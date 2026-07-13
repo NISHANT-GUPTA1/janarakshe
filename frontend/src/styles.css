@@ -58,6 +58,8 @@ a:hover { text-decoration: underline; }
 .skip-link:focus { left: 0; }
 
 .wrap { max-width: 1280px; margin: 0 auto; padding: 22px 24px 48px; }
+/* The home command-center console runs edge-to-edge instead of the gov column. */
+.wrap-full { max-width: none; padding: 0; }
 
 /* ===================== government chrome ===================== */
 /* ---- Row 1: KSP top utility bar (teal → purple gradient) ---- */

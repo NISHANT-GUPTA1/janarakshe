@@ -8,7 +8,7 @@ district-level aggregate APIs. Pilot state: **Karnataka**.
 
 ```bash
 cd backend
-python -m venv .venv && .\venv\Scripts\activate      # Windows
+python -m venv .venv && .\venv\Scripts\activate or .\venv\Scripts\Activate.ps1      # Windows
 # source .venv/bin/activate                          # macOS/Linux
 pip install -r requirements.txt
 ```

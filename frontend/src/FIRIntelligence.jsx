@@ -1,8 +1,5 @@
-import React, { useEffect, useMemo, useState, Suspense, lazy } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { api } from './api.js';
-
-// Heavy three.js graph — only loaded when the network tab is opened.
-const NetworkGraph = lazy(() => import('./NetworkGraph.jsx'));
 
 // ===========================================================
 // Phase 7 — FIR-record intelligence, modelled on the KSP Police
@@ -227,9 +224,11 @@ function ScatterMap({ points, hotspots }) {
 }
 
 // ---------------------------------------------------------- Crime Network
+// The interactive 3D graph is rendered on the dashboard (dash/Dashboard.jsx).
+// This panel is the tabular read-out of the same network, so it no longer
+// duplicates it behind an "open graph" modal.
 function Network() {
   const [d, err] = useFir(api.firNetwork);
-  const [show, setShow] = useState(false);
   if (err) return <div className="error">FIR network API error: {err}</div>;
   if (!d) return <p className="hint">Loading co-accused network…</p>;
   const s = d.summary;
@@ -252,14 +251,6 @@ function Network() {
           <li key={o.entity_id}><span>{o.name} · {o.district}</span><b>{o.co_offenders} links</b></li>
         ))}
       </ul>
-      {d.graph && (
-        <button className="graph-open" onClick={() => setShow(true)}>◉ Open 3D network graph</button>
-      )}
-      {show && d.graph && (
-        <Suspense fallback={<div className="graph-modal"><div className="hint">Loading 3D graph…</div></div>}>
-          <NetworkGraph graph={d.graph} caseGraph={d.case_graph} summary={s} onClose={() => setShow(false)} />
-        </Suspense>
-      )}
     </section>
   );
 }

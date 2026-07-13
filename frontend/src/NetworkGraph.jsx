@@ -54,7 +54,9 @@ function egoNetwork(base, mode, pid) {
 //   • "partnerships" — person<->person, a line = they shared a case (co-offending)
 //   • "cases"        — person<->case,  a line = this person was in this case,
 //                       so one person branching to many cases = a repeat offender.
-export default function NetworkGraph({ graph, caseGraph, summary, onClose }) {
+// `embedded` renders the same graph inline as a dashboard panel instead of as a
+// modal over a backdrop: no scrim, no close button, no Escape handler.
+export default function NetworkGraph({ graph, caseGraph, summary, onClose, embedded = false }) {
   const fgRef = useRef();
   const boxRef = useRef();
   const [dims, setDims] = useState({ w: 800, h: 520 });
@@ -78,8 +80,9 @@ export default function NetworkGraph({ graph, caseGraph, summary, onClose }) {
     return () => ro.disconnect();
   }, []);
 
-  // close on Escape
+  // close on Escape (modal only — embedded has nothing to close)
   useEffect(() => {
+    if (!onClose) return undefined;
     const onKey = (e) => e.key === 'Escape' && onClose();
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
@@ -170,7 +173,10 @@ export default function NetworkGraph({ graph, caseGraph, summary, onClose }) {
   const isCaseMode = mode === 'cases';
 
   return (
-    <div className="graph-modal" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
+    <div
+      className={embedded ? 'graph-embed' : 'graph-modal'}
+      onMouseDown={(e) => !embedded && e.target === e.currentTarget && onClose()}
+    >
       <div className="graph-dialog">
         <div className="graph-head">
           <div>
@@ -222,7 +228,9 @@ export default function NetworkGraph({ graph, caseGraph, summary, onClose }) {
             >
               {focusLargest ? 'Show all crews' : 'Focus biggest crew'}
             </button>
-            <button className="graph-close" onClick={onClose} aria-label="Close">✕</button>
+            {!embedded && (
+              <button className="graph-close" onClick={onClose} aria-label="Close">✕</button>
+            )}
           </div>
         </div>
 

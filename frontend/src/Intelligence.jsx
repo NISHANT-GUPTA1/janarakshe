@@ -1,15 +1,13 @@
-import React, { useEffect, useState, Suspense, lazy } from 'react';
+import React, { useEffect, useState } from 'react';
 import { api } from './api.js';
 
-// Heavy (three.js) — only loaded when the user opens the 3D graph.
-const NetworkGraph = lazy(() => import('./NetworkGraph.jsx'));
-
 // Phase 3: pattern detection (real data) + synthetic offender intelligence.
+// The 3D network lives on the dashboard itself (see dash/Dashboard.jsx), so this
+// module shows the tabular summary only — no duplicate "open graph" modal.
 export default function Intelligence() {
   const [patterns, setPatterns] = useState(null);
   const [repeat, setRepeat] = useState(null);
   const [network, setNetwork] = useState(null);
-  const [showGraph, setShowGraph] = useState(false);
   const [err, setErr] = useState(null);
 
   useEffect(() => {
@@ -84,18 +82,7 @@ export default function Intelligence() {
             <li key={o.entity_id}><span>{o.name} · {o.district}</span> <b>{o.co_offenders} links</b></li>
           ))}
         </ul>
-        {network.graph && (
-          <button className="graph-open" onClick={() => setShowGraph(true)}>
-            ◉ Open 3D network graph
-          </button>
-        )}
       </section>
-
-      {showGraph && network.graph && (
-        <Suspense fallback={<div className="graph-modal"><div className="hint">Loading 3D graph…</div></div>}>
-          <NetworkGraph graph={network.graph} caseGraph={network.case_graph} summary={network.summary} onClose={() => setShowGraph(false)} />
-        </Suspense>
-      )}
     </div>
   );
 }

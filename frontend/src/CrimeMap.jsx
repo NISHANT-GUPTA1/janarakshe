@@ -3,9 +3,7 @@ import { MapContainer, TileLayer, GeoJSON, CircleMarker, Tooltip, useMap } from 
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet.heat';
-
-const BAND_COLOR = { Low: '#1ea672', Medium: '#d8a300', High: '#e8730c', Critical: '#d23b3b' };
-const HOTSPOT_COLOR = { established: '#ff3b3b', emerging: '#ffae42' };
+import { BAND_COLOR, HOTSPOT_COLOR } from './dash/palette.js';
 
 // leaflet.heat isn't part of react-leaflet — wrap it as a child layer.
 function HeatLayer({ points }) {
@@ -17,22 +15,28 @@ function HeatLayer({ points }) {
   return null;
 }
 
-export default function CrimeMap({ districts, boundaries, selectedId, onSelect }) {
+// `focusIds` (a Set, or null for "everything") comes from the console filters:
+// districts outside the focus stay on the map but recede, so the filter reads as
+// a spotlight rather than as data disappearing.
+export default function CrimeMap({ districts, boundaries, selectedId, focusIds = null, height = 520, onSelect }) {
   const [layer, setLayer] = useState('risk'); // 'risk' | 'heat'
   const byId = Object.fromEntries(districts.map((d) => [d.geo_unit_id, d]));
-  const maxSev = Math.max(...districts.map((d) => d.severity_weighted_index), 1);
-  const heatPoints = districts
-    .filter((d) => d.centroid)
-    .map((d) => [d.centroid.lat, d.centroid.lon, d.severity_weighted_index / maxSev]);
+  const inFocus = (id) => !focusIds || focusIds.has(id);
+
+  const shown = districts.filter((d) => inFocus(d.geo_unit_id) && d.centroid);
+  const maxSev = Math.max(...shown.map((d) => d.severity_weighted_index), 1);
+  const heatPoints = shown.map((d) => [d.centroid.lat, d.centroid.lon, d.severity_weighted_index / maxSev]);
 
   const style = (feature) => {
-    const d = byId[feature.properties.geo_unit_id];
-    const isSel = selectedId === feature.properties.geo_unit_id;
+    const id = feature.properties.geo_unit_id;
+    const d = byId[id];
+    const isSel = selectedId === id;
+    const focused = inFocus(id);
     return {
       color: isSel ? '#ffffff' : '#1b2335',
       weight: isSel ? 2.5 : 1,
       fillColor: d ? BAND_COLOR[d.risk_band] : '#444',
-      fillOpacity: layer === 'heat' ? 0.12 : isSel ? 0.92 : 0.62,
+      fillOpacity: !focused ? 0.08 : layer === 'heat' ? 0.12 : isSel ? 0.92 : 0.62,
     };
   };
 
@@ -60,17 +64,22 @@ export default function CrimeMap({ districts, boundaries, selectedId, onSelect }
         </span>
       </div>
 
-      <MapContainer center={[14.8, 76.2]} zoom={6} style={{ height: 520, borderRadius: 12 }} preferCanvas>
+      <MapContainer center={[14.8, 76.2]} zoom={6} style={{ height, borderRadius: 12 }} preferCanvas>
         <TileLayer
           url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
           attribution='&copy; OpenStreetMap &copy; CARTO'
         />
         {boundaries && (
-          <GeoJSON key={`${selectedId}-${layer}`} data={boundaries} style={style} onEachFeature={onEach} />
+          <GeoJSON
+            key={`${selectedId}-${layer}-${focusIds ? focusIds.size : 'all'}`}
+            data={boundaries}
+            style={style}
+            onEachFeature={onEach}
+          />
         )}
         {layer === 'heat' && <HeatLayer points={heatPoints} />}
-        {districts
-          .filter((d) => d.hotspot_status !== 'none' && d.centroid)
+        {shown
+          .filter((d) => d.hotspot_status !== 'none')
           .map((d) => (
             <CircleMarker
               key={d.geo_unit_id}
