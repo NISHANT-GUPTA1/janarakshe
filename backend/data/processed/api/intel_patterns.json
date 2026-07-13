@@ -1,0 +1,221 @@
+{
+  "latest_year": 2013,
+  "clusters": [
+    {
+      "cluster": 0,
+      "dominant_groups": [
+        "VIOLENT",
+        "PROPERTY"
+      ],
+      "districts": [
+        "Bagalkote",
+        "Belagavi",
+        "Chikkaballapura",
+        "Davanagere",
+        "Gadag",
+        "Haveri",
+        "Kalaburagi",
+        "Kolar",
+        "Koppal",
+        "Raichur",
+        "Vijayapura"
+      ],
+      "size": 11
+    },
+    {
+      "cluster": 1,
+      "dominant_groups": [
+        "VIOLENT",
+        "PROPERTY"
+      ],
+      "districts": [
+        "Ballari",
+        "Bengaluru Rural",
+        "Dakshina Kannada",
+        "Dharwad",
+        "Mysuru",
+        "Ramanagara",
+        "Tumakuru",
+        "Udupi"
+      ],
+      "size": 8
+    },
+    {
+      "cluster": 2,
+      "dominant_groups": [
+        "VIOLENT",
+        "PROPERTY"
+      ],
+      "districts": [
+        "Bidar",
+        "Chamarajanagara",
+        "Chikkamagaluru",
+        "Chitradurga",
+        "Hassan",
+        "Kodagu",
+        "Mandya",
+        "Shivamogga",
+        "Uttara Kannada",
+        "Yadgir"
+      ],
+      "size": 10
+    },
+    {
+      "cluster": 3,
+      "dominant_groups": [
+        "PROPERTY",
+        "VIOLENT"
+      ],
+      "districts": [
+        "Bengaluru Urban"
+      ],
+      "size": 1
+    }
+  ],
+  "anomalies": [
+    {
+      "geo_unit_id": "DISTRICT:KA-VIJAYAPURA",
+      "name": "Vijayapura",
+      "year": 2003,
+      "cases": 4283,
+      "zscore": 2.96,
+      "direction": "spike"
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-DAVANAGERE",
+      "name": "Davanagere",
+      "year": 2013,
+      "cases": 3843,
+      "zscore": 2.71,
+      "direction": "spike"
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BALLARI",
+      "name": "Ballari",
+      "year": 2005,
+      "cases": 4432,
+      "zscore": 2.39,
+      "direction": "spike"
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-KODAGU",
+      "name": "Kodagu",
+      "year": 2010,
+      "cases": 2199,
+      "zscore": 2.32,
+      "direction": "spike"
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BAGALKOTE",
+      "name": "Bagalkote",
+      "year": 2001,
+      "cases": 1710,
+      "zscore": -2.28,
+      "direction": "drop"
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-CHIKKAMAGALURU",
+      "name": "Chikkamagaluru",
+      "year": 2006,
+      "cases": 3369,
+      "zscore": 2.22,
+      "direction": "spike"
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-KALABURAGI",
+      "name": "Kalaburagi",
+      "year": 2009,
+      "cases": 5984,
+      "zscore": 2.22,
+      "direction": "spike"
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-DAKSHINA-KANNADA",
+      "name": "Dakshina Kannada",
+      "year": 2001,
+      "cases": 3047,
+      "zscore": -2.11,
+      "direction": "drop"
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-CHITRADURGA",
+      "name": "Chitradurga",
+      "year": 2001,
+      "cases": 2691,
+      "zscore": -1.98,
+      "direction": "drop"
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-GADAG",
+      "name": "Gadag",
+      "year": 2003,
+      "cases": 842,
+      "zscore": -1.95,
+      "direction": "drop"
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-UDUPI",
+      "name": "Udupi",
+      "year": 2001,
+      "cases": 1959,
+      "zscore": -1.93,
+      "direction": "drop"
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BIDAR",
+      "name": "Bidar",
+      "year": 2002,
+      "cases": 4417,
+      "zscore": 1.9,
+      "direction": "spike"
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-DAKSHINA-KANNADA",
+      "name": "Dakshina Kannada",
+      "year": 2013,
+      "cases": 4922,
+      "zscore": 1.88,
+      "direction": "spike"
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-RAICHUR",
+      "name": "Raichur",
+      "year": 2011,
+      "cases": 3491,
+      "zscore": 1.86,
+      "direction": "spike"
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-KOPPAL",
+      "name": "Koppal",
+      "year": 2004,
+      "cases": 1103,
+      "zscore": -1.85,
+      "direction": "drop"
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-HASSAN",
+      "name": "Hassan",
+      "year": 2010,
+      "cases": 6204,
+      "zscore": 1.83,
+      "direction": "spike"
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-CHITRADURGA",
+      "name": "Chitradurga",
+      "year": 2010,
+      "cases": 4752,
+      "zscore": 1.82,
+      "direction": "spike"
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-TUMAKURU",
+      "name": "Tumakuru",
+      "year": 2011,
+      "cases": 5593,
+      "zscore": 1.81,
+      "direction": "spike"
+    }
+  ]
+}

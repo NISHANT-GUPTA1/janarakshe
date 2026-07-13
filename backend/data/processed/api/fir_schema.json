@@ -1,0 +1,148 @@
+{
+  "title": "KSP Police FIR System \u2014 Data Model",
+  "note": "Record-level ER model the platform is designed around (source: KSP confidential DB schema).",
+  "tables": [
+    {
+      "name": "CaseMaster",
+      "role": "Core FIR / case record",
+      "columns": [
+        "CaseMasterID (PK)",
+        "CrimeNo",
+        "CaseNo",
+        "CrimeRegisteredDate",
+        "IncidentFromDate",
+        "IncidentToDate",
+        "latitude",
+        "longitude",
+        "BriefFacts",
+        "PolicePersonID (FK)",
+        "PoliceStationID (FK)",
+        "CaseCategoryID (FK)",
+        "GravityOffenceID (FK)",
+        "CrimeMajorHeadID (FK)",
+        "CrimeMinorHeadID (FK)",
+        "CaseStatusID (FK)",
+        "CourtID (FK)"
+      ]
+    },
+    {
+      "name": "Accused",
+      "role": "Persons accused in a case (A1, A2, \u2026)",
+      "columns": [
+        "AccusedMasterID (PK)",
+        "CaseMasterID (FK)",
+        "AccusedName",
+        "AgeYear",
+        "GenderID",
+        "PersonID"
+      ]
+    },
+    {
+      "name": "Victim",
+      "role": "Victims linked to a case",
+      "columns": [
+        "VictimMasterID (PK)",
+        "CaseMasterID (FK)",
+        "VictimName",
+        "AgeYear",
+        "GenderID",
+        "VictimPolice"
+      ]
+    },
+    {
+      "name": "ComplainantDetails",
+      "role": "Complainant + demographics",
+      "columns": [
+        "ComplainantID (PK)",
+        "CaseMasterID (FK)",
+        "ComplainantName",
+        "AgeYear",
+        "OccupationID (FK)",
+        "ReligionID (FK)",
+        "CasteID (FK)",
+        "GenderID"
+      ]
+    },
+    {
+      "name": "ArrestSurrender",
+      "role": "Arrest / surrender events",
+      "columns": [
+        "ArrestSurrenderID (PK)",
+        "CaseMasterID (FK)",
+        "AccusedMasterID (FK)",
+        "ArrestSurrenderDate",
+        "IOID (FK)",
+        "CourtID (FK)",
+        "PoliceStationID (FK)"
+      ]
+    },
+    {
+      "name": "ChargesheetDetails",
+      "role": "Final report (A=chargesheet / B=false / C=undetected)",
+      "columns": [
+        "CSID (PK)",
+        "CaseMasterID (FK)",
+        "csdate",
+        "cstype",
+        "PolicePersonID (FK)"
+      ]
+    },
+    {
+      "name": "Act / Section / ActSectionAssociation",
+      "role": "Legal acts & sections per case",
+      "columns": [
+        "ActCode (PK)",
+        "SectionCode",
+        "ActSectionAssociation.CaseMasterID (FK)"
+      ]
+    },
+    {
+      "name": "CrimeHead / CrimeSubHead",
+      "role": "Major & minor crime classification",
+      "columns": [
+        "CrimeHeadID (PK)",
+        "CrimeGroupName",
+        "CrimeSubHeadID (PK)",
+        "CrimeHeadName"
+      ]
+    },
+    {
+      "name": "Unit / UnitType",
+      "role": "Police station hierarchy",
+      "columns": [
+        "UnitID (PK)",
+        "UnitName",
+        "TypeID (FK)",
+        "ParentUnit",
+        "DistrictID (FK)"
+      ]
+    },
+    {
+      "name": "Employee / Rank / Designation",
+      "role": "Police officers",
+      "columns": [
+        "EmployeeID (PK)",
+        "UnitID (FK)",
+        "RankID (FK)",
+        "DesignationID (FK)",
+        "KGID"
+      ]
+    },
+    {
+      "name": "District / State / Court",
+      "role": "Geo & judicial masters",
+      "columns": [
+        "DistrictID (PK)",
+        "StateID (FK)",
+        "CourtID (PK)",
+        "CourtName"
+      ]
+    }
+  ],
+  "relationships": [
+    "CaseMaster 1\u2014* Victim / Accused / ComplainantDetails / ArrestSurrender / ActSectionAssociation",
+    "CaseMaster *\u20141 CaseCategory / GravityOffence / CrimeHead / CrimeSubHead / CaseStatus / Court / Employee",
+    "CrimeSubHead *\u20141 CrimeHead ; Section *\u20141 Act",
+    "Unit *\u20141 District ; District *\u20141 State ; Employee *\u20141 Unit/Rank/Designation"
+  ]
+}

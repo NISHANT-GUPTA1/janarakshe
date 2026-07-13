@@ -1,0 +1,72 @@
+[
+  {
+    "geo_unit_id": "DISTRICT:KA-RAMANAGARA",
+    "name": "Ramanagara",
+    "total_cognizable_cases": 4363,
+    "crime_rate_per_100k": 403.0,
+    "severity_weighted_index": 775.9,
+    "hotspot_status": "established",
+    "risk_score": 73.7,
+    "risk_band": "High",
+    "centroid": {
+      "lat": 12.76429,
+      "lon": 77.3177
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-BENGALURU-RURAL",
+    "name": "Bengaluru Rural",
+    "total_cognizable_cases": 5663,
+    "crime_rate_per_100k": 571.5,
+    "severity_weighted_index": 1056.1,
+    "hotspot_status": "established",
+    "risk_score": 71.4,
+    "risk_band": "High",
+    "centroid": {
+      "lat": 13.19727,
+      "lon": 77.61527
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-BENGALURU-URBAN",
+    "name": "Bengaluru Urban",
+    "total_cognizable_cases": 30318,
+    "crime_rate_per_100k": 315.1,
+    "severity_weighted_index": 642.0,
+    "hotspot_status": "emerging",
+    "risk_score": 62.4,
+    "risk_band": "High",
+    "centroid": {
+      "lat": 12.91857,
+      "lon": 77.579
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-SHIVAMOGGA",
+    "name": "Shivamogga",
+    "total_cognizable_cases": 5943,
+    "crime_rate_per_100k": 339.1,
+    "severity_weighted_index": 695.7,
+    "hotspot_status": "emerging",
+    "risk_score": 61.1,
+    "risk_band": "High",
+    "centroid": {
+      "lat": 14.04919,
+      "lon": 75.19818
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-KODAGU",
+    "name": "Kodagu",
+    "total_cognizable_cases": 1707,
+    "crime_rate_per_100k": 307.8,
+    "severity_weighted_index": 651.2,
+    "hotspot_status": "emerging",
+    "risk_score": 51.8,
+    "risk_band": "High",
+    "centroid": {
+      "lat": 12.43935,
+      "lon": 75.79433
+    }
+  }
+]

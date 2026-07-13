@@ -1,0 +1,5912 @@
+{
+  "DISTRICT:KA-BAGALKOTE": {
+    "geo_unit_id": "DISTRICT:KA-BAGALKOTE",
+    "name": "Bagalkote",
+    "year": 2013,
+    "population": 1889752,
+    "kpis": {
+      "total_cognizable_cases": 2340,
+      "crime_rate_per_100k": 123.8,
+      "severity_weighted_index": 246.3,
+      "violent_crime_share": 0.159,
+      "crime_against_women_rate": 17.9
+    },
+    "hotspot": {
+      "zscore": -1.03,
+      "trend_slope": 40.9,
+      "status": "none"
+    },
+    "risk": {
+      "score": 16.6,
+      "band": "Low",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.051,
+          "weight": 0.429,
+          "contribution": 2.17
+        },
+        "trend_momentum": {
+          "value": 0.505,
+          "weight": 0.286,
+          "contribution": 14.43
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 1710,
+        "rate_per_100k": 90.5
+      },
+      {
+        "year": 2002,
+        "total": 1915,
+        "rate_per_100k": 101.3
+      },
+      {
+        "year": 2003,
+        "total": 1951,
+        "rate_per_100k": 103.2
+      },
+      {
+        "year": 2004,
+        "total": 2038,
+        "rate_per_100k": 107.8
+      },
+      {
+        "year": 2005,
+        "total": 2083,
+        "rate_per_100k": 110.2
+      },
+      {
+        "year": 2006,
+        "total": 2062,
+        "rate_per_100k": 109.1
+      },
+      {
+        "year": 2007,
+        "total": 2044,
+        "rate_per_100k": 108.2
+      },
+      {
+        "year": 2008,
+        "total": 2048,
+        "rate_per_100k": 108.4
+      },
+      {
+        "year": 2009,
+        "total": 2130,
+        "rate_per_100k": 112.7
+      },
+      {
+        "year": 2010,
+        "total": 2189,
+        "rate_per_100k": 115.8
+      },
+      {
+        "year": 2011,
+        "total": 2255,
+        "rate_per_100k": 119.3
+      },
+      {
+        "year": 2012,
+        "total": 2297,
+        "rate_per_100k": 121.5
+      },
+      {
+        "year": 2013,
+        "total": 2340,
+        "rate_per_100k": 123.8
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 1071
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 292
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 231
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 197
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 147
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 86
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 84
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 52
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 46
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 33
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 30
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 22
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 18
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 14
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 7
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 4
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 3
+      },
+      {
+        "category_code": "INSULT_MODESTY",
+        "group": "WOMEN",
+        "cases": 2
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 1
+      }
+    ]
+  },
+  "DISTRICT:KA-BALLARI": {
+    "geo_unit_id": "DISTRICT:KA-BALLARI",
+    "name": "Ballari",
+    "year": 2013,
+    "population": 2452595,
+    "kpis": {
+      "total_cognizable_cases": 3269,
+      "crime_rate_per_100k": 133.3,
+      "severity_weighted_index": 261.1,
+      "violent_crime_share": 0.193,
+      "crime_against_women_rate": 16.4
+    },
+    "hotspot": {
+      "zscore": -0.95,
+      "trend_slope": -25.4,
+      "status": "none"
+    },
+    "risk": {
+      "score": 13.6,
+      "band": "Low",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.068,
+          "weight": 0.429,
+          "contribution": 2.92
+        },
+        "trend_momentum": {
+          "value": 0.372,
+          "weight": 0.286,
+          "contribution": 10.63
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 3229,
+        "rate_per_100k": 131.7
+      },
+      {
+        "year": 2002,
+        "total": 3088,
+        "rate_per_100k": 125.9
+      },
+      {
+        "year": 2003,
+        "total": 3302,
+        "rate_per_100k": 134.6
+      },
+      {
+        "year": 2004,
+        "total": 3850,
+        "rate_per_100k": 157.0
+      },
+      {
+        "year": 2005,
+        "total": 4432,
+        "rate_per_100k": 180.7
+      },
+      {
+        "year": 2006,
+        "total": 4112,
+        "rate_per_100k": 167.7
+      },
+      {
+        "year": 2007,
+        "total": 3636,
+        "rate_per_100k": 148.3
+      },
+      {
+        "year": 2008,
+        "total": 3264,
+        "rate_per_100k": 133.1
+      },
+      {
+        "year": 2009,
+        "total": 3209,
+        "rate_per_100k": 130.8
+      },
+      {
+        "year": 2010,
+        "total": 3414,
+        "rate_per_100k": 139.2
+      },
+      {
+        "year": 2011,
+        "total": 3205,
+        "rate_per_100k": 130.7
+      },
+      {
+        "year": 2012,
+        "total": 3112,
+        "rate_per_100k": 126.9
+      },
+      {
+        "year": 2013,
+        "total": 3269,
+        "rate_per_100k": 133.3
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 1464
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 414
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 351
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 214
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 206
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 177
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 99
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 58
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 58
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 57
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 53
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 41
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 36
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 25
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 8
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 5
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 3
+      }
+    ]
+  },
+  "DISTRICT:KA-BELAGAVI": {
+    "geo_unit_id": "DISTRICT:KA-BELAGAVI",
+    "name": "Belagavi",
+    "year": 2013,
+    "population": 4779661,
+    "kpis": {
+      "total_cognizable_cases": 6594,
+      "crime_rate_per_100k": 138.0,
+      "severity_weighted_index": 259.6,
+      "violent_crime_share": 0.168,
+      "crime_against_women_rate": 22.3
+    },
+    "hotspot": {
+      "zscore": -0.96,
+      "trend_slope": 242.5,
+      "status": "none"
+    },
+    "risk": {
+      "score": 28.8,
+      "band": "Medium",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.066,
+          "weight": 0.429,
+          "contribution": 2.84
+        },
+        "trend_momentum": {
+          "value": 0.909,
+          "weight": 0.286,
+          "contribution": 25.98
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 5053,
+        "rate_per_100k": 105.7
+      },
+      {
+        "year": 2002,
+        "total": 4726,
+        "rate_per_100k": 98.9
+      },
+      {
+        "year": 2003,
+        "total": 4494,
+        "rate_per_100k": 94.0
+      },
+      {
+        "year": 2004,
+        "total": 4657,
+        "rate_per_100k": 97.4
+      },
+      {
+        "year": 2005,
+        "total": 5680,
+        "rate_per_100k": 118.8
+      },
+      {
+        "year": 2006,
+        "total": 6143,
+        "rate_per_100k": 128.5
+      },
+      {
+        "year": 2007,
+        "total": 6778,
+        "rate_per_100k": 141.8
+      },
+      {
+        "year": 2008,
+        "total": 7150,
+        "rate_per_100k": 149.6
+      },
+      {
+        "year": 2009,
+        "total": 7315,
+        "rate_per_100k": 153.0
+      },
+      {
+        "year": 2010,
+        "total": 7463,
+        "rate_per_100k": 156.1
+      },
+      {
+        "year": 2011,
+        "total": 7393,
+        "rate_per_100k": 154.7
+      },
+      {
+        "year": 2012,
+        "total": 6845,
+        "rate_per_100k": 143.2
+      },
+      {
+        "year": 2013,
+        "total": 6594,
+        "rate_per_100k": 138.0
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 3371
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 775
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 473
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 472
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 310
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 296
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 246
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 200
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 113
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 103
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 67
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 61
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 40
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 20
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 16
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 12
+      },
+      {
+        "category_code": "INSULT_MODESTY",
+        "group": "WOMEN",
+        "cases": 12
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 7
+      }
+    ]
+  },
+  "DISTRICT:KA-BENGALURU-RURAL": {
+    "geo_unit_id": "DISTRICT:KA-BENGALURU-RURAL",
+    "name": "Bengaluru Rural",
+    "year": 2013,
+    "population": 990923,
+    "kpis": {
+      "total_cognizable_cases": 5663,
+      "crime_rate_per_100k": 571.5,
+      "severity_weighted_index": 1056.1,
+      "violent_crime_share": 0.171,
+      "crime_against_women_rate": 65.7
+    },
+    "hotspot": {
+      "zscore": 3.31,
+      "trend_slope": -211.0,
+      "status": "established"
+    },
+    "risk": {
+      "score": 71.4,
+      "band": "High",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 1.0,
+          "weight": 0.429,
+          "contribution": 42.86
+        },
+        "trend_momentum": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        },
+        "hotspot_membership": {
+          "value": 1.0,
+          "weight": 0.286,
+          "contribution": 28.57
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 5209,
+        "rate_per_100k": 525.7
+      },
+      {
+        "year": 2002,
+        "total": 7310,
+        "rate_per_100k": 737.7
+      },
+      {
+        "year": 2003,
+        "total": 7409,
+        "rate_per_100k": 747.7
+      },
+      {
+        "year": 2004,
+        "total": 8084,
+        "rate_per_100k": 815.8
+      },
+      {
+        "year": 2005,
+        "total": 8200,
+        "rate_per_100k": 827.5
+      },
+      {
+        "year": 2006,
+        "total": 8778,
+        "rate_per_100k": 885.8
+      },
+      {
+        "year": 2007,
+        "total": 8577,
+        "rate_per_100k": 865.6
+      },
+      {
+        "year": 2008,
+        "total": 4423,
+        "rate_per_100k": 446.4
+      },
+      {
+        "year": 2009,
+        "total": 4384,
+        "rate_per_100k": 442.4
+      },
+      {
+        "year": 2010,
+        "total": 4612,
+        "rate_per_100k": 465.4
+      },
+      {
+        "year": 2011,
+        "total": 4915,
+        "rate_per_100k": 496.0
+      },
+      {
+        "year": 2012,
+        "total": 5560,
+        "rate_per_100k": 561.1
+      },
+      {
+        "year": 2013,
+        "total": 5663,
+        "rate_per_100k": 571.5
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 2893
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 596
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 562
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 311
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 281
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 246
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 130
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 129
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 112
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 93
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 76
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 69
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 57
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 37
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 35
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 22
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 10
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 3
+      },
+      {
+        "category_code": "FORGERY",
+        "group": "ECONOMIC",
+        "cases": 1
+      }
+    ]
+  },
+  "DISTRICT:KA-BENGALURU-URBAN": {
+    "geo_unit_id": "DISTRICT:KA-BENGALURU-URBAN",
+    "name": "Bengaluru Urban",
+    "year": 2013,
+    "population": 9621551,
+    "kpis": {
+      "total_cognizable_cases": 30318,
+      "crime_rate_per_100k": 315.1,
+      "severity_weighted_index": 642.0,
+      "violent_crime_share": 0.183,
+      "crime_against_women_rate": 22.5
+    },
+    "hotspot": {
+      "zscore": 1.09,
+      "trend_slope": 244.0,
+      "status": "emerging"
+    },
+    "risk": {
+      "score": 62.4,
+      "band": "High",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.515,
+          "weight": 0.429,
+          "contribution": 22.05
+        },
+        "trend_momentum": {
+          "value": 0.912,
+          "weight": 0.286,
+          "contribution": 26.07
+        },
+        "hotspot_membership": {
+          "value": 0.5,
+          "weight": 0.286,
+          "contribution": 14.29
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 27254,
+        "rate_per_100k": 283.3
+      },
+      {
+        "year": 2002,
+        "total": 29120,
+        "rate_per_100k": 302.7
+      },
+      {
+        "year": 2003,
+        "total": 29260,
+        "rate_per_100k": 304.1
+      },
+      {
+        "year": 2004,
+        "total": 28526,
+        "rate_per_100k": 296.5
+      },
+      {
+        "year": 2005,
+        "total": 29042,
+        "rate_per_100k": 301.8
+      },
+      {
+        "year": 2006,
+        "total": 26284,
+        "rate_per_100k": 273.2
+      },
+      {
+        "year": 2007,
+        "total": 27049,
+        "rate_per_100k": 281.1
+      },
+      {
+        "year": 2008,
+        "total": 29664,
+        "rate_per_100k": 308.3
+      },
+      {
+        "year": 2009,
+        "total": 32380,
+        "rate_per_100k": 336.5
+      },
+      {
+        "year": 2010,
+        "total": 32188,
+        "rate_per_100k": 334.5
+      },
+      {
+        "year": 2011,
+        "total": 30283,
+        "rate_per_100k": 314.7
+      },
+      {
+        "year": 2012,
+        "total": 29297,
+        "rate_per_100k": 304.5
+      },
+      {
+        "year": 2013,
+        "total": 30318,
+        "rate_per_100k": 315.1
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 10643
+      },
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 8132
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 3132
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 2987
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 1404
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 642
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 619
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 482
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 465
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 442
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 378
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 362
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 217
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 133
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 80
+      },
+      {
+        "category_code": "INSULT_MODESTY",
+        "group": "WOMEN",
+        "cases": 73
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 52
+      },
+      {
+        "category_code": "FORGERY",
+        "group": "ECONOMIC",
+        "cases": 33
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 26
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 16
+      }
+    ]
+  },
+  "DISTRICT:KA-BIDAR": {
+    "geo_unit_id": "DISTRICT:KA-BIDAR",
+    "name": "Bidar",
+    "year": 2013,
+    "population": 1703300,
+    "kpis": {
+      "total_cognizable_cases": 3963,
+      "crime_rate_per_100k": 232.7,
+      "severity_weighted_index": 447.1,
+      "violent_crime_share": 0.279,
+      "crime_against_women_rate": 27.2
+    },
+    "hotspot": {
+      "zscore": 0.05,
+      "trend_slope": -56.0,
+      "status": "none"
+    },
+    "risk": {
+      "score": 21.1,
+      "band": "Low",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.286,
+          "weight": 0.429,
+          "contribution": 12.26
+        },
+        "trend_momentum": {
+          "value": 0.311,
+          "weight": 0.286,
+          "contribution": 8.88
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 4371,
+        "rate_per_100k": 256.6
+      },
+      {
+        "year": 2002,
+        "total": 4417,
+        "rate_per_100k": 259.3
+      },
+      {
+        "year": 2003,
+        "total": 4069,
+        "rate_per_100k": 238.9
+      },
+      {
+        "year": 2004,
+        "total": 4045,
+        "rate_per_100k": 237.5
+      },
+      {
+        "year": 2005,
+        "total": 3589,
+        "rate_per_100k": 210.7
+      },
+      {
+        "year": 2006,
+        "total": 3583,
+        "rate_per_100k": 210.4
+      },
+      {
+        "year": 2007,
+        "total": 3639,
+        "rate_per_100k": 213.6
+      },
+      {
+        "year": 2008,
+        "total": 3363,
+        "rate_per_100k": 197.4
+      },
+      {
+        "year": 2009,
+        "total": 3594,
+        "rate_per_100k": 211.0
+      },
+      {
+        "year": 2010,
+        "total": 3599,
+        "rate_per_100k": 211.3
+      },
+      {
+        "year": 2011,
+        "total": 3471,
+        "rate_per_100k": 203.8
+      },
+      {
+        "year": 2012,
+        "total": 3658,
+        "rate_per_100k": 214.8
+      },
+      {
+        "year": 2013,
+        "total": 3963,
+        "rate_per_100k": 232.7
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 2071
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 941
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 207
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 171
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 112
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 107
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 82
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 53
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 47
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 40
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 34
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 30
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 18
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 15
+      },
+      {
+        "category_code": "INSULT_MODESTY",
+        "group": "WOMEN",
+        "cases": 9
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 7
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 7
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 5
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 4
+      },
+      {
+        "category_code": "FORGERY",
+        "group": "ECONOMIC",
+        "cases": 3
+      }
+    ]
+  },
+  "DISTRICT:KA-CHAMARAJANAGARA": {
+    "geo_unit_id": "DISTRICT:KA-CHAMARAJANAGARA",
+    "name": "Chamarajanagara",
+    "year": 2013,
+    "population": 1020791,
+    "kpis": {
+      "total_cognizable_cases": 1866,
+      "crime_rate_per_100k": 182.8,
+      "severity_weighted_index": 404.3,
+      "violent_crime_share": 0.344,
+      "crime_against_women_rate": 27.8
+    },
+    "hotspot": {
+      "zscore": -0.18,
+      "trend_slope": 52.2,
+      "status": "none"
+    },
+    "risk": {
+      "score": 25.2,
+      "band": "Medium",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.236,
+          "weight": 0.429,
+          "contribution": 10.11
+        },
+        "trend_momentum": {
+          "value": 0.528,
+          "weight": 0.286,
+          "contribution": 15.08
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 1390,
+        "rate_per_100k": 136.2
+      },
+      {
+        "year": 2002,
+        "total": 1327,
+        "rate_per_100k": 130.0
+      },
+      {
+        "year": 2003,
+        "total": 1171,
+        "rate_per_100k": 114.7
+      },
+      {
+        "year": 2004,
+        "total": 1627,
+        "rate_per_100k": 159.4
+      },
+      {
+        "year": 2005,
+        "total": 1504,
+        "rate_per_100k": 147.3
+      },
+      {
+        "year": 2006,
+        "total": 1300,
+        "rate_per_100k": 127.4
+      },
+      {
+        "year": 2007,
+        "total": 1373,
+        "rate_per_100k": 134.5
+      },
+      {
+        "year": 2008,
+        "total": 1518,
+        "rate_per_100k": 148.7
+      },
+      {
+        "year": 2009,
+        "total": 1661,
+        "rate_per_100k": 162.7
+      },
+      {
+        "year": 2010,
+        "total": 1937,
+        "rate_per_100k": 189.8
+      },
+      {
+        "year": 2011,
+        "total": 1960,
+        "rate_per_100k": 192.0
+      },
+      {
+        "year": 2012,
+        "total": 1733,
+        "rate_per_100k": 169.8
+      },
+      {
+        "year": 2013,
+        "total": 1866,
+        "rate_per_100k": 182.8
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 705
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 515
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 141
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 137
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 95
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 63
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 54
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 41
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 27
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 25
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 17
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 16
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 11
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 5
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 4
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 4
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 3
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 3
+      }
+    ]
+  },
+  "DISTRICT:KA-CHIKKABALLAPURA": {
+    "geo_unit_id": "DISTRICT:KA-CHIKKABALLAPURA",
+    "name": "Chikkaballapura",
+    "year": 2013,
+    "population": 1255104,
+    "kpis": {
+      "total_cognizable_cases": 2372,
+      "crime_rate_per_100k": 189.0,
+      "severity_weighted_index": 397.9,
+      "violent_crime_share": 0.258,
+      "crime_against_women_rate": 25.5
+    },
+    "hotspot": {
+      "zscore": -0.22,
+      "trend_slope": 128.6,
+      "status": "none"
+    },
+    "risk": {
+      "score": 29.2,
+      "band": "Medium",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.228,
+          "weight": 0.429,
+          "contribution": 9.79
+        },
+        "trend_momentum": {
+          "value": 0.681,
+          "weight": 0.286,
+          "contribution": 19.46
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2008,
+        "total": 1891,
+        "rate_per_100k": 150.7
+      },
+      {
+        "year": 2009,
+        "total": 1948,
+        "rate_per_100k": 155.2
+      },
+      {
+        "year": 2010,
+        "total": 2333,
+        "rate_per_100k": 185.9
+      },
+      {
+        "year": 2011,
+        "total": 2611,
+        "rate_per_100k": 208.0
+      },
+      {
+        "year": 2012,
+        "total": 2554,
+        "rate_per_100k": 203.5
+      },
+      {
+        "year": 2013,
+        "total": 2372,
+        "rate_per_100k": 189.0
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 1007
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 472
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 228
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 211
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 76
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 57
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 56
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 51
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 43
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 33
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 32
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 26
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 26
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 23
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 17
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 12
+      },
+      {
+        "category_code": "FORGERY",
+        "group": "ECONOMIC",
+        "cases": 1
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 1
+      }
+    ]
+  },
+  "DISTRICT:KA-CHIKKAMAGALURU": {
+    "geo_unit_id": "DISTRICT:KA-CHIKKAMAGALURU",
+    "name": "Chikkamagaluru",
+    "year": 2013,
+    "population": 1137961,
+    "kpis": {
+      "total_cognizable_cases": 2758,
+      "crime_rate_per_100k": 242.4,
+      "severity_weighted_index": 488.0,
+      "violent_crime_share": 0.261,
+      "crime_against_women_rate": 42.4
+    },
+    "hotspot": {
+      "zscore": 0.27,
+      "trend_slope": -8.4,
+      "status": "none"
+    },
+    "risk": {
+      "score": 25.9,
+      "band": "Medium",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.334,
+          "weight": 0.429,
+          "contribution": 14.31
+        },
+        "trend_momentum": {
+          "value": 0.406,
+          "weight": 0.286,
+          "contribution": 11.61
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 2766,
+        "rate_per_100k": 243.1
+      },
+      {
+        "year": 2002,
+        "total": 2796,
+        "rate_per_100k": 245.7
+      },
+      {
+        "year": 2003,
+        "total": 3013,
+        "rate_per_100k": 264.8
+      },
+      {
+        "year": 2004,
+        "total": 2823,
+        "rate_per_100k": 248.1
+      },
+      {
+        "year": 2005,
+        "total": 2716,
+        "rate_per_100k": 238.7
+      },
+      {
+        "year": 2006,
+        "total": 3369,
+        "rate_per_100k": 296.1
+      },
+      {
+        "year": 2007,
+        "total": 2814,
+        "rate_per_100k": 247.3
+      },
+      {
+        "year": 2008,
+        "total": 3101,
+        "rate_per_100k": 272.5
+      },
+      {
+        "year": 2009,
+        "total": 2915,
+        "rate_per_100k": 256.2
+      },
+      {
+        "year": 2010,
+        "total": 3165,
+        "rate_per_100k": 278.1
+      },
+      {
+        "year": 2011,
+        "total": 2726,
+        "rate_per_100k": 239.6
+      },
+      {
+        "year": 2012,
+        "total": 2498,
+        "rate_per_100k": 219.5
+      },
+      {
+        "year": 2013,
+        "total": 2758,
+        "rate_per_100k": 242.4
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 1292
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 577
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 162
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 154
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 141
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 106
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 71
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 69
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 38
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 37
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 36
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 21
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 20
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 13
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 7
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 7
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 6
+      },
+      {
+        "category_code": "FORGERY",
+        "group": "ECONOMIC",
+        "cases": 1
+      }
+    ]
+  },
+  "DISTRICT:KA-CHITRADURGA": {
+    "geo_unit_id": "DISTRICT:KA-CHITRADURGA",
+    "name": "Chitradurga",
+    "year": 2013,
+    "population": 1659456,
+    "kpis": {
+      "total_cognizable_cases": 3970,
+      "crime_rate_per_100k": 239.2,
+      "severity_weighted_index": 444.8,
+      "violent_crime_share": 0.23,
+      "crime_against_women_rate": 34.2
+    },
+    "hotspot": {
+      "zscore": 0.03,
+      "trend_slope": 122.0,
+      "status": "none"
+    },
+    "risk": {
+      "score": 31.2,
+      "band": "Medium",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.283,
+          "weight": 0.429,
+          "contribution": 12.14
+        },
+        "trend_momentum": {
+          "value": 0.668,
+          "weight": 0.286,
+          "contribution": 19.08
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 2691,
+        "rate_per_100k": 162.2
+      },
+      {
+        "year": 2002,
+        "total": 2986,
+        "rate_per_100k": 179.9
+      },
+      {
+        "year": 2003,
+        "total": 3276,
+        "rate_per_100k": 197.4
+      },
+      {
+        "year": 2004,
+        "total": 3672,
+        "rate_per_100k": 221.3
+      },
+      {
+        "year": 2005,
+        "total": 3492,
+        "rate_per_100k": 210.4
+      },
+      {
+        "year": 2006,
+        "total": 3531,
+        "rate_per_100k": 212.8
+      },
+      {
+        "year": 2007,
+        "total": 3929,
+        "rate_per_100k": 236.8
+      },
+      {
+        "year": 2008,
+        "total": 4191,
+        "rate_per_100k": 252.6
+      },
+      {
+        "year": 2009,
+        "total": 4122,
+        "rate_per_100k": 248.4
+      },
+      {
+        "year": 2010,
+        "total": 4752,
+        "rate_per_100k": 286.4
+      },
+      {
+        "year": 2011,
+        "total": 4278,
+        "rate_per_100k": 257.8
+      },
+      {
+        "year": 2012,
+        "total": 4059,
+        "rate_per_100k": 244.6
+      },
+      {
+        "year": 2013,
+        "total": 3970,
+        "rate_per_100k": 239.2
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 2154
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 782
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 213
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 193
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 178
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 130
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 64
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 62
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 42
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 31
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 31
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 28
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 25
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 17
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 7
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 7
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 5
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 1
+      }
+    ]
+  },
+  "DISTRICT:KA-DAKSHINA-KANNADA": {
+    "geo_unit_id": "DISTRICT:KA-DAKSHINA-KANNADA",
+    "name": "Dakshina Kannada",
+    "year": 2013,
+    "population": 2089649,
+    "kpis": {
+      "total_cognizable_cases": 4922,
+      "crime_rate_per_100k": 235.5,
+      "severity_weighted_index": 425.9,
+      "violent_crime_share": 0.171,
+      "crime_against_women_rate": 27.0
+    },
+    "hotspot": {
+      "zscore": -0.07,
+      "trend_slope": 109.7,
+      "status": "none"
+    },
+    "risk": {
+      "score": 29.6,
+      "band": "Medium",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.261,
+          "weight": 0.429,
+          "contribution": 11.19
+        },
+        "trend_momentum": {
+          "value": 0.643,
+          "weight": 0.286,
+          "contribution": 18.38
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 3047,
+        "rate_per_100k": 145.8
+      },
+      {
+        "year": 2002,
+        "total": 3429,
+        "rate_per_100k": 164.1
+      },
+      {
+        "year": 2003,
+        "total": 3521,
+        "rate_per_100k": 168.5
+      },
+      {
+        "year": 2004,
+        "total": 4133,
+        "rate_per_100k": 197.8
+      },
+      {
+        "year": 2005,
+        "total": 4292,
+        "rate_per_100k": 205.4
+      },
+      {
+        "year": 2006,
+        "total": 4037,
+        "rate_per_100k": 193.2
+      },
+      {
+        "year": 2007,
+        "total": 3888,
+        "rate_per_100k": 186.1
+      },
+      {
+        "year": 2008,
+        "total": 3974,
+        "rate_per_100k": 190.2
+      },
+      {
+        "year": 2009,
+        "total": 4187,
+        "rate_per_100k": 200.4
+      },
+      {
+        "year": 2010,
+        "total": 4196,
+        "rate_per_100k": 200.8
+      },
+      {
+        "year": 2011,
+        "total": 4356,
+        "rate_per_100k": 208.5
+      },
+      {
+        "year": 2012,
+        "total": 4521,
+        "rate_per_100k": 216.4
+      },
+      {
+        "year": 2013,
+        "total": 4922,
+        "rate_per_100k": 235.5
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 2583
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 603
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 341
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 300
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 282
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 273
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 126
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 110
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 96
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 56
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 42
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 34
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 29
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 16
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 13
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 9
+      },
+      {
+        "category_code": "INSULT_MODESTY",
+        "group": "WOMEN",
+        "cases": 7
+      },
+      {
+        "category_code": "FORGERY",
+        "group": "ECONOMIC",
+        "cases": 1
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 1
+      }
+    ]
+  },
+  "DISTRICT:KA-DAVANAGERE": {
+    "geo_unit_id": "DISTRICT:KA-DAVANAGERE",
+    "name": "Davanagere",
+    "year": 2013,
+    "population": 1945497,
+    "kpis": {
+      "total_cognizable_cases": 3843,
+      "crime_rate_per_100k": 197.5,
+      "severity_weighted_index": 399.6,
+      "violent_crime_share": 0.209,
+      "crime_against_women_rate": 36.1
+    },
+    "hotspot": {
+      "zscore": -0.21,
+      "trend_slope": 24.7,
+      "status": "none"
+    },
+    "risk": {
+      "score": 23.4,
+      "band": "Low",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.23,
+          "weight": 0.429,
+          "contribution": 9.88
+        },
+        "trend_momentum": {
+          "value": 0.473,
+          "weight": 0.286,
+          "contribution": 13.51
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 3301,
+        "rate_per_100k": 169.7
+      },
+      {
+        "year": 2002,
+        "total": 3106,
+        "rate_per_100k": 159.7
+      },
+      {
+        "year": 2003,
+        "total": 2988,
+        "rate_per_100k": 153.6
+      },
+      {
+        "year": 2004,
+        "total": 2950,
+        "rate_per_100k": 151.6
+      },
+      {
+        "year": 2005,
+        "total": 2869,
+        "rate_per_100k": 147.5
+      },
+      {
+        "year": 2006,
+        "total": 2812,
+        "rate_per_100k": 144.5
+      },
+      {
+        "year": 2007,
+        "total": 2775,
+        "rate_per_100k": 142.6
+      },
+      {
+        "year": 2008,
+        "total": 3009,
+        "rate_per_100k": 154.7
+      },
+      {
+        "year": 2009,
+        "total": 3259,
+        "rate_per_100k": 167.5
+      },
+      {
+        "year": 2010,
+        "total": 3059,
+        "rate_per_100k": 157.2
+      },
+      {
+        "year": 2011,
+        "total": 2768,
+        "rate_per_100k": 142.3
+      },
+      {
+        "year": 2012,
+        "total": 3271,
+        "rate_per_100k": 168.1
+      },
+      {
+        "year": 2013,
+        "total": 3843,
+        "rate_per_100k": 197.5
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 1638
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 641
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 397
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 352
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 180
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 167
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 127
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 93
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 58
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 33
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 33
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 31
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 30
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 23
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 14
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 14
+      },
+      {
+        "category_code": "INSULT_MODESTY",
+        "group": "WOMEN",
+        "cases": 5
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 3
+      },
+      {
+        "category_code": "FORGERY",
+        "group": "ECONOMIC",
+        "cases": 2
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 2
+      }
+    ]
+  },
+  "DISTRICT:KA-DHARWAD": {
+    "geo_unit_id": "DISTRICT:KA-DHARWAD",
+    "name": "Dharwad",
+    "year": 2013,
+    "population": 1847023,
+    "kpis": {
+      "total_cognizable_cases": 3681,
+      "crime_rate_per_100k": 199.3,
+      "severity_weighted_index": 396.0,
+      "violent_crime_share": 0.191,
+      "crime_against_women_rate": 24.9
+    },
+    "hotspot": {
+      "zscore": -0.23,
+      "trend_slope": 73.0,
+      "status": "none"
+    },
+    "risk": {
+      "score": 26.0,
+      "band": "Medium",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.226,
+          "weight": 0.429,
+          "contribution": 9.69
+        },
+        "trend_momentum": {
+          "value": 0.57,
+          "weight": 0.286,
+          "contribution": 16.27
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 2801,
+        "rate_per_100k": 151.6
+      },
+      {
+        "year": 2002,
+        "total": 2926,
+        "rate_per_100k": 158.4
+      },
+      {
+        "year": 2003,
+        "total": 2696,
+        "rate_per_100k": 146.0
+      },
+      {
+        "year": 2004,
+        "total": 2616,
+        "rate_per_100k": 141.6
+      },
+      {
+        "year": 2005,
+        "total": 2810,
+        "rate_per_100k": 152.1
+      },
+      {
+        "year": 2006,
+        "total": 3118,
+        "rate_per_100k": 168.8
+      },
+      {
+        "year": 2007,
+        "total": 3049,
+        "rate_per_100k": 165.1
+      },
+      {
+        "year": 2008,
+        "total": 3386,
+        "rate_per_100k": 183.3
+      },
+      {
+        "year": 2009,
+        "total": 3318,
+        "rate_per_100k": 179.6
+      },
+      {
+        "year": 2010,
+        "total": 3708,
+        "rate_per_100k": 200.8
+      },
+      {
+        "year": 2011,
+        "total": 3153,
+        "rate_per_100k": 170.7
+      },
+      {
+        "year": 2012,
+        "total": 3250,
+        "rate_per_100k": 176.0
+      },
+      {
+        "year": 2013,
+        "total": 3681,
+        "rate_per_100k": 199.3
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 1605
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 447
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 367
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 242
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 222
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 199
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 112
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 112
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 92
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 71
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 70
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 44
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 34
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 22
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 15
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 14
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 5
+      },
+      {
+        "category_code": "INSULT_MODESTY",
+        "group": "WOMEN",
+        "cases": 5
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 2
+      },
+      {
+        "category_code": "FORGERY",
+        "group": "ECONOMIC",
+        "cases": 1
+      }
+    ]
+  },
+  "DISTRICT:KA-GADAG": {
+    "geo_unit_id": "DISTRICT:KA-GADAG",
+    "name": "Gadag",
+    "year": 2013,
+    "population": 1064570,
+    "kpis": {
+      "total_cognizable_cases": 1092,
+      "crime_rate_per_100k": 102.6,
+      "severity_weighted_index": 203.1,
+      "violent_crime_share": 0.188,
+      "crime_against_women_rate": 18.1
+    },
+    "hotspot": {
+      "zscore": -1.26,
+      "trend_slope": 20.5,
+      "status": "none"
+    },
+    "risk": {
+      "score": 13.3,
+      "band": "Low",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.0,
+          "weight": 0.429,
+          "contribution": 0.0
+        },
+        "trend_momentum": {
+          "value": 0.464,
+          "weight": 0.286,
+          "contribution": 13.26
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 899,
+        "rate_per_100k": 84.4
+      },
+      {
+        "year": 2002,
+        "total": 928,
+        "rate_per_100k": 87.2
+      },
+      {
+        "year": 2003,
+        "total": 842,
+        "rate_per_100k": 79.1
+      },
+      {
+        "year": 2004,
+        "total": 947,
+        "rate_per_100k": 89.0
+      },
+      {
+        "year": 2005,
+        "total": 1030,
+        "rate_per_100k": 96.8
+      },
+      {
+        "year": 2006,
+        "total": 1138,
+        "rate_per_100k": 106.9
+      },
+      {
+        "year": 2007,
+        "total": 1022,
+        "rate_per_100k": 96.0
+      },
+      {
+        "year": 2008,
+        "total": 1175,
+        "rate_per_100k": 110.4
+      },
+      {
+        "year": 2009,
+        "total": 1150,
+        "rate_per_100k": 108.0
+      },
+      {
+        "year": 2010,
+        "total": 1107,
+        "rate_per_100k": 104.0
+      },
+      {
+        "year": 2011,
+        "total": 1100,
+        "rate_per_100k": 103.3
+      },
+      {
+        "year": 2012,
+        "total": 1083,
+        "rate_per_100k": 101.7
+      },
+      {
+        "year": 2013,
+        "total": 1092,
+        "rate_per_100k": 102.6
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 540
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 130
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 104
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 75
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 40
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 39
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 36
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 27
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 25
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 24
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 18
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 13
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 12
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 5
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 2
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 1
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 1
+      }
+    ]
+  },
+  "DISTRICT:KA-HASSAN": {
+    "geo_unit_id": "DISTRICT:KA-HASSAN",
+    "name": "Hassan",
+    "year": 2013,
+    "population": 1776421,
+    "kpis": {
+      "total_cognizable_cases": 5433,
+      "crime_rate_per_100k": 305.8,
+      "severity_weighted_index": 611.1,
+      "violent_crime_share": 0.284,
+      "crime_against_women_rate": 47.0
+    },
+    "hotspot": {
+      "zscore": 0.93,
+      "trend_slope": 174.4,
+      "status": "none"
+    },
+    "risk": {
+      "score": 42.6,
+      "band": "Medium",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.478,
+          "weight": 0.429,
+          "contribution": 20.5
+        },
+        "trend_momentum": {
+          "value": 0.773,
+          "weight": 0.286,
+          "contribution": 22.08
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 4039,
+        "rate_per_100k": 227.4
+      },
+      {
+        "year": 2002,
+        "total": 4100,
+        "rate_per_100k": 230.8
+      },
+      {
+        "year": 2003,
+        "total": 4196,
+        "rate_per_100k": 236.2
+      },
+      {
+        "year": 2004,
+        "total": 4298,
+        "rate_per_100k": 241.9
+      },
+      {
+        "year": 2005,
+        "total": 4120,
+        "rate_per_100k": 231.9
+      },
+      {
+        "year": 2006,
+        "total": 4299,
+        "rate_per_100k": 242.0
+      },
+      {
+        "year": 2007,
+        "total": 4531,
+        "rate_per_100k": 255.1
+      },
+      {
+        "year": 2008,
+        "total": 4949,
+        "rate_per_100k": 278.6
+      },
+      {
+        "year": 2009,
+        "total": 5142,
+        "rate_per_100k": 289.5
+      },
+      {
+        "year": 2010,
+        "total": 6204,
+        "rate_per_100k": 349.2
+      },
+      {
+        "year": 2011,
+        "total": 6071,
+        "rate_per_100k": 341.8
+      },
+      {
+        "year": 2012,
+        "total": 5592,
+        "rate_per_100k": 314.8
+      },
+      {
+        "year": 2013,
+        "total": 5433,
+        "rate_per_100k": 305.8
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 2524
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 1275
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 415
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 224
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 182
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 170
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 157
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 114
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 92
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 61
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 57
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 57
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 52
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 19
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 12
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 12
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 4
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 4
+      },
+      {
+        "category_code": "FORGERY",
+        "group": "ECONOMIC",
+        "cases": 2
+      }
+    ]
+  },
+  "DISTRICT:KA-HAVERI": {
+    "geo_unit_id": "DISTRICT:KA-HAVERI",
+    "name": "Haveri",
+    "year": 2013,
+    "population": 1597668,
+    "kpis": {
+      "total_cognizable_cases": 2157,
+      "crime_rate_per_100k": 135.0,
+      "severity_weighted_index": 253.2,
+      "violent_crime_share": 0.157,
+      "crime_against_women_rate": 19.6
+    },
+    "hotspot": {
+      "zscore": -0.99,
+      "trend_slope": 30.2,
+      "status": "none"
+    },
+    "risk": {
+      "score": 16.3,
+      "band": "Low",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.059,
+          "weight": 0.429,
+          "contribution": 2.52
+        },
+        "trend_momentum": {
+          "value": 0.484,
+          "weight": 0.286,
+          "contribution": 13.82
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 2211,
+        "rate_per_100k": 138.4
+      },
+      {
+        "year": 2002,
+        "total": 1955,
+        "rate_per_100k": 122.4
+      },
+      {
+        "year": 2003,
+        "total": 1827,
+        "rate_per_100k": 114.4
+      },
+      {
+        "year": 2004,
+        "total": 1970,
+        "rate_per_100k": 123.3
+      },
+      {
+        "year": 2005,
+        "total": 1888,
+        "rate_per_100k": 118.2
+      },
+      {
+        "year": 2006,
+        "total": 1839,
+        "rate_per_100k": 115.1
+      },
+      {
+        "year": 2007,
+        "total": 2043,
+        "rate_per_100k": 127.9
+      },
+      {
+        "year": 2008,
+        "total": 2322,
+        "rate_per_100k": 145.3
+      },
+      {
+        "year": 2009,
+        "total": 2139,
+        "rate_per_100k": 133.9
+      },
+      {
+        "year": 2010,
+        "total": 2245,
+        "rate_per_100k": 140.5
+      },
+      {
+        "year": 2011,
+        "total": 2356,
+        "rate_per_100k": 147.5
+      },
+      {
+        "year": 2012,
+        "total": 2333,
+        "rate_per_100k": 146.0
+      },
+      {
+        "year": 2013,
+        "total": 2157,
+        "rate_per_100k": 135.0
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 1129
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 254
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 251
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 145
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 80
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 76
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 55
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 49
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 31
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 20
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 18
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 16
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 14
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 12
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 6
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 1
+      }
+    ]
+  },
+  "DISTRICT:KA-KALABURAGI": {
+    "geo_unit_id": "DISTRICT:KA-KALABURAGI",
+    "name": "Kalaburagi",
+    "year": 2013,
+    "population": 2566326,
+    "kpis": {
+      "total_cognizable_cases": 4524,
+      "crime_rate_per_100k": 176.3,
+      "severity_weighted_index": 367.1,
+      "violent_crime_share": 0.252,
+      "crime_against_women_rate": 24.4
+    },
+    "hotspot": {
+      "zscore": -0.38,
+      "trend_slope": 37.3,
+      "status": "none"
+    },
+    "risk": {
+      "score": 22.5,
+      "band": "Low",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.192,
+          "weight": 0.429,
+          "contribution": 8.24
+        },
+        "trend_momentum": {
+          "value": 0.498,
+          "weight": 0.286,
+          "contribution": 14.23
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 4169,
+        "rate_per_100k": 162.4
+      },
+      {
+        "year": 2002,
+        "total": 4003,
+        "rate_per_100k": 156.0
+      },
+      {
+        "year": 2003,
+        "total": 4278,
+        "rate_per_100k": 166.7
+      },
+      {
+        "year": 2004,
+        "total": 4684,
+        "rate_per_100k": 182.5
+      },
+      {
+        "year": 2005,
+        "total": 4858,
+        "rate_per_100k": 189.3
+      },
+      {
+        "year": 2006,
+        "total": 5093,
+        "rate_per_100k": 198.5
+      },
+      {
+        "year": 2007,
+        "total": 4952,
+        "rate_per_100k": 193.0
+      },
+      {
+        "year": 2008,
+        "total": 5622,
+        "rate_per_100k": 219.1
+      },
+      {
+        "year": 2009,
+        "total": 5984,
+        "rate_per_100k": 233.2
+      },
+      {
+        "year": 2010,
+        "total": 4799,
+        "rate_per_100k": 187.0
+      },
+      {
+        "year": 2011,
+        "total": 4537,
+        "rate_per_100k": 176.8
+      },
+      {
+        "year": 2012,
+        "total": 4101,
+        "rate_per_100k": 159.8
+      },
+      {
+        "year": 2013,
+        "total": 4524,
+        "rate_per_100k": 176.3
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 2032
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 781
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 470
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 274
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 195
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 125
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 122
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 118
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 88
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 79
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 62
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 60
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 54
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 25
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 19
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 8
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 7
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 4
+      },
+      {
+        "category_code": "FORGERY",
+        "group": "ECONOMIC",
+        "cases": 1
+      }
+    ]
+  },
+  "DISTRICT:KA-KODAGU": {
+    "geo_unit_id": "DISTRICT:KA-KODAGU",
+    "name": "Kodagu",
+    "year": 2013,
+    "population": 554519,
+    "kpis": {
+      "total_cognizable_cases": 1707,
+      "crime_rate_per_100k": 307.8,
+      "severity_weighted_index": 651.2,
+      "violent_crime_share": 0.333,
+      "crime_against_women_rate": 40.6
+    },
+    "hotspot": {
+      "zscore": 1.14,
+      "trend_slope": 50.2,
+      "status": "emerging"
+    },
+    "risk": {
+      "score": 51.8,
+      "band": "High",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.525,
+          "weight": 0.429,
+          "contribution": 22.51
+        },
+        "trend_momentum": {
+          "value": 0.524,
+          "weight": 0.286,
+          "contribution": 14.97
+        },
+        "hotspot_membership": {
+          "value": 0.5,
+          "weight": 0.286,
+          "contribution": 14.29
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 1301,
+        "rate_per_100k": 234.6
+      },
+      {
+        "year": 2002,
+        "total": 1365,
+        "rate_per_100k": 246.2
+      },
+      {
+        "year": 2003,
+        "total": 1282,
+        "rate_per_100k": 231.2
+      },
+      {
+        "year": 2004,
+        "total": 1459,
+        "rate_per_100k": 263.1
+      },
+      {
+        "year": 2005,
+        "total": 1478,
+        "rate_per_100k": 266.5
+      },
+      {
+        "year": 2006,
+        "total": 1341,
+        "rate_per_100k": 241.8
+      },
+      {
+        "year": 2007,
+        "total": 1613,
+        "rate_per_100k": 290.9
+      },
+      {
+        "year": 2008,
+        "total": 1730,
+        "rate_per_100k": 312.0
+      },
+      {
+        "year": 2009,
+        "total": 1826,
+        "rate_per_100k": 329.3
+      },
+      {
+        "year": 2010,
+        "total": 2199,
+        "rate_per_100k": 396.6
+      },
+      {
+        "year": 2011,
+        "total": 1901,
+        "rate_per_100k": 342.8
+      },
+      {
+        "year": 2012,
+        "total": 1550,
+        "rate_per_100k": 279.5
+      },
+      {
+        "year": 2013,
+        "total": 1707,
+        "rate_per_100k": 307.8
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 685
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 462
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 128
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 107
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 54
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 48
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 41
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 40
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 33
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 30
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 26
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 23
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 17
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 3
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 3
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 2
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 2
+      },
+      {
+        "category_code": "INSULT_MODESTY",
+        "group": "WOMEN",
+        "cases": 2
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 1
+      }
+    ]
+  },
+  "DISTRICT:KA-KOLAR": {
+    "geo_unit_id": "DISTRICT:KA-KOLAR",
+    "name": "Kolar",
+    "year": 2013,
+    "population": 1536401,
+    "kpis": {
+      "total_cognizable_cases": 3097,
+      "crime_rate_per_100k": 201.6,
+      "severity_weighted_index": 402.6,
+      "violent_crime_share": 0.227,
+      "crime_against_women_rate": 17.2
+    },
+    "hotspot": {
+      "zscore": -0.19,
+      "trend_slope": -135.3,
+      "status": "none"
+    },
+    "risk": {
+      "score": 14.4,
+      "band": "Low",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.234,
+          "weight": 0.429,
+          "contribution": 10.02
+        },
+        "trend_momentum": {
+          "value": 0.152,
+          "weight": 0.286,
+          "contribution": 4.34
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 4136,
+        "rate_per_100k": 269.2
+      },
+      {
+        "year": 2002,
+        "total": 4607,
+        "rate_per_100k": 299.9
+      },
+      {
+        "year": 2003,
+        "total": 4133,
+        "rate_per_100k": 269.0
+      },
+      {
+        "year": 2004,
+        "total": 3962,
+        "rate_per_100k": 257.9
+      },
+      {
+        "year": 2005,
+        "total": 3966,
+        "rate_per_100k": 258.1
+      },
+      {
+        "year": 2006,
+        "total": 4179,
+        "rate_per_100k": 272.0
+      },
+      {
+        "year": 2007,
+        "total": 4610,
+        "rate_per_100k": 300.1
+      },
+      {
+        "year": 2008,
+        "total": 2863,
+        "rate_per_100k": 186.3
+      },
+      {
+        "year": 2009,
+        "total": 2712,
+        "rate_per_100k": 176.5
+      },
+      {
+        "year": 2010,
+        "total": 2903,
+        "rate_per_100k": 188.9
+      },
+      {
+        "year": 2011,
+        "total": 3024,
+        "rate_per_100k": 196.8
+      },
+      {
+        "year": 2012,
+        "total": 3216,
+        "rate_per_100k": 209.3
+      },
+      {
+        "year": 2013,
+        "total": 3097,
+        "rate_per_100k": 201.6
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 1433
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 478
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 301
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 249
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 166
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 104
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 74
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 65
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 57
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 43
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 40
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 38
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 22
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 9
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 8
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 8
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 2
+      }
+    ]
+  },
+  "DISTRICT:KA-KOPPAL": {
+    "geo_unit_id": "DISTRICT:KA-KOPPAL",
+    "name": "Koppal",
+    "year": 2013,
+    "population": 1389920,
+    "kpis": {
+      "total_cognizable_cases": 1732,
+      "crime_rate_per_100k": 124.6,
+      "severity_weighted_index": 220.9,
+      "violent_crime_share": 0.154,
+      "crime_against_women_rate": 17.5
+    },
+    "hotspot": {
+      "zscore": -1.17,
+      "trend_slope": 59.1,
+      "status": "none"
+    },
+    "risk": {
+      "score": 16.4,
+      "band": "Low",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.021,
+          "weight": 0.429,
+          "contribution": 0.89
+        },
+        "trend_momentum": {
+          "value": 0.542,
+          "weight": 0.286,
+          "contribution": 15.48
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 1406,
+        "rate_per_100k": 101.2
+      },
+      {
+        "year": 2002,
+        "total": 1393,
+        "rate_per_100k": 100.2
+      },
+      {
+        "year": 2003,
+        "total": 1135,
+        "rate_per_100k": 81.7
+      },
+      {
+        "year": 2004,
+        "total": 1103,
+        "rate_per_100k": 79.4
+      },
+      {
+        "year": 2005,
+        "total": 1589,
+        "rate_per_100k": 114.3
+      },
+      {
+        "year": 2006,
+        "total": 1539,
+        "rate_per_100k": 110.7
+      },
+      {
+        "year": 2007,
+        "total": 1640,
+        "rate_per_100k": 118.0
+      },
+      {
+        "year": 2008,
+        "total": 1723,
+        "rate_per_100k": 124.0
+      },
+      {
+        "year": 2009,
+        "total": 1916,
+        "rate_per_100k": 137.8
+      },
+      {
+        "year": 2010,
+        "total": 1951,
+        "rate_per_100k": 140.4
+      },
+      {
+        "year": 2011,
+        "total": 1858,
+        "rate_per_100k": 133.7
+      },
+      {
+        "year": 2012,
+        "total": 1899,
+        "rate_per_100k": 136.6
+      },
+      {
+        "year": 2013,
+        "total": 1732,
+        "rate_per_100k": 124.6
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 1018
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 206
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 138
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 84
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 59
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 54
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 49
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 39
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 22
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 22
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 14
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 14
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 7
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 3
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 3
+      }
+    ]
+  },
+  "DISTRICT:KA-MANDYA": {
+    "geo_unit_id": "DISTRICT:KA-MANDYA",
+    "name": "Mandya",
+    "year": 2013,
+    "population": 1805769,
+    "kpis": {
+      "total_cognizable_cases": 5544,
+      "crime_rate_per_100k": 307.0,
+      "severity_weighted_index": 622.8,
+      "violent_crime_share": 0.263,
+      "crime_against_women_rate": 48.9
+    },
+    "hotspot": {
+      "zscore": 0.99,
+      "trend_slope": 189.6,
+      "status": "none"
+    },
+    "risk": {
+      "score": 44.0,
+      "band": "Medium",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.492,
+          "weight": 0.429,
+          "contribution": 21.09
+        },
+        "trend_momentum": {
+          "value": 0.803,
+          "weight": 0.286,
+          "contribution": 22.95
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 4807,
+        "rate_per_100k": 266.2
+      },
+      {
+        "year": 2002,
+        "total": 4745,
+        "rate_per_100k": 262.8
+      },
+      {
+        "year": 2003,
+        "total": 3755,
+        "rate_per_100k": 207.9
+      },
+      {
+        "year": 2004,
+        "total": 3380,
+        "rate_per_100k": 187.2
+      },
+      {
+        "year": 2005,
+        "total": 3380,
+        "rate_per_100k": 187.2
+      },
+      {
+        "year": 2006,
+        "total": 3924,
+        "rate_per_100k": 217.3
+      },
+      {
+        "year": 2007,
+        "total": 4236,
+        "rate_per_100k": 234.6
+      },
+      {
+        "year": 2008,
+        "total": 4747,
+        "rate_per_100k": 262.9
+      },
+      {
+        "year": 2009,
+        "total": 5491,
+        "rate_per_100k": 304.1
+      },
+      {
+        "year": 2010,
+        "total": 6626,
+        "rate_per_100k": 366.9
+      },
+      {
+        "year": 2011,
+        "total": 6120,
+        "rate_per_100k": 338.9
+      },
+      {
+        "year": 2012,
+        "total": 5914,
+        "rate_per_100k": 327.5
+      },
+      {
+        "year": 2013,
+        "total": 5544,
+        "rate_per_100k": 307.0
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 2409
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 1175
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 559
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 305
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 221
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 221
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 160
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 120
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 76
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 74
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 67
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 50
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 31
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 25
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 19
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 12
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 12
+      },
+      {
+        "category_code": "INSULT_MODESTY",
+        "group": "WOMEN",
+        "cases": 4
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 3
+      },
+      {
+        "category_code": "FORGERY",
+        "group": "ECONOMIC",
+        "cases": 1
+      }
+    ]
+  },
+  "DISTRICT:KA-MYSURU": {
+    "geo_unit_id": "DISTRICT:KA-MYSURU",
+    "name": "Mysuru",
+    "year": 2013,
+    "population": 3001127,
+    "kpis": {
+      "total_cognizable_cases": 7032,
+      "crime_rate_per_100k": 234.3,
+      "severity_weighted_index": 456.5,
+      "violent_crime_share": 0.237,
+      "crime_against_women_rate": 17.5
+    },
+    "hotspot": {
+      "zscore": 0.1,
+      "trend_slope": 287.7,
+      "status": "none"
+    },
+    "risk": {
+      "score": 41.3,
+      "band": "Medium",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.297,
+          "weight": 0.429,
+          "contribution": 12.73
+        },
+        "trend_momentum": {
+          "value": 1.0,
+          "weight": 0.286,
+          "contribution": 28.57
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 4803,
+        "rate_per_100k": 160.0
+      },
+      {
+        "year": 2002,
+        "total": 4560,
+        "rate_per_100k": 151.9
+      },
+      {
+        "year": 2003,
+        "total": 4193,
+        "rate_per_100k": 139.7
+      },
+      {
+        "year": 2004,
+        "total": 4759,
+        "rate_per_100k": 158.6
+      },
+      {
+        "year": 2005,
+        "total": 5249,
+        "rate_per_100k": 174.9
+      },
+      {
+        "year": 2006,
+        "total": 5564,
+        "rate_per_100k": 185.4
+      },
+      {
+        "year": 2007,
+        "total": 6132,
+        "rate_per_100k": 204.3
+      },
+      {
+        "year": 2008,
+        "total": 6259,
+        "rate_per_100k": 208.6
+      },
+      {
+        "year": 2009,
+        "total": 6669,
+        "rate_per_100k": 222.2
+      },
+      {
+        "year": 2010,
+        "total": 7871,
+        "rate_per_100k": 262.3
+      },
+      {
+        "year": 2011,
+        "total": 7464,
+        "rate_per_100k": 248.7
+      },
+      {
+        "year": 2012,
+        "total": 7165,
+        "rate_per_100k": 238.7
+      },
+      {
+        "year": 2013,
+        "total": 7032,
+        "rate_per_100k": 234.3
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 3127
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 1210
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 921
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 345
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 334
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 329
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 185
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 107
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 96
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 80
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 77
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 73
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 45
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 26
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 23
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 23
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 16
+      },
+      {
+        "category_code": "FORGERY",
+        "group": "ECONOMIC",
+        "cases": 10
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 4
+      },
+      {
+        "category_code": "INSULT_MODESTY",
+        "group": "WOMEN",
+        "cases": 1
+      }
+    ]
+  },
+  "DISTRICT:KA-RAICHUR": {
+    "geo_unit_id": "DISTRICT:KA-RAICHUR",
+    "name": "Raichur",
+    "year": 2013,
+    "population": 1928812,
+    "kpis": {
+      "total_cognizable_cases": 3062,
+      "crime_rate_per_100k": 158.8,
+      "severity_weighted_index": 337.5,
+      "violent_crime_share": 0.254,
+      "crime_against_women_rate": 38.3
+    },
+    "hotspot": {
+      "zscore": -0.54,
+      "trend_slope": 83.1,
+      "status": "none"
+    },
+    "risk": {
+      "score": 23.6,
+      "band": "Low",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.158,
+          "weight": 0.429,
+          "contribution": 6.75
+        },
+        "trend_momentum": {
+          "value": 0.59,
+          "weight": 0.286,
+          "contribution": 16.85
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 2384,
+        "rate_per_100k": 123.6
+      },
+      {
+        "year": 2002,
+        "total": 2522,
+        "rate_per_100k": 130.8
+      },
+      {
+        "year": 2003,
+        "total": 2334,
+        "rate_per_100k": 121.0
+      },
+      {
+        "year": 2004,
+        "total": 2333,
+        "rate_per_100k": 121.0
+      },
+      {
+        "year": 2005,
+        "total": 2609,
+        "rate_per_100k": 135.3
+      },
+      {
+        "year": 2006,
+        "total": 2789,
+        "rate_per_100k": 144.6
+      },
+      {
+        "year": 2007,
+        "total": 2873,
+        "rate_per_100k": 149.0
+      },
+      {
+        "year": 2008,
+        "total": 2994,
+        "rate_per_100k": 155.2
+      },
+      {
+        "year": 2009,
+        "total": 2907,
+        "rate_per_100k": 150.7
+      },
+      {
+        "year": 2010,
+        "total": 3349,
+        "rate_per_100k": 173.6
+      },
+      {
+        "year": 2011,
+        "total": 3491,
+        "rate_per_100k": 181.0
+      },
+      {
+        "year": 2012,
+        "total": 3039,
+        "rate_per_100k": 157.6
+      },
+      {
+        "year": 2013,
+        "total": 3062,
+        "rate_per_100k": 158.8
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 1282
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 639
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 294
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 162
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 156
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 156
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 108
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 67
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 47
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 46
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 43
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 24
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 13
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 8
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 8
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 4
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 3
+      },
+      {
+        "category_code": "FORGERY",
+        "group": "ECONOMIC",
+        "cases": 2
+      }
+    ]
+  },
+  "DISTRICT:KA-RAMANAGARA": {
+    "geo_unit_id": "DISTRICT:KA-RAMANAGARA",
+    "name": "Ramanagara",
+    "year": 2013,
+    "population": 1082636,
+    "kpis": {
+      "total_cognizable_cases": 4363,
+      "crime_rate_per_100k": 403.0,
+      "severity_weighted_index": 775.9,
+      "violent_crime_share": 0.208,
+      "crime_against_women_rate": 43.1
+    },
+    "hotspot": {
+      "zscore": 1.81,
+      "trend_slope": 74.3,
+      "status": "established"
+    },
+    "risk": {
+      "score": 73.7,
+      "band": "High",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.672,
+          "weight": 0.429,
+          "contribution": 28.78
+        },
+        "trend_momentum": {
+          "value": 0.572,
+          "weight": 0.286,
+          "contribution": 16.35
+        },
+        "hotspot_membership": {
+          "value": 1.0,
+          "weight": 0.286,
+          "contribution": 28.57
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2008,
+        "total": 4084,
+        "rate_per_100k": 377.2
+      },
+      {
+        "year": 2009,
+        "total": 4237,
+        "rate_per_100k": 391.4
+      },
+      {
+        "year": 2010,
+        "total": 4440,
+        "rate_per_100k": 410.1
+      },
+      {
+        "year": 2011,
+        "total": 4337,
+        "rate_per_100k": 400.6
+      },
+      {
+        "year": 2012,
+        "total": 4673,
+        "rate_per_100k": 431.6
+      },
+      {
+        "year": 2013,
+        "total": 4363,
+        "rate_per_100k": 403.0
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 2064
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 620
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 507
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 273
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 250
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 141
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 92
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 71
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 68
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 57
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 53
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 51
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 43
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 28
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 21
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 11
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 10
+      },
+      {
+        "category_code": "FORGERY",
+        "group": "ECONOMIC",
+        "cases": 2
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 1
+      }
+    ]
+  },
+  "DISTRICT:KA-SHIVAMOGGA": {
+    "geo_unit_id": "DISTRICT:KA-SHIVAMOGGA",
+    "name": "Shivamogga",
+    "year": 2013,
+    "population": 1752753,
+    "kpis": {
+      "total_cognizable_cases": 5943,
+      "crime_rate_per_100k": 339.1,
+      "severity_weighted_index": 695.7,
+      "violent_crime_share": 0.274,
+      "crime_against_women_rate": 71.6
+    },
+    "hotspot": {
+      "zscore": 1.38,
+      "trend_slope": 174.1,
+      "status": "emerging"
+    },
+    "risk": {
+      "score": 61.1,
+      "band": "High",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.578,
+          "weight": 0.429,
+          "contribution": 24.75
+        },
+        "trend_momentum": {
+          "value": 0.772,
+          "weight": 0.286,
+          "contribution": 22.07
+        },
+        "hotspot_membership": {
+          "value": 0.5,
+          "weight": 0.286,
+          "contribution": 14.29
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 4178,
+        "rate_per_100k": 238.4
+      },
+      {
+        "year": 2002,
+        "total": 4165,
+        "rate_per_100k": 237.6
+      },
+      {
+        "year": 2003,
+        "total": 3706,
+        "rate_per_100k": 211.4
+      },
+      {
+        "year": 2004,
+        "total": 3749,
+        "rate_per_100k": 213.9
+      },
+      {
+        "year": 2005,
+        "total": 4169,
+        "rate_per_100k": 237.9
+      },
+      {
+        "year": 2006,
+        "total": 4403,
+        "rate_per_100k": 251.2
+      },
+      {
+        "year": 2007,
+        "total": 4249,
+        "rate_per_100k": 242.4
+      },
+      {
+        "year": 2008,
+        "total": 4790,
+        "rate_per_100k": 273.3
+      },
+      {
+        "year": 2009,
+        "total": 5599,
+        "rate_per_100k": 319.4
+      },
+      {
+        "year": 2010,
+        "total": 5839,
+        "rate_per_100k": 333.1
+      },
+      {
+        "year": 2011,
+        "total": 5516,
+        "rate_per_100k": 314.7
+      },
+      {
+        "year": 2012,
+        "total": 5034,
+        "rate_per_100k": 287.2
+      },
+      {
+        "year": 2013,
+        "total": 5943,
+        "rate_per_100k": 339.1
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 2588
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 1367
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 340
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 330
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 300
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 267
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 217
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 191
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 67
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 66
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 65
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 44
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 43
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 17
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 15
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 14
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 5
+      },
+      {
+        "category_code": "INSULT_MODESTY",
+        "group": "WOMEN",
+        "cases": 4
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 2
+      },
+      {
+        "category_code": "FORGERY",
+        "group": "ECONOMIC",
+        "cases": 1
+      }
+    ]
+  },
+  "DISTRICT:KA-TUMAKURU": {
+    "geo_unit_id": "DISTRICT:KA-TUMAKURU",
+    "name": "Tumakuru",
+    "year": 2013,
+    "population": 2678980,
+    "kpis": {
+      "total_cognizable_cases": 4829,
+      "crime_rate_per_100k": 180.3,
+      "severity_weighted_index": 339.0,
+      "violent_crime_share": 0.207,
+      "crime_against_women_rate": 26.0
+    },
+    "hotspot": {
+      "zscore": -0.53,
+      "trend_slope": 119.2,
+      "status": "none"
+    },
+    "risk": {
+      "score": 25.8,
+      "band": "Medium",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.159,
+          "weight": 0.429,
+          "contribution": 6.83
+        },
+        "trend_momentum": {
+          "value": 0.662,
+          "weight": 0.286,
+          "contribution": 18.92
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 4141,
+        "rate_per_100k": 154.6
+      },
+      {
+        "year": 2002,
+        "total": 4180,
+        "rate_per_100k": 156.0
+      },
+      {
+        "year": 2003,
+        "total": 4003,
+        "rate_per_100k": 149.4
+      },
+      {
+        "year": 2004,
+        "total": 4251,
+        "rate_per_100k": 158.7
+      },
+      {
+        "year": 2005,
+        "total": 4354,
+        "rate_per_100k": 162.5
+      },
+      {
+        "year": 2006,
+        "total": 4271,
+        "rate_per_100k": 159.4
+      },
+      {
+        "year": 2007,
+        "total": 4718,
+        "rate_per_100k": 176.1
+      },
+      {
+        "year": 2008,
+        "total": 4813,
+        "rate_per_100k": 179.7
+      },
+      {
+        "year": 2009,
+        "total": 4945,
+        "rate_per_100k": 184.6
+      },
+      {
+        "year": 2010,
+        "total": 5101,
+        "rate_per_100k": 190.4
+      },
+      {
+        "year": 2011,
+        "total": 5593,
+        "rate_per_100k": 208.8
+      },
+      {
+        "year": 2012,
+        "total": 5567,
+        "rate_per_100k": 207.8
+      },
+      {
+        "year": 2013,
+        "total": 4829,
+        "rate_per_100k": 180.3
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 2454
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 741
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 421
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 210
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 206
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 201
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 157
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 90
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 87
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 58
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 49
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 41
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 37
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 26
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 18
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 17
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 14
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 2
+      }
+    ]
+  },
+  "DISTRICT:KA-UDUPI": {
+    "geo_unit_id": "DISTRICT:KA-UDUPI",
+    "name": "Udupi",
+    "year": 2013,
+    "population": 1177361,
+    "kpis": {
+      "total_cognizable_cases": 2667,
+      "crime_rate_per_100k": 226.5,
+      "severity_weighted_index": 398.5,
+      "violent_crime_share": 0.169,
+      "crime_against_women_rate": 29.1
+    },
+    "hotspot": {
+      "zscore": -0.21,
+      "trend_slope": 49.1,
+      "status": "none"
+    },
+    "risk": {
+      "score": 24.7,
+      "band": "Low",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.229,
+          "weight": 0.429,
+          "contribution": 9.82
+        },
+        "trend_momentum": {
+          "value": 0.522,
+          "weight": 0.286,
+          "contribution": 14.9
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 1959,
+        "rate_per_100k": 166.4
+      },
+      {
+        "year": 2002,
+        "total": 2209,
+        "rate_per_100k": 187.6
+      },
+      {
+        "year": 2003,
+        "total": 2170,
+        "rate_per_100k": 184.3
+      },
+      {
+        "year": 2004,
+        "total": 2240,
+        "rate_per_100k": 190.3
+      },
+      {
+        "year": 2005,
+        "total": 2237,
+        "rate_per_100k": 190.0
+      },
+      {
+        "year": 2006,
+        "total": 2218,
+        "rate_per_100k": 188.4
+      },
+      {
+        "year": 2007,
+        "total": 2389,
+        "rate_per_100k": 202.9
+      },
+      {
+        "year": 2008,
+        "total": 2335,
+        "rate_per_100k": 198.3
+      },
+      {
+        "year": 2009,
+        "total": 2406,
+        "rate_per_100k": 204.4
+      },
+      {
+        "year": 2010,
+        "total": 2699,
+        "rate_per_100k": 229.2
+      },
+      {
+        "year": 2011,
+        "total": 2578,
+        "rate_per_100k": 219.0
+      },
+      {
+        "year": 2012,
+        "total": 2454,
+        "rate_per_100k": 208.4
+      },
+      {
+        "year": 2013,
+        "total": 2667,
+        "rate_per_100k": 226.5
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 1529
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 332
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 146
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 128
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 120
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 110
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 78
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 67
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 41
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 26
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 23
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 22
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 20
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 10
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 7
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 6
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 2
+      }
+    ]
+  },
+  "DISTRICT:KA-UTTARA-KANNADA": {
+    "geo_unit_id": "DISTRICT:KA-UTTARA-KANNADA",
+    "name": "Uttara Kannada",
+    "year": 2013,
+    "population": 1437169,
+    "kpis": {
+      "total_cognizable_cases": 2977,
+      "crime_rate_per_100k": 207.1,
+      "severity_weighted_index": 383.0,
+      "violent_crime_share": 0.207,
+      "crime_against_women_rate": 40.2
+    },
+    "hotspot": {
+      "zscore": -0.3,
+      "trend_slope": 66.2,
+      "status": "none"
+    },
+    "risk": {
+      "score": 24.9,
+      "band": "Low",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.211,
+          "weight": 0.429,
+          "contribution": 9.04
+        },
+        "trend_momentum": {
+          "value": 0.556,
+          "weight": 0.286,
+          "contribution": 15.88
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 2319,
+        "rate_per_100k": 161.4
+      },
+      {
+        "year": 2002,
+        "total": 2335,
+        "rate_per_100k": 162.5
+      },
+      {
+        "year": 2003,
+        "total": 2306,
+        "rate_per_100k": 160.5
+      },
+      {
+        "year": 2004,
+        "total": 2296,
+        "rate_per_100k": 159.8
+      },
+      {
+        "year": 2005,
+        "total": 2323,
+        "rate_per_100k": 161.6
+      },
+      {
+        "year": 2006,
+        "total": 2279,
+        "rate_per_100k": 158.6
+      },
+      {
+        "year": 2007,
+        "total": 2341,
+        "rate_per_100k": 162.9
+      },
+      {
+        "year": 2008,
+        "total": 2580,
+        "rate_per_100k": 179.5
+      },
+      {
+        "year": 2009,
+        "total": 2603,
+        "rate_per_100k": 181.1
+      },
+      {
+        "year": 2010,
+        "total": 2993,
+        "rate_per_100k": 208.3
+      },
+      {
+        "year": 2011,
+        "total": 2976,
+        "rate_per_100k": 207.1
+      },
+      {
+        "year": 2012,
+        "total": 2828,
+        "rate_per_100k": 196.8
+      },
+      {
+        "year": 2013,
+        "total": 2977,
+        "rate_per_100k": 207.1
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 1627
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 482
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 155
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 138
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 128
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 99
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 94
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 67
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 51
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 35
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 24
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 18
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 17
+      },
+      {
+        "category_code": "INSULT_MODESTY",
+        "group": "WOMEN",
+        "cases": 13
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 11
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 7
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 6
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 5
+      }
+    ]
+  },
+  "DISTRICT:KA-VIJAYAPURA": {
+    "geo_unit_id": "DISTRICT:KA-VIJAYAPURA",
+    "name": "Vijayapura",
+    "year": 2013,
+    "population": 2177331,
+    "kpis": {
+      "total_cognizable_cases": 2569,
+      "crime_rate_per_100k": 118.0,
+      "severity_weighted_index": 237.1,
+      "violent_crime_share": 0.222,
+      "crime_against_women_rate": 20.1
+    },
+    "hotspot": {
+      "zscore": -1.08,
+      "trend_slope": -33.7,
+      "status": "none"
+    },
+    "risk": {
+      "score": 11.9,
+      "band": "Low",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.04,
+          "weight": 0.429,
+          "contribution": 1.71
+        },
+        "trend_momentum": {
+          "value": 0.356,
+          "weight": 0.286,
+          "contribution": 10.16
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2001,
+        "total": 2941,
+        "rate_per_100k": 135.1
+      },
+      {
+        "year": 2002,
+        "total": 2762,
+        "rate_per_100k": 126.9
+      },
+      {
+        "year": 2003,
+        "total": 4283,
+        "rate_per_100k": 196.7
+      },
+      {
+        "year": 2004,
+        "total": 3109,
+        "rate_per_100k": 142.8
+      },
+      {
+        "year": 2005,
+        "total": 3015,
+        "rate_per_100k": 138.5
+      },
+      {
+        "year": 2006,
+        "total": 3162,
+        "rate_per_100k": 145.2
+      },
+      {
+        "year": 2007,
+        "total": 3218,
+        "rate_per_100k": 147.8
+      },
+      {
+        "year": 2008,
+        "total": 3125,
+        "rate_per_100k": 143.5
+      },
+      {
+        "year": 2009,
+        "total": 3290,
+        "rate_per_100k": 151.1
+      },
+      {
+        "year": 2010,
+        "total": 3259,
+        "rate_per_100k": 149.7
+      },
+      {
+        "year": 2011,
+        "total": 3040,
+        "rate_per_100k": 139.6
+      },
+      {
+        "year": 2012,
+        "total": 2783,
+        "rate_per_100k": 127.8
+      },
+      {
+        "year": 2013,
+        "total": 2569,
+        "rate_per_100k": 118.0
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 1245
+      },
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 383
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 205
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 145
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 118
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 94
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 92
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 66
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 54
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 45
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 37
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 28
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 27
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 11
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 10
+      },
+      {
+        "category_code": "CBT",
+        "group": "ECONOMIC",
+        "cases": 4
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 3
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 2
+      }
+    ]
+  },
+  "DISTRICT:KA-YADGIR": {
+    "geo_unit_id": "DISTRICT:KA-YADGIR",
+    "name": "Yadgir",
+    "year": 2013,
+    "population": 1174271,
+    "kpis": {
+      "total_cognizable_cases": 1489,
+      "crime_rate_per_100k": 126.8,
+      "severity_weighted_index": 333.0,
+      "violent_crime_share": 0.444,
+      "crime_against_women_rate": 35.1
+    },
+    "hotspot": {
+      "zscore": -0.57,
+      "trend_slope": -26.5,
+      "status": "none"
+    },
+    "risk": {
+      "score": 17.1,
+      "band": "Low",
+      "partial": true,
+      "components": {
+        "crime_intensity": {
+          "value": 0.152,
+          "weight": 0.429,
+          "contribution": 6.53
+        },
+        "trend_momentum": {
+          "value": 0.37,
+          "weight": 0.286,
+          "contribution": 10.57
+        },
+        "hotspot_membership": {
+          "value": 0.0,
+          "weight": 0.286,
+          "contribution": 0.0
+        }
+      }
+    },
+    "trend": [
+      {
+        "year": 2010,
+        "total": 1542,
+        "rate_per_100k": 131.3
+      },
+      {
+        "year": 2011,
+        "total": 1592,
+        "rate_per_100k": 135.6
+      },
+      {
+        "year": 2012,
+        "total": 1486,
+        "rate_per_100k": 126.5
+      },
+      {
+        "year": 2013,
+        "total": 1489,
+        "rate_per_100k": 126.8
+      }
+    ],
+    "breakdown": [
+      {
+        "category_code": "GRIEVOUS_HURT",
+        "group": "VIOLENT",
+        "cases": 558
+      },
+      {
+        "category_code": "OTHER",
+        "group": "OTHER_SLL",
+        "cases": 289
+      },
+      {
+        "category_code": "RIOTS",
+        "group": "PUBLIC_ORDER",
+        "cases": 204
+      },
+      {
+        "category_code": "ASSAULT_WOMEN_MODESTY",
+        "group": "WOMEN",
+        "cases": 123
+      },
+      {
+        "category_code": "CRUELTY_HUSBAND",
+        "group": "WOMEN",
+        "cases": 61
+      },
+      {
+        "category_code": "THEFT",
+        "group": "PROPERTY",
+        "cases": 54
+      },
+      {
+        "category_code": "BURGLARY",
+        "group": "PROPERTY",
+        "cases": 46
+      },
+      {
+        "category_code": "MURDER",
+        "group": "VIOLENT",
+        "cases": 33
+      },
+      {
+        "category_code": "ATTEMPT_MURDER",
+        "group": "VIOLENT",
+        "cases": 31
+      },
+      {
+        "category_code": "CHEATING",
+        "group": "ECONOMIC",
+        "cases": 30
+      },
+      {
+        "category_code": "KIDNAP_ABDUCT",
+        "group": "VIOLENT",
+        "cases": 29
+      },
+      {
+        "category_code": "RAPE",
+        "group": "WOMEN",
+        "cases": 16
+      },
+      {
+        "category_code": "ROBBERY",
+        "group": "VIOLENT",
+        "cases": 8
+      },
+      {
+        "category_code": "DOWRY_DEATH",
+        "group": "WOMEN",
+        "cases": 3
+      },
+      {
+        "category_code": "ARSON",
+        "group": "PROPERTY",
+        "cases": 2
+      },
+      {
+        "category_code": "DACOITY",
+        "group": "VIOLENT",
+        "cases": 1
+      },
+      {
+        "category_code": "CULP_HOMICIDE",
+        "group": "VIOLENT",
+        "cases": 1
+      }
+    ]
+  }
+}

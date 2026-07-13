@@ -1,0 +1,5375 @@
+{
+  "data_note": "SYNTHETIC FIR records, schema-shaped to the KSP Police FIR System ER model (confidential record-level data is not public). Anchored to real latest-year district crime volumes & category mix (2013); deterministic (seed 42).",
+  "hour_histogram": [
+    16,
+    15,
+    5,
+    5,
+    7,
+    7,
+    6,
+    17,
+    22,
+    29,
+    38,
+    31,
+    23,
+    29,
+    22,
+    31,
+    36,
+    50,
+    58,
+    50,
+    52,
+    40,
+    33,
+    19
+  ],
+  "gravity_by_hour": {
+    "Heinous": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      5,
+      3,
+      1,
+      0,
+      0,
+      2,
+      1,
+      3,
+      6,
+      3,
+      1,
+      3,
+      1,
+      0
+    ],
+    "Non-Heinous": [
+      16,
+      15,
+      5,
+      5,
+      7,
+      7,
+      6,
+      17,
+      20,
+      27,
+      33,
+      28,
+      22,
+      29,
+      22,
+      29,
+      35,
+      47,
+      52,
+      47,
+      51,
+      37,
+      32,
+      19
+    ]
+  },
+  "points": [
+    {
+      "lat": 17.87761,
+      "lon": 77.33094,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bidar"
+    },
+    {
+      "lat": 18.10538,
+      "lon": 76.95505,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bidar"
+    },
+    {
+      "lat": 18.08547,
+      "lon": 77.75972,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bidar"
+    },
+    {
+      "lat": 18.10985,
+      "lon": 77.32565,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bidar"
+    },
+    {
+      "lat": 18.19774,
+      "lon": 77.00691,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bidar"
+    },
+    {
+      "lat": 18.21093,
+      "lon": 77.20837,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bidar"
+    },
+    {
+      "lat": 17.99822,
+      "lon": 77.29853,
+      "hour": 10,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Bidar"
+    },
+    {
+      "lat": 18.0516,
+      "lon": 77.37841,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bidar"
+    },
+    {
+      "lat": 17.73998,
+      "lon": 77.12799,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bidar"
+    },
+    {
+      "lat": 17.7808,
+      "lon": 77.08051,
+      "hour": 5,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bidar"
+    },
+    {
+      "lat": 17.87133,
+      "lon": 77.4598,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bidar"
+    },
+    {
+      "lat": 17.61834,
+      "lon": 76.91041,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bidar"
+    },
+    {
+      "lat": 17.96297,
+      "lon": 77.39999,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bidar"
+    },
+    {
+      "lat": 17.81879,
+      "lon": 77.16047,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bidar"
+    },
+    {
+      "lat": 18.11356,
+      "lon": 77.42476,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bidar"
+    },
+    {
+      "lat": 18.17618,
+      "lon": 77.19199,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bidar"
+    },
+    {
+      "lat": 18.34392,
+      "lon": 77.21931,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bidar"
+    },
+    {
+      "lat": 18.16047,
+      "lon": 77.08857,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bidar"
+    },
+    {
+      "lat": 18.09045,
+      "lon": 76.97286,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bidar"
+    },
+    {
+      "lat": 18.06156,
+      "lon": 76.98268,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Bidar"
+    },
+    {
+      "lat": 17.18255,
+      "lon": 76.84139,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.27669,
+      "lon": 76.81698,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.36902,
+      "lon": 76.85137,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.10189,
+      "lon": 76.96718,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.3205,
+      "lon": 76.74814,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.11936,
+      "lon": 76.68161,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.32658,
+      "lon": 77.07376,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.37814,
+      "lon": 76.67922,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.25762,
+      "lon": 76.67463,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.16774,
+      "lon": 77.13952,
+      "hour": 1,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.09884,
+      "lon": 76.85576,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.0608,
+      "lon": 76.80859,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.09897,
+      "lon": 76.86808,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.38682,
+      "lon": 76.75373,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.35366,
+      "lon": 76.77455,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.41803,
+      "lon": 76.82786,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.01877,
+      "lon": 76.82606,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.44784,
+      "lon": 76.7653,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.02637,
+      "lon": 76.95623,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 17.09489,
+      "lon": 76.88189,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kalaburagi"
+    },
+    {
+      "lat": 16.23953,
+      "lon": 74.61583,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.13539,
+      "lon": 74.91481,
+      "hour": 3,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.14714,
+      "lon": 74.65543,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.13275,
+      "lon": 74.73582,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.14391,
+      "lon": 74.84819,
+      "hour": 0,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.49836,
+      "lon": 74.75688,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.20928,
+      "lon": 74.68363,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.16761,
+      "lon": 74.46794,
+      "hour": 6,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.21346,
+      "lon": 74.92715,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.11632,
+      "lon": 74.8113,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.06875,
+      "lon": 74.80515,
+      "hour": 18,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.01838,
+      "lon": 74.76242,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.25854,
+      "lon": 74.54906,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.25243,
+      "lon": 74.84403,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.34726,
+      "lon": 74.83967,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.38718,
+      "lon": 74.87619,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.22683,
+      "lon": 74.8131,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.08613,
+      "lon": 74.6263,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.04671,
+      "lon": 74.99291,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.46193,
+      "lon": 74.69952,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Belagavi"
+    },
+    {
+      "lat": 16.43871,
+      "lon": 76.91636,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.93972,
+      "lon": 76.9959,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.74429,
+      "lon": 76.64493,
+      "hour": 1,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.78393,
+      "lon": 76.86992,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.41549,
+      "lon": 77.05123,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.4059,
+      "lon": 77.265,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.15313,
+      "lon": 77.14479,
+      "hour": 7,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.84097,
+      "lon": 77.18382,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.88514,
+      "lon": 76.92755,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.7917,
+      "lon": 77.34502,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.45344,
+      "lon": 76.85946,
+      "hour": 5,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.62766,
+      "lon": 76.65101,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.56092,
+      "lon": 77.15287,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.84993,
+      "lon": 76.79348,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.43532,
+      "lon": 77.14327,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.9146,
+      "lon": 77.38404,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.86623,
+      "lon": 76.93043,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.71311,
+      "lon": 77.14818,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.25925,
+      "lon": 77.00705,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.78626,
+      "lon": 76.86954,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Yadgir"
+    },
+    {
+      "lat": 16.19524,
+      "lon": 75.71946,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 16.15979,
+      "lon": 75.76322,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 15.92298,
+      "lon": 75.35521,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 16.07433,
+      "lon": 75.62433,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 16.1248,
+      "lon": 75.62322,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 16.47702,
+      "lon": 75.96478,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 15.88601,
+      "lon": 75.3981,
+      "hour": 1,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 16.27195,
+      "lon": 75.40861,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 15.7394,
+      "lon": 75.65802,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 16.20812,
+      "lon": 75.58847,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 16.54555,
+      "lon": 75.48878,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 16.53525,
+      "lon": 75.90837,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 16.26186,
+      "lon": 75.48327,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 16.03401,
+      "lon": 75.40933,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 15.92021,
+      "lon": 75.64278,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 16.39922,
+      "lon": 75.63411,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 16.36761,
+      "lon": 75.50343,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 15.88332,
+      "lon": 75.51954,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 16.35337,
+      "lon": 75.63758,
+      "hour": 1,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 15.91305,
+      "lon": 75.7384,
+      "hour": 7,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bagalkote"
+    },
+    {
+      "lat": 15.94385,
+      "lon": 76.78009,
+      "hour": 7,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Raichur"
+    },
+    {
+      "lat": 15.94001,
+      "lon": 76.7924,
+      "hour": 4,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Raichur"
+    },
+    {
+      "lat": 16.0909,
+      "lon": 76.9,
+      "hour": 18,
+      "gravity": "Heinous",
+      "category": "Crime Against Women",
+      "district": "Raichur"
+    },
+    {
+      "lat": 16.00734,
+      "lon": 76.92031,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Raichur"
+    },
+    {
+      "lat": 16.2217,
+      "lon": 77.0633,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Raichur"
+    },
+    {
+      "lat": 16.04151,
+      "lon": 76.96931,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Raichur"
+    },
+    {
+      "lat": 16.22678,
+      "lon": 76.99384,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Raichur"
+    },
+    {
+      "lat": 16.16524,
+      "lon": 77.03836,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Raichur"
+    },
+    {
+      "lat": 16.32025,
+      "lon": 77.07189,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Raichur"
+    },
+    {
+      "lat": 15.99338,
+      "lon": 76.59522,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Raichur"
+    },
+    {
+      "lat": 16.19174,
+      "lon": 76.5406,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Raichur"
+    },
+    {
+      "lat": 16.25345,
+      "lon": 76.83034,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Raichur"
+    },
+    {
+      "lat": 16.33903,
+      "lon": 77.05415,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Raichur"
+    },
+    {
+      "lat": 16.12669,
+      "lon": 76.9529,
+      "hour": 6,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Raichur"
+    },
+    {
+      "lat": 16.29923,
+      "lon": 76.97597,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Raichur"
+    },
+    {
+      "lat": 15.89515,
+      "lon": 76.7162,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Raichur"
+    },
+    {
+      "lat": 16.24503,
+      "lon": 76.73101,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Raichur"
+    },
+    {
+      "lat": 16.19173,
+      "lon": 77.00804,
+      "hour": 5,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Raichur"
+    },
+    {
+      "lat": 16.12352,
+      "lon": 76.91295,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Raichur"
+    },
+    {
+      "lat": 15.98843,
+      "lon": 76.87148,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Raichur"
+    },
+    {
+      "lat": 15.47272,
+      "lon": 75.87769,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.53957,
+      "lon": 76.01585,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.48411,
+      "lon": 76.17211,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.68399,
+      "lon": 76.13516,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.33755,
+      "lon": 75.95345,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.6665,
+      "lon": 76.23799,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.46677,
+      "lon": 76.08665,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.71086,
+      "lon": 75.88472,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.45417,
+      "lon": 76.05739,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.85451,
+      "lon": 76.1667,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.83696,
+      "lon": 76.51187,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Koppal"
+    },
+    {
+      "lat": 16.01225,
+      "lon": 75.9381,
+      "hour": 1,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.5919,
+      "lon": 75.99824,
+      "hour": 0,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.6774,
+      "lon": 76.19105,
+      "hour": 4,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.62277,
+      "lon": 76.2062,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.40905,
+      "lon": 76.15362,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.5328,
+      "lon": 76.30361,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.73571,
+      "lon": 76.10706,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.47863,
+      "lon": 76.11393,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.96981,
+      "lon": 76.21855,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Koppal"
+    },
+    {
+      "lat": 15.53513,
+      "lon": 75.76848,
+      "hour": 19,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.62034,
+      "lon": 75.51363,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.54798,
+      "lon": 75.31456,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.20582,
+      "lon": 75.64185,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.43664,
+      "lon": 75.67414,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.71278,
+      "lon": 75.90566,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.4817,
+      "lon": 75.68575,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.48475,
+      "lon": 75.44262,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Gadag"
+    },
+    {
+      "lat": 16.00851,
+      "lon": 75.81169,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.44621,
+      "lon": 75.60252,
+      "hour": 18,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.34986,
+      "lon": 75.34885,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.73766,
+      "lon": 75.8076,
+      "hour": 11,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.87136,
+      "lon": 75.79379,
+      "hour": 7,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.39509,
+      "lon": 75.41029,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.64998,
+      "lon": 75.88619,
+      "hour": 20,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.47219,
+      "lon": 75.5949,
+      "hour": 7,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.48305,
+      "lon": 75.50735,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.74174,
+      "lon": 75.8713,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.58283,
+      "lon": 75.31147,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.67643,
+      "lon": 75.46229,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Gadag"
+    },
+    {
+      "lat": 15.03016,
+      "lon": 76.33905,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ballari"
+    },
+    {
+      "lat": 15.12145,
+      "lon": 76.32977,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ballari"
+    },
+    {
+      "lat": 15.09931,
+      "lon": 76.70488,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Ballari"
+    },
+    {
+      "lat": 15.13061,
+      "lon": 76.38027,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ballari"
+    },
+    {
+      "lat": 15.31509,
+      "lon": 76.56992,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Ballari"
+    },
+    {
+      "lat": 15.07776,
+      "lon": 76.3108,
+      "hour": 22,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Ballari"
+    },
+    {
+      "lat": 14.77346,
+      "lon": 76.72235,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Ballari"
+    },
+    {
+      "lat": 14.95598,
+      "lon": 76.36083,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Ballari"
+    },
+    {
+      "lat": 14.79556,
+      "lon": 76.20834,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ballari"
+    },
+    {
+      "lat": 14.78649,
+      "lon": 76.53567,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Ballari"
+    },
+    {
+      "lat": 14.86981,
+      "lon": 76.56263,
+      "hour": 1,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ballari"
+    },
+    {
+      "lat": 15.14361,
+      "lon": 76.60867,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Ballari"
+    },
+    {
+      "lat": 15.18719,
+      "lon": 76.42545,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ballari"
+    },
+    {
+      "lat": 15.13514,
+      "lon": 76.12038,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ballari"
+    },
+    {
+      "lat": 14.93754,
+      "lon": 76.45729,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Ballari"
+    },
+    {
+      "lat": 15.30002,
+      "lon": 76.47246,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Ballari"
+    },
+    {
+      "lat": 15.02296,
+      "lon": 76.29804,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ballari"
+    },
+    {
+      "lat": 15.20629,
+      "lon": 76.14123,
+      "hour": 7,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ballari"
+    },
+    {
+      "lat": 15.03889,
+      "lon": 76.71521,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ballari"
+    },
+    {
+      "lat": 15.14955,
+      "lon": 76.30996,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Ballari"
+    },
+    {
+      "lat": 15.17495,
+      "lon": 75.27527,
+      "hour": 19,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.39165,
+      "lon": 75.18364,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.18281,
+      "lon": 75.51072,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.33183,
+      "lon": 75.26008,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.12951,
+      "lon": 75.30466,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.33277,
+      "lon": 75.27153,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.20031,
+      "lon": 75.2099,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.20566,
+      "lon": 75.18993,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.28242,
+      "lon": 75.07927,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.44193,
+      "lon": 75.02978,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.66278,
+      "lon": 75.33243,
+      "hour": 6,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.60048,
+      "lon": 75.43766,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.53733,
+      "lon": 75.15808,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.2676,
+      "lon": 75.20384,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.10541,
+      "lon": 75.21782,
+      "hour": 7,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.37986,
+      "lon": 75.00674,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.2852,
+      "lon": 75.01941,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.24826,
+      "lon": 75.21788,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.40753,
+      "lon": 74.88401,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 15.28606,
+      "lon": 75.12487,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Dharwad"
+    },
+    {
+      "lat": 14.64298,
+      "lon": 74.48893,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.24138,
+      "lon": 74.49415,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.89331,
+      "lon": 74.65662,
+      "hour": 17,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.46864,
+      "lon": 74.87287,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.63317,
+      "lon": 74.48425,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.50199,
+      "lon": 74.77882,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.75925,
+      "lon": 74.72391,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.78731,
+      "lon": 74.70069,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 15.0041,
+      "lon": 74.65031,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.77628,
+      "lon": 74.81777,
+      "hour": 0,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.58614,
+      "lon": 75.16538,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.63383,
+      "lon": 74.72396,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.67373,
+      "lon": 74.8484,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.77499,
+      "lon": 74.44274,
+      "hour": 7,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 15.02434,
+      "lon": 74.71696,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.74338,
+      "lon": 74.50635,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.82132,
+      "lon": 74.82226,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.87727,
+      "lon": 74.73824,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.54253,
+      "lon": 74.56829,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.46737,
+      "lon": 74.66471,
+      "hour": 0,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Uttara Kannada"
+    },
+    {
+      "lat": 14.72429,
+      "lon": 75.49044,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Haveri"
+    },
+    {
+      "lat": 14.89862,
+      "lon": 75.47933,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Haveri"
+    },
+    {
+      "lat": 14.49009,
+      "lon": 75.49201,
+      "hour": 17,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Haveri"
+    },
+    {
+      "lat": 14.51109,
+      "lon": 75.24327,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Haveri"
+    },
+    {
+      "lat": 14.8582,
+      "lon": 75.54361,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Haveri"
+    },
+    {
+      "lat": 14.83277,
+      "lon": 75.37556,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Haveri"
+    },
+    {
+      "lat": 14.99794,
+      "lon": 75.44482,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Haveri"
+    },
+    {
+      "lat": 14.81735,
+      "lon": 75.45629,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Haveri"
+    },
+    {
+      "lat": 14.85555,
+      "lon": 75.18891,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Haveri"
+    },
+    {
+      "lat": 14.62839,
+      "lon": 75.44641,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Haveri"
+    },
+    {
+      "lat": 14.66667,
+      "lon": 75.52082,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Haveri"
+    },
+    {
+      "lat": 15.00311,
+      "lon": 75.60872,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Haveri"
+    },
+    {
+      "lat": 15.10317,
+      "lon": 75.23926,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Haveri"
+    },
+    {
+      "lat": 14.73665,
+      "lon": 75.2648,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Haveri"
+    },
+    {
+      "lat": 14.96406,
+      "lon": 75.64342,
+      "hour": 18,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Haveri"
+    },
+    {
+      "lat": 14.81898,
+      "lon": 75.43271,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Haveri"
+    },
+    {
+      "lat": 14.75251,
+      "lon": 75.41829,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Haveri"
+    },
+    {
+      "lat": 15.23761,
+      "lon": 75.5788,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Haveri"
+    },
+    {
+      "lat": 14.69243,
+      "lon": 75.29406,
+      "hour": 21,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Haveri"
+    },
+    {
+      "lat": 14.85537,
+      "lon": 75.56367,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Haveri"
+    },
+    {
+      "lat": 13.8061,
+      "lon": 76.72222,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.21813,
+      "lon": 76.57576,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.24282,
+      "lon": 76.46306,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.23997,
+      "lon": 76.42405,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.29911,
+      "lon": 76.48383,
+      "hour": 5,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.44322,
+      "lon": 76.42683,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.05895,
+      "lon": 76.41147,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.26692,
+      "lon": 76.83763,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.05611,
+      "lon": 76.71722,
+      "hour": 18,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.61337,
+      "lon": 76.21388,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.39584,
+      "lon": 76.52605,
+      "hour": 1,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.46852,
+      "lon": 76.62863,
+      "hour": 4,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.48149,
+      "lon": 76.45379,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.26536,
+      "lon": 76.59508,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.40057,
+      "lon": 76.72218,
+      "hour": 0,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.03264,
+      "lon": 76.49632,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.32009,
+      "lon": 76.48493,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.48772,
+      "lon": 76.7467,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.24604,
+      "lon": 76.39418,
+      "hour": 7,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.19911,
+      "lon": 76.7518,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chitradurga"
+    },
+    {
+      "lat": 14.50754,
+      "lon": 75.91445,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.28387,
+      "lon": 75.85026,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.72495,
+      "lon": 75.95249,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.13766,
+      "lon": 76.15702,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.38267,
+      "lon": 75.90357,
+      "hour": 11,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.43333,
+      "lon": 75.93598,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.51435,
+      "lon": 76.17705,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.29127,
+      "lon": 75.97974,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.44904,
+      "lon": 75.82004,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.34048,
+      "lon": 76.0102,
+      "hour": 4,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.39498,
+      "lon": 76.02198,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.75655,
+      "lon": 75.80091,
+      "hour": 0,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.53418,
+      "lon": 76.05277,
+      "hour": 1,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.83045,
+      "lon": 75.76611,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.54245,
+      "lon": 76.10672,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.25174,
+      "lon": 75.94262,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.5407,
+      "lon": 76.17639,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.32581,
+      "lon": 75.86586,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.64679,
+      "lon": 76.09014,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.50408,
+      "lon": 76.08281,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Davanagere"
+    },
+    {
+      "lat": 14.13255,
+      "lon": 75.04008,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 14.23949,
+      "lon": 75.05393,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 14.06399,
+      "lon": 75.36529,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 14.06351,
+      "lon": 75.16842,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 14.03038,
+      "lon": 75.2053,
+      "hour": 7,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 13.9003,
+      "lon": 75.19225,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 13.72889,
+      "lon": 75.40056,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 13.9139,
+      "lon": 75.01891,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 14.0664,
+      "lon": 75.30462,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 13.73128,
+      "lon": 75.26114,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 14.04408,
+      "lon": 75.42059,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 14.04013,
+      "lon": 75.3366,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 14.11797,
+      "lon": 75.29114,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 14.3172,
+      "lon": 75.37684,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 14.11757,
+      "lon": 75.16555,
+      "hour": 7,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 14.02519,
+      "lon": 75.24665,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 14.13159,
+      "lon": 74.95043,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 13.62007,
+      "lon": 75.16212,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 14.05062,
+      "lon": 75.36722,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 13.89871,
+      "lon": 75.10635,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Shivamogga"
+    },
+    {
+      "lat": 13.3283,
+      "lon": 74.80349,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.66169,
+      "lon": 75.06848,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.36764,
+      "lon": 75.02433,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.41737,
+      "lon": 75.01515,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.74526,
+      "lon": 74.72859,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.48792,
+      "lon": 74.84598,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.65112,
+      "lon": 75.13692,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.54111,
+      "lon": 74.88696,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.3875,
+      "lon": 74.60219,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.47943,
+      "lon": 75.22058,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.67309,
+      "lon": 74.78011,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.63674,
+      "lon": 75.01089,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.66766,
+      "lon": 75.10018,
+      "hour": 7,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.51861,
+      "lon": 74.83306,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.28247,
+      "lon": 74.75161,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.41965,
+      "lon": 74.88793,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.40457,
+      "lon": 75.11149,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.59418,
+      "lon": 74.89422,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.25927,
+      "lon": 74.65518,
+      "hour": 3,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.50794,
+      "lon": 75.31366,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Udupi"
+    },
+    {
+      "lat": 13.57042,
+      "lon": 75.78806,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.43214,
+      "lon": 75.57376,
+      "hour": 1,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.66453,
+      "lon": 75.41912,
+      "hour": 3,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.41399,
+      "lon": 75.67421,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.53207,
+      "lon": 75.79797,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.32231,
+      "lon": 75.57836,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.19008,
+      "lon": 75.84892,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.5955,
+      "lon": 75.81512,
+      "hour": 19,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.4124,
+      "lon": 75.60457,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.71172,
+      "lon": 75.43251,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.56675,
+      "lon": 75.66289,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.31348,
+      "lon": 75.72114,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.49651,
+      "lon": 75.54118,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.28841,
+      "lon": 75.85483,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.37977,
+      "lon": 75.65253,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.40927,
+      "lon": 75.8609,
+      "hour": 18,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.72873,
+      "lon": 75.67669,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.49751,
+      "lon": 75.54549,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.73911,
+      "lon": 75.72021,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.57236,
+      "lon": 76.01366,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chikkamagaluru"
+    },
+    {
+      "lat": 13.45399,
+      "lon": 78.16875,
+      "hour": 11,
+      "gravity": "Heinous",
+      "category": "Crime Against Women",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.77186,
+      "lon": 77.86281,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.63037,
+      "lon": 77.79748,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.59886,
+      "lon": 78.06625,
+      "hour": 1,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.58461,
+      "lon": 77.82848,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.55506,
+      "lon": 77.89989,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.54584,
+      "lon": 77.89603,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.37754,
+      "lon": 77.97884,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.55928,
+      "lon": 77.86732,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.62518,
+      "lon": 77.59044,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.57705,
+      "lon": 77.7208,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.41693,
+      "lon": 77.95007,
+      "hour": 5,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.60518,
+      "lon": 77.91036,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.4453,
+      "lon": 77.70965,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.57694,
+      "lon": 77.59656,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.73967,
+      "lon": 77.9452,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.5363,
+      "lon": 77.72733,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.612,
+      "lon": 77.75367,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.40369,
+      "lon": 77.84893,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 13.44828,
+      "lon": 77.67194,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chikkaballapura"
+    },
+    {
+      "lat": 12.8435,
+      "lon": 76.16579,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Hassan"
+    },
+    {
+      "lat": 12.82841,
+      "lon": 75.86296,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Hassan"
+    },
+    {
+      "lat": 13.03311,
+      "lon": 76.1158,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Hassan"
+    },
+    {
+      "lat": 12.86187,
+      "lon": 76.40085,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Hassan"
+    },
+    {
+      "lat": 12.85884,
+      "lon": 76.14602,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Hassan"
+    },
+    {
+      "lat": 13.05048,
+      "lon": 76.10451,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Hassan"
+    },
+    {
+      "lat": 12.8492,
+      "lon": 75.85465,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Hassan"
+    },
+    {
+      "lat": 12.91182,
+      "lon": 76.3825,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Hassan"
+    },
+    {
+      "lat": 12.88728,
+      "lon": 75.84539,
+      "hour": 3,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Hassan"
+    },
+    {
+      "lat": 12.82593,
+      "lon": 76.51812,
+      "hour": 5,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Hassan"
+    },
+    {
+      "lat": 13.00108,
+      "lon": 76.01421,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Hassan"
+    },
+    {
+      "lat": 12.89146,
+      "lon": 76.1071,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Hassan"
+    },
+    {
+      "lat": 12.83194,
+      "lon": 76.19985,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Hassan"
+    },
+    {
+      "lat": 12.94148,
+      "lon": 76.19324,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Hassan"
+    },
+    {
+      "lat": 13.15023,
+      "lon": 76.00877,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Hassan"
+    },
+    {
+      "lat": 13.17841,
+      "lon": 76.24477,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Hassan"
+    },
+    {
+      "lat": 12.80733,
+      "lon": 76.08929,
+      "hour": 0,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Hassan"
+    },
+    {
+      "lat": 12.91056,
+      "lon": 76.24786,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Hassan"
+    },
+    {
+      "lat": 12.90596,
+      "lon": 76.17937,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Hassan"
+    },
+    {
+      "lat": 13.00174,
+      "lon": 76.04031,
+      "hour": 7,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Hassan"
+    },
+    {
+      "lat": 13.028,
+      "lon": 78.2668,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kolar"
+    },
+    {
+      "lat": 13.0671,
+      "lon": 78.07229,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Kolar"
+    },
+    {
+      "lat": 13.17765,
+      "lon": 77.99842,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kolar"
+    },
+    {
+      "lat": 12.87516,
+      "lon": 78.2352,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Kolar"
+    },
+    {
+      "lat": 13.13292,
+      "lon": 78.03072,
+      "hour": 2,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kolar"
+    },
+    {
+      "lat": 13.00794,
+      "lon": 78.17016,
+      "hour": 15,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Kolar"
+    },
+    {
+      "lat": 13.1621,
+      "lon": 78.26853,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kolar"
+    },
+    {
+      "lat": 12.96523,
+      "lon": 77.9226,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kolar"
+    },
+    {
+      "lat": 13.11953,
+      "lon": 78.03976,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Kolar"
+    },
+    {
+      "lat": 13.12833,
+      "lon": 78.10569,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Kolar"
+    },
+    {
+      "lat": 13.12965,
+      "lon": 78.04663,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kolar"
+    },
+    {
+      "lat": 13.07078,
+      "lon": 78.1709,
+      "hour": 0,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kolar"
+    },
+    {
+      "lat": 13.26766,
+      "lon": 78.15634,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kolar"
+    },
+    {
+      "lat": 13.06707,
+      "lon": 78.50927,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kolar"
+    },
+    {
+      "lat": 13.12991,
+      "lon": 78.26007,
+      "hour": 7,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kolar"
+    },
+    {
+      "lat": 12.99603,
+      "lon": 78.10993,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kolar"
+    },
+    {
+      "lat": 13.15645,
+      "lon": 78.4913,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kolar"
+    },
+    {
+      "lat": 13.15974,
+      "lon": 78.01212,
+      "hour": 0,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Kolar"
+    },
+    {
+      "lat": 12.79692,
+      "lon": 78.37128,
+      "hour": 8,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Kolar"
+    },
+    {
+      "lat": 12.95394,
+      "lon": 77.95823,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kolar"
+    },
+    {
+      "lat": 13.04477,
+      "lon": 77.85091,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 13.21136,
+      "lon": 77.47828,
+      "hour": 6,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 13.36297,
+      "lon": 77.45298,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 13.25988,
+      "lon": 77.3751,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 12.97685,
+      "lon": 78.10522,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 13.1459,
+      "lon": 77.49924,
+      "hour": 2,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 12.95568,
+      "lon": 77.65276,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 13.16018,
+      "lon": 77.69879,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 13.09293,
+      "lon": 77.72603,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 13.33475,
+      "lon": 77.41322,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 13.22715,
+      "lon": 77.78891,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 13.21549,
+      "lon": 77.95828,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 13.26036,
+      "lon": 77.71256,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 13.00248,
+      "lon": 77.79273,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 13.4036,
+      "lon": 77.52594,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 13.44123,
+      "lon": 77.45677,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 13.22874,
+      "lon": 77.59197,
+      "hour": 10,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 13.31077,
+      "lon": 77.83114,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 13.50691,
+      "lon": 77.3573,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 13.18737,
+      "lon": 77.63679,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Rural"
+    },
+    {
+      "lat": 12.7584,
+      "lon": 75.10472,
+      "hour": 6,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 12.7084,
+      "lon": 74.91762,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 12.64049,
+      "lon": 75.50542,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 12.9942,
+      "lon": 75.0528,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 13.01224,
+      "lon": 75.07726,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 12.81353,
+      "lon": 75.33476,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 12.77105,
+      "lon": 75.58984,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 12.92221,
+      "lon": 75.19751,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 12.825,
+      "lon": 75.33989,
+      "hour": 17,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 12.88737,
+      "lon": 75.14329,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 12.97269,
+      "lon": 75.23767,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 12.66269,
+      "lon": 75.33447,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 12.95294,
+      "lon": 75.30774,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 12.82573,
+      "lon": 75.50392,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 12.8851,
+      "lon": 74.96601,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 12.57487,
+      "lon": 75.0265,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 12.57018,
+      "lon": 75.24562,
+      "hour": 7,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 13.01233,
+      "lon": 75.53302,
+      "hour": 9,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 12.96439,
+      "lon": 75.09145,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 12.79917,
+      "lon": 75.19073,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Dakshina Kannada"
+    },
+    {
+      "lat": 13.05747,
+      "lon": 77.4604,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.94284,
+      "lon": 77.33348,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.19459,
+      "lon": 77.66066,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.69733,
+      "lon": 77.85708,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.1029,
+      "lon": 77.75818,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.94662,
+      "lon": 77.67724,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.6922,
+      "lon": 77.69644,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.90429,
+      "lon": 77.69967,
+      "hour": 1,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.08361,
+      "lon": 77.52913,
+      "hour": 21,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.94707,
+      "lon": 77.57454,
+      "hour": 2,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.00712,
+      "lon": 77.69036,
+      "hour": 4,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.71538,
+      "lon": 77.46278,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.60519,
+      "lon": 77.41872,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.13956,
+      "lon": 77.16365,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.0018,
+      "lon": 77.72337,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.85932,
+      "lon": 77.53076,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.71883,
+      "lon": 77.44681,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.02055,
+      "lon": 77.33916,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.87435,
+      "lon": 77.50267,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.84304,
+      "lon": 77.22815,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.12045,
+      "lon": 77.72653,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.08456,
+      "lon": 77.37089,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.69336,
+      "lon": 77.59285,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.98108,
+      "lon": 77.4044,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.81147,
+      "lon": 77.61557,
+      "hour": 12,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.99203,
+      "lon": 77.48989,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.97867,
+      "lon": 77.43517,
+      "hour": 1,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.86467,
+      "lon": 77.70985,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.79728,
+      "lon": 77.67475,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.88368,
+      "lon": 77.37505,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.60337,
+      "lon": 77.55034,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.81025,
+      "lon": 77.65832,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.14758,
+      "lon": 77.46606,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.87293,
+      "lon": 77.87214,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.82207,
+      "lon": 77.45487,
+      "hour": 7,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.2924,
+      "lon": 77.7778,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.02552,
+      "lon": 77.71315,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.89222,
+      "lon": 77.64508,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.99121,
+      "lon": 77.52211,
+      "hour": 1,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.14633,
+      "lon": 77.98849,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.72727,
+      "lon": 77.70167,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.80353,
+      "lon": 77.44354,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.99291,
+      "lon": 77.51226,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.88332,
+      "lon": 77.72113,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.88289,
+      "lon": 77.55686,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.76671,
+      "lon": 77.50046,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.06959,
+      "lon": 77.7605,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.65852,
+      "lon": 77.48473,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.06885,
+      "lon": 77.42428,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.84338,
+      "lon": 77.64608,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.10599,
+      "lon": 77.35947,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.99528,
+      "lon": 77.64383,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.12435,
+      "lon": 77.64597,
+      "hour": 21,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.98139,
+      "lon": 77.64266,
+      "hour": 9,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.79926,
+      "lon": 77.77294,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.91311,
+      "lon": 77.30133,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.03997,
+      "lon": 77.63038,
+      "hour": 0,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.86136,
+      "lon": 77.47016,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.11973,
+      "lon": 77.54501,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.98773,
+      "lon": 77.91567,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 13.04915,
+      "lon": 77.341,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Bengaluru Urban"
+    },
+    {
+      "lat": 12.06255,
+      "lon": 75.49448,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.3903,
+      "lon": 75.72063,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.41231,
+      "lon": 75.90413,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.59118,
+      "lon": 75.80586,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.45649,
+      "lon": 75.90177,
+      "hour": 0,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.42152,
+      "lon": 75.47001,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.38322,
+      "lon": 75.78632,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.12547,
+      "lon": 75.94262,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.42178,
+      "lon": 75.99077,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.31047,
+      "lon": 75.6427,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.48363,
+      "lon": 75.87704,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.43409,
+      "lon": 75.61953,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.12418,
+      "lon": 75.7885,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.61639,
+      "lon": 75.99333,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.41176,
+      "lon": 75.3936,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.61002,
+      "lon": 75.81176,
+      "hour": 2,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.65704,
+      "lon": 75.90197,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.43303,
+      "lon": 75.90778,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.69184,
+      "lon": 75.52733,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 12.22462,
+      "lon": 75.9947,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Kodagu"
+    },
+    {
+      "lat": 11.85849,
+      "lon": 77.27265,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 12.1021,
+      "lon": 76.86433,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 12.11467,
+      "lon": 77.15705,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 11.68575,
+      "lon": 76.86563,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 11.85402,
+      "lon": 77.20744,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 11.87317,
+      "lon": 77.18218,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 12.1314,
+      "lon": 77.20819,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 11.59372,
+      "lon": 76.91916,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 11.98219,
+      "lon": 76.93236,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 11.98089,
+      "lon": 76.9968,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 11.73154,
+      "lon": 77.24862,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 12.05004,
+      "lon": 77.04658,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 11.77908,
+      "lon": 76.93271,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 11.87548,
+      "lon": 76.88272,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 12.05089,
+      "lon": 76.92105,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 11.8606,
+      "lon": 77.17987,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 12.14087,
+      "lon": 77.15648,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 11.92744,
+      "lon": 77.08824,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 12.01314,
+      "lon": 76.93722,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 11.91517,
+      "lon": 77.1563,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Chamarajanagara"
+    },
+    {
+      "lat": 13.58254,
+      "lon": 76.9189,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.55604,
+      "lon": 77.09904,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 14.05994,
+      "lon": 77.04424,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.32623,
+      "lon": 76.77935,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.60852,
+      "lon": 76.99434,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.75421,
+      "lon": 76.98131,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.75009,
+      "lon": 77.0065,
+      "hour": 2,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.60964,
+      "lon": 77.03206,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.68771,
+      "lon": 77.35471,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.74913,
+      "lon": 77.27727,
+      "hour": 4,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.41895,
+      "lon": 76.97585,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.84539,
+      "lon": 76.9286,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.30892,
+      "lon": 77.15167,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.70247,
+      "lon": 76.78706,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.73607,
+      "lon": 77.21868,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.75205,
+      "lon": 76.97945,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.33627,
+      "lon": 76.9581,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.54129,
+      "lon": 76.89087,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.56567,
+      "lon": 76.71372,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 13.54329,
+      "lon": 77.12351,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Tumakuru"
+    },
+    {
+      "lat": 12.60256,
+      "lon": 77.37145,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.93235,
+      "lon": 77.31099,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.72034,
+      "lon": 77.06011,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.79441,
+      "lon": 77.2051,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.88794,
+      "lon": 77.47484,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.74566,
+      "lon": 77.41074,
+      "hour": 0,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.74039,
+      "lon": 77.62294,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.8856,
+      "lon": 77.18636,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.95835,
+      "lon": 77.26158,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.88693,
+      "lon": 77.50725,
+      "hour": 0,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 13.13456,
+      "lon": 77.10103,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.54728,
+      "lon": 77.33007,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.60738,
+      "lon": 77.19635,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.57663,
+      "lon": 77.52102,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.66243,
+      "lon": 77.55199,
+      "hour": 16,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.87713,
+      "lon": 77.47627,
+      "hour": 3,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.74992,
+      "lon": 77.28531,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.78818,
+      "lon": 77.50223,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.58312,
+      "lon": 77.4626,
+      "hour": 12,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.61897,
+      "lon": 77.17033,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Ramanagara"
+    },
+    {
+      "lat": 12.28279,
+      "lon": 76.8156,
+      "hour": 18,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.76115,
+      "lon": 76.75585,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.594,
+      "lon": 76.72082,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.70815,
+      "lon": 76.64254,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.62773,
+      "lon": 76.63045,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.6538,
+      "lon": 76.86671,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.535,
+      "lon": 76.96139,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.76373,
+      "lon": 76.85523,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.66788,
+      "lon": 76.81614,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.36576,
+      "lon": 76.91903,
+      "hour": 1,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.56072,
+      "lon": 76.42403,
+      "hour": 6,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.39627,
+      "lon": 76.84094,
+      "hour": 5,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.50171,
+      "lon": 77.0627,
+      "hour": 1,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.26683,
+      "lon": 76.79102,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.76559,
+      "lon": 76.751,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.52023,
+      "lon": 76.93226,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.63496,
+      "lon": 77.17307,
+      "hour": 21,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.45515,
+      "lon": 76.96376,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.74583,
+      "lon": 76.73771,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.53964,
+      "lon": 77.26074,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mandya"
+    },
+    {
+      "lat": 12.25933,
+      "lon": 76.45323,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.37464,
+      "lon": 76.46806,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.15276,
+      "lon": 76.57423,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.31983,
+      "lon": 76.48677,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.2672,
+      "lon": 76.43579,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.28241,
+      "lon": 76.59893,
+      "hour": 16,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.2545,
+      "lon": 76.35895,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.37858,
+      "lon": 76.47216,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.21346,
+      "lon": 76.41111,
+      "hour": 10,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.33663,
+      "lon": 76.37839,
+      "hour": 4,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.43232,
+      "lon": 76.62187,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.15369,
+      "lon": 76.47504,
+      "hour": 8,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.18382,
+      "lon": 76.56383,
+      "hour": 10,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.10716,
+      "lon": 76.57602,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.12363,
+      "lon": 76.63086,
+      "hour": 13,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.28711,
+      "lon": 76.72652,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.40124,
+      "lon": 76.54552,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.23466,
+      "lon": 76.69318,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 11.8726,
+      "lon": 76.67696,
+      "hour": 8,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 12.22689,
+      "lon": 76.4327,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Mysuru"
+    },
+    {
+      "lat": 16.51605,
+      "lon": 76.11535,
+      "hour": 17,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 16.89183,
+      "lon": 76.098,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 16.91656,
+      "lon": 75.8387,
+      "hour": 0,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 16.86001,
+      "lon": 75.86099,
+      "hour": 22,
+      "gravity": "Non-Heinous",
+      "category": "Economic & Financial Crime",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 17.17838,
+      "lon": 76.17314,
+      "hour": 9,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 16.8634,
+      "lon": 76.02544,
+      "hour": 7,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 16.98561,
+      "lon": 76.15341,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 16.77665,
+      "lon": 75.82641,
+      "hour": 0,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Women",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 16.83494,
+      "lon": 75.98008,
+      "hour": 10,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 17.00454,
+      "lon": 75.98121,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 17.01313,
+      "lon": 75.81344,
+      "hour": 20,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 16.75418,
+      "lon": 75.9271,
+      "hour": 15,
+      "gravity": "Heinous",
+      "category": "Violent Crime",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 16.74868,
+      "lon": 75.94138,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 16.92627,
+      "lon": 75.8949,
+      "hour": 11,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 16.9505,
+      "lon": 76.04301,
+      "hour": 19,
+      "gravity": "Non-Heinous",
+      "category": "Crime Against Public Order / State",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 16.74777,
+      "lon": 75.94459,
+      "hour": 23,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 16.59257,
+      "lon": 76.13076,
+      "hour": 15,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 16.91979,
+      "lon": 75.73379,
+      "hour": 14,
+      "gravity": "Non-Heinous",
+      "category": "Violent Crime",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 16.88239,
+      "lon": 76.09003,
+      "hour": 0,
+      "gravity": "Non-Heinous",
+      "category": "Other Special & Local Laws",
+      "district": "Vijayapura"
+    },
+    {
+      "lat": 16.92585,
+      "lon": 76.1139,
+      "hour": 10,
+      "gravity": "Non-Heinous",
+      "category": "Property Crime",
+      "district": "Vijayapura"
+    }
+  ],
+  "hotspots": [
+    {
+      "lat": 12.9,
+      "lon": 77.5,
+      "count": 6,
+      "district": "Bengaluru Urban",
+      "heinous": 0,
+      "peak_hour": 0
+    },
+    {
+      "lat": 13.1,
+      "lon": 77.5,
+      "count": 5,
+      "district": "Bengaluru Rural",
+      "heinous": 1,
+      "peak_hour": 2
+    },
+    {
+      "lat": 17.4,
+      "lon": 76.8,
+      "count": 4,
+      "district": "Kalaburagi",
+      "heinous": 0,
+      "peak_hour": 9
+    },
+    {
+      "lat": 13.1,
+      "lon": 78.0,
+      "count": 4,
+      "district": "Kolar",
+      "heinous": 0,
+      "peak_hour": 2
+    },
+    {
+      "lat": 13.0,
+      "lon": 77.7,
+      "count": 4,
+      "district": "Bengaluru Rural",
+      "heinous": 0,
+      "peak_hour": 4
+    },
+    {
+      "lat": 12.9,
+      "lon": 77.7,
+      "count": 4,
+      "district": "Bengaluru Urban",
+      "heinous": 0,
+      "peak_hour": 1
+    },
+    {
+      "lat": 11.9,
+      "lon": 77.2,
+      "count": 4,
+      "district": "Chamarajanagara",
+      "heinous": 0,
+      "peak_hour": 14
+    },
+    {
+      "lat": 18.1,
+      "lon": 77.0,
+      "count": 3,
+      "district": "Bidar",
+      "heinous": 0,
+      "peak_hour": 12
+    },
+    {
+      "lat": 17.1,
+      "lon": 76.9,
+      "count": 3,
+      "district": "Kalaburagi",
+      "heinous": 0,
+      "peak_hour": 18
+    },
+    {
+      "lat": 16.1,
+      "lon": 74.8,
+      "count": 3,
+      "district": "Belagavi",
+      "heinous": 1,
+      "peak_hour": 0
+    },
+    {
+      "lat": 16.2,
+      "lon": 77.0,
+      "count": 3,
+      "district": "Raichur",
+      "heinous": 0,
+      "peak_hour": 5
+    },
+    {
+      "lat": 15.5,
+      "lon": 76.1,
+      "count": 3,
+      "district": "Koppal",
+      "heinous": 0,
+      "peak_hour": 19
+    },
+    {
+      "lat": 15.7,
+      "lon": 75.9,
+      "count": 3,
+      "district": "Koppal",
+      "heinous": 0,
+      "peak_hour": 10
+    },
+    {
+      "lat": 15.3,
+      "lon": 75.3,
+      "count": 3,
+      "district": "Gadag",
+      "heinous": 0,
+      "peak_hour": 10
+    },
+    {
+      "lat": 15.1,
+      "lon": 76.3,
+      "count": 3,
+      "district": "Ballari",
+      "heinous": 1,
+      "peak_hour": 17
+    },
+    {
+      "lat": 15.2,
+      "lon": 75.2,
+      "count": 3,
+      "district": "Dharwad",
+      "heinous": 0,
+      "peak_hour": 15
+    },
+    {
+      "lat": 14.8,
+      "lon": 75.4,
+      "count": 3,
+      "district": "Haveri",
+      "heinous": 0,
+      "peak_hour": 11
+    },
+    {
+      "lat": 14.3,
+      "lon": 75.9,
+      "count": 3,
+      "district": "Davanagere",
+      "heinous": 0,
+      "peak_hour": 11
+    },
+    {
+      "lat": 14.5,
+      "lon": 76.1,
+      "count": 3,
+      "district": "Davanagere",
+      "heinous": 0,
+      "peak_hour": 1
+    },
+    {
+      "lat": 13.7,
+      "lon": 75.4,
+      "count": 3,
+      "district": "Shivamogga",
+      "heinous": 0,
+      "peak_hour": 3
+    }
+  ]
+}

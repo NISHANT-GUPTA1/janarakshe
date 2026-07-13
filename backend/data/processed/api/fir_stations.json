@@ -1,0 +1,916 @@
+{
+  "data_note": "SYNTHETIC FIR records, schema-shaped to the KSP Police FIR System ER model (confidential record-level data is not public). Anchored to real latest-year district crime volumes & category mix (2013); deterministic (seed 42).",
+  "total_stations": 91,
+  "stations": [
+    {
+      "unit_id": "UNIT-KA-BENGALURU-URBAN-02",
+      "name": "Bengaluru Urban Rural PS",
+      "district": "Bengaluru Urban",
+      "cases": 22,
+      "heinous": 2,
+      "heinous_share": 0.091,
+      "detection_rate": 0.409,
+      "top_category": "Property Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-BENGALURU-URBAN-04",
+      "name": "Bengaluru Urban City PS",
+      "district": "Bengaluru Urban",
+      "cases": 17,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.412,
+      "top_category": "Property Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-BENGALURU-URBAN-03",
+      "name": "Bengaluru Urban Market PS",
+      "district": "Bengaluru Urban",
+      "cases": 14,
+      "heinous": 1,
+      "heinous_share": 0.071,
+      "detection_rate": 0.286,
+      "top_category": "Property Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-MYSURU-02",
+      "name": "Mysuru Rural PS",
+      "district": "Mysuru",
+      "cases": 12,
+      "heinous": 1,
+      "heinous_share": 0.083,
+      "detection_rate": 0.25,
+      "top_category": "Property Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-SHIVAMOGGA-03",
+      "name": "Shivamogga Market PS",
+      "district": "Shivamogga",
+      "cases": 11,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.091,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-RAMANAGARA-02",
+      "name": "Ramanagara Rural PS",
+      "district": "Ramanagara",
+      "cases": 11,
+      "heinous": 1,
+      "heinous_share": 0.091,
+      "detection_rate": 0.455,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-BAGALKOTE-01",
+      "name": "Bagalkote Town PS",
+      "district": "Bagalkote",
+      "cases": 10,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.2,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-GADAG-03",
+      "name": "Gadag Market PS",
+      "district": "Gadag",
+      "cases": 10,
+      "heinous": 3,
+      "heinous_share": 0.3,
+      "detection_rate": 0.2,
+      "top_category": "Violent Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-BALLARI-03",
+      "name": "Ballari Market PS",
+      "district": "Ballari",
+      "cases": 10,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.4,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-RAICHUR-02",
+      "name": "Raichur Rural PS",
+      "district": "Raichur",
+      "cases": 9,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.556,
+      "top_category": "Violent Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-DHARWAD-01",
+      "name": "Dharwad Town PS",
+      "district": "Dharwad",
+      "cases": 9,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.333,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-UTTARA-KANNADA-02",
+      "name": "Uttara Kannada Rural PS",
+      "district": "Uttara Kannada",
+      "cases": 9,
+      "heinous": 1,
+      "heinous_share": 0.111,
+      "detection_rate": 0.333,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-HAVERI-02",
+      "name": "Haveri Rural PS",
+      "district": "Haveri",
+      "cases": 9,
+      "heinous": 1,
+      "heinous_share": 0.111,
+      "detection_rate": 0.444,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-CHIKKAMAGALURU-02",
+      "name": "Chikkamagaluru Rural PS",
+      "district": "Chikkamagaluru",
+      "cases": 9,
+      "heinous": 1,
+      "heinous_share": 0.111,
+      "detection_rate": 0.333,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-CHIKKABALLAPURA-02",
+      "name": "Chikkaballapura Rural PS",
+      "district": "Chikkaballapura",
+      "cases": 9,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.333,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-CHAMARAJANAGARA-02",
+      "name": "Chamarajanagara Rural PS",
+      "district": "Chamarajanagara",
+      "cases": 9,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.333,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-VIJAYAPURA-02",
+      "name": "Vijayapura Rural PS",
+      "district": "Vijayapura",
+      "cases": 9,
+      "heinous": 1,
+      "heinous_share": 0.111,
+      "detection_rate": 0.444,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-BIDAR-03",
+      "name": "Bidar Market PS",
+      "district": "Bidar",
+      "cases": 8,
+      "heinous": 1,
+      "heinous_share": 0.125,
+      "detection_rate": 0.375,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-KALABURAGI-01",
+      "name": "Kalaburagi Town PS",
+      "district": "Kalaburagi",
+      "cases": 8,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.25,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-KALABURAGI-02",
+      "name": "Kalaburagi Rural PS",
+      "district": "Kalaburagi",
+      "cases": 8,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.375,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-BELAGAVI-02",
+      "name": "Belagavi Rural PS",
+      "district": "Belagavi",
+      "cases": 8,
+      "heinous": 1,
+      "heinous_share": 0.125,
+      "detection_rate": 0.375,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-KOPPAL-01",
+      "name": "Koppal Town PS",
+      "district": "Koppal",
+      "cases": 8,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.375,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-KOPPAL-03",
+      "name": "Koppal Market PS",
+      "district": "Koppal",
+      "cases": 8,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.125,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-CHITRADURGA-01",
+      "name": "Chitradurga Town PS",
+      "district": "Chitradurga",
+      "cases": 8,
+      "heinous": 1,
+      "heinous_share": 0.125,
+      "detection_rate": 0.25,
+      "top_category": "Violent Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-UDUPI-01",
+      "name": "Udupi Town PS",
+      "district": "Udupi",
+      "cases": 8,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.375,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-CHIKKAMAGALURU-03",
+      "name": "Chikkamagaluru Market PS",
+      "district": "Chikkamagaluru",
+      "cases": 8,
+      "heinous": 1,
+      "heinous_share": 0.125,
+      "detection_rate": 0.375,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-HASSAN-02",
+      "name": "Hassan Rural PS",
+      "district": "Hassan",
+      "cases": 8,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.625,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-HASSAN-01",
+      "name": "Hassan Town PS",
+      "district": "Hassan",
+      "cases": 8,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.125,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-KOLAR-03",
+      "name": "Kolar Market PS",
+      "district": "Kolar",
+      "cases": 8,
+      "heinous": 2,
+      "heinous_share": 0.25,
+      "detection_rate": 0.5,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-BENGALURU-RURAL-01",
+      "name": "Bengaluru Rural Town PS",
+      "district": "Bengaluru Rural",
+      "cases": 8,
+      "heinous": 1,
+      "heinous_share": 0.125,
+      "detection_rate": 0.375,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-DAKSHINA-KANNADA-02",
+      "name": "Dakshina Kannada Rural PS",
+      "district": "Dakshina Kannada",
+      "cases": 8,
+      "heinous": 1,
+      "heinous_share": 0.125,
+      "detection_rate": 0.5,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-BENGALURU-URBAN-01",
+      "name": "Bengaluru Urban Town PS",
+      "district": "Bengaluru Urban",
+      "cases": 8,
+      "heinous": 1,
+      "heinous_share": 0.125,
+      "detection_rate": 0.375,
+      "top_category": "Property Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-KODAGU-02",
+      "name": "Kodagu Rural PS",
+      "district": "Kodagu",
+      "cases": 8,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.5,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-TUMAKURU-01",
+      "name": "Tumakuru Town PS",
+      "district": "Tumakuru",
+      "cases": 8,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.375,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-BIDAR-02",
+      "name": "Bidar Rural PS",
+      "district": "Bidar",
+      "cases": 7,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.286,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-BELAGAVI-03",
+      "name": "Belagavi Market PS",
+      "district": "Belagavi",
+      "cases": 7,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.571,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-YADGIR-01",
+      "name": "Yadgir Town PS",
+      "district": "Yadgir",
+      "cases": 7,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.429,
+      "top_category": "Crime Against Women"
+    },
+    {
+      "unit_id": "UNIT-KA-YADGIR-02",
+      "name": "Yadgir Rural PS",
+      "district": "Yadgir",
+      "cases": 7,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.571,
+      "top_category": "Property Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-BALLARI-02",
+      "name": "Ballari Rural PS",
+      "district": "Ballari",
+      "cases": 7,
+      "heinous": 1,
+      "heinous_share": 0.143,
+      "detection_rate": 0.286,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-DHARWAD-02",
+      "name": "Dharwad Rural PS",
+      "district": "Dharwad",
+      "cases": 7,
+      "heinous": 1,
+      "heinous_share": 0.143,
+      "detection_rate": 0.429,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-CHITRADURGA-03",
+      "name": "Chitradurga Market PS",
+      "district": "Chitradurga",
+      "cases": 7,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.286,
+      "top_category": "Violent Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-DAVANAGERE-02",
+      "name": "Davanagere Rural PS",
+      "district": "Davanagere",
+      "cases": 7,
+      "heinous": 1,
+      "heinous_share": 0.143,
+      "detection_rate": 0.143,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-DAVANAGERE-03",
+      "name": "Davanagere Market PS",
+      "district": "Davanagere",
+      "cases": 7,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.429,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-UDUPI-02",
+      "name": "Udupi Rural PS",
+      "district": "Udupi",
+      "cases": 7,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.429,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-KOLAR-01",
+      "name": "Kolar Town PS",
+      "district": "Kolar",
+      "cases": 7,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.286,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-BENGALURU-RURAL-03",
+      "name": "Bengaluru Rural Market PS",
+      "district": "Bengaluru Rural",
+      "cases": 7,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.429,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-KODAGU-01",
+      "name": "Kodagu Town PS",
+      "district": "Kodagu",
+      "cases": 7,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.286,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-TUMAKURU-02",
+      "name": "Tumakuru Rural PS",
+      "district": "Tumakuru",
+      "cases": 7,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.286,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-MANDYA-03",
+      "name": "Mandya Market PS",
+      "district": "Mandya",
+      "cases": 7,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.286,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-MANDYA-01",
+      "name": "Mandya Town PS",
+      "district": "Mandya",
+      "cases": 7,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.429,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-YADGIR-03",
+      "name": "Yadgir Market PS",
+      "district": "Yadgir",
+      "cases": 6,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.0,
+      "top_category": "Violent Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-RAICHUR-01",
+      "name": "Raichur Town PS",
+      "district": "Raichur",
+      "cases": 6,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.333,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-UTTARA-KANNADA-03",
+      "name": "Uttara Kannada Market PS",
+      "district": "Uttara Kannada",
+      "cases": 6,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.167,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-HAVERI-03",
+      "name": "Haveri Market PS",
+      "district": "Haveri",
+      "cases": 6,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.5,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-DAVANAGERE-01",
+      "name": "Davanagere Town PS",
+      "district": "Davanagere",
+      "cases": 6,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.5,
+      "top_category": "Violent Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-CHIKKABALLAPURA-01",
+      "name": "Chikkaballapura Town PS",
+      "district": "Chikkaballapura",
+      "cases": 6,
+      "heinous": 1,
+      "heinous_share": 0.167,
+      "detection_rate": 0.333,
+      "top_category": "Violent Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-DAKSHINA-KANNADA-01",
+      "name": "Dakshina Kannada Town PS",
+      "district": "Dakshina Kannada",
+      "cases": 6,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.333,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-DAKSHINA-KANNADA-03",
+      "name": "Dakshina Kannada Market PS",
+      "district": "Dakshina Kannada",
+      "cases": 6,
+      "heinous": 1,
+      "heinous_share": 0.167,
+      "detection_rate": 0.333,
+      "top_category": "Violent Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-CHAMARAJANAGARA-01",
+      "name": "Chamarajanagara Town PS",
+      "district": "Chamarajanagara",
+      "cases": 6,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.333,
+      "top_category": "Violent Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-MANDYA-02",
+      "name": "Mandya Rural PS",
+      "district": "Mandya",
+      "cases": 6,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.333,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-VIJAYAPURA-01",
+      "name": "Vijayapura Town PS",
+      "district": "Vijayapura",
+      "cases": 6,
+      "heinous": 1,
+      "heinous_share": 0.167,
+      "detection_rate": 0.5,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-BIDAR-01",
+      "name": "Bidar Town PS",
+      "district": "Bidar",
+      "cases": 5,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.6,
+      "top_category": "Property Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-BELAGAVI-01",
+      "name": "Belagavi Town PS",
+      "district": "Belagavi",
+      "cases": 5,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.4,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-BAGALKOTE-03",
+      "name": "Bagalkote Market PS",
+      "district": "Bagalkote",
+      "cases": 5,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.6,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-BAGALKOTE-02",
+      "name": "Bagalkote Rural PS",
+      "district": "Bagalkote",
+      "cases": 5,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.2,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-RAICHUR-03",
+      "name": "Raichur Market PS",
+      "district": "Raichur",
+      "cases": 5,
+      "heinous": 1,
+      "heinous_share": 0.2,
+      "detection_rate": 0.4,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-GADAG-02",
+      "name": "Gadag Rural PS",
+      "district": "Gadag",
+      "cases": 5,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.4,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-GADAG-01",
+      "name": "Gadag Town PS",
+      "district": "Gadag",
+      "cases": 5,
+      "heinous": 1,
+      "heinous_share": 0.2,
+      "detection_rate": 0.2,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-UTTARA-KANNADA-01",
+      "name": "Uttara Kannada Town PS",
+      "district": "Uttara Kannada",
+      "cases": 5,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.6,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-HAVERI-01",
+      "name": "Haveri Town PS",
+      "district": "Haveri",
+      "cases": 5,
+      "heinous": 2,
+      "heinous_share": 0.4,
+      "detection_rate": 0.6,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-CHITRADURGA-02",
+      "name": "Chitradurga Rural PS",
+      "district": "Chitradurga",
+      "cases": 5,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.4,
+      "top_category": "Property Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-SHIVAMOGGA-01",
+      "name": "Shivamogga Town PS",
+      "district": "Shivamogga",
+      "cases": 5,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.4,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-UDUPI-03",
+      "name": "Udupi Market PS",
+      "district": "Udupi",
+      "cases": 5,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.6,
+      "top_category": "Violent Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-CHIKKABALLAPURA-03",
+      "name": "Chikkaballapura Market PS",
+      "district": "Chikkaballapura",
+      "cases": 5,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.2,
+      "top_category": "Violent Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-KOLAR-02",
+      "name": "Kolar Rural PS",
+      "district": "Kolar",
+      "cases": 5,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.4,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-BENGALURU-RURAL-02",
+      "name": "Bengaluru Rural Rural PS",
+      "district": "Bengaluru Rural",
+      "cases": 5,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.8,
+      "top_category": "Property Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-KODAGU-03",
+      "name": "Kodagu Market PS",
+      "district": "Kodagu",
+      "cases": 5,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.0,
+      "top_category": "Violent Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-CHAMARAJANAGARA-03",
+      "name": "Chamarajanagara Market PS",
+      "district": "Chamarajanagara",
+      "cases": 5,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.6,
+      "top_category": "Violent Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-TUMAKURU-03",
+      "name": "Tumakuru Market PS",
+      "district": "Tumakuru",
+      "cases": 5,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.6,
+      "top_category": "Property Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-RAMANAGARA-03",
+      "name": "Ramanagara Market PS",
+      "district": "Ramanagara",
+      "cases": 5,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.2,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-MYSURU-01",
+      "name": "Mysuru Town PS",
+      "district": "Mysuru",
+      "cases": 5,
+      "heinous": 1,
+      "heinous_share": 0.2,
+      "detection_rate": 0.4,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-VIJAYAPURA-03",
+      "name": "Vijayapura Market PS",
+      "district": "Vijayapura",
+      "cases": 5,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.8,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-KALABURAGI-03",
+      "name": "Kalaburagi Market PS",
+      "district": "Kalaburagi",
+      "cases": 4,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.75,
+      "top_category": "Crime Against Public Order / State"
+    },
+    {
+      "unit_id": "UNIT-KA-KOPPAL-02",
+      "name": "Koppal Rural PS",
+      "district": "Koppal",
+      "cases": 4,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.75,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-DHARWAD-03",
+      "name": "Dharwad Market PS",
+      "district": "Dharwad",
+      "cases": 4,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.25,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-SHIVAMOGGA-02",
+      "name": "Shivamogga Rural PS",
+      "district": "Shivamogga",
+      "cases": 4,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.0,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-HASSAN-03",
+      "name": "Hassan Market PS",
+      "district": "Hassan",
+      "cases": 4,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.25,
+      "top_category": "Other Special & Local Laws"
+    },
+    {
+      "unit_id": "UNIT-KA-RAMANAGARA-01",
+      "name": "Ramanagara Town PS",
+      "district": "Ramanagara",
+      "cases": 4,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.25,
+      "top_category": "Violent Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-BALLARI-01",
+      "name": "Ballari Town PS",
+      "district": "Ballari",
+      "cases": 3,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 1.0,
+      "top_category": "Economic & Financial Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-CHIKKAMAGALURU-01",
+      "name": "Chikkamagaluru Town PS",
+      "district": "Chikkamagaluru",
+      "cases": 3,
+      "heinous": 0,
+      "heinous_share": 0.0,
+      "detection_rate": 0.333,
+      "top_category": "Property Crime"
+    },
+    {
+      "unit_id": "UNIT-KA-MYSURU-03",
+      "name": "Mysuru Market PS",
+      "district": "Mysuru",
+      "cases": 3,
+      "heinous": 1,
+      "heinous_share": 0.333,
+      "detection_rate": 0.0,
+      "top_category": "Other Special & Local Laws"
+    }
+  ]
+}

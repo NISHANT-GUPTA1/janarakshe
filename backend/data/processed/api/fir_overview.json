@@ -1,0 +1,221 @@
+{
+  "data_note": "SYNTHETIC FIR records, schema-shaped to the KSP Police FIR System ER model (confidential record-level data is not public). Anchored to real latest-year district crime volumes & category mix (2013); deterministic (seed 42).",
+  "total_cases": 641,
+  "latest_year": 2013,
+  "by_category": [
+    {
+      "label": "FIR",
+      "count": 455
+    },
+    {
+      "label": "UDR",
+      "count": 85
+    },
+    {
+      "label": "PAR",
+      "count": 70
+    },
+    {
+      "label": "Zero FIR",
+      "count": 31
+    }
+  ],
+  "by_gravity": [
+    {
+      "label": "Non-Heinous",
+      "count": 608
+    },
+    {
+      "label": "Heinous",
+      "count": 33
+    }
+  ],
+  "by_status": [
+    {
+      "label": "Under Investigation",
+      "count": 213
+    },
+    {
+      "label": "Charge Sheeted",
+      "count": 181
+    },
+    {
+      "label": "Pending Trial",
+      "count": 100
+    },
+    {
+      "label": "Disposed",
+      "count": 95
+    },
+    {
+      "label": "Closed",
+      "count": 52
+    }
+  ],
+  "by_major_head": [
+    {
+      "label": "Other Special & Local Laws",
+      "count": 291
+    },
+    {
+      "label": "Violent Crime",
+      "count": 145
+    },
+    {
+      "label": "Property Crime",
+      "count": 96
+    },
+    {
+      "label": "Crime Against Women",
+      "count": 42
+    },
+    {
+      "label": "Crime Against Public Order / State",
+      "count": 37
+    },
+    {
+      "label": "Economic & Financial Crime",
+      "count": 30
+    }
+  ],
+  "detection": {
+    "chargesheeted": 238,
+    "false": 50,
+    "undetected": 40,
+    "detection_rate": 0.726
+  },
+  "demographics": {
+    "accused_gender": [
+      {
+        "label": "M",
+        "count": 677
+      },
+      {
+        "label": "F",
+        "count": 223
+      },
+      {
+        "label": "T",
+        "count": 15
+      }
+    ],
+    "accused_age": [
+      {
+        "label": "26-35",
+        "count": 321
+      },
+      {
+        "label": "18-25",
+        "count": 259
+      },
+      {
+        "label": "36-45",
+        "count": 210
+      },
+      {
+        "label": "46-60",
+        "count": 92
+      },
+      {
+        "label": "60+",
+        "count": 33
+      }
+    ],
+    "victim_gender": [
+      {
+        "label": "M",
+        "count": 374
+      },
+      {
+        "label": "F",
+        "count": 116
+      },
+      {
+        "label": "T",
+        "count": 11
+      }
+    ],
+    "complainant_religion": [
+      {
+        "label": "Hindu",
+        "count": 532
+      },
+      {
+        "label": "Muslim",
+        "count": 75
+      },
+      {
+        "label": "Christian",
+        "count": 21
+      },
+      {
+        "label": "Jain",
+        "count": 8
+      },
+      {
+        "label": "Other",
+        "count": 5
+      }
+    ],
+    "complainant_caste": [
+      {
+        "label": "OBC",
+        "count": 267
+      },
+      {
+        "label": "General",
+        "count": 181
+      },
+      {
+        "label": "SC",
+        "count": 112
+      },
+      {
+        "label": "ST",
+        "count": 52
+      },
+      {
+        "label": "Other",
+        "count": 29
+      }
+    ],
+    "complainant_occupation": [
+      {
+        "label": "Daily Wage Labourer",
+        "count": 82
+      },
+      {
+        "label": "Private Employee",
+        "count": 81
+      },
+      {
+        "label": "Business",
+        "count": 75
+      },
+      {
+        "label": "Homemaker",
+        "count": 71
+      },
+      {
+        "label": "Government Employee",
+        "count": 69
+      },
+      {
+        "label": "Driver",
+        "count": 67
+      },
+      {
+        "label": "Unemployed",
+        "count": 67
+      },
+      {
+        "label": "Student",
+        "count": 65
+      },
+      {
+        "label": "Farmer",
+        "count": 64
+      }
+    ]
+  }
+}

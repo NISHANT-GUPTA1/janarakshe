@@ -1,0 +1,422 @@
+[
+  {
+    "geo_unit_id": "DISTRICT:KA-RAMANAGARA",
+    "name": "Ramanagara",
+    "total_cognizable_cases": 4363,
+    "crime_rate_per_100k": 403.0,
+    "severity_weighted_index": 775.9,
+    "hotspot_status": "established",
+    "risk_score": 73.7,
+    "risk_band": "High",
+    "centroid": {
+      "lat": 12.76429,
+      "lon": 77.3177
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-BENGALURU-RURAL",
+    "name": "Bengaluru Rural",
+    "total_cognizable_cases": 5663,
+    "crime_rate_per_100k": 571.5,
+    "severity_weighted_index": 1056.1,
+    "hotspot_status": "established",
+    "risk_score": 71.4,
+    "risk_band": "High",
+    "centroid": {
+      "lat": 13.19727,
+      "lon": 77.61527
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-BENGALURU-URBAN",
+    "name": "Bengaluru Urban",
+    "total_cognizable_cases": 30318,
+    "crime_rate_per_100k": 315.1,
+    "severity_weighted_index": 642.0,
+    "hotspot_status": "emerging",
+    "risk_score": 62.4,
+    "risk_band": "High",
+    "centroid": {
+      "lat": 12.91857,
+      "lon": 77.579
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-SHIVAMOGGA",
+    "name": "Shivamogga",
+    "total_cognizable_cases": 5943,
+    "crime_rate_per_100k": 339.1,
+    "severity_weighted_index": 695.7,
+    "hotspot_status": "emerging",
+    "risk_score": 61.1,
+    "risk_band": "High",
+    "centroid": {
+      "lat": 14.04919,
+      "lon": 75.19818
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-KODAGU",
+    "name": "Kodagu",
+    "total_cognizable_cases": 1707,
+    "crime_rate_per_100k": 307.8,
+    "severity_weighted_index": 651.2,
+    "hotspot_status": "emerging",
+    "risk_score": 51.8,
+    "risk_band": "High",
+    "centroid": {
+      "lat": 12.43935,
+      "lon": 75.79433
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-MANDYA",
+    "name": "Mandya",
+    "total_cognizable_cases": 5544,
+    "crime_rate_per_100k": 307.0,
+    "severity_weighted_index": 622.8,
+    "hotspot_status": "none",
+    "risk_score": 44.0,
+    "risk_band": "Medium",
+    "centroid": {
+      "lat": 12.58418,
+      "lon": 76.81072
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-HASSAN",
+    "name": "Hassan",
+    "total_cognizable_cases": 5433,
+    "crime_rate_per_100k": 305.8,
+    "severity_weighted_index": 611.1,
+    "hotspot_status": "none",
+    "risk_score": 42.6,
+    "risk_band": "Medium",
+    "centroid": {
+      "lat": 12.95112,
+      "lon": 76.12079
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-MYSURU",
+    "name": "Mysuru",
+    "total_cognizable_cases": 7032,
+    "crime_rate_per_100k": 234.3,
+    "severity_weighted_index": 456.5,
+    "hotspot_status": "none",
+    "risk_score": 41.3,
+    "risk_band": "Medium",
+    "centroid": {
+      "lat": 12.24909,
+      "lon": 76.56116
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-CHITRADURGA",
+    "name": "Chitradurga",
+    "total_cognizable_cases": 3970,
+    "crime_rate_per_100k": 239.2,
+    "severity_weighted_index": 444.8,
+    "hotspot_status": "none",
+    "risk_score": 31.2,
+    "risk_band": "Medium",
+    "centroid": {
+      "lat": 14.3072,
+      "lon": 76.57131
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-DAKSHINA-KANNADA",
+    "name": "Dakshina Kannada",
+    "total_cognizable_cases": 4922,
+    "crime_rate_per_100k": 235.5,
+    "severity_weighted_index": 425.9,
+    "hotspot_status": "none",
+    "risk_score": 29.6,
+    "risk_band": "Medium",
+    "centroid": {
+      "lat": 12.8238,
+      "lon": 75.26289
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-CHIKKABALLAPURA",
+    "name": "Chikkaballapura",
+    "total_cognizable_cases": 2372,
+    "crime_rate_per_100k": 189.0,
+    "severity_weighted_index": 397.9,
+    "hotspot_status": "none",
+    "risk_score": 29.2,
+    "risk_band": "Medium",
+    "centroid": {
+      "lat": 13.54671,
+      "lon": 77.82465
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-BELAGAVI",
+    "name": "Belagavi",
+    "total_cognizable_cases": 6594,
+    "crime_rate_per_100k": 138.0,
+    "severity_weighted_index": 259.6,
+    "hotspot_status": "none",
+    "risk_score": 28.8,
+    "risk_band": "Medium",
+    "centroid": {
+      "lat": 16.18818,
+      "lon": 74.75963
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-DHARWAD",
+    "name": "Dharwad",
+    "total_cognizable_cases": 3681,
+    "crime_rate_per_100k": 199.3,
+    "severity_weighted_index": 396.0,
+    "hotspot_status": "none",
+    "risk_score": 26.0,
+    "risk_band": "Medium",
+    "centroid": {
+      "lat": 15.34299,
+      "lon": 75.14517
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-CHIKKAMAGALURU",
+    "name": "Chikkamagaluru",
+    "total_cognizable_cases": 2758,
+    "crime_rate_per_100k": 242.4,
+    "severity_weighted_index": 488.0,
+    "hotspot_status": "none",
+    "risk_score": 25.9,
+    "risk_band": "Medium",
+    "centroid": {
+      "lat": 13.46141,
+      "lon": 75.67937
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-TUMAKURU",
+    "name": "Tumakuru",
+    "total_cognizable_cases": 4829,
+    "crime_rate_per_100k": 180.3,
+    "severity_weighted_index": 339.0,
+    "hotspot_status": "none",
+    "risk_score": 25.8,
+    "risk_band": "Medium",
+    "centroid": {
+      "lat": 13.59578,
+      "lon": 77.0392
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-CHAMARAJANAGARA",
+    "name": "Chamarajanagara",
+    "total_cognizable_cases": 1866,
+    "crime_rate_per_100k": 182.8,
+    "severity_weighted_index": 404.3,
+    "hotspot_status": "none",
+    "risk_score": 25.2,
+    "risk_band": "Medium",
+    "centroid": {
+      "lat": 11.97933,
+      "lon": 77.02029
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-UTTARA-KANNADA",
+    "name": "Uttara Kannada",
+    "total_cognizable_cases": 2977,
+    "crime_rate_per_100k": 207.1,
+    "severity_weighted_index": 383.0,
+    "hotspot_status": "none",
+    "risk_score": 24.9,
+    "risk_band": "Low",
+    "centroid": {
+      "lat": 14.75779,
+      "lon": 74.66223
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-UDUPI",
+    "name": "Udupi",
+    "total_cognizable_cases": 2667,
+    "crime_rate_per_100k": 226.5,
+    "severity_weighted_index": 398.5,
+    "hotspot_status": "none",
+    "risk_score": 24.7,
+    "risk_band": "Low",
+    "centroid": {
+      "lat": 13.49593,
+      "lon": 74.91871
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-RAICHUR",
+    "name": "Raichur",
+    "total_cognizable_cases": 3062,
+    "crime_rate_per_100k": 158.8,
+    "severity_weighted_index": 337.5,
+    "hotspot_status": "none",
+    "risk_score": 23.6,
+    "risk_band": "Low",
+    "centroid": {
+      "lat": 16.11201,
+      "lon": 76.89014
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-DAVANAGERE",
+    "name": "Davanagere",
+    "total_cognizable_cases": 3843,
+    "crime_rate_per_100k": 197.5,
+    "severity_weighted_index": 399.6,
+    "hotspot_status": "none",
+    "risk_score": 23.4,
+    "risk_band": "Low",
+    "centroid": {
+      "lat": 14.43655,
+      "lon": 75.96591
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-KALABURAGI",
+    "name": "Kalaburagi",
+    "total_cognizable_cases": 4524,
+    "crime_rate_per_100k": 176.3,
+    "severity_weighted_index": 367.1,
+    "hotspot_status": "none",
+    "risk_score": 22.5,
+    "risk_band": "Low",
+    "centroid": {
+      "lat": 17.23246,
+      "lon": 76.82914
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-BIDAR",
+    "name": "Bidar",
+    "total_cognizable_cases": 3963,
+    "crime_rate_per_100k": 232.7,
+    "severity_weighted_index": 447.1,
+    "hotspot_status": "none",
+    "risk_score": 21.1,
+    "risk_band": "Low",
+    "centroid": {
+      "lat": 17.97923,
+      "lon": 77.21543
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-YADGIR",
+    "name": "Yadgir",
+    "total_cognizable_cases": 1489,
+    "crime_rate_per_100k": 126.8,
+    "severity_weighted_index": 333.0,
+    "hotspot_status": "none",
+    "risk_score": 17.1,
+    "risk_band": "Low",
+    "centroid": {
+      "lat": 16.65915,
+      "lon": 76.96717
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-BAGALKOTE",
+    "name": "Bagalkote",
+    "total_cognizable_cases": 2340,
+    "crime_rate_per_100k": 123.8,
+    "severity_weighted_index": 246.3,
+    "hotspot_status": "none",
+    "risk_score": 16.6,
+    "risk_band": "Low",
+    "centroid": {
+      "lat": 16.16773,
+      "lon": 75.64623
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-KOPPAL",
+    "name": "Koppal",
+    "total_cognizable_cases": 1732,
+    "crime_rate_per_100k": 124.6,
+    "severity_weighted_index": 220.9,
+    "hotspot_status": "none",
+    "risk_score": 16.4,
+    "risk_band": "Low",
+    "centroid": {
+      "lat": 15.64385,
+      "lon": 76.13751
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-HAVERI",
+    "name": "Haveri",
+    "total_cognizable_cases": 2157,
+    "crime_rate_per_100k": 135.0,
+    "severity_weighted_index": 253.2,
+    "hotspot_status": "none",
+    "risk_score": 16.3,
+    "risk_band": "Low",
+    "centroid": {
+      "lat": 14.7755,
+      "lon": 75.42343
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-KOLAR",
+    "name": "Kolar",
+    "total_cognizable_cases": 3097,
+    "crime_rate_per_100k": 201.6,
+    "severity_weighted_index": 402.6,
+    "hotspot_status": "none",
+    "risk_score": 14.4,
+    "risk_band": "Low",
+    "centroid": {
+      "lat": 13.14231,
+      "lon": 78.19151
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-BALLARI",
+    "name": "Ballari",
+    "total_cognizable_cases": 3269,
+    "crime_rate_per_100k": 133.3,
+    "severity_weighted_index": 261.1,
+    "hotspot_status": "none",
+    "risk_score": 13.6,
+    "risk_band": "Low",
+    "centroid": {
+      "lat": 15.04663,
+      "lon": 76.44268
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-GADAG",
+    "name": "Gadag",
+    "total_cognizable_cases": 1092,
+    "crime_rate_per_100k": 102.6,
+    "severity_weighted_index": 203.1,
+    "hotspot_status": "none",
+    "risk_score": 13.3,
+    "risk_band": "Low",
+    "centroid": {
+      "lat": 15.51467,
+      "lon": 75.65606
+    }
+  },
+  {
+    "geo_unit_id": "DISTRICT:KA-VIJAYAPURA",
+    "name": "Vijayapura",
+    "total_cognizable_cases": 2569,
+    "crime_rate_per_100k": 118.0,
+    "severity_weighted_index": 237.1,
+    "hotspot_status": "none",
+    "risk_score": 11.9,
+    "risk_band": "Low",
+    "centroid": {
+      "lat": 16.8752,
+      "lon": 75.95977
+    }
+  }
+]

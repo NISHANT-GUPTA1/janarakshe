@@ -1,0 +1,57 @@
+{
+  "state": "Karnataka",
+  "series": [
+    {
+      "year": 2001,
+      "total_cognizable_cases": 108515
+    },
+    {
+      "year": 2002,
+      "total_cognizable_cases": 112975
+    },
+    {
+      "year": 2003,
+      "total_cognizable_cases": 111593
+    },
+    {
+      "year": 2004,
+      "total_cognizable_cases": 113561
+    },
+    {
+      "year": 2005,
+      "total_cognizable_cases": 116974
+    },
+    {
+      "year": 2006,
+      "total_cognizable_cases": 117167
+    },
+    {
+      "year": 2007,
+      "total_cognizable_cases": 120118
+    },
+    {
+      "year": 2008,
+      "total_cognizable_cases": 127093
+    },
+    {
+      "year": 2009,
+      "total_cognizable_cases": 133438
+    },
+    {
+      "year": 2010,
+      "total_cognizable_cases": 141742
+    },
+    {
+      "year": 2011,
+      "total_cognizable_cases": 136928
+    },
+    {
+      "year": 2012,
+      "total_cognizable_cases": 133372
+    },
+    {
+      "year": 2013,
+      "total_cognizable_cases": 135776
+    }
+  ]
+}

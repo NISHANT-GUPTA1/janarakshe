@@ -1,0 +1,528 @@
+{
+  "data_note": "SYNTHETIC FIR records, schema-shaped to the KSP Police FIR System ER model (confidential record-level data is not public). Anchored to real latest-year district crime volumes & category mix (2013); deterministic (seed 42).",
+  "total_accused": 449,
+  "repeat_offenders": 255,
+  "repeat_ratio": 0.568,
+  "top": [
+    {
+      "person_id": "ACC-00281",
+      "name": "Manju R.",
+      "district": "Bengaluru Rural",
+      "gender": "M",
+      "age_band": "36-45",
+      "cases": 10,
+      "co_offenders": 4,
+      "jurisdictions": 3,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 379",
+        "IPC 435",
+        "IPC 147"
+      ],
+      "peak_hour": 9,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00225",
+      "name": "Girish B.",
+      "district": "Chikkamagaluru",
+      "gender": "F",
+      "age_band": "18-25",
+      "cases": 9,
+      "co_offenders": 8,
+      "jurisdictions": 3,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 147",
+        "IPC 392",
+        "IPC 302"
+      ],
+      "peak_hour": 16,
+      "heinous_cases": 1
+    },
+    {
+      "person_id": "ACC-00309",
+      "name": "Vinod K.",
+      "district": "Bengaluru Urban",
+      "gender": "T",
+      "age_band": "26-35",
+      "cases": 8,
+      "co_offenders": 3,
+      "jurisdictions": 3,
+      "mo": "Theft",
+      "top_sections": [
+        "IPC 379",
+        "IPC 420",
+        "IPC 445"
+      ],
+      "peak_hour": 22,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00311",
+      "name": "Girish H.",
+      "district": "Bengaluru Urban",
+      "gender": "M",
+      "age_band": "36-45",
+      "cases": 7,
+      "co_offenders": 7,
+      "jurisdictions": 3,
+      "mo": "Theft",
+      "top_sections": [
+        "IPC 379",
+        "IPC 392",
+        "IPC 395"
+      ],
+      "peak_hour": 1,
+      "heinous_cases": 1
+    },
+    {
+      "person_id": "ACC-00352",
+      "name": "Kavya T.",
+      "district": "Kodagu",
+      "gender": "M",
+      "age_band": "18-25",
+      "cases": 7,
+      "co_offenders": 6,
+      "jurisdictions": 3,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 325"
+      ],
+      "peak_hour": 16,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00394",
+      "name": "Vinod T.",
+      "district": "Ramanagara",
+      "gender": "F",
+      "age_band": "18-25",
+      "cases": 7,
+      "co_offenders": 4,
+      "jurisdictions": 2,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 325",
+        "IPC 307"
+      ],
+      "peak_hour": 22,
+      "heinous_cases": 1
+    },
+    {
+      "person_id": "ACC-00128",
+      "name": "Anil T.",
+      "district": "Dharwad",
+      "gender": "M",
+      "age_band": "36-45",
+      "cases": 6,
+      "co_offenders": 5,
+      "jurisdictions": 2,
+      "mo": "Grievous Hurt",
+      "top_sections": [
+        "IPC 325",
+        "IPC 302",
+        "IPC 420"
+      ],
+      "peak_hour": 7,
+      "heinous_cases": 1
+    },
+    {
+      "person_id": "ACC-00197",
+      "name": "Vinod M.",
+      "district": "Shivamogga",
+      "gender": "M",
+      "age_band": "26-35",
+      "cases": 6,
+      "co_offenders": 5,
+      "jurisdictions": 3,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 435",
+        "IPC 325",
+        "IPC 354"
+      ],
+      "peak_hour": 21,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00295",
+      "name": "Santosh M.",
+      "district": "Dakshina Kannada",
+      "gender": "M",
+      "age_band": "36-45",
+      "cases": 6,
+      "co_offenders": 5,
+      "jurisdictions": 3,
+      "mo": "Riots",
+      "top_sections": [
+        "IPC 147",
+        "IPC 392",
+        "IPC 325"
+      ],
+      "peak_hour": 6,
+      "heinous_cases": 1
+    },
+    {
+      "person_id": "ACC-00127",
+      "name": "Girish T.",
+      "district": "Dharwad",
+      "gender": "M",
+      "age_band": "46-60",
+      "cases": 6,
+      "co_offenders": 4,
+      "jurisdictions": 3,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 147"
+      ],
+      "peak_hour": 13,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00211",
+      "name": "Ravi K.",
+      "district": "Udupi",
+      "gender": "M",
+      "age_band": "18-25",
+      "cases": 6,
+      "co_offenders": 4,
+      "jurisdictions": 3,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 435",
+        "IPC 445"
+      ],
+      "peak_hour": 18,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00226",
+      "name": "Deepa N.",
+      "district": "Chikkamagaluru",
+      "gender": "M",
+      "age_band": "36-45",
+      "cases": 6,
+      "co_offenders": 4,
+      "jurisdictions": 3,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 325",
+        "IPC 307"
+      ],
+      "peak_hour": 9,
+      "heinous_cases": 1
+    },
+    {
+      "person_id": "ACC-00239",
+      "name": "Basava P.",
+      "district": "Chikkaballapura",
+      "gender": "F",
+      "age_band": "26-35",
+      "cases": 6,
+      "co_offenders": 4,
+      "jurisdictions": 2,
+      "mo": "Grievous Hurt",
+      "top_sections": [
+        "IPC 325",
+        "IPC 498A",
+        "IPC 445"
+      ],
+      "peak_hour": 16,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00436",
+      "name": "Mahesh M.",
+      "district": "Vijayapura",
+      "gender": "M",
+      "age_band": "36-45",
+      "cases": 6,
+      "co_offenders": 4,
+      "jurisdictions": 3,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 420",
+        "IPC 307"
+      ],
+      "peak_hour": 22,
+      "heinous_cases": 1
+    },
+    {
+      "person_id": "ACC-00015",
+      "name": "Ramesh D.",
+      "district": "Kalaburagi",
+      "gender": "M",
+      "age_band": "36-45",
+      "cases": 6,
+      "co_offenders": 2,
+      "jurisdictions": 3,
+      "mo": "Riots",
+      "top_sections": [
+        "IPC 147",
+        "IPC 325",
+        "IPC 445"
+      ],
+      "peak_hour": 1,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00071",
+      "name": "Naveen G.",
+      "district": "Raichur",
+      "gender": "M",
+      "age_band": "26-35",
+      "cases": 6,
+      "co_offenders": 2,
+      "jurisdictions": 3,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 379"
+      ],
+      "peak_hour": 6,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00296",
+      "name": "Santosh G.",
+      "district": "Dakshina Kannada",
+      "gender": "M",
+      "age_band": "26-35",
+      "cases": 6,
+      "co_offenders": 2,
+      "jurisdictions": 2,
+      "mo": "Riots",
+      "top_sections": [
+        "IPC 147",
+        "IPC 392",
+        "IPC 325"
+      ],
+      "peak_hour": 10,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00310",
+      "name": "Deepa R.",
+      "district": "Bengaluru Urban",
+      "gender": "M",
+      "age_band": "36-45",
+      "cases": 6,
+      "co_offenders": 0,
+      "jurisdictions": 4,
+      "mo": "Theft",
+      "top_sections": [
+        "IPC 379",
+        "IPC 420"
+      ],
+      "peak_hour": 12,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00072",
+      "name": "Manju T.",
+      "district": "Raichur",
+      "gender": "F",
+      "age_band": "46-60",
+      "cases": 5,
+      "co_offenders": 5,
+      "jurisdictions": 3,
+      "mo": "Grievous Hurt",
+      "top_sections": [
+        "IPC 325",
+        "IPC 376",
+        "IPC 379"
+      ],
+      "peak_hour": 7,
+      "heinous_cases": 1
+    },
+    {
+      "person_id": "ACC-00098",
+      "name": "Ravi G.",
+      "district": "Koppal",
+      "gender": "M",
+      "age_band": "26-35",
+      "cases": 5,
+      "co_offenders": 5,
+      "jurisdictions": 3,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 147"
+      ],
+      "peak_hour": 18,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00155",
+      "name": "Latha R.",
+      "district": "Haveri",
+      "gender": "M",
+      "age_band": "18-25",
+      "cases": 5,
+      "co_offenders": 5,
+      "jurisdictions": 3,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 363",
+        "IPC 307"
+      ],
+      "peak_hour": 17,
+      "heinous_cases": 2
+    },
+    {
+      "person_id": "ACC-00169",
+      "name": "Deepa D.",
+      "district": "Chitradurga",
+      "gender": "F",
+      "age_band": "18-25",
+      "cases": 5,
+      "co_offenders": 5,
+      "jurisdictions": 3,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 354",
+        "IPC 302",
+        "IPC 445"
+      ],
+      "peak_hour": 18,
+      "heinous_cases": 1
+    },
+    {
+      "person_id": "ACC-00043",
+      "name": "Mahesh H.",
+      "district": "Yadgir",
+      "gender": "F",
+      "age_band": "36-45",
+      "cases": 5,
+      "co_offenders": 4,
+      "jurisdictions": 2,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 498A",
+        "IPC 379",
+        "IPC 354"
+      ],
+      "peak_hour": 1,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00092",
+      "name": "Suresh G.",
+      "district": "Koppal",
+      "gender": "M",
+      "age_band": "26-35",
+      "cases": 5,
+      "co_offenders": 4,
+      "jurisdictions": 2,
+      "mo": "Riots",
+      "top_sections": [
+        "IPC 147",
+        "IPC 498A",
+        "IPC 325"
+      ],
+      "peak_hour": 1,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00085",
+      "name": "Anil R.",
+      "district": "Koppal",
+      "gender": "F",
+      "age_band": "18-25",
+      "cases": 5,
+      "co_offenders": 4,
+      "jurisdictions": 2,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 147",
+        "IPC 498A"
+      ],
+      "peak_hour": 1,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00253",
+      "name": "Basava P.",
+      "district": "Hassan",
+      "gender": "T",
+      "age_band": "46-60",
+      "cases": 5,
+      "co_offenders": 4,
+      "jurisdictions": 2,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 325",
+        "IPC 420"
+      ],
+      "peak_hour": 18,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00408",
+      "name": "Arjun P.",
+      "district": "Mandya",
+      "gender": "M",
+      "age_band": "18-25",
+      "cases": 5,
+      "co_offenders": 4,
+      "jurisdictions": 3,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 379"
+      ],
+      "peak_hour": 21,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00003",
+      "name": "Latha M.",
+      "district": "Bidar",
+      "gender": "M",
+      "age_band": "18-25",
+      "cases": 5,
+      "co_offenders": 3,
+      "jurisdictions": 2,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 363",
+        "IPC 325",
+        "IPC 379"
+      ],
+      "peak_hour": 10,
+      "heinous_cases": 1
+    },
+    {
+      "person_id": "ACC-00020",
+      "name": "Basava B.",
+      "district": "Kalaburagi",
+      "gender": "M",
+      "age_band": "26-35",
+      "cases": 5,
+      "co_offenders": 3,
+      "jurisdictions": 3,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 498A",
+        "IPC 420"
+      ],
+      "peak_hour": 22,
+      "heinous_cases": 0
+    },
+    {
+      "person_id": "ACC-00212",
+      "name": "Yusuf P.",
+      "district": "Udupi",
+      "gender": "M",
+      "age_band": "26-35",
+      "cases": 5,
+      "co_offenders": 3,
+      "jurisdictions": 3,
+      "mo": "Other",
+      "top_sections": [
+        "IPC 325",
+        "IPC 435"
+      ],
+      "peak_hour": 9,
+      "heinous_cases": 0
+    }
+  ]
+}

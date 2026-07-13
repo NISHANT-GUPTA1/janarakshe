@@ -7,6 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "export:api": "node scripts/export-static-api.mjs",
+    "build:static": "npm run export:api && vite build --mode static",
     "preview": "vite preview"
   },
   "dependencies": {

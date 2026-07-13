@@ -1,0 +1,1918 @@
+{
+  "generated_at": "2026-07-13T08:45:25.509031Z",
+  "latest_crime_year": 2013,
+  "model_meta": {
+    "algorithms": [
+      "PCA (dimensionality reduction)",
+      "KMeans k=4 (socio-crime integrated clusters)",
+      "RandomForest (SE \u2192 crime rate prediction)",
+      "SHAP TreeExplainer (per-district explainability)",
+      "IsolationForest (multi-dimensional anomaly detection)",
+      "OLS Linear Forecast (numpy.polyfit)"
+    ],
+    "n_districts": 30,
+    "n_features": 17,
+    "features_used": [
+      "crime_ECONOMIC",
+      "crime_OTHER_SLL",
+      "crime_PROPERTY",
+      "crime_PUBLIC_ORDER",
+      "crime_VIOLENT",
+      "crime_WOMEN",
+      "population_density",
+      "urbanization_rate",
+      "literacy_rate",
+      "graduate_rate",
+      "low_income_share",
+      "marginal_worker_share",
+      "nonworker_share",
+      "work_participation_rate",
+      "scst_share",
+      "sex_ratio",
+      "internet_penetration"
+    ],
+    "pca_components_used": 3,
+    "pca_cumulative_variance_explained": 0.7459,
+    "kmeans_k": 4,
+    "kmeans_silhouette_score": 0.3102,
+    "rf_oob_r2": 0.0355,
+    "rf_train_r2": 0.7003,
+    "isolation_forest_contamination": 0.15,
+    "years_trained": "2001\u20132013",
+    "socioeconomic_source": "Census of India 2011",
+    "crime_data_source": "NCRB District IPC"
+  },
+  "pca_components": [
+    {
+      "component": 1,
+      "variance_explained": 0.4519,
+      "top_positive_features": [
+        "graduate_rate",
+        "internet_penetration",
+        "urbanization_rate"
+      ],
+      "top_negative_features": [
+        "low_income_share",
+        "marginal_worker_share",
+        "scst_share"
+      ]
+    },
+    {
+      "component": 2,
+      "variance_explained": 0.1578,
+      "top_positive_features": [
+        "crime_OTHER_SLL",
+        "literacy_rate",
+        "sex_ratio"
+      ],
+      "top_negative_features": [
+        "crime_PUBLIC_ORDER",
+        "nonworker_share",
+        "scst_share"
+      ]
+    },
+    {
+      "component": 3,
+      "variance_explained": 0.1362,
+      "top_positive_features": [
+        "nonworker_share",
+        "crime_OTHER_SLL",
+        "crime_PUBLIC_ORDER"
+      ],
+      "top_negative_features": [
+        "work_participation_rate",
+        "crime_VIOLENT",
+        "scst_share"
+      ]
+    }
+  ],
+  "clusters": [
+    {
+      "cluster": 0,
+      "dominant_crime_groups": [
+        "OTHER_SLL",
+        "VIOLENT"
+      ],
+      "crime_profile": {
+        "ECONOMIC": 0.027,
+        "OTHER_SLL": 0.465,
+        "PROPERTY": 0.13,
+        "PUBLIC_ORDER": 0.052,
+        "VIOLENT": 0.256,
+        "WOMEN": 0.071
+      },
+      "se_profile": {
+        "population_density": 245.65,
+        "urbanization_rate": 20.867,
+        "literacy_rate": 67.12,
+        "graduate_rate": 5.53,
+        "low_income_share": 13.723,
+        "marginal_worker_share": 16.184,
+        "nonworker_share": 49.825,
+        "work_participation_rate": 50.175,
+        "scst_share": 26.736,
+        "sex_ratio": 992.237,
+        "internet_penetration": 0.964
+      },
+      "avg_confidence": 0.651,
+      "districts": [
+        {
+          "geo_unit_id": "DISTRICT:KA-CHIKKABALLAPURA",
+          "name": "Chikkaballapura",
+          "confidence": 0.465,
+          "pca_x": -1.4945,
+          "pca_y": 0.0621
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-CHIKKAMAGALURU",
+          "name": "Chikkamagaluru",
+          "confidence": 0.851,
+          "pca_x": -0.6112,
+          "pca_y": 1.7478
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-CHITRADURGA",
+          "name": "Chitradurga",
+          "confidence": 0.559,
+          "pca_x": -2.1833,
+          "pca_y": 1.1167
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-HASSAN",
+          "name": "Hassan",
+          "confidence": 0.807,
+          "pca_x": -0.8711,
+          "pca_y": 2.018
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-KODAGU",
+          "name": "Kodagu",
+          "confidence": 0.516,
+          "pca_x": 0.5111,
+          "pca_y": 2.4717
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-MANDYA",
+          "name": "Mandya",
+          "confidence": 0.617,
+          "pca_x": -0.9748,
+          "pca_y": 0.7356
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-RAMANAGARA",
+          "name": "Ramanagara",
+          "confidence": 0.547,
+          "pca_x": 0.0276,
+          "pca_y": 1.0083
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-TUMAKURU",
+          "name": "Tumakuru",
+          "confidence": 0.846,
+          "pca_x": -0.8423,
+          "pca_y": 1.4623
+        }
+      ],
+      "size": 8
+    },
+    {
+      "cluster": 1,
+      "dominant_crime_groups": [
+        "PROPERTY",
+        "OTHER_SLL"
+      ],
+      "crime_profile": {
+        "ECONOMIC": 0.104,
+        "OTHER_SLL": 0.268,
+        "PROPERTY": 0.398,
+        "PUBLIC_ORDER": 0.012,
+        "VIOLENT": 0.183,
+        "WOMEN": 0.035
+      },
+      "se_profile": {
+        "population_density": 4402.9,
+        "urbanization_rate": 90.8,
+        "literacy_rate": 78.08,
+        "graduate_rate": 18.01,
+        "low_income_share": 3.87,
+        "marginal_worker_share": 9.15,
+        "nonworker_share": 55.86,
+        "work_participation_rate": 44.14,
+        "scst_share": 14.43,
+        "sex_ratio": 915.6,
+        "internet_penetration": 13.18
+      },
+      "avg_confidence": 1.0,
+      "districts": [
+        {
+          "geo_unit_id": "DISTRICT:KA-BENGALURU-URBAN",
+          "name": "Bengaluru Urban",
+          "confidence": 1.0,
+          "pca_x": 11.8411,
+          "pca_y": -3.2715
+        }
+      ],
+      "size": 1
+    },
+    {
+      "cluster": 2,
+      "dominant_crime_groups": [
+        "OTHER_SLL",
+        "VIOLENT"
+      ],
+      "crime_profile": {
+        "ECONOMIC": 0.055,
+        "OTHER_SLL": 0.492,
+        "PROPERTY": 0.131,
+        "PUBLIC_ORDER": 0.055,
+        "VIOLENT": 0.198,
+        "WOMEN": 0.068
+      },
+      "se_profile": {
+        "population_density": 342.189,
+        "urbanization_rate": 37.93,
+        "literacy_rate": 70.327,
+        "graduate_rate": 6.504,
+        "low_income_share": 10.606,
+        "marginal_worker_share": 14.329,
+        "nonworker_share": 55.5,
+        "work_participation_rate": 44.5,
+        "scst_share": 20.202,
+        "sex_ratio": 994.244,
+        "internet_penetration": 2.112
+      },
+      "avg_confidence": 0.446,
+      "districts": [
+        {
+          "geo_unit_id": "DISTRICT:KA-BALLARI",
+          "name": "Ballari",
+          "confidence": 0.313,
+          "pca_x": 0.8854,
+          "pca_y": -0.6905
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-BELAGAVI",
+          "name": "Belagavi",
+          "confidence": 0.113,
+          "pca_x": -0.1177,
+          "pca_y": -0.0639
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-BENGALURU-RURAL",
+          "name": "Bengaluru Rural",
+          "confidence": 0.746,
+          "pca_x": 1.1432,
+          "pca_y": 0.534
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-DAKSHINA-KANNADA",
+          "name": "Dakshina Kannada",
+          "confidence": 0.401,
+          "pca_x": 3.3563,
+          "pca_y": 2.6923
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-DHARWAD",
+          "name": "Dharwad",
+          "confidence": 0.556,
+          "pca_x": 3.4201,
+          "pca_y": -0.5591
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-MYSURU",
+          "name": "Mysuru",
+          "confidence": 0.595,
+          "pca_x": 1.8718,
+          "pca_y": -0.6023
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-SHIVAMOGGA",
+          "name": "Shivamogga",
+          "confidence": 0.335,
+          "pca_x": 0.2879,
+          "pca_y": 0.132
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-UDUPI",
+          "name": "Udupi",
+          "confidence": 0.409,
+          "pca_x": 2.2043,
+          "pca_y": 3.4705
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-UTTARA-KANNADA",
+          "name": "Uttara Kannada",
+          "confidence": 0.549,
+          "pca_x": 0.7708,
+          "pca_y": 0.9384
+        }
+      ],
+      "size": 9
+    },
+    {
+      "cluster": 3,
+      "dominant_crime_groups": [
+        "OTHER_SLL",
+        "VIOLENT"
+      ],
+      "crime_profile": {
+        "ECONOMIC": 0.028,
+        "OTHER_SLL": 0.45,
+        "PROPERTY": 0.105,
+        "PUBLIC_ORDER": 0.096,
+        "VIOLENT": 0.241,
+        "WOMEN": 0.081
+      },
+      "se_profile": {
+        "population_density": 265.742,
+        "urbanization_rate": 27.549,
+        "literacy_rate": 59.001,
+        "graduate_rate": 3.839,
+        "low_income_share": 14.818,
+        "marginal_worker_share": 19.364,
+        "nonworker_share": 54.894,
+        "work_participation_rate": 45.106,
+        "scst_share": 30.409,
+        "sex_ratio": 977.3,
+        "internet_penetration": 0.94
+      },
+      "avg_confidence": 0.443,
+      "districts": [
+        {
+          "geo_unit_id": "DISTRICT:KA-BAGALKOTE",
+          "name": "Bagalkote",
+          "confidence": 0.318,
+          "pca_x": -0.3605,
+          "pca_y": -1.1077
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-BIDAR",
+          "name": "Bidar",
+          "confidence": 0.657,
+          "pca_x": -1.6424,
+          "pca_y": -1.389
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-CHAMARAJANAGARA",
+          "name": "Chamarajanagara",
+          "confidence": 0.288,
+          "pca_x": -2.7687,
+          "pca_y": -1.1702
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-DAVANAGERE",
+          "name": "Davanagere",
+          "confidence": 0.524,
+          "pca_x": -0.3529,
+          "pca_y": -1.0775
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-GADAG",
+          "name": "Gadag",
+          "confidence": 0.164,
+          "pca_x": -0.489,
+          "pca_y": 0.249
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-HAVERI",
+          "name": "Haveri",
+          "confidence": 0.495,
+          "pca_x": -1.1973,
+          "pca_y": -0.1184
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-KALABURAGI",
+          "name": "Kalaburagi",
+          "confidence": 0.642,
+          "pca_x": -1.4185,
+          "pca_y": -2.1056
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-KOLAR",
+          "name": "Kolar",
+          "confidence": 0.405,
+          "pca_x": -0.585,
+          "pca_y": -0.3648
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-KOPPAL",
+          "name": "Koppal",
+          "confidence": 0.422,
+          "pca_x": -2.2248,
+          "pca_y": 0.5251
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-RAICHUR",
+          "name": "Raichur",
+          "confidence": 0.542,
+          "pca_x": -2.886,
+          "pca_y": -1.5225
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-VIJAYAPURA",
+          "name": "Vijayapura",
+          "confidence": 0.626,
+          "pca_x": -1.2124,
+          "pca_y": -1.1609
+        },
+        {
+          "geo_unit_id": "DISTRICT:KA-YADGIR",
+          "name": "Yadgir",
+          "confidence": 0.232,
+          "pca_x": -4.0871,
+          "pca_y": -3.9598
+        }
+      ],
+      "size": 12
+    }
+  ],
+  "rf_feature_importance": [
+    {
+      "feature": "graduate_rate",
+      "importance": 0.1621
+    },
+    {
+      "feature": "literacy_rate",
+      "importance": 0.1416
+    },
+    {
+      "feature": "sex_ratio",
+      "importance": 0.1214
+    },
+    {
+      "feature": "low_income_share",
+      "importance": 0.1034
+    },
+    {
+      "feature": "scst_share",
+      "importance": 0.0912
+    },
+    {
+      "feature": "nonworker_share",
+      "importance": 0.0754
+    },
+    {
+      "feature": "work_participation_rate",
+      "importance": 0.0753
+    },
+    {
+      "feature": "marginal_worker_share",
+      "importance": 0.0678
+    },
+    {
+      "feature": "population_density",
+      "importance": 0.0638
+    },
+    {
+      "feature": "internet_penetration",
+      "importance": 0.0619
+    },
+    {
+      "feature": "urbanization_rate",
+      "importance": 0.036
+    }
+  ],
+  "shap_insights": [
+    {
+      "geo_unit_id": "DISTRICT:KA-BENGALURU-RURAL",
+      "name": "Bengaluru Rural",
+      "predicted_rate": 344.5,
+      "actual_rate": 571.5,
+      "prediction_error": -227.0,
+      "top_drivers": [
+        {
+          "feature": "sex_ratio",
+          "shap_value": 27.782,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "literacy_rate",
+          "shap_value": 24.186,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": 22.101,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": 15.723,
+          "direction": "increases_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BENGALURU-URBAN",
+      "name": "Bengaluru Urban",
+      "predicted_rate": 309.8,
+      "actual_rate": 315.1,
+      "prediction_error": -5.3,
+      "top_drivers": [
+        {
+          "feature": "sex_ratio",
+          "shap_value": 26.785,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "literacy_rate",
+          "shap_value": 14.868,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": 14.722,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "population_density",
+          "shap_value": 12.598,
+          "direction": "increases_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-RAMANAGARA",
+      "name": "Ramanagara",
+      "predicted_rate": 307.0,
+      "actual_rate": 403.0,
+      "prediction_error": -96.0,
+      "top_drivers": [
+        {
+          "feature": "low_income_share",
+          "shap_value": 22.435,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "nonworker_share",
+          "shap_value": 15.302,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "work_participation_rate",
+          "shap_value": 13.955,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "scst_share",
+          "shap_value": 12.467,
+          "direction": "increases_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-HASSAN",
+      "name": "Hassan",
+      "predicted_rate": 297.8,
+      "actual_rate": 305.8,
+      "prediction_error": -8.0,
+      "top_drivers": [
+        {
+          "feature": "literacy_rate",
+          "shap_value": 20.438,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": 19.577,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "nonworker_share",
+          "shap_value": 11.232,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "scst_share",
+          "shap_value": 10.851,
+          "direction": "increases_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-SHIVAMOGGA",
+      "name": "Shivamogga",
+      "predicted_rate": 288.1,
+      "actual_rate": 339.1,
+      "prediction_error": -50.9,
+      "top_drivers": [
+        {
+          "feature": "literacy_rate",
+          "shap_value": 18.588,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": 17.628,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": 16.243,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "scst_share",
+          "shap_value": 10.202,
+          "direction": "increases_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-KODAGU",
+      "name": "Kodagu",
+      "predicted_rate": 282.7,
+      "actual_rate": 307.8,
+      "prediction_error": -25.1,
+      "top_drivers": [
+        {
+          "feature": "graduate_rate",
+          "shap_value": 14.719,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "literacy_rate",
+          "shap_value": 14.001,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": 9.746,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "nonworker_share",
+          "shap_value": 9.398,
+          "direction": "increases_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-CHIKKAMAGALURU",
+      "name": "Chikkamagaluru",
+      "predicted_rate": 279.0,
+      "actual_rate": 242.4,
+      "prediction_error": 36.6,
+      "top_drivers": [
+        {
+          "feature": "literacy_rate",
+          "shap_value": 15.21,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": 14.578,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": 11.562,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "nonworker_share",
+          "shap_value": 9.026,
+          "direction": "increases_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-DAKSHINA-KANNADA",
+      "name": "Dakshina Kannada",
+      "predicted_rate": 270.8,
+      "actual_rate": 235.5,
+      "prediction_error": 35.3,
+      "top_drivers": [
+        {
+          "feature": "graduate_rate",
+          "shap_value": 13.626,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "literacy_rate",
+          "shap_value": 11.331,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": 8.278,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "nonworker_share",
+          "shap_value": 6.335,
+          "direction": "increases_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-MANDYA",
+      "name": "Mandya",
+      "predicted_rate": 268.5,
+      "actual_rate": 307.0,
+      "prediction_error": -38.5,
+      "top_drivers": [
+        {
+          "feature": "graduate_rate",
+          "shap_value": 19.111,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "nonworker_share",
+          "shap_value": 12.475,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "work_participation_rate",
+          "shap_value": 12.359,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "scst_share",
+          "shap_value": 9.525,
+          "direction": "increases_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-DHARWAD",
+      "name": "Dharwad",
+      "predicted_rate": 252.0,
+      "actual_rate": 199.3,
+      "prediction_error": 52.7,
+      "top_drivers": [
+        {
+          "feature": "literacy_rate",
+          "shap_value": 13.373,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "population_density",
+          "shap_value": 11.828,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": 11.2,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "nonworker_share",
+          "shap_value": -8.218,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-UDUPI",
+      "name": "Udupi",
+      "predicted_rate": 243.8,
+      "actual_rate": 226.5,
+      "prediction_error": 17.3,
+      "top_drivers": [
+        {
+          "feature": "literacy_rate",
+          "shap_value": 12.898,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": 12.846,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": 7.27,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "nonworker_share",
+          "shap_value": -7.042,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-MYSURU",
+      "name": "Mysuru",
+      "predicted_rate": 235.6,
+      "actual_rate": 234.3,
+      "prediction_error": 1.3,
+      "top_drivers": [
+        {
+          "feature": "graduate_rate",
+          "shap_value": 15.246,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "population_density",
+          "shap_value": 13.427,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": 11.125,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "nonworker_share",
+          "shap_value": -5.888,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-UTTARA-KANNADA",
+      "name": "Uttara Kannada",
+      "predicted_rate": 232.0,
+      "actual_rate": 207.1,
+      "prediction_error": 24.9,
+      "top_drivers": [
+        {
+          "feature": "literacy_rate",
+          "shap_value": 14.23,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": 12.992,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": 10.378,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "nonworker_share",
+          "shap_value": -7.637,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-CHITRADURGA",
+      "name": "Chitradurga",
+      "predicted_rate": 224.3,
+      "actual_rate": 239.2,
+      "prediction_error": -14.9,
+      "top_drivers": [
+        {
+          "feature": "nonworker_share",
+          "shap_value": 10.254,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "work_participation_rate",
+          "shap_value": 9.289,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": -8.356,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": 4.29,
+          "direction": "increases_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-CHIKKABALLAPURA",
+      "name": "Chikkaballapura",
+      "predicted_rate": 221.9,
+      "actual_rate": 189.0,
+      "prediction_error": 32.9,
+      "top_drivers": [
+        {
+          "feature": "nonworker_share",
+          "shap_value": 11.329,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "work_participation_rate",
+          "shap_value": 9.881,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": -9.865,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "scst_share",
+          "shap_value": -4.934,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-TUMAKURU",
+      "name": "Tumakuru",
+      "predicted_rate": 221.2,
+      "actual_rate": 180.3,
+      "prediction_error": 40.9,
+      "top_drivers": [
+        {
+          "feature": "graduate_rate",
+          "shap_value": 14.116,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": -10.389,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "nonworker_share",
+          "shap_value": 9.821,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "work_participation_rate",
+          "shap_value": 9.22,
+          "direction": "increases_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-DAVANAGERE",
+      "name": "Davanagere",
+      "predicted_rate": 205.5,
+      "actual_rate": 197.5,
+      "prediction_error": 8.0,
+      "top_drivers": [
+        {
+          "feature": "graduate_rate",
+          "shap_value": 16.777,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": -8.629,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "marginal_worker_share",
+          "shap_value": -4.378,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "scst_share",
+          "shap_value": -4.036,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-KOLAR",
+      "name": "Kolar",
+      "predicted_rate": 199.4,
+      "actual_rate": 201.6,
+      "prediction_error": -2.2,
+      "top_drivers": [
+        {
+          "feature": "low_income_share",
+          "shap_value": -10.182,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": 5.753,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "marginal_worker_share",
+          "shap_value": -5.686,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "sex_ratio",
+          "shap_value": -3.894,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BIDAR",
+      "name": "Bidar",
+      "predicted_rate": 192.3,
+      "actual_rate": 232.7,
+      "prediction_error": -40.3,
+      "top_drivers": [
+        {
+          "feature": "graduate_rate",
+          "shap_value": -13.21,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": -7.896,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "sex_ratio",
+          "shap_value": 4.945,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "literacy_rate",
+          "shap_value": -4.538,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-HAVERI",
+      "name": "Haveri",
+      "predicted_rate": 176.0,
+      "actual_rate": 135.0,
+      "prediction_error": 41.0,
+      "top_drivers": [
+        {
+          "feature": "graduate_rate",
+          "shap_value": -18.332,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "sex_ratio",
+          "shap_value": 12.471,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": -10.41,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "marginal_worker_share",
+          "shap_value": -8.116,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BALLARI",
+      "name": "Ballari",
+      "predicted_rate": 172.9,
+      "actual_rate": 133.3,
+      "prediction_error": 39.6,
+      "top_drivers": [
+        {
+          "feature": "literacy_rate",
+          "shap_value": -18.138,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": -18.071,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": 11.7,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "sex_ratio",
+          "shap_value": -7.78,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BELAGAVI",
+      "name": "Belagavi",
+      "predicted_rate": 168.9,
+      "actual_rate": 138.0,
+      "prediction_error": 30.9,
+      "top_drivers": [
+        {
+          "feature": "graduate_rate",
+          "shap_value": -13.761,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": -11.435,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "marginal_worker_share",
+          "shap_value": -7.425,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "nonworker_share",
+          "shap_value": -7.33,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-CHAMARAJANAGARA",
+      "name": "Chamarajanagara",
+      "predicted_rate": 168.6,
+      "actual_rate": 182.8,
+      "prediction_error": -14.2,
+      "top_drivers": [
+        {
+          "feature": "literacy_rate",
+          "shap_value": -16.67,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": -14.676,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": -8.039,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "sex_ratio",
+          "shap_value": -3.776,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-RAICHUR",
+      "name": "Raichur",
+      "predicted_rate": 166.9,
+      "actual_rate": 158.8,
+      "prediction_error": 8.2,
+      "top_drivers": [
+        {
+          "feature": "literacy_rate",
+          "shap_value": -16.804,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": -15.643,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": -8.606,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "population_density",
+          "shap_value": -4.877,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-KALABURAGI",
+      "name": "Kalaburagi",
+      "predicted_rate": 165.9,
+      "actual_rate": 176.3,
+      "prediction_error": -10.4,
+      "top_drivers": [
+        {
+          "feature": "literacy_rate",
+          "shap_value": -15.447,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": -12.876,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": -7.552,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "population_density",
+          "shap_value": -4.539,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-GADAG",
+      "name": "Gadag",
+      "predicted_rate": 154.7,
+      "actual_rate": 102.6,
+      "prediction_error": 52.2,
+      "top_drivers": [
+        {
+          "feature": "graduate_rate",
+          "shap_value": -20.321,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": -9.656,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "sex_ratio",
+          "shap_value": -7.584,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "scst_share",
+          "shap_value": -7.082,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-KOPPAL",
+      "name": "Koppal",
+      "predicted_rate": 151.1,
+      "actual_rate": 124.6,
+      "prediction_error": 26.5,
+      "top_drivers": [
+        {
+          "feature": "literacy_rate",
+          "shap_value": -19.043,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": -16.16,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": -8.567,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "sex_ratio",
+          "shap_value": -6.984,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-VIJAYAPURA",
+      "name": "Vijayapura",
+      "predicted_rate": 148.4,
+      "actual_rate": 118.0,
+      "prediction_error": 30.4,
+      "top_drivers": [
+        {
+          "feature": "literacy_rate",
+          "shap_value": -17.935,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": -11.133,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "marginal_worker_share",
+          "shap_value": -8.524,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "nonworker_share",
+          "shap_value": -8.188,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-YADGIR",
+      "name": "Yadgir",
+      "predicted_rate": 147.7,
+      "actual_rate": 126.8,
+      "prediction_error": 20.9,
+      "top_drivers": [
+        {
+          "feature": "literacy_rate",
+          "shap_value": -18.095,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": -17.006,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": -9.909,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "sex_ratio",
+          "shap_value": -6.05,
+          "direction": "reduces_risk"
+        }
+      ]
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BAGALKOTE",
+      "name": "Bagalkote",
+      "predicted_rate": 145.5,
+      "actual_rate": 123.8,
+      "prediction_error": 21.7,
+      "top_drivers": [
+        {
+          "feature": "literacy_rate",
+          "shap_value": -18.54,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": -9.141,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "marginal_worker_share",
+          "shap_value": -8.853,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "nonworker_share",
+          "shap_value": -8.222,
+          "direction": "reduces_risk"
+        }
+      ]
+    }
+  ],
+  "isolation_anomalies": [
+    {
+      "geo_unit_id": "DISTRICT:KA-BENGALURU-URBAN",
+      "name": "Bengaluru Urban",
+      "anomaly_score": 1.0,
+      "is_anomaly": true
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-YADGIR",
+      "name": "Yadgir",
+      "anomaly_score": 0.476,
+      "is_anomaly": true
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-DAKSHINA-KANNADA",
+      "name": "Dakshina Kannada",
+      "anomaly_score": 0.367,
+      "is_anomaly": true
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-KODAGU",
+      "name": "Kodagu",
+      "anomaly_score": 0.361,
+      "is_anomaly": true
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-UDUPI",
+      "name": "Udupi",
+      "anomaly_score": 0.352,
+      "is_anomaly": true
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-DHARWAD",
+      "name": "Dharwad",
+      "anomaly_score": 0.333,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BIDAR",
+      "name": "Bidar",
+      "anomaly_score": 0.235,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-UTTARA-KANNADA",
+      "name": "Uttara Kannada",
+      "anomaly_score": 0.214,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-MYSURU",
+      "name": "Mysuru",
+      "anomaly_score": 0.192,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-RAICHUR",
+      "name": "Raichur",
+      "anomaly_score": 0.183,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BALLARI",
+      "name": "Ballari",
+      "anomaly_score": 0.18,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-CHITRADURGA",
+      "name": "Chitradurga",
+      "anomaly_score": 0.156,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-CHAMARAJANAGARA",
+      "name": "Chamarajanagara",
+      "anomaly_score": 0.155,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BENGALURU-RURAL",
+      "name": "Bengaluru Rural",
+      "anomaly_score": 0.112,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-HAVERI",
+      "name": "Haveri",
+      "anomaly_score": 0.096,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-KALABURAGI",
+      "name": "Kalaburagi",
+      "anomaly_score": 0.095,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-KOPPAL",
+      "name": "Koppal",
+      "anomaly_score": 0.094,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-SHIVAMOGGA",
+      "name": "Shivamogga",
+      "anomaly_score": 0.092,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-HASSAN",
+      "name": "Hassan",
+      "anomaly_score": 0.09,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BAGALKOTE",
+      "name": "Bagalkote",
+      "anomaly_score": 0.089,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-CHIKKAMAGALURU",
+      "name": "Chikkamagaluru",
+      "anomaly_score": 0.08,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-RAMANAGARA",
+      "name": "Ramanagara",
+      "anomaly_score": 0.071,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-MANDYA",
+      "name": "Mandya",
+      "anomaly_score": 0.06,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-VIJAYAPURA",
+      "name": "Vijayapura",
+      "anomaly_score": 0.045,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-CHIKKABALLAPURA",
+      "name": "Chikkaballapura",
+      "anomaly_score": 0.037,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-TUMAKURU",
+      "name": "Tumakuru",
+      "anomaly_score": 0.027,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-KOLAR",
+      "name": "Kolar",
+      "anomaly_score": 0.023,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-DAVANAGERE",
+      "name": "Davanagere",
+      "anomaly_score": 0.014,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BELAGAVI",
+      "name": "Belagavi",
+      "anomaly_score": 0.013,
+      "is_anomaly": false
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-GADAG",
+      "name": "Gadag",
+      "anomaly_score": 0.0,
+      "is_anomaly": false
+    }
+  ],
+  "forecasts": [
+    {
+      "geo_unit_id": "DISTRICT:KA-BENGALURU-URBAN",
+      "name": "Bengaluru Urban",
+      "forecast_year": 2014,
+      "forecast_cases": 30989,
+      "slope_per_year": 243.97,
+      "r2": 0.278,
+      "trend": "rising",
+      "ci_low": 27349,
+      "ci_high": 34628
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-MYSURU",
+      "name": "Mysuru",
+      "forecast_year": 2014,
+      "forecast_cases": 7992,
+      "slope_per_year": 287.66,
+      "r2": 0.853,
+      "trend": "rising",
+      "ci_low": 6886,
+      "ci_high": 9097
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BELAGAVI",
+      "name": "Belagavi",
+      "forecast_year": 2014,
+      "forecast_cases": 7873,
+      "slope_per_year": 242.48,
+      "r2": 0.708,
+      "trend": "rising",
+      "ci_low": 6432,
+      "ci_high": 9313
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-MANDYA",
+      "name": "Mandya",
+      "forecast_year": 2014,
+      "forecast_cases": 6148,
+      "slope_per_year": 189.62,
+      "r2": 0.483,
+      "trend": "rising",
+      "ci_low": 4331,
+      "ci_high": 7964
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-HASSAN",
+      "name": "Hassan",
+      "forecast_year": 2014,
+      "forecast_cases": 6064,
+      "slope_per_year": 174.37,
+      "r2": 0.769,
+      "trend": "rising",
+      "ci_low": 5178,
+      "ci_high": 6949
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-SHIVAMOGGA",
+      "name": "Shivamogga",
+      "forecast_year": 2014,
+      "forecast_cases": 5937,
+      "slope_per_year": 174.13,
+      "r2": 0.74,
+      "trend": "rising",
+      "ci_low": 4982,
+      "ci_high": 6891
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-TUMAKURU",
+      "name": "Tumakuru",
+      "forecast_year": 2014,
+      "forecast_cases": 5508,
+      "slope_per_year": 119.21,
+      "r2": 0.769,
+      "trend": "rising",
+      "ci_low": 4902,
+      "ci_high": 6113
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-KALABURAGI",
+      "name": "Kalaburagi",
+      "forecast_year": 2014,
+      "forecast_cases": 4999,
+      "slope_per_year": 37.26,
+      "r2": 0.062,
+      "trend": "rising",
+      "ci_low": 3655,
+      "ci_high": 6342
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BENGALURU-RURAL",
+      "name": "Bengaluru Rural",
+      "forecast_year": 2014,
+      "forecast_cases": 4917,
+      "slope_per_year": -211.02,
+      "r2": 0.236,
+      "trend": "dropping",
+      "ci_low": 1403,
+      "ci_high": 8430
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-DAKSHINA-KANNADA",
+      "name": "Dakshina Kannada",
+      "forecast_year": 2014,
+      "forecast_cases": 4806,
+      "slope_per_year": 109.7,
+      "r2": 0.76,
+      "trend": "rising",
+      "ci_low": 4235,
+      "ci_high": 5376
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-CHITRADURGA",
+      "name": "Chitradurga",
+      "forecast_year": 2014,
+      "forecast_cases": 4619,
+      "slope_per_year": 122.02,
+      "r2": 0.706,
+      "trend": "rising",
+      "ci_low": 3890,
+      "ci_high": 5347
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-RAMANAGARA",
+      "name": "Ramanagara",
+      "forecast_year": 2014,
+      "forecast_cases": 4615,
+      "slope_per_year": 74.29,
+      "r2": 0.492,
+      "trend": "rising",
+      "ci_low": 4192,
+      "ci_high": 5037
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-DHARWAD",
+      "name": "Dharwad",
+      "forecast_year": 2014,
+      "forecast_cases": 3627,
+      "slope_per_year": 73.01,
+      "r2": 0.663,
+      "trend": "rising",
+      "ci_low": 3145,
+      "ci_high": 4108
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BIDAR",
+      "name": "Bidar",
+      "forecast_year": 2014,
+      "forecast_cases": 3405,
+      "slope_per_year": -55.95,
+      "r2": 0.411,
+      "trend": "dropping",
+      "ci_low": 2785,
+      "ci_high": 4024
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-RAICHUR",
+      "name": "Raichur",
+      "forecast_year": 2014,
+      "forecast_cases": 3403,
+      "slope_per_year": 83.13,
+      "r2": 0.751,
+      "trend": "rising",
+      "ci_low": 2960,
+      "ci_high": 3845
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BALLARI",
+      "name": "Ballari",
+      "forecast_year": 2014,
+      "forecast_cases": 3292,
+      "slope_per_year": -25.44,
+      "r2": 0.056,
+      "trend": "dropping",
+      "ci_low": 2328,
+      "ci_high": 4255
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-DAVANAGERE",
+      "name": "Davanagere",
+      "forecast_year": 2014,
+      "forecast_cases": 3250,
+      "slope_per_year": 24.73,
+      "r2": 0.107,
+      "trend": "rising",
+      "ci_low": 2590,
+      "ci_high": 3909
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-UTTARA-KANNADA",
+      "name": "Uttara Kannada",
+      "forecast_year": 2014,
+      "forecast_cases": 3013,
+      "slope_per_year": 66.18,
+      "r2": 0.771,
+      "trend": "rising",
+      "ci_low": 2679,
+      "ci_high": 3346
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-VIJAYAPURA",
+      "name": "Vijayapura",
+      "forecast_year": 2014,
+      "forecast_cases": 2883,
+      "slope_per_year": -33.71,
+      "r2": 0.103,
+      "trend": "dropping",
+      "ci_low": 1963,
+      "ci_high": 3802
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-CHIKKAMAGALURU",
+      "name": "Chikkamagaluru",
+      "forecast_year": 2014,
+      "forecast_cases": 2822,
+      "slope_per_year": -8.41,
+      "r2": 0.021,
+      "trend": "stable",
+      "ci_low": 2284,
+      "ci_high": 3359
+    }
+  ],
+  "hotspot_predictions": [
+    {
+      "geo_unit_id": "DISTRICT:KA-BENGALURU-URBAN",
+      "name": "Bengaluru Urban",
+      "probability": 0.969,
+      "risk_tier": "Critical",
+      "signal_breakdown": {
+        "trend_score": 0.924,
+        "isolation_score": 1.0,
+        "cluster_risk_score": 0.999
+      }
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-MYSURU",
+      "name": "Mysuru",
+      "probability": 0.717,
+      "risk_tier": "High",
+      "signal_breakdown": {
+        "trend_score": 1.0,
+        "isolation_score": 0.192,
+        "cluster_risk_score": 0.998
+      }
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-DAKSHINA-KANNADA",
+      "name": "Dakshina Kannada",
+      "probability": 0.654,
+      "risk_tier": "High",
+      "signal_breakdown": {
+        "trend_score": 0.691,
+        "isolation_score": 0.367,
+        "cluster_risk_score": 0.998
+      }
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-BELAGAVI",
+      "name": "Belagavi",
+      "probability": 0.623,
+      "risk_tier": "High",
+      "signal_breakdown": {
+        "trend_score": 0.921,
+        "isolation_score": 0.013,
+        "cluster_risk_score": 0.998
+      }
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-DHARWAD",
+      "name": "Dharwad",
+      "probability": 0.617,
+      "risk_tier": "High",
+      "signal_breakdown": {
+        "trend_score": 0.627,
+        "isolation_score": 0.333,
+        "cluster_risk_score": 0.998
+      }
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-KODAGU",
+      "name": "Kodagu",
+      "probability": 0.611,
+      "risk_tier": "High",
+      "signal_breakdown": {
+        "trend_score": 0.587,
+        "isolation_score": 0.361,
+        "cluster_risk_score": 1.0
+      }
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-UDUPI",
+      "name": "Udupi",
+      "probability": 0.607,
+      "risk_tier": "High",
+      "signal_breakdown": {
+        "trend_score": 0.585,
+        "isolation_score": 0.352,
+        "cluster_risk_score": 0.998
+      }
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-HASSAN",
+      "name": "Hassan",
+      "probability": 0.603,
+      "risk_tier": "High",
+      "signal_breakdown": {
+        "trend_score": 0.803,
+        "isolation_score": 0.09,
+        "cluster_risk_score": 1.0
+      }
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-MANDYA",
+      "name": "Mandya",
+      "probability": 0.603,
+      "risk_tier": "High",
+      "signal_breakdown": {
+        "trend_score": 0.83,
+        "isolation_score": 0.06,
+        "cluster_risk_score": 1.0
+      }
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-SHIVAMOGGA",
+      "name": "Shivamogga",
+      "probability": 0.603,
+      "risk_tier": "High",
+      "signal_breakdown": {
+        "trend_score": 0.803,
+        "isolation_score": 0.092,
+        "cluster_risk_score": 0.998
+      }
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-YADGIR",
+      "name": "Yadgir",
+      "probability": 0.598,
+      "risk_tier": "High",
+      "signal_breakdown": {
+        "trend_score": 0.454,
+        "isolation_score": 0.476,
+        "cluster_risk_score": 1.0
+      }
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-CHITRADURGA",
+      "name": "Chitradurga",
+      "probability": 0.589,
+      "risk_tier": "High",
+      "signal_breakdown": {
+        "trend_score": 0.712,
+        "isolation_score": 0.156,
+        "cluster_risk_score": 1.0
+      }
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-RAICHUR",
+      "name": "Raichur",
+      "probability": 0.572,
+      "risk_tier": "High",
+      "signal_breakdown": {
+        "trend_score": 0.644,
+        "isolation_score": 0.183,
+        "cluster_risk_score": 1.0
+      }
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-UTTARA-KANNADA",
+      "name": "Uttara Kannada",
+      "probability": 0.57,
+      "risk_tier": "High",
+      "signal_breakdown": {
+        "trend_score": 0.615,
+        "isolation_score": 0.214,
+        "cluster_risk_score": 0.998
+      }
+    },
+    {
+      "geo_unit_id": "DISTRICT:KA-CHIKKABALLAPURA",
+      "name": "Chikkaballapura",
+      "probability": 0.552,
+      "risk_tier": "Medium",
+      "signal_breakdown": {
+        "trend_score": 0.724,
+        "isolation_score": 0.037,
+        "cluster_risk_score": 1.0
+      }
+    }
+  ]
+}

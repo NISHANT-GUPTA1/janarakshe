@@ -12,6 +12,9 @@ env/
 node_modules/
 frontend/dist/
 frontend/.vite/
+# generated at build time by `npm run export:api` — the source of truth is
+# backend/data/processed/api/
+frontend/public/api/
 npm-debug.log*
 yarn-error.log*
 
@@ -22,6 +25,12 @@ backend/data/raw/*
 !backend/data/raw/.gitkeep
 backend/data/processed/*
 !backend/data/processed/.gitkeep
+
+# ...except the built API payloads (~1 MB), which ARE committed: a static deploy
+# (Netlify) clones the repo and cannot run the Python pipeline, so these files are
+# the deployed API. Regenerate with `python -m pipeline.run` and commit the diff.
+!backend/data/processed/api/
+!backend/data/processed/api/*.json
 
 # ---- runtime ----
 backend/logs/

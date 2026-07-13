@@ -1,0 +1,233 @@
+{
+  "data_note": "SYNTHETIC offenders (no open person-level data exists). Anchored to real district crime volumes/mix; deterministic.",
+  "total_offenders": 816,
+  "repeat_offenders": 547,
+  "repeat_ratio": 0.67,
+  "top": [
+    {
+      "entity_id": "ENT-SYN-00546",
+      "name": "Kiran G.",
+      "district": "Bengaluru Urban",
+      "incident_count": 8,
+      "first_seen": "2009-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 4
+    },
+    {
+      "entity_id": "ENT-SYN-00506",
+      "name": "Manju N.",
+      "district": "Bengaluru Urban",
+      "incident_count": 7,
+      "first_seen": "2010-01-01",
+      "last_seen": "2012-12-31",
+      "degree": 12
+    },
+    {
+      "entity_id": "ENT-SYN-00594",
+      "name": "Shankar S.",
+      "district": "Bengaluru Urban",
+      "incident_count": 7,
+      "first_seen": "2009-01-01",
+      "last_seen": "2011-12-31",
+      "degree": 8
+    },
+    {
+      "entity_id": "ENT-SYN-00138",
+      "name": "Ravi M.",
+      "district": "Koppal",
+      "incident_count": 6,
+      "first_seen": "2009-01-01",
+      "last_seen": "2012-12-31",
+      "degree": 3
+    },
+    {
+      "entity_id": "ENT-SYN-00337",
+      "name": "Ravi M.",
+      "district": "Chikkamagaluru",
+      "incident_count": 6,
+      "first_seen": "2010-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 1
+    },
+    {
+      "entity_id": "ENT-SYN-00385",
+      "name": "Anil B.",
+      "district": "Hassan",
+      "incident_count": 6,
+      "first_seen": "2009-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 3
+    },
+    {
+      "entity_id": "ENT-SYN-00446",
+      "name": "Mahesh V.",
+      "district": "Dakshina Kannada",
+      "incident_count": 6,
+      "first_seen": "2009-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 7
+    },
+    {
+      "entity_id": "ENT-SYN-00497",
+      "name": "Girish R.",
+      "district": "Bengaluru Urban",
+      "incident_count": 6,
+      "first_seen": "2009-01-01",
+      "last_seen": "2012-12-31",
+      "degree": 3
+    },
+    {
+      "entity_id": "ENT-SYN-00522",
+      "name": "Vinod B.",
+      "district": "Bengaluru Urban",
+      "incident_count": 6,
+      "first_seen": "2010-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 2
+    },
+    {
+      "entity_id": "ENT-SYN-00602",
+      "name": "Suresh P.",
+      "district": "Bengaluru Urban",
+      "incident_count": 6,
+      "first_seen": "2009-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 5
+    },
+    {
+      "entity_id": "ENT-SYN-00617",
+      "name": "Basava P.",
+      "district": "Bengaluru Urban",
+      "incident_count": 6,
+      "first_seen": "2009-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 4
+    },
+    {
+      "entity_id": "ENT-SYN-00639",
+      "name": "Vinod R.",
+      "district": "Bengaluru Urban",
+      "incident_count": 6,
+      "first_seen": "2011-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 5
+    },
+    {
+      "entity_id": "ENT-SYN-00641",
+      "name": "Naveen R.",
+      "district": "Bengaluru Urban",
+      "incident_count": 6,
+      "first_seen": "2009-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 2
+    },
+    {
+      "entity_id": "ENT-SYN-00644",
+      "name": "Lokesh N.",
+      "district": "Bengaluru Urban",
+      "incident_count": 6,
+      "first_seen": "2010-01-01",
+      "last_seen": "2012-12-31",
+      "degree": 4
+    },
+    {
+      "entity_id": "ENT-SYN-00680",
+      "name": "Ramesh G.",
+      "district": "Tumakuru",
+      "incident_count": 6,
+      "first_seen": "2010-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 4
+    },
+    {
+      "entity_id": "ENT-SYN-00717",
+      "name": "Lokesh R.",
+      "district": "Ramanagara",
+      "incident_count": 6,
+      "first_seen": "2009-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 1
+    },
+    {
+      "entity_id": "ENT-SYN-00787",
+      "name": "Shankar M.",
+      "district": "Mysuru",
+      "incident_count": 6,
+      "first_seen": "2009-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 6
+    },
+    {
+      "entity_id": "ENT-SYN-00802",
+      "name": "Anil M.",
+      "district": "Vijayapura",
+      "incident_count": 6,
+      "first_seen": "2010-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 6
+    },
+    {
+      "entity_id": "ENT-SYN-00008",
+      "name": "Mahesh P.",
+      "district": "Bidar",
+      "incident_count": 5,
+      "first_seen": "2009-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 4
+    },
+    {
+      "entity_id": "ENT-SYN-00017",
+      "name": "Lokesh N.",
+      "district": "Bidar",
+      "incident_count": 5,
+      "first_seen": "2011-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 4
+    },
+    {
+      "entity_id": "ENT-SYN-00061",
+      "name": "Lokesh P.",
+      "district": "Belagavi",
+      "incident_count": 5,
+      "first_seen": "2009-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 2
+    },
+    {
+      "entity_id": "ENT-SYN-00088",
+      "name": "Lokesh N.",
+      "district": "Belagavi",
+      "incident_count": 5,
+      "first_seen": "2009-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 4
+    },
+    {
+      "entity_id": "ENT-SYN-00097",
+      "name": "Anil M.",
+      "district": "Yadgir",
+      "incident_count": 5,
+      "first_seen": "2009-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 4
+    },
+    {
+      "entity_id": "ENT-SYN-00117",
+      "name": "Mahesh K.",
+      "district": "Raichur",
+      "incident_count": 5,
+      "first_seen": "2009-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 4
+    },
+    {
+      "entity_id": "ENT-SYN-00125",
+      "name": "Basava S.",
+      "district": "Raichur",
+      "incident_count": 5,
+      "first_seen": "2009-01-01",
+      "last_seen": "2013-12-31",
+      "degree": 3
+    }
+  ]
+}
