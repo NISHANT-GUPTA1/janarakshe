@@ -563,7 +563,7 @@ function Hero({ meta, districtCount }) {
           <span className="dot-live" /> Live · Karnataka State Police
         </span>
         <h1>
-          <span className="grad">Crime</span>Watch <span className="thin">Karnataka</span>
+          <span className="grad">ಜನರಕ್ಷೆ</span> <span className="thin">Janarakṣe</span>
         </h1>
         <p>
           AI-driven crime analytics on NCRB district records and FIR-schema case data —
