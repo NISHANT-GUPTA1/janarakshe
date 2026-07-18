@@ -8,8 +8,10 @@
 //                      /api/*.json, shipped with the frontend build. This works
 //                      because every backend route is a pure passthrough of one
 //                      JSON file (app/main.py just does `return _load("x.json")`),
-//                      so a static host such as Netlify or GitHub Pages can serve
-//                      the whole API with no server process at all.
+//                      so Catalyst Web Client Hosting (or any static host) can serve
+//                      the whole API with no server process at all. Used only for the
+//                      split-hosting option; the default Catalyst deploy is the single
+//                      AppSail container that serves this frontend + the live API.
 //                      `npm run export:api` copies the files into public/api/.
 const BASE = import.meta.env.VITE_API_BASE || '';
 const STATIC = import.meta.env.VITE_STATIC_API === '1';

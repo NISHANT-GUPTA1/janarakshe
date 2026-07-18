@@ -1,0 +1,21 @@
+# FULL dependencies for the offline data pipeline (`python -m pipeline.run` and
+# `python -m pipeline.fir_datastore`). Run locally to (re)generate the committed
+# data in data/processed/. The deployed API does NOT need these — see requirements.txt.
+fastapi==0.119.0
+uvicorn[standard]==0.37.0
+pandas==2.2.3
+numpy==2.1.2
+scikit-learn==1.8.0
+pydantic>=2.0
+scipy>=1.13
+
+# Advanced AI/ML pattern detection (PCA, RF, SHAP, IsolationForest, Forecast)
+shap>=0.46
+
+# Catalyst Data Store SDK (also in the runtime set)
+zcatalyst-sdk>=1.4.0
+
+# Phase 2+ (geospatial maps, seasonal/anomaly stats) — install when those phases start:
+# geopandas
+# shapely
+# statsmodels

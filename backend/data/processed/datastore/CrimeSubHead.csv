@@ -1,0 +1,17 @@
+CrimeSubHeadID,CrimeHeadID,CrimeHeadName,SeqID
+1,1,Other,1
+2,2,Kidnap Abduct,2
+3,2,Grievous Hurt,3
+4,3,Theft,4
+5,3,Burglary,5
+6,4,Riots,6
+7,5,Cruelty Husband,7
+8,6,Cheating,8
+9,5,Assault Women Modesty,9
+10,2,Dacoity,10
+11,5,Rape,11
+12,2,Attempt Murder,12
+13,2,Murder,13
+14,3,Arson,14
+15,2,Robbery,15
+16,6,Cbt,16

@@ -384,12 +384,18 @@ function DataModel() {
         <h2>{d.title}</h2>
         <p className="hint">{d.note}</p>
       </section>
+      {d.crime_no_format && (
+        <section className="panel">
+          <h3>Key format</h3>
+          <p className="hint">{d.crime_no_format}</p>
+        </section>
+      )}
       <section className="panel">
-        <h3>Tables</h3>
+        <h3>Tables <span className="hint">({d.tables.length})</span></h3>
         <div className="unit-grid">
           {d.tables.map((t) => (
             <div className="unit-card" key={t.name}>
-              <div className="unit-name">{t.name}</div>
+              <div className="unit-name">{t.name}{t.group ? <span className="hint"> · {t.group}</span> : null}</div>
               <div className="unit-desc">{t.role}</div>
               <div className="schema-cols">{t.columns.join(' · ')}</div>
             </div>
@@ -397,9 +403,15 @@ function DataModel() {
         </div>
       </section>
       <section className="panel">
-        <h3>Relationships</h3>
+        <h3>Relationships <span className="hint">({d.relationships.length})</span></h3>
         <ul className="bullet">
-          {d.relationships.map((r, i) => <li key={i}>{r}</li>)}
+          {d.relationships.map((r, i) => (
+            <li key={i}>
+              {typeof r === 'string'
+                ? r
+                : <><b>{r.parent}</b> {r.type} <b>{r.child}</b> <span className="hint">via {r.via}</span></>}
+            </li>
+          ))}
         </ul>
       </section>
     </>

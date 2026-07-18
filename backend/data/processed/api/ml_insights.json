@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T08:45:25.509031Z",
+  "generated_at": "2026-07-17T18:41:33.886940Z",
   "latest_crime_year": 2013,
   "model_meta": {
     "algorithms": [
@@ -482,23 +482,23 @@
       "top_drivers": [
         {
           "feature": "sex_ratio",
-          "shap_value": 27.782,
-          "direction": "increases_risk"
+          "shap_value": -0.157,
+          "direction": "reduces_risk"
         },
         {
           "feature": "literacy_rate",
-          "shap_value": 24.186,
+          "shap_value": 0.074,
           "direction": "increases_risk"
         },
         {
           "feature": "low_income_share",
-          "shap_value": 22.101,
-          "direction": "increases_risk"
+          "shap_value": -0.05,
+          "direction": "reduces_risk"
         },
         {
-          "feature": "graduate_rate",
-          "shap_value": 15.723,
-          "direction": "increases_risk"
+          "feature": "marginal_worker_share",
+          "shap_value": -0.024,
+          "direction": "reduces_risk"
         }
       ]
     },
@@ -510,23 +510,23 @@
       "prediction_error": -5.3,
       "top_drivers": [
         {
-          "feature": "sex_ratio",
-          "shap_value": 26.785,
-          "direction": "increases_risk"
-        },
-        {
-          "feature": "literacy_rate",
-          "shap_value": 14.868,
-          "direction": "increases_risk"
-        },
-        {
           "feature": "graduate_rate",
-          "shap_value": 14.722,
+          "shap_value": 0.699,
           "direction": "increases_risk"
         },
         {
           "feature": "population_density",
-          "shap_value": 12.598,
+          "shap_value": 0.341,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": -0.328,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "internet_penetration",
+          "shap_value": 0.314,
           "direction": "increases_risk"
         }
       ]
@@ -539,24 +539,24 @@
       "prediction_error": -96.0,
       "top_drivers": [
         {
-          "feature": "low_income_share",
-          "shap_value": 22.435,
-          "direction": "increases_risk"
-        },
-        {
           "feature": "nonworker_share",
-          "shap_value": 15.302,
-          "direction": "increases_risk"
+          "shap_value": -0.073,
+          "direction": "reduces_risk"
         },
         {
           "feature": "work_participation_rate",
-          "shap_value": 13.955,
+          "shap_value": 0.073,
           "direction": "increases_risk"
         },
         {
-          "feature": "scst_share",
-          "shap_value": 12.467,
-          "direction": "increases_risk"
+          "feature": "graduate_rate",
+          "shap_value": -0.072,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": -0.05,
+          "direction": "reduces_risk"
         }
       ]
     },
@@ -568,23 +568,23 @@
       "prediction_error": -8.0,
       "top_drivers": [
         {
-          "feature": "literacy_rate",
-          "shap_value": 20.438,
-          "direction": "increases_risk"
-        },
-        {
-          "feature": "graduate_rate",
-          "shap_value": 19.577,
-          "direction": "increases_risk"
-        },
-        {
           "feature": "nonworker_share",
-          "shap_value": 11.232,
+          "shap_value": -0.119,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "work_participation_rate",
+          "shap_value": 0.119,
           "direction": "increases_risk"
         },
         {
-          "feature": "scst_share",
-          "shap_value": 10.851,
+          "feature": "sex_ratio",
+          "shap_value": 0.107,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "literacy_rate",
+          "shap_value": 0.065,
           "direction": "increases_risk"
         }
       ]
@@ -598,22 +598,22 @@
       "top_drivers": [
         {
           "feature": "literacy_rate",
-          "shap_value": 18.588,
-          "direction": "increases_risk"
-        },
-        {
-          "feature": "graduate_rate",
-          "shap_value": 17.628,
+          "shap_value": 0.118,
           "direction": "increases_risk"
         },
         {
           "feature": "low_income_share",
-          "shap_value": 16.243,
+          "shap_value": -0.077,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "sex_ratio",
+          "shap_value": 0.055,
           "direction": "increases_risk"
         },
         {
-          "feature": "scst_share",
-          "shap_value": 10.202,
+          "feature": "graduate_rate",
+          "shap_value": 0.046,
           "direction": "increases_risk"
         }
       ]
@@ -626,23 +626,23 @@
       "prediction_error": -25.1,
       "top_drivers": [
         {
-          "feature": "graduate_rate",
-          "shap_value": 14.719,
-          "direction": "increases_risk"
-        },
-        {
           "feature": "literacy_rate",
-          "shap_value": 14.001,
+          "shap_value": 0.16,
           "direction": "increases_risk"
         },
         {
-          "feature": "low_income_share",
-          "shap_value": 9.746,
+          "feature": "marginal_worker_share",
+          "shap_value": -0.157,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "sex_ratio",
+          "shap_value": 0.144,
           "direction": "increases_risk"
         },
         {
-          "feature": "nonworker_share",
-          "shap_value": 9.398,
+          "feature": "graduate_rate",
+          "shap_value": 0.126,
           "direction": "increases_risk"
         }
       ]
@@ -656,22 +656,22 @@
       "top_drivers": [
         {
           "feature": "literacy_rate",
-          "shap_value": 15.21,
+          "shap_value": 0.116,
           "direction": "increases_risk"
         },
         {
-          "feature": "graduate_rate",
-          "shap_value": 14.578,
-          "direction": "increases_risk"
-        },
-        {
-          "feature": "low_income_share",
-          "shap_value": 11.562,
+          "feature": "sex_ratio",
+          "shap_value": 0.098,
           "direction": "increases_risk"
         },
         {
           "feature": "nonworker_share",
-          "shap_value": 9.026,
+          "shap_value": -0.09,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "work_participation_rate",
+          "shap_value": 0.09,
           "direction": "increases_risk"
         }
       ]
@@ -684,24 +684,24 @@
       "prediction_error": 35.3,
       "top_drivers": [
         {
-          "feature": "graduate_rate",
-          "shap_value": 13.626,
+          "feature": "literacy_rate",
+          "shap_value": 0.251,
           "direction": "increases_risk"
         },
         {
-          "feature": "literacy_rate",
-          "shap_value": 11.331,
+          "feature": "graduate_rate",
+          "shap_value": 0.187,
           "direction": "increases_risk"
         },
         {
           "feature": "low_income_share",
-          "shap_value": 8.278,
-          "direction": "increases_risk"
+          "shap_value": -0.156,
+          "direction": "reduces_risk"
         },
         {
-          "feature": "nonworker_share",
-          "shap_value": 6.335,
-          "direction": "increases_risk"
+          "feature": "scst_share",
+          "shap_value": -0.148,
+          "direction": "reduces_risk"
         }
       ]
     },
@@ -713,23 +713,23 @@
       "prediction_error": -38.5,
       "top_drivers": [
         {
-          "feature": "graduate_rate",
-          "shap_value": 19.111,
+          "feature": "scst_share",
+          "shap_value": -0.099,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": 0.096,
           "direction": "increases_risk"
         },
         {
           "feature": "nonworker_share",
-          "shap_value": 12.475,
-          "direction": "increases_risk"
+          "shap_value": -0.052,
+          "direction": "reduces_risk"
         },
         {
           "feature": "work_participation_rate",
-          "shap_value": 12.359,
-          "direction": "increases_risk"
-        },
-        {
-          "feature": "scst_share",
-          "shap_value": 9.525,
+          "shap_value": 0.052,
           "direction": "increases_risk"
         }
       ]
@@ -742,24 +742,24 @@
       "prediction_error": 52.7,
       "top_drivers": [
         {
-          "feature": "literacy_rate",
-          "shap_value": 13.373,
-          "direction": "increases_risk"
+          "feature": "low_income_share",
+          "shap_value": -0.17,
+          "direction": "reduces_risk"
         },
         {
-          "feature": "population_density",
-          "shap_value": 11.828,
-          "direction": "increases_risk"
+          "feature": "scst_share",
+          "shap_value": -0.114,
+          "direction": "reduces_risk"
         },
         {
           "feature": "graduate_rate",
-          "shap_value": 11.2,
+          "shap_value": 0.107,
           "direction": "increases_risk"
         },
         {
           "feature": "nonworker_share",
-          "shap_value": -8.218,
-          "direction": "reduces_risk"
+          "shap_value": 0.097,
+          "direction": "increases_risk"
         }
       ]
     },
@@ -771,23 +771,23 @@
       "prediction_error": 17.3,
       "top_drivers": [
         {
+          "feature": "sex_ratio",
+          "shap_value": 0.452,
+          "direction": "increases_risk"
+        },
+        {
           "feature": "literacy_rate",
-          "shap_value": 12.898,
+          "shap_value": 0.232,
           "direction": "increases_risk"
         },
         {
           "feature": "graduate_rate",
-          "shap_value": 12.846,
+          "shap_value": 0.199,
           "direction": "increases_risk"
         },
         {
-          "feature": "low_income_share",
-          "shap_value": 7.27,
-          "direction": "increases_risk"
-        },
-        {
-          "feature": "nonworker_share",
-          "shap_value": -7.042,
+          "feature": "scst_share",
+          "shap_value": -0.149,
           "direction": "reduces_risk"
         }
       ]
@@ -801,22 +801,22 @@
       "top_drivers": [
         {
           "feature": "graduate_rate",
-          "shap_value": 15.246,
-          "direction": "increases_risk"
-        },
-        {
-          "feature": "population_density",
-          "shap_value": 13.427,
+          "shap_value": 0.085,
           "direction": "increases_risk"
         },
         {
           "feature": "low_income_share",
-          "shap_value": 11.125,
-          "direction": "increases_risk"
+          "shap_value": -0.079,
+          "direction": "reduces_risk"
         },
         {
           "feature": "nonworker_share",
-          "shap_value": -5.888,
+          "shap_value": 0.063,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "work_participation_rate",
+          "shap_value": -0.063,
           "direction": "reduces_risk"
         }
       ]
@@ -830,22 +830,22 @@
       "top_drivers": [
         {
           "feature": "literacy_rate",
-          "shap_value": 14.23,
+          "shap_value": 0.174,
           "direction": "increases_risk"
         },
         {
-          "feature": "graduate_rate",
-          "shap_value": 12.992,
-          "direction": "increases_risk"
-        },
-        {
-          "feature": "low_income_share",
-          "shap_value": 10.378,
-          "direction": "increases_risk"
+          "feature": "scst_share",
+          "shap_value": -0.153,
+          "direction": "reduces_risk"
         },
         {
           "feature": "nonworker_share",
-          "shap_value": -7.637,
+          "shap_value": 0.101,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "work_participation_rate",
+          "shap_value": -0.101,
           "direction": "reduces_risk"
         }
       ]
@@ -858,23 +858,23 @@
       "prediction_error": -14.9,
       "top_drivers": [
         {
+          "feature": "scst_share",
+          "shap_value": 0.158,
+          "direction": "increases_risk"
+        },
+        {
           "feature": "nonworker_share",
-          "shap_value": 10.254,
-          "direction": "increases_risk"
-        },
-        {
-          "feature": "work_participation_rate",
-          "shap_value": 9.289,
-          "direction": "increases_risk"
-        },
-        {
-          "feature": "low_income_share",
-          "shap_value": -8.356,
+          "shap_value": -0.139,
           "direction": "reduces_risk"
         },
         {
-          "feature": "graduate_rate",
-          "shap_value": 4.29,
+          "feature": "work_participation_rate",
+          "shap_value": 0.139,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "marginal_worker_share",
+          "shap_value": 0.09,
           "direction": "increases_risk"
         }
       ]
@@ -888,22 +888,22 @@
       "top_drivers": [
         {
           "feature": "nonworker_share",
-          "shap_value": 11.329,
-          "direction": "increases_risk"
-        },
-        {
-          "feature": "work_participation_rate",
-          "shap_value": 9.881,
-          "direction": "increases_risk"
-        },
-        {
-          "feature": "low_income_share",
-          "shap_value": -9.865,
+          "shap_value": -0.122,
           "direction": "reduces_risk"
         },
         {
+          "feature": "work_participation_rate",
+          "shap_value": 0.122,
+          "direction": "increases_risk"
+        },
+        {
           "feature": "scst_share",
-          "shap_value": -4.934,
+          "shap_value": 0.115,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": -0.066,
           "direction": "reduces_risk"
         }
       ]
@@ -916,23 +916,23 @@
       "prediction_error": 40.9,
       "top_drivers": [
         {
-          "feature": "graduate_rate",
-          "shap_value": 14.116,
+          "feature": "nonworker_share",
+          "shap_value": -0.112,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "work_participation_rate",
+          "shap_value": 0.112,
           "direction": "increases_risk"
         },
         {
           "feature": "low_income_share",
-          "shap_value": -10.389,
-          "direction": "reduces_risk"
-        },
-        {
-          "feature": "nonworker_share",
-          "shap_value": 9.821,
+          "shap_value": 0.079,
           "direction": "increases_risk"
         },
         {
-          "feature": "work_participation_rate",
-          "shap_value": 9.22,
+          "feature": "marginal_worker_share",
+          "shap_value": 0.062,
           "direction": "increases_risk"
         }
       ]
@@ -945,24 +945,24 @@
       "prediction_error": 8.0,
       "top_drivers": [
         {
-          "feature": "graduate_rate",
-          "shap_value": 16.777,
+          "feature": "scst_share",
+          "shap_value": 0.063,
           "direction": "increases_risk"
         },
         {
-          "feature": "low_income_share",
-          "shap_value": -8.629,
+          "feature": "sex_ratio",
+          "shap_value": -0.049,
           "direction": "reduces_risk"
         },
         {
           "feature": "marginal_worker_share",
-          "shap_value": -4.378,
-          "direction": "reduces_risk"
+          "shap_value": 0.046,
+          "direction": "increases_risk"
         },
         {
-          "feature": "scst_share",
-          "shap_value": -4.036,
-          "direction": "reduces_risk"
+          "feature": "graduate_rate",
+          "shap_value": 0.045,
+          "direction": "increases_risk"
         }
       ]
     },
@@ -974,24 +974,24 @@
       "prediction_error": -2.2,
       "top_drivers": [
         {
-          "feature": "low_income_share",
-          "shap_value": -10.182,
-          "direction": "reduces_risk"
+          "feature": "scst_share",
+          "shap_value": 0.096,
+          "direction": "increases_risk"
         },
         {
           "feature": "graduate_rate",
-          "shap_value": 5.753,
+          "shap_value": -0.051,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "low_income_share",
+          "shap_value": 0.043,
           "direction": "increases_risk"
         },
         {
           "feature": "marginal_worker_share",
-          "shap_value": -5.686,
-          "direction": "reduces_risk"
-        },
-        {
-          "feature": "sex_ratio",
-          "shap_value": -3.894,
-          "direction": "reduces_risk"
+          "shap_value": 0.032,
+          "direction": "increases_risk"
         }
       ]
     },
@@ -1004,22 +1004,22 @@
       "top_drivers": [
         {
           "feature": "graduate_rate",
-          "shap_value": -13.21,
+          "shap_value": -0.132,
           "direction": "reduces_risk"
         },
         {
-          "feature": "low_income_share",
-          "shap_value": -7.896,
+          "feature": "nonworker_share",
+          "shap_value": 0.129,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "work_participation_rate",
+          "shap_value": -0.129,
           "direction": "reduces_risk"
         },
         {
           "feature": "sex_ratio",
-          "shap_value": 4.945,
-          "direction": "increases_risk"
-        },
-        {
-          "feature": "literacy_rate",
-          "shap_value": -4.538,
+          "shap_value": -0.115,
           "direction": "reduces_risk"
         }
       ]
@@ -1032,24 +1032,24 @@
       "prediction_error": 41.0,
       "top_drivers": [
         {
-          "feature": "graduate_rate",
-          "shap_value": -18.332,
+          "feature": "sex_ratio",
+          "shap_value": -0.139,
           "direction": "reduces_risk"
         },
         {
-          "feature": "sex_ratio",
-          "shap_value": 12.471,
-          "direction": "increases_risk"
+          "feature": "graduate_rate",
+          "shap_value": -0.118,
+          "direction": "reduces_risk"
         },
         {
           "feature": "low_income_share",
-          "shap_value": -10.41,
-          "direction": "reduces_risk"
+          "shap_value": 0.104,
+          "direction": "increases_risk"
         },
         {
-          "feature": "marginal_worker_share",
-          "shap_value": -8.116,
-          "direction": "reduces_risk"
+          "feature": "literacy_rate",
+          "shap_value": 0.047,
+          "direction": "increases_risk"
         }
       ]
     },
@@ -1061,23 +1061,23 @@
       "prediction_error": 39.6,
       "top_drivers": [
         {
+          "feature": "scst_share",
+          "shap_value": 0.136,
+          "direction": "increases_risk"
+        },
+        {
           "feature": "literacy_rate",
-          "shap_value": -18.138,
+          "shap_value": -0.125,
           "direction": "reduces_risk"
         },
         {
           "feature": "graduate_rate",
-          "shap_value": -18.071,
+          "shap_value": -0.107,
           "direction": "reduces_risk"
         },
         {
           "feature": "low_income_share",
-          "shap_value": 11.7,
-          "direction": "increases_risk"
-        },
-        {
-          "feature": "sex_ratio",
-          "shap_value": -7.78,
+          "shap_value": -0.08,
           "direction": "reduces_risk"
         }
       ]
@@ -1091,22 +1091,22 @@
       "top_drivers": [
         {
           "feature": "graduate_rate",
-          "shap_value": -13.761,
+          "shap_value": -0.075,
           "direction": "reduces_risk"
         },
         {
-          "feature": "low_income_share",
-          "shap_value": -11.435,
-          "direction": "reduces_risk"
-        },
-        {
-          "feature": "marginal_worker_share",
-          "shap_value": -7.425,
+          "feature": "scst_share",
+          "shap_value": -0.075,
           "direction": "reduces_risk"
         },
         {
           "feature": "nonworker_share",
-          "shap_value": -7.33,
+          "shap_value": 0.057,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "work_participation_rate",
+          "shap_value": -0.057,
           "direction": "reduces_risk"
         }
       ]
@@ -1120,23 +1120,23 @@
       "top_drivers": [
         {
           "feature": "literacy_rate",
-          "shap_value": -16.67,
-          "direction": "reduces_risk"
-        },
-        {
-          "feature": "graduate_rate",
-          "shap_value": -14.676,
+          "shap_value": -0.169,
           "direction": "reduces_risk"
         },
         {
           "feature": "low_income_share",
-          "shap_value": -8.039,
+          "shap_value": 0.134,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": -0.121,
           "direction": "reduces_risk"
         },
         {
-          "feature": "sex_ratio",
-          "shap_value": -3.776,
-          "direction": "reduces_risk"
+          "feature": "scst_share",
+          "shap_value": 0.113,
+          "direction": "increases_risk"
         }
       ]
     },
@@ -1149,23 +1149,23 @@
       "top_drivers": [
         {
           "feature": "literacy_rate",
-          "shap_value": -16.804,
+          "shap_value": -0.248,
           "direction": "reduces_risk"
         },
         {
           "feature": "graduate_rate",
-          "shap_value": -15.643,
+          "shap_value": -0.165,
           "direction": "reduces_risk"
+        },
+        {
+          "feature": "scst_share",
+          "shap_value": 0.139,
+          "direction": "increases_risk"
         },
         {
           "feature": "low_income_share",
-          "shap_value": -8.606,
-          "direction": "reduces_risk"
-        },
-        {
-          "feature": "population_density",
-          "shap_value": -4.877,
-          "direction": "reduces_risk"
+          "shap_value": 0.127,
+          "direction": "increases_risk"
         }
       ]
     },
@@ -1178,23 +1178,23 @@
       "top_drivers": [
         {
           "feature": "literacy_rate",
-          "shap_value": -15.447,
+          "shap_value": -0.165,
           "direction": "reduces_risk"
         },
         {
-          "feature": "graduate_rate",
-          "shap_value": -12.876,
+          "feature": "nonworker_share",
+          "shap_value": 0.1,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "work_participation_rate",
+          "shap_value": -0.1,
           "direction": "reduces_risk"
         },
         {
-          "feature": "low_income_share",
-          "shap_value": -7.552,
-          "direction": "reduces_risk"
-        },
-        {
-          "feature": "population_density",
-          "shap_value": -4.539,
-          "direction": "reduces_risk"
+          "feature": "marginal_worker_share",
+          "shap_value": 0.095,
+          "direction": "increases_risk"
         }
       ]
     },
@@ -1207,23 +1207,23 @@
       "top_drivers": [
         {
           "feature": "graduate_rate",
-          "shap_value": -20.321,
-          "direction": "reduces_risk"
-        },
-        {
-          "feature": "low_income_share",
-          "shap_value": -9.656,
-          "direction": "reduces_risk"
-        },
-        {
-          "feature": "sex_ratio",
-          "shap_value": -7.584,
+          "shap_value": -0.091,
           "direction": "reduces_risk"
         },
         {
           "feature": "scst_share",
-          "shap_value": -7.082,
+          "shap_value": -0.037,
           "direction": "reduces_risk"
+        },
+        {
+          "feature": "marginal_worker_share",
+          "shap_value": -0.035,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "urbanization_rate",
+          "shap_value": 0.018,
+          "direction": "increases_risk"
         }
       ]
     },
@@ -1235,24 +1235,24 @@
       "prediction_error": 26.5,
       "top_drivers": [
         {
-          "feature": "literacy_rate",
-          "shap_value": -19.043,
-          "direction": "reduces_risk"
+          "feature": "low_income_share",
+          "shap_value": 0.141,
+          "direction": "increases_risk"
         },
         {
           "feature": "graduate_rate",
-          "shap_value": -16.16,
+          "shap_value": -0.135,
           "direction": "reduces_risk"
         },
         {
-          "feature": "low_income_share",
-          "shap_value": -8.567,
+          "feature": "literacy_rate",
+          "shap_value": -0.12,
           "direction": "reduces_risk"
         },
         {
-          "feature": "sex_ratio",
-          "shap_value": -6.984,
-          "direction": "reduces_risk"
+          "feature": "marginal_worker_share",
+          "shap_value": 0.096,
+          "direction": "increases_risk"
         }
       ]
     },
@@ -1265,22 +1265,22 @@
       "top_drivers": [
         {
           "feature": "literacy_rate",
-          "shap_value": -17.935,
+          "shap_value": -0.136,
           "direction": "reduces_risk"
         },
         {
-          "feature": "low_income_share",
-          "shap_value": -11.133,
-          "direction": "reduces_risk"
-        },
-        {
-          "feature": "marginal_worker_share",
-          "shap_value": -8.524,
+          "feature": "sex_ratio",
+          "shap_value": -0.101,
           "direction": "reduces_risk"
         },
         {
           "feature": "nonworker_share",
-          "shap_value": -8.188,
+          "shap_value": 0.094,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "work_participation_rate",
+          "shap_value": -0.094,
           "direction": "reduces_risk"
         }
       ]
@@ -1294,23 +1294,23 @@
       "top_drivers": [
         {
           "feature": "literacy_rate",
-          "shap_value": -18.095,
+          "shap_value": -0.375,
           "direction": "reduces_risk"
         },
         {
           "feature": "graduate_rate",
-          "shap_value": -17.006,
+          "shap_value": -0.18,
           "direction": "reduces_risk"
         },
         {
-          "feature": "low_income_share",
-          "shap_value": -9.909,
-          "direction": "reduces_risk"
+          "feature": "scst_share",
+          "shap_value": 0.099,
+          "direction": "increases_risk"
         },
         {
-          "feature": "sex_ratio",
-          "shap_value": -6.05,
-          "direction": "reduces_risk"
+          "feature": "marginal_worker_share",
+          "shap_value": 0.058,
+          "direction": "increases_risk"
         }
       ]
     },
@@ -1323,22 +1323,22 @@
       "top_drivers": [
         {
           "feature": "literacy_rate",
-          "shap_value": -18.54,
-          "direction": "reduces_risk"
-        },
-        {
-          "feature": "low_income_share",
-          "shap_value": -9.141,
-          "direction": "reduces_risk"
-        },
-        {
-          "feature": "marginal_worker_share",
-          "shap_value": -8.853,
+          "shap_value": -0.108,
           "direction": "reduces_risk"
         },
         {
           "feature": "nonworker_share",
-          "shap_value": -8.222,
+          "shap_value": 0.076,
+          "direction": "increases_risk"
+        },
+        {
+          "feature": "work_participation_rate",
+          "shap_value": -0.076,
+          "direction": "reduces_risk"
+        },
+        {
+          "feature": "graduate_rate",
+          "shap_value": -0.068,
           "direction": "reduces_risk"
         }
       ]

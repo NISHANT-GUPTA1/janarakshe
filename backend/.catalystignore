@@ -1,0 +1,11 @@
+# Keep the AppSail bundle small: never ship the local virtualenv, caches, logs,
+# or the raw source data (the runtime serves the committed processed/api/*.json and
+# queries Data Store — it does NOT run the heavy pipeline).
+venv/
+.venv/
+env/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+logs/
+data/raw/

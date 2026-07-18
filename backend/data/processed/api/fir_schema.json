@@ -1,9 +1,11 @@
 {
   "title": "KSP Police FIR System \u2014 Data Model",
-  "note": "Record-level ER model the platform is designed around (source: KSP confidential DB schema).",
+  "note": "Record-level ER model the platform is designed around (source: KSP confidential DB schema, Police_FIR_ER_Diagram.pdf). Provisioned as a relational store on Catalyst Data Store \u2014 see catalyst/datastore/schema.sql.",
+  "crime_no_format": "CrimeNo = 1-digit Case Category Code + 4-digit District ID + 4-digit Police Station (Unit) ID + 4-digit Year + 5-digit running serial. CaseNo = YYYY + 5-digit serial (last 9 digits of CrimeNo).",
   "tables": [
     {
       "name": "CaseMaster",
+      "group": "Case",
       "role": "Core FIR / case record",
       "columns": [
         "CaseMasterID (PK)",
@@ -12,33 +14,51 @@
         "CrimeRegisteredDate",
         "IncidentFromDate",
         "IncidentToDate",
+        "InfoReceivedPSDate",
         "latitude",
         "longitude",
         "BriefFacts",
-        "PolicePersonID (FK)",
-        "PoliceStationID (FK)",
+        "PolicePersonID (FK\u2192Employee)",
+        "PoliceStationID (FK\u2192Unit)",
         "CaseCategoryID (FK)",
         "GravityOffenceID (FK)",
-        "CrimeMajorHeadID (FK)",
-        "CrimeMinorHeadID (FK)",
+        "CrimeMajorHeadID (FK\u2192CrimeHead)",
+        "CrimeMinorHeadID (FK\u2192CrimeSubHead)",
         "CaseStatusID (FK)",
         "CourtID (FK)"
       ]
     },
     {
-      "name": "Accused",
-      "role": "Persons accused in a case (A1, A2, \u2026)",
+      "name": "Inv_OccuranceTime",
+      "group": "Case",
+      "role": "1:1 occurrence time/location per FIR",
       "columns": [
-        "AccusedMasterID (PK)",
+        "CaseMasterID (PK, FK\u2192CaseMaster)",
+        "IncidentFromDate",
+        "IncidentToDate",
+        "InfoReceivedPSDate",
+        "latitude",
+        "longitude"
+      ]
+    },
+    {
+      "name": "ComplainantDetails",
+      "group": "Participants",
+      "role": "Complainant + demographics",
+      "columns": [
+        "ComplainantID (PK)",
         "CaseMasterID (FK)",
-        "AccusedName",
+        "ComplainantName",
         "AgeYear",
-        "GenderID",
-        "PersonID"
+        "OccupationID (FK)",
+        "ReligionID (FK)",
+        "CasteID (FK\u2192CasteMaster)",
+        "GenderID"
       ]
     },
     {
       "name": "Victim",
+      "group": "Participants",
       "role": "Victims linked to a case",
       "columns": [
         "VictimMasterID (PK)",
@@ -50,99 +70,502 @@
       ]
     },
     {
-      "name": "ComplainantDetails",
-      "role": "Complainant + demographics",
+      "name": "Accused",
+      "group": "Participants",
+      "role": "Persons accused (A1, A2, \u2026)",
       "columns": [
-        "ComplainantID (PK)",
+        "AccusedMasterID (PK)",
         "CaseMasterID (FK)",
-        "ComplainantName",
+        "AccusedName",
         "AgeYear",
-        "OccupationID (FK)",
-        "ReligionID (FK)",
-        "CasteID (FK)",
-        "GenderID"
+        "GenderID",
+        "PersonID"
+      ]
+    },
+    {
+      "name": "ActSectionAssociation",
+      "group": "Legal",
+      "role": "Acts & sections invoked per case",
+      "columns": [
+        "CaseMasterID (FK)",
+        "ActID (FK\u2192Act.ActCode)",
+        "SectionID (FK\u2192Section.SectionCode)",
+        "ActOrderID",
+        "SectionOrderID"
+      ]
+    },
+    {
+      "name": "Act",
+      "group": "Legal",
+      "role": "Legal acts (IPC, NDPS, BNS \u2026)",
+      "columns": [
+        "ActCode (PK)",
+        "ActDescription",
+        "ShortName",
+        "Active"
+      ]
+    },
+    {
+      "name": "Section",
+      "group": "Legal",
+      "role": "Sections within an act",
+      "columns": [
+        "ActCode (PK, FK\u2192Act)",
+        "SectionCode (PK)",
+        "SectionDescription",
+        "Active"
+      ]
+    },
+    {
+      "name": "CrimeHeadActSection",
+      "group": "Legal",
+      "role": "Maps crime head \u2194 act/section",
+      "columns": [
+        "CrimeHeadID (FK)",
+        "ActCode (FK\u2192Act)",
+        "SectionCode (FK\u2192Section)"
+      ]
+    },
+    {
+      "name": "CrimeHead",
+      "group": "Legal",
+      "role": "Major crime head",
+      "columns": [
+        "CrimeHeadID (PK)",
+        "CrimeGroupName",
+        "Active"
+      ]
+    },
+    {
+      "name": "CrimeSubHead",
+      "group": "Legal",
+      "role": "Minor crime sub-head",
+      "columns": [
+        "CrimeSubHeadID (PK)",
+        "CrimeHeadID (FK)",
+        "CrimeHeadName",
+        "SeqID"
       ]
     },
     {
       "name": "ArrestSurrender",
+      "group": "Arrest",
       "role": "Arrest / surrender events",
       "columns": [
         "ArrestSurrenderID (PK)",
         "CaseMasterID (FK)",
-        "AccusedMasterID (FK)",
+        "ArrestSurrenderTypeID",
         "ArrestSurrenderDate",
-        "IOID (FK)",
+        "ArrestSurrenderStateId (FK\u2192State)",
+        "ArrestSurrenderDistrictId (FK\u2192District)",
+        "PoliceStationID (FK\u2192Unit)",
+        "IOID (FK\u2192Employee)",
         "CourtID (FK)",
-        "PoliceStationID (FK)"
+        "AccusedMasterID (FK)",
+        "IsAccused",
+        "IsComplainantAccused"
+      ]
+    },
+    {
+      "name": "inv_arrestsurrenderaccused",
+      "group": "Arrest",
+      "role": "Junction \u2014 one arrest event \u2194 many accused",
+      "columns": [
+        "ArrestSurrenderID (PK, FK)",
+        "AccusedMasterID (PK, FK)"
       ]
     },
     {
       "name": "ChargesheetDetails",
+      "group": "Arrest",
       "role": "Final report (A=chargesheet / B=false / C=undetected)",
       "columns": [
         "CSID (PK)",
         "CaseMasterID (FK)",
         "csdate",
         "cstype",
-        "PolicePersonID (FK)"
+        "PolicePersonID (FK\u2192Employee)"
       ]
     },
     {
-      "name": "Act / Section / ActSectionAssociation",
-      "role": "Legal acts & sections per case",
+      "name": "CaseCategory",
+      "group": "Lookups",
+      "role": "FIR / UDR / PAR / Zero FIR",
       "columns": [
-        "ActCode (PK)",
-        "SectionCode",
-        "ActSectionAssociation.CaseMasterID (FK)"
+        "CaseCategoryID (PK)",
+        "LookupValue"
       ]
     },
     {
-      "name": "CrimeHead / CrimeSubHead",
-      "role": "Major & minor crime classification",
+      "name": "GravityOffence",
+      "group": "Lookups",
+      "role": "Heinous / Non-Heinous",
       "columns": [
-        "CrimeHeadID (PK)",
-        "CrimeGroupName",
-        "CrimeSubHeadID (PK)",
-        "CrimeHeadName"
+        "GravityOffenceID (PK)",
+        "LookupValue"
       ]
     },
     {
-      "name": "Unit / UnitType",
-      "role": "Police station hierarchy",
+      "name": "CaseStatusMaster",
+      "group": "Lookups",
+      "role": "Case status",
       "columns": [
-        "UnitID (PK)",
-        "UnitName",
-        "TypeID (FK)",
-        "ParentUnit",
-        "DistrictID (FK)"
+        "CaseStatusID (PK)",
+        "CaseStatusName"
       ]
     },
     {
-      "name": "Employee / Rank / Designation",
+      "name": "CasteMaster",
+      "group": "Lookups",
+      "role": "Caste",
+      "columns": [
+        "caste_master_id (PK)",
+        "caste_master_name"
+      ]
+    },
+    {
+      "name": "ReligionMaster",
+      "group": "Lookups",
+      "role": "Religion",
+      "columns": [
+        "ReligionID (PK)",
+        "ReligionName"
+      ]
+    },
+    {
+      "name": "OccupationMaster",
+      "group": "Lookups",
+      "role": "Occupation",
+      "columns": [
+        "OccupationID (PK)",
+        "OccupationName"
+      ]
+    },
+    {
+      "name": "Employee",
+      "group": "Organisation",
       "role": "Police officers",
       "columns": [
         "EmployeeID (PK)",
+        "DistrictID (FK)",
         "UnitID (FK)",
         "RankID (FK)",
         "DesignationID (FK)",
-        "KGID"
+        "KGID",
+        "FirstName",
+        "EmployeeDOB",
+        "GenderID",
+        "BloodGroupID",
+        "PhysicallyChallenged",
+        "AppointmentDate"
       ]
     },
     {
-      "name": "District / State / Court",
-      "role": "Geo & judicial masters",
+      "name": "Rank",
+      "group": "Organisation",
+      "role": "Police rank",
+      "columns": [
+        "RankID (PK)",
+        "RankName",
+        "Hierarchy",
+        "Active"
+      ]
+    },
+    {
+      "name": "Designation",
+      "group": "Organisation",
+      "role": "Police designation",
+      "columns": [
+        "DesignationID (PK)",
+        "DesignationName",
+        "Active",
+        "SortOrder"
+      ]
+    },
+    {
+      "name": "Unit",
+      "group": "Organisation",
+      "role": "Police station / unit hierarchy",
+      "columns": [
+        "UnitID (PK)",
+        "UnitName",
+        "TypeID (FK\u2192UnitType)",
+        "ParentUnit",
+        "NationalityID",
+        "StateID (FK)",
+        "DistrictID (FK)",
+        "Active"
+      ]
+    },
+    {
+      "name": "UnitType",
+      "group": "Organisation",
+      "role": "Unit type",
+      "columns": [
+        "UnitTypeID (PK)",
+        "UnitTypeName",
+        "CityDistState",
+        "Hierarchy",
+        "Active"
+      ]
+    },
+    {
+      "name": "Court",
+      "group": "Geo",
+      "role": "Courts",
+      "columns": [
+        "CourtID (PK)",
+        "CourtName",
+        "DistrictID (FK)",
+        "StateID (FK)",
+        "Active"
+      ]
+    },
+    {
+      "name": "District",
+      "group": "Geo",
+      "role": "Districts",
       "columns": [
         "DistrictID (PK)",
+        "DistrictName",
         "StateID (FK)",
-        "CourtID (PK)",
-        "CourtName"
+        "Active"
+      ]
+    },
+    {
+      "name": "State",
+      "group": "Geo",
+      "role": "States",
+      "columns": [
+        "StateID (PK)",
+        "StateName",
+        "NationalityID",
+        "Active"
       ]
     }
   ],
   "relationships": [
-    "CaseMaster 1\u2014* Victim / Accused / ComplainantDetails / ArrestSurrender / ActSectionAssociation",
-    "CaseMaster *\u20141 CaseCategory / GravityOffence / CrimeHead / CrimeSubHead / CaseStatus / Court / Employee",
-    "CrimeSubHead *\u20141 CrimeHead ; Section *\u20141 Act",
-    "Unit *\u20141 District ; District *\u20141 State ; Employee *\u20141 Unit/Rank/Designation"
+    {
+      "parent": "CaseMaster",
+      "child": "Victim",
+      "type": "1:N",
+      "via": "CaseMasterID"
+    },
+    {
+      "parent": "CaseMaster",
+      "child": "Accused",
+      "type": "1:N",
+      "via": "CaseMasterID"
+    },
+    {
+      "parent": "CaseMaster",
+      "child": "ArrestSurrender",
+      "type": "1:N",
+      "via": "CaseMasterID"
+    },
+    {
+      "parent": "CaseMaster",
+      "child": "ComplainantDetails",
+      "type": "1:N",
+      "via": "CaseMasterID"
+    },
+    {
+      "parent": "CaseMaster",
+      "child": "ActSectionAssociation",
+      "type": "1:N",
+      "via": "CaseMasterID"
+    },
+    {
+      "parent": "CaseMaster",
+      "child": "Inv_OccuranceTime",
+      "type": "1:1",
+      "via": "CaseMasterID"
+    },
+    {
+      "parent": "CaseCategory",
+      "child": "CaseMaster",
+      "type": "1:N",
+      "via": "CaseCategoryID"
+    },
+    {
+      "parent": "GravityOffence",
+      "child": "CaseMaster",
+      "type": "1:N",
+      "via": "GravityOffenceID"
+    },
+    {
+      "parent": "CrimeHead",
+      "child": "CaseMaster",
+      "type": "1:N",
+      "via": "CrimeMajorHeadID"
+    },
+    {
+      "parent": "CrimeSubHead",
+      "child": "CaseMaster",
+      "type": "1:N",
+      "via": "CrimeMinorHeadID"
+    },
+    {
+      "parent": "CaseStatusMaster",
+      "child": "CaseMaster",
+      "type": "1:N",
+      "via": "CaseStatusID"
+    },
+    {
+      "parent": "Court",
+      "child": "CaseMaster",
+      "type": "1:N",
+      "via": "CourtID"
+    },
+    {
+      "parent": "Employee",
+      "child": "CaseMaster",
+      "type": "1:N",
+      "via": "PolicePersonID"
+    },
+    {
+      "parent": "ArrestSurrender",
+      "child": "inv_arrestsurrenderaccused",
+      "type": "1:N",
+      "via": "ArrestSurrenderID"
+    },
+    {
+      "parent": "Accused",
+      "child": "inv_arrestsurrenderaccused",
+      "type": "1:N",
+      "via": "AccusedMasterID"
+    },
+    {
+      "parent": "State",
+      "child": "ArrestSurrender",
+      "type": "1:N",
+      "via": "ArrestSurrenderStateId"
+    },
+    {
+      "parent": "District",
+      "child": "ArrestSurrender",
+      "type": "1:N",
+      "via": "ArrestSurrenderDistrictId"
+    },
+    {
+      "parent": "Court",
+      "child": "ArrestSurrender",
+      "type": "1:N",
+      "via": "CourtID"
+    },
+    {
+      "parent": "Employee",
+      "child": "ArrestSurrender",
+      "type": "1:N",
+      "via": "IOID"
+    },
+    {
+      "parent": "OccupationMaster",
+      "child": "ComplainantDetails",
+      "type": "1:N",
+      "via": "OccupationID"
+    },
+    {
+      "parent": "ReligionMaster",
+      "child": "ComplainantDetails",
+      "type": "1:N",
+      "via": "ReligionID"
+    },
+    {
+      "parent": "CasteMaster",
+      "child": "ComplainantDetails",
+      "type": "1:N",
+      "via": "CasteID"
+    },
+    {
+      "parent": "Act",
+      "child": "ActSectionAssociation",
+      "type": "1:N",
+      "via": "ActID"
+    },
+    {
+      "parent": "Section",
+      "child": "ActSectionAssociation",
+      "type": "1:N",
+      "via": "SectionID"
+    },
+    {
+      "parent": "CrimeHead",
+      "child": "CrimeSubHead",
+      "type": "1:N",
+      "via": "CrimeHeadID"
+    },
+    {
+      "parent": "CrimeHead",
+      "child": "CrimeHeadActSection",
+      "type": "1:N",
+      "via": "CrimeHeadID"
+    },
+    {
+      "parent": "Act",
+      "child": "CrimeHeadActSection",
+      "type": "1:N",
+      "via": "ActCode"
+    },
+    {
+      "parent": "Act",
+      "child": "Section",
+      "type": "1:N",
+      "via": "ActCode"
+    },
+    {
+      "parent": "District",
+      "child": "Court",
+      "type": "1:N",
+      "via": "DistrictID"
+    },
+    {
+      "parent": "State",
+      "child": "District",
+      "type": "1:N",
+      "via": "StateID"
+    },
+    {
+      "parent": "UnitType",
+      "child": "Unit",
+      "type": "1:N",
+      "via": "TypeID"
+    },
+    {
+      "parent": "State",
+      "child": "Unit",
+      "type": "1:N",
+      "via": "StateID"
+    },
+    {
+      "parent": "District",
+      "child": "Unit",
+      "type": "1:N",
+      "via": "DistrictID"
+    },
+    {
+      "parent": "District",
+      "child": "Employee",
+      "type": "1:N",
+      "via": "DistrictID"
+    },
+    {
+      "parent": "Unit",
+      "child": "Employee",
+      "type": "1:N",
+      "via": "UnitID"
+    },
+    {
+      "parent": "Rank",
+      "child": "Employee",
+      "type": "1:N",
+      "via": "RankID"
+    },
+    {
+      "parent": "Designation",
+      "child": "Employee",
+      "type": "1:N",
+      "via": "DesignationID"
+    }
   ]
 }

@@ -12,8 +12,9 @@ RUN npm run build
 # ---- stage 2: backend + serve ----
 FROM python:3.12-slim AS app
 WORKDIR /app
-COPY backend/requirements.txt ./backend/requirements.txt
-RUN pip install --no-cache-dir -r backend/requirements.txt
+# The image runs the full pipeline at build time, so it needs the full (pipeline) deps.
+COPY backend/requirements-pipeline.txt ./backend/requirements-pipeline.txt
+RUN pip install --no-cache-dir -r backend/requirements-pipeline.txt
 COPY backend/ ./backend/
 COPY docs/ ./docs/
 COPY --from=frontend /fe/dist ./frontend/dist

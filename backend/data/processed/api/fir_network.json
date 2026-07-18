@@ -3935,58 +3935,13 @@
   "case_graph": {
     "nodes": [
       {
-        "id": "ACC-00228",
+        "id": "ACC-00052",
         "kind": "person",
-        "name": "Anil S.",
-        "district": "Chikkamagaluru",
-        "incidents": 3,
-        "degree": 3,
-        "component": 2
-      },
-      {
-        "id": "ACC-00336",
-        "kind": "person",
-        "name": "Lokesh V.",
-        "district": "Bengaluru Urban",
-        "incidents": 2,
-        "degree": 1,
-        "component": 0
-      },
-      {
-        "id": "ACC-00146",
-        "kind": "person",
-        "name": "Arjun R.",
-        "district": "Uttara Kannada",
-        "incidents": 2,
-        "degree": 2,
-        "component": 11
-      },
-      {
-        "id": "ACC-00023",
-        "kind": "person",
-        "name": "Girish P.",
-        "district": "Kalaburagi",
+        "name": "Mallesh S.",
+        "district": "Yadgir",
         "incidents": 1,
         "degree": 2,
-        "component": 1
-      },
-      {
-        "id": "ACC-00155",
-        "kind": "person",
-        "name": "Latha R.",
-        "district": "Haveri",
-        "incidents": 5,
-        "degree": 5,
-        "component": 12
-      },
-      {
-        "id": "ACC-00061",
-        "kind": "person",
-        "name": "Kiran K.",
-        "district": "Bagalkote",
-        "incidents": 4,
-        "degree": 4,
-        "component": 18
+        "component": 9
       },
       {
         "id": "ACC-00129",
@@ -3998,1696 +3953,22 @@
         "component": 4
       },
       {
-        "id": "ACC-00195",
+        "id": "ACC-00365",
         "kind": "person",
-        "name": "Deepa B.",
-        "district": "Davanagere",
-        "incidents": 1,
-        "degree": 1,
-        "component": 41
-      },
-      {
-        "id": "ACC-00265",
-        "kind": "person",
-        "name": "Mallesh B.",
-        "district": "Hassan",
-        "incidents": 1,
-        "degree": 1,
-        "component": 7
-      },
-      {
-        "id": "ACC-00113",
-        "kind": "person",
-        "name": "Santosh T.",
-        "district": "Ballari",
-        "incidents": 5,
-        "degree": 2,
-        "component": 30
-      },
-      {
-        "id": "ACC-00172",
-        "kind": "person",
-        "name": "Vinod M.",
-        "district": "Chitradurga",
-        "incidents": 3,
-        "degree": 1,
-        "component": 13
-      },
-      {
-        "id": "ACC-00356",
-        "kind": "person",
-        "name": "Lokesh S.",
+        "name": "Deepa P.",
         "district": "Kodagu",
-        "incidents": 3,
-        "degree": 2,
-        "component": 15
-      },
-      {
-        "id": "ACC-00092",
-        "kind": "person",
-        "name": "Suresh G.",
-        "district": "Koppal",
-        "incidents": 5,
-        "degree": 4,
-        "component": 3
-      },
-      {
-        "id": "ACC-00046",
-        "kind": "person",
-        "name": "Basava M.",
-        "district": "Yadgir",
-        "incidents": 2,
-        "degree": 1,
-        "component": 9
-      },
-      {
-        "id": "ACC-00309",
-        "kind": "person",
-        "name": "Vinod K.",
-        "district": "Bengaluru Urban",
-        "incidents": 8,
-        "degree": 3,
-        "component": 0
-      },
-      {
-        "id": "ACC-00201",
-        "kind": "person",
-        "name": "Roopa H.",
-        "district": "Shivamogga",
         "incidents": 1,
-        "degree": 2,
-        "component": 6
-      },
-      {
-        "id": "ACC-00417",
-        "kind": "person",
-        "name": "Lokesh M.",
-        "district": "Mandya",
-        "incidents": 4,
-        "degree": 3,
-        "component": 5
-      },
-      {
-        "id": "ACC-00139",
-        "kind": "person",
-        "name": "Roopa H.",
-        "district": "Dharwad",
-        "incidents": 1,
-        "degree": 2,
-        "component": 4
-      },
-      {
-        "id": "ACC-00372",
-        "kind": "person",
-        "name": "Nagaraj D.",
-        "district": "Chamarajanagara",
-        "incidents": 4,
-        "degree": 3,
-        "component": 23
-      },
-      {
-        "id": "ACC-00072",
-        "kind": "person",
-        "name": "Manju T.",
-        "district": "Raichur",
-        "incidents": 5,
-        "degree": 5,
-        "component": 10
-      },
-      {
-        "id": "ACC-00174",
-        "kind": "person",
-        "name": "Kavya R.",
-        "district": "Chitradurga",
-        "incidents": 2,
-        "degree": 2,
-        "component": 13
-      },
-      {
-        "id": "ACC-00018",
-        "kind": "person",
-        "name": "Latha M.",
-        "district": "Kalaburagi",
-        "incidents": 2,
-        "degree": 3,
-        "component": 1
-      },
-      {
-        "id": "ACC-00024",
-        "kind": "person",
-        "name": "Girish G.",
-        "district": "Kalaburagi",
-        "incidents": 3,
-        "degree": 3,
-        "component": 1
-      },
-      {
-        "id": "ACC-00082",
-        "kind": "person",
-        "name": "Mallesh R.",
-        "district": "Raichur",
-        "incidents": 2,
-        "degree": 3,
-        "component": 10
-      },
-      {
-        "id": "ACC-00093",
-        "kind": "person",
-        "name": "Shankar N.",
-        "district": "Koppal",
-        "incidents": 1,
-        "degree": 2,
-        "component": 3
-      },
-      {
-        "id": "ACC-00300",
-        "kind": "person",
-        "name": "Ravi N.",
-        "district": "Dakshina Kannada",
-        "incidents": 1,
-        "degree": 2,
-        "component": 22
-      },
-      {
-        "id": "ACC-00045",
-        "kind": "person",
-        "name": "Vinod P.",
-        "district": "Yadgir",
-        "incidents": 3,
-        "degree": 1,
-        "component": 35
-      },
-      {
-        "id": "ACC-00439",
-        "kind": "person",
-        "name": "Imran S.",
-        "district": "Vijayapura",
-        "incidents": 2,
-        "degree": 1,
-        "component": 24
-      },
-      {
-        "id": "ACC-00254",
-        "kind": "person",
-        "name": "Anil T.",
-        "district": "Hassan",
-        "incidents": 2,
-        "degree": 1,
-        "component": 46
-      },
-      {
-        "id": "ACC-00021",
-        "kind": "person",
-        "name": "Lokesh G.",
-        "district": "Kalaburagi",
-        "incidents": 1,
-        "degree": 1,
-        "component": 1
-      },
-      {
-        "id": "ACC-00039",
-        "kind": "person",
-        "name": "Kiran H.",
-        "district": "Belagavi",
-        "incidents": 1,
-        "degree": 1,
-        "component": 34
-      },
-      {
-        "id": "ACC-00271",
-        "kind": "person",
-        "name": "Santosh R.",
-        "district": "Kolar",
-        "incidents": 2,
-        "degree": 2,
-        "component": 8
-      },
-      {
-        "id": "ACC-00321",
-        "kind": "person",
-        "name": "Santosh P.",
-        "district": "Bengaluru Urban",
-        "incidents": 3,
-        "degree": 4,
-        "component": 0
-      },
-      {
-        "id": "ACC-00398",
-        "kind": "person",
-        "name": "Mallesh B.",
-        "district": "Ramanagara",
-        "incidents": 3,
-        "degree": 2,
-        "component": 20
-      },
-      {
-        "id": "ACC-00169",
-        "kind": "person",
-        "name": "Deepa D.",
-        "district": "Chitradurga",
-        "incidents": 5,
-        "degree": 5,
-        "component": 13
-      },
-      {
-        "id": "ACC-00132",
-        "kind": "person",
-        "name": "Manju S.",
-        "district": "Dharwad",
-        "incidents": 3,
-        "degree": 3,
-        "component": 4
-      },
-      {
-        "id": "ACC-00384",
-        "kind": "person",
-        "name": "Yusuf K.",
-        "district": "Tumakuru",
-        "incidents": 2,
-        "degree": 1,
-        "component": 29
-      },
-      {
-        "id": "ACC-00049",
-        "kind": "person",
-        "name": "Manju B.",
-        "district": "Yadgir",
-        "incidents": 2,
-        "degree": 1,
-        "component": 9
-      },
-      {
-        "id": "ACC-00110",
-        "kind": "person",
-        "name": "Imran S.",
-        "district": "Gadag",
-        "incidents": 2,
-        "degree": 1,
-        "component": 37
-      },
-      {
-        "id": "ACC-00131",
-        "kind": "person",
-        "name": "Suresh S.",
-        "district": "Dharwad",
-        "incidents": 2,
-        "degree": 1,
-        "component": 4
-      },
-      {
-        "id": "ACC-00277",
-        "kind": "person",
-        "name": "Arjun T.",
-        "district": "Kolar",
-        "incidents": 2,
-        "degree": 1,
-        "component": 8
-      },
-      {
-        "id": "ACC-00357",
-        "kind": "person",
-        "name": "Ramesh S.",
-        "district": "Kodagu",
-        "incidents": 3,
         "degree": 1,
         "component": 15
       },
       {
-        "id": "ACC-00078",
+        "id": "ACC-00283",
         "kind": "person",
-        "name": "Lokesh P.",
-        "district": "Raichur",
-        "incidents": 1,
-        "degree": 1,
-        "component": 10
-      },
-      {
-        "id": "ACC-00320",
-        "kind": "person",
-        "name": "Prakash R.",
-        "district": "Bengaluru Urban",
-        "incidents": 3,
-        "degree": 2,
-        "component": 0
-      },
-      {
-        "id": "ACC-00435",
-        "kind": "person",
-        "name": "Manju G.",
-        "district": "Mysuru",
-        "incidents": 1,
-        "degree": 2,
-        "component": 32
-      },
-      {
-        "id": "ACC-00327",
-        "kind": "person",
-        "name": "Mallesh P.",
-        "district": "Bengaluru Urban",
-        "incidents": 3,
-        "degree": 1,
-        "component": 47
-      },
-      {
-        "id": "ACC-00117",
-        "kind": "person",
-        "name": "Prakash N.",
-        "district": "Ballari",
-        "incidents": 2,
-        "degree": 3,
-        "component": 21
-      },
-      {
-        "id": "ACC-00257",
-        "kind": "person",
-        "name": "Manju N.",
-        "district": "Hassan",
-        "incidents": 3,
-        "degree": 2,
-        "component": 7
-      },
-      {
-        "id": "ACC-00062",
-        "kind": "person",
-        "name": "Prakash G.",
-        "district": "Bagalkote",
-        "incidents": 4,
-        "degree": 2,
-        "component": 18
-      },
-      {
-        "id": "ACC-00026",
-        "kind": "person",
-        "name": "Arjun K.",
-        "district": "Kalaburagi",
-        "incidents": 1,
-        "degree": 1,
-        "component": 1
-      },
-      {
-        "id": "ACC-00298",
-        "kind": "person",
-        "name": "Vinod G.",
-        "district": "Dakshina Kannada",
-        "incidents": 2,
-        "degree": 2,
-        "component": 28
-      },
-      {
-        "id": "ACC-00103",
-        "kind": "person",
-        "name": "Mahesh K.",
-        "district": "Gadag",
-        "incidents": 3,
-        "degree": 1,
-        "component": 27
-      },
-      {
-        "id": "ACC-00048",
-        "kind": "person",
-        "name": "Girish H.",
-        "district": "Yadgir",
-        "incidents": 2,
-        "degree": 2,
-        "component": 9
-      },
-      {
-        "id": "ACC-00253",
-        "kind": "person",
-        "name": "Basava P.",
-        "district": "Hassan",
-        "incidents": 5,
-        "degree": 4,
-        "component": 7
-      },
-      {
-        "id": "ACC-00171",
-        "kind": "person",
-        "name": "Roopa D.",
-        "district": "Chitradurga",
-        "incidents": 4,
-        "degree": 2,
-        "component": 13
-      },
-      {
-        "id": "ACC-00141",
-        "kind": "person",
-        "name": "Santosh H.",
-        "district": "Uttara Kannada",
-        "incidents": 4,
-        "degree": 4,
-        "component": 11
-      },
-      {
-        "id": "ACC-00434",
-        "kind": "person",
-        "name": "Girish P.",
-        "district": "Mysuru",
-        "incidents": 3,
-        "degree": 4,
-        "component": 26
-      },
-      {
-        "id": "ACC-00032",
-        "kind": "person",
-        "name": "Nagaraj P.",
-        "district": "Belagavi",
-        "incidents": 4,
-        "degree": 1,
-        "component": 17
-      },
-      {
-        "id": "ACC-00200",
-        "kind": "person",
-        "name": "Latha B.",
-        "district": "Shivamogga",
-        "incidents": 2,
-        "degree": 3,
-        "component": 6
-      },
-      {
-        "id": "ACC-00237",
-        "kind": "person",
-        "name": "Yusuf D.",
-        "district": "Chikkamagaluru",
-        "incidents": 2,
-        "degree": 2,
-        "component": 2
-      },
-      {
-        "id": "ACC-00063",
-        "kind": "person",
-        "name": "Arjun P.",
-        "district": "Bagalkote",
-        "incidents": 3,
-        "degree": 2,
-        "component": 18
-      },
-      {
-        "id": "ACC-00005",
-        "kind": "person",
-        "name": "Latha R.",
-        "district": "Bidar",
-        "incidents": 1,
-        "degree": 1,
-        "component": 16
-      },
-      {
-        "id": "ACC-00070",
-        "kind": "person",
-        "name": "Anil B.",
-        "district": "Bagalkote",
-        "incidents": 1,
-        "degree": 2,
-        "component": 18
-      },
-      {
-        "id": "ACC-00264",
-        "kind": "person",
-        "name": "Latha D.",
-        "district": "Hassan",
-        "incidents": 3,
-        "degree": 2,
-        "component": 7
-      },
-      {
-        "id": "ACC-00429",
-        "kind": "person",
-        "name": "Prakash M.",
-        "district": "Mysuru",
-        "incidents": 2,
-        "degree": 2,
-        "component": 26
-      },
-      {
-        "id": "ACC-00248",
-        "kind": "person",
-        "name": "Mahesh T.",
-        "district": "Chikkaballapura",
-        "incidents": 1,
-        "degree": 2,
-        "component": 25
-      },
-      {
-        "id": "ACC-00106",
-        "kind": "person",
-        "name": "Lokesh K.",
-        "district": "Gadag",
-        "incidents": 2,
-        "degree": 1,
-        "component": 36
-      },
-      {
-        "id": "ACC-00064",
-        "kind": "person",
-        "name": "Shankar B.",
-        "district": "Bagalkote",
-        "incidents": 1,
-        "degree": 1,
-        "component": 18
-      },
-      {
-        "id": "ACC-00112",
-        "kind": "person",
-        "name": "Vinod T.",
-        "district": "Gadag",
-        "incidents": 1,
-        "degree": 2,
-        "component": 27
-      },
-      {
-        "id": "ACC-00413",
-        "kind": "person",
-        "name": "Yusuf R.",
-        "district": "Mandya",
-        "incidents": 4,
-        "degree": 2,
-        "component": 5
-      },
-      {
-        "id": "ACC-00085",
-        "kind": "person",
-        "name": "Anil R.",
-        "district": "Koppal",
-        "incidents": 5,
-        "degree": 4,
-        "component": 3
-      },
-      {
-        "id": "ACC-00176",
-        "kind": "person",
-        "name": "Manju K.",
-        "district": "Chitradurga",
-        "incidents": 3,
-        "degree": 1,
-        "component": 13
-      },
-      {
-        "id": "ACC-00077",
-        "kind": "person",
-        "name": "Ramesh T.",
-        "district": "Raichur",
-        "incidents": 2,
-        "degree": 1,
-        "component": 10
-      },
-      {
-        "id": "ACC-00293",
-        "kind": "person",
-        "name": "Mallesh R.",
+        "name": "Suresh R.",
         "district": "Bengaluru Rural",
-        "incidents": 2,
-        "degree": 3,
-        "component": 14
-      },
-      {
-        "id": "ACC-00153",
-        "kind": "person",
-        "name": "Roopa N.",
-        "district": "Uttara Kannada",
-        "incidents": 3,
-        "degree": 1,
-        "component": 39
-      },
-      {
-        "id": "ACC-00194",
-        "kind": "person",
-        "name": "Kiran K.",
-        "district": "Davanagere",
         "incidents": 1,
-        "degree": 1,
-        "component": 42
-      },
-      {
-        "id": "ACC-00251",
-        "kind": "person",
-        "name": "Basava P.",
-        "district": "Chikkaballapura",
-        "incidents": 1,
-        "degree": 1,
-        "component": 25
-      },
-      {
-        "id": "ACC-00304",
-        "kind": "person",
-        "name": "Anil G.",
-        "district": "Dakshina Kannada",
-        "incidents": 2,
-        "degree": 2,
-        "component": 22
-      },
-      {
-        "id": "ACC-00420",
-        "kind": "person",
-        "name": "Imran V.",
-        "district": "Mandya",
-        "incidents": 1,
-        "degree": 1,
-        "component": 5
-      },
-      {
-        "id": "ACC-00099",
-        "kind": "person",
-        "name": "Ramesh S.",
-        "district": "Gadag",
-        "incidents": 5,
-        "degree": 2,
-        "component": 27
-      },
-      {
-        "id": "ACC-00395",
-        "kind": "person",
-        "name": "Anil D.",
-        "district": "Ramanagara",
-        "incidents": 3,
-        "degree": 3,
-        "component": 20
-      },
-      {
-        "id": "ACC-00423",
-        "kind": "person",
-        "name": "Santosh V.",
-        "district": "Mysuru",
-        "incidents": 2,
-        "degree": 2,
-        "component": 32
-      },
-      {
-        "id": "ACC-00204",
-        "kind": "person",
-        "name": "Nagaraj P.",
-        "district": "Shivamogga",
-        "incidents": 2,
-        "degree": 1,
-        "component": 6
-      },
-      {
-        "id": "ACC-00316",
-        "kind": "person",
-        "name": "Prakash V.",
-        "district": "Bengaluru Urban",
-        "incidents": 1,
-        "degree": 2,
-        "component": 31
-      },
-      {
-        "id": "ACC-00408",
-        "kind": "person",
-        "name": "Arjun P.",
-        "district": "Mandya",
-        "incidents": 5,
-        "degree": 4,
-        "component": 5
-      },
-      {
-        "id": "ACC-00297",
-        "kind": "person",
-        "name": "Lokesh K.",
-        "district": "Dakshina Kannada",
-        "incidents": 2,
-        "degree": 1,
-        "component": 28
-      },
-      {
-        "id": "ACC-00355",
-        "kind": "person",
-        "name": "Roopa D.",
-        "district": "Kodagu",
-        "incidents": 4,
-        "degree": 2,
-        "component": 15
-      },
-      {
-        "id": "ACC-00353",
-        "kind": "person",
-        "name": "Roopa R.",
-        "district": "Kodagu",
-        "incidents": 4,
-        "degree": 1,
-        "component": 15
-      },
-      {
-        "id": "ACC-00118",
-        "kind": "person",
-        "name": "Suresh T.",
-        "district": "Ballari",
-        "incidents": 2,
-        "degree": 2,
-        "component": 21
-      },
-      {
-        "id": "ACC-00399",
-        "kind": "person",
-        "name": "Prakash P.",
-        "district": "Ramanagara",
-        "incidents": 1,
-        "degree": 1,
-        "component": 20
-      },
-      {
-        "id": "ACC-00230",
-        "kind": "person",
-        "name": "Naveen D.",
-        "district": "Chikkamagaluru",
-        "incidents": 2,
-        "degree": 2,
-        "component": 2
-      },
-      {
-        "id": "ACC-00065",
-        "kind": "person",
-        "name": "Manju D.",
-        "district": "Bagalkote",
-        "incidents": 2,
-        "degree": 1,
-        "component": 18
-      },
-      {
-        "id": "ACC-00211",
-        "kind": "person",
-        "name": "Ravi K.",
-        "district": "Udupi",
-        "incidents": 6,
-        "degree": 4,
-        "component": 19
-      },
-      {
-        "id": "ACC-00307",
-        "kind": "person",
-        "name": "Imran P.",
-        "district": "Dakshina Kannada",
-        "incidents": 2,
-        "degree": 2,
-        "component": 22
-      },
-      {
-        "id": "ACC-00370",
-        "kind": "person",
-        "name": "Ramesh T.",
-        "district": "Chamarajanagara",
-        "incidents": 3,
-        "degree": 2,
-        "component": 23
-      },
-      {
-        "id": "ACC-00376",
-        "kind": "person",
-        "name": "Santosh N.",
-        "district": "Chamarajanagara",
-        "incidents": 2,
-        "degree": 3,
-        "component": 23
-      },
-      {
-        "id": "ACC-00017",
-        "kind": "person",
-        "name": "Mallesh N.",
-        "district": "Kalaburagi",
-        "incidents": 4,
-        "degree": 2,
-        "component": 1
-      },
-      {
-        "id": "ACC-00143",
-        "kind": "person",
-        "name": "Shankar B.",
-        "district": "Uttara Kannada",
-        "incidents": 2,
-        "degree": 1,
-        "component": 39
-      },
-      {
-        "id": "ACC-00175",
-        "kind": "person",
-        "name": "Prakash B.",
-        "district": "Chitradurga",
-        "incidents": 2,
-        "degree": 1,
-        "component": 13
-      },
-      {
-        "id": "ACC-00383",
-        "kind": "person",
-        "name": "Manju S.",
-        "district": "Tumakuru",
-        "incidents": 2,
-        "degree": 1,
-        "component": 29
-      },
-      {
-        "id": "ACC-00333",
-        "kind": "person",
-        "name": "Ravi B.",
-        "district": "Bengaluru Urban",
-        "incidents": 1,
-        "degree": 1,
-        "component": 0
-      },
-      {
-        "id": "ACC-00428",
-        "kind": "person",
-        "name": "Prakash G.",
-        "district": "Mysuru",
-        "incidents": 1,
-        "degree": 2,
-        "component": 26
-      },
-      {
-        "id": "ACC-00059",
-        "kind": "person",
-        "name": "Deepa R.",
-        "district": "Bagalkote",
-        "incidents": 3,
-        "degree": 2,
-        "component": 18
-      },
-      {
-        "id": "ACC-00414",
-        "kind": "person",
-        "name": "Mahesh M.",
-        "district": "Mandya",
-        "incidents": 1,
-        "degree": 2,
-        "component": 5
-      },
-      {
-        "id": "ACC-00090",
-        "kind": "person",
-        "name": "Vinod M.",
-        "district": "Koppal",
-        "incidents": 1,
-        "degree": 1,
-        "component": 3
-      },
-      {
-        "id": "ACC-00318",
-        "kind": "person",
-        "name": "Kavya V.",
-        "district": "Bengaluru Urban",
-        "incidents": 5,
-        "degree": 2,
-        "component": 0
-      },
-      {
-        "id": "ACC-00144",
-        "kind": "person",
-        "name": "Anil H.",
-        "district": "Uttara Kannada",
-        "incidents": 2,
-        "degree": 3,
-        "component": 11
-      },
-      {
-        "id": "ACC-00246",
-        "kind": "person",
-        "name": "Arjun P.",
-        "district": "Chikkaballapura",
-        "incidents": 2,
-        "degree": 1,
-        "component": 45
-      },
-      {
-        "id": "ACC-00386",
-        "kind": "person",
-        "name": "Nagaraj N.",
-        "district": "Tumakuru",
-        "incidents": 1,
-        "degree": 1,
-        "component": 51
-      },
-      {
-        "id": "ACC-00236",
-        "kind": "person",
-        "name": "Mallesh P.",
-        "district": "Chikkamagaluru",
-        "incidents": 2,
-        "degree": 1,
-        "component": 2
-      },
-      {
-        "id": "ACC-00412",
-        "kind": "person",
-        "name": "Kavya S.",
-        "district": "Mandya",
-        "incidents": 3,
-        "degree": 2,
-        "component": 5
-      },
-      {
-        "id": "ACC-00050",
-        "kind": "person",
-        "name": "Anil T.",
-        "district": "Yadgir",
-        "incidents": 4,
-        "degree": 3,
-        "component": 9
-      },
-      {
-        "id": "ACC-00351",
-        "kind": "person",
-        "name": "Roopa T.",
-        "district": "Bengaluru Urban",
-        "incidents": 2,
-        "degree": 2,
-        "component": 0
-      },
-      {
-        "id": "ACC-00436",
-        "kind": "person",
-        "name": "Mahesh M.",
-        "district": "Vijayapura",
-        "incidents": 6,
-        "degree": 4,
-        "component": 24
-      },
-      {
-        "id": "ACC-00121",
-        "kind": "person",
-        "name": "Nagaraj D.",
-        "district": "Ballari",
-        "incidents": 3,
-        "degree": 2,
-        "component": 30
-      },
-      {
-        "id": "ACC-00379",
-        "kind": "person",
-        "name": "Mahesh M.",
-        "district": "Chamarajanagara",
-        "incidents": 1,
-        "degree": 1,
-        "component": 49
-      },
-      {
-        "id": "ACC-00303",
-        "kind": "person",
-        "name": "Suresh B.",
-        "district": "Dakshina Kannada",
-        "incidents": 2,
-        "degree": 1,
-        "component": 22
-      },
-      {
-        "id": "ACC-00247",
-        "kind": "person",
-        "name": "Manju N.",
-        "district": "Chikkaballapura",
-        "incidents": 3,
-        "degree": 1,
-        "component": 44
-      },
-      {
-        "id": "ACC-00385",
-        "kind": "person",
-        "name": "Mallesh S.",
-        "district": "Tumakuru",
-        "incidents": 3,
-        "degree": 1,
-        "component": 50
-      },
-      {
-        "id": "ACC-00446",
-        "kind": "person",
-        "name": "Ravi D.",
-        "district": "Vijayapura",
-        "incidents": 3,
-        "degree": 2,
-        "component": 24
-      },
-      {
-        "id": "ACC-00343",
-        "kind": "person",
-        "name": "Prakash N.",
-        "district": "Bengaluru Urban",
-        "incidents": 1,
-        "degree": 2,
-        "component": 31
-      },
-      {
-        "id": "ACC-00438",
-        "kind": "person",
-        "name": "Santosh G.",
-        "district": "Vijayapura",
-        "incidents": 2,
-        "degree": 1,
-        "component": 53
-      },
-      {
-        "id": "ACC-00150",
-        "kind": "person",
-        "name": "Yusuf P.",
-        "district": "Uttara Kannada",
-        "incidents": 1,
-        "degree": 1,
-        "component": 11
-      },
-      {
-        "id": "ACC-00179",
-        "kind": "person",
-        "name": "Suresh V.",
-        "district": "Chitradurga",
-        "incidents": 1,
-        "degree": 2,
-        "component": 13
-      },
-      {
-        "id": "ACC-00286",
-        "kind": "person",
-        "name": "Ravi B.",
-        "district": "Bengaluru Rural",
-        "incidents": 2,
         "degree": 2,
         "component": 14
-      },
-      {
-        "id": "ACC-00080",
-        "kind": "person",
-        "name": "Naveen P.",
-        "district": "Raichur",
-        "incidents": 2,
-        "degree": 2,
-        "component": 10
-      },
-      {
-        "id": "ACC-00003",
-        "kind": "person",
-        "name": "Latha M.",
-        "district": "Bidar",
-        "incidents": 5,
-        "degree": 3,
-        "component": 16
-      },
-      {
-        "id": "ACC-00016",
-        "kind": "person",
-        "name": "Arjun D.",
-        "district": "Kalaburagi",
-        "incidents": 4,
-        "degree": 1,
-        "component": 1
-      },
-      {
-        "id": "ACC-00196",
-        "kind": "person",
-        "name": "Shankar V.",
-        "district": "Davanagere",
-        "incidents": 3,
-        "degree": 1,
-        "component": 42
-      },
-      {
-        "id": "ACC-00197",
-        "kind": "person",
-        "name": "Vinod M.",
-        "district": "Shivamogga",
-        "incidents": 6,
-        "degree": 5,
-        "component": 6
-      },
-      {
-        "id": "ACC-00401",
-        "kind": "person",
-        "name": "Manju B.",
-        "district": "Ramanagara",
-        "incidents": 2,
-        "degree": 1,
-        "component": 20
-      },
-      {
-        "id": "ACC-00409",
-        "kind": "person",
-        "name": "Santosh R.",
-        "district": "Mandya",
-        "incidents": 4,
-        "degree": 3,
-        "component": 5
-      },
-      {
-        "id": "ACC-00116",
-        "kind": "person",
-        "name": "Suresh D.",
-        "district": "Ballari",
-        "incidents": 2,
-        "degree": 2,
-        "component": 30
-      },
-      {
-        "id": "ACC-00362",
-        "kind": "person",
-        "name": "Roopa B.",
-        "district": "Kodagu",
-        "incidents": 1,
-        "degree": 1,
-        "component": 15
-      },
-      {
-        "id": "ACC-00442",
-        "kind": "person",
-        "name": "Prakash N.",
-        "district": "Vijayapura",
-        "incidents": 3,
-        "degree": 2,
-        "component": 24
-      },
-      {
-        "id": "ACC-00295",
-        "kind": "person",
-        "name": "Santosh M.",
-        "district": "Dakshina Kannada",
-        "incidents": 6,
-        "degree": 5,
-        "component": 22
-      },
-      {
-        "id": "ACC-00344",
-        "kind": "person",
-        "name": "Deepa V.",
-        "district": "Bengaluru Urban",
-        "incidents": 2,
-        "degree": 1,
-        "component": 48
-      },
-      {
-        "id": "ACC-00074",
-        "kind": "person",
-        "name": "Prakash S.",
-        "district": "Raichur",
-        "incidents": 3,
-        "degree": 4,
-        "component": 10
-      },
-      {
-        "id": "ACC-00215",
-        "kind": "person",
-        "name": "Mallesh D.",
-        "district": "Udupi",
-        "incidents": 4,
-        "degree": 3,
-        "component": 19
-      },
-      {
-        "id": "ACC-00004",
-        "kind": "person",
-        "name": "Manju R.",
-        "district": "Bidar",
-        "incidents": 1,
-        "degree": 1,
-        "component": 33
-      },
-      {
-        "id": "ACC-00170",
-        "kind": "person",
-        "name": "Latha D.",
-        "district": "Chitradurga",
-        "incidents": 5,
-        "degree": 2,
-        "component": 13
-      },
-      {
-        "id": "ACC-00199",
-        "kind": "person",
-        "name": "Shankar H.",
-        "district": "Shivamogga",
-        "incidents": 3,
-        "degree": 2,
-        "component": 6
-      },
-      {
-        "id": "ACC-00031",
-        "kind": "person",
-        "name": "Santosh T.",
-        "district": "Belagavi",
-        "incidents": 3,
-        "degree": 3,
-        "component": 17
-      },
-      {
-        "id": "ACC-00358",
-        "kind": "person",
-        "name": "Lokesh B.",
-        "district": "Kodagu",
-        "incidents": 2,
-        "degree": 2,
-        "component": 15
-      },
-      {
-        "id": "ACC-00047",
-        "kind": "person",
-        "name": "Imran B.",
-        "district": "Yadgir",
-        "incidents": 1,
-        "degree": 1,
-        "component": 9
-      },
-      {
-        "id": "ACC-00216",
-        "kind": "person",
-        "name": "Kiran S.",
-        "district": "Udupi",
-        "incidents": 4,
-        "degree": 4,
-        "component": 19
-      },
-      {
-        "id": "ACC-00128",
-        "kind": "person",
-        "name": "Anil T.",
-        "district": "Dharwad",
-        "incidents": 6,
-        "degree": 5,
-        "component": 4
-      },
-      {
-        "id": "ACC-00104",
-        "kind": "person",
-        "name": "Shankar T.",
-        "district": "Gadag",
-        "incidents": 3,
-        "degree": 1,
-        "component": 37
-      },
-      {
-        "id": "ACC-00221",
-        "kind": "person",
-        "name": "Basava K.",
-        "district": "Udupi",
-        "incidents": 1,
-        "degree": 2,
-        "component": 19
-      },
-      {
-        "id": "ACC-00317",
-        "kind": "person",
-        "name": "Santosh H.",
-        "district": "Bengaluru Urban",
-        "incidents": 3,
-        "degree": 1,
-        "component": 0
-      },
-      {
-        "id": "ACC-00212",
-        "kind": "person",
-        "name": "Yusuf P.",
-        "district": "Udupi",
-        "incidents": 5,
-        "degree": 3,
-        "component": 19
-      },
-      {
-        "id": "ACC-00234",
-        "kind": "person",
-        "name": "Ravi V.",
-        "district": "Chikkamagaluru",
-        "incidents": 1,
-        "degree": 1,
-        "component": 2
-      },
-      {
-        "id": "ACC-00015",
-        "kind": "person",
-        "name": "Ramesh D.",
-        "district": "Kalaburagi",
-        "incidents": 6,
-        "degree": 2,
-        "component": 1
-      },
-      {
-        "id": "ACC-00156",
-        "kind": "person",
-        "name": "Yusuf B.",
-        "district": "Haveri",
-        "incidents": 3,
-        "degree": 3,
-        "component": 12
-      },
-      {
-        "id": "ACC-00339",
-        "kind": "person",
-        "name": "Manju V.",
-        "district": "Bengaluru Urban",
-        "incidents": 3,
-        "degree": 3,
-        "component": 0
-      },
-      {
-        "id": "ACC-00415",
-        "kind": "person",
-        "name": "Shankar K.",
-        "district": "Mandya",
-        "incidents": 1,
-        "degree": 2,
-        "component": 5
-      },
-      {
-        "id": "ACC-00281",
-        "kind": "person",
-        "name": "Manju R.",
-        "district": "Bengaluru Rural",
-        "incidents": 10,
-        "degree": 4,
-        "component": 14
-      },
-      {
-        "id": "ACC-00269",
-        "kind": "person",
-        "name": "Girish S.",
-        "district": "Kolar",
-        "incidents": 4,
-        "degree": 3,
-        "component": 8
-      },
-      {
-        "id": "ACC-00242",
-        "kind": "person",
-        "name": "Shankar V.",
-        "district": "Chikkaballapura",
-        "incidents": 1,
-        "degree": 1,
-        "component": 44
-      },
-      {
-        "id": "ACC-00296",
-        "kind": "person",
-        "name": "Santosh G.",
-        "district": "Dakshina Kannada",
-        "incidents": 6,
-        "degree": 2,
-        "component": 22
-      },
-      {
-        "id": "ACC-00148",
-        "kind": "person",
-        "name": "Kavya N.",
-        "district": "Uttara Kannada",
-        "incidents": 3,
-        "degree": 4,
-        "component": 11
-      },
-      {
-        "id": "ACC-00052",
-        "kind": "person",
-        "name": "Mallesh S.",
-        "district": "Yadgir",
-        "incidents": 1,
-        "degree": 2,
-        "component": 9
-      },
-      {
-        "id": "ACC-00120",
-        "kind": "person",
-        "name": "Roopa D.",
-        "district": "Ballari",
-        "incidents": 3,
-        "degree": 1,
-        "component": 38
-      },
-      {
-        "id": "ACC-00266",
-        "kind": "person",
-        "name": "Roopa M.",
-        "district": "Hassan",
-        "incidents": 1,
-        "degree": 2,
-        "component": 7
-      },
-      {
-        "id": "ACC-00164",
-        "kind": "person",
-        "name": "Arjun S.",
-        "district": "Haveri",
-        "incidents": 1,
-        "degree": 1,
-        "component": 12
-      },
-      {
-        "id": "ACC-00245",
-        "kind": "person",
-        "name": "Ramesh H.",
-        "district": "Chikkaballapura",
-        "incidents": 4,
-        "degree": 2,
-        "component": 25
-      },
-      {
-        "id": "ACC-00240",
-        "kind": "person",
-        "name": "Lokesh S.",
-        "district": "Chikkaballapura",
-        "incidents": 3,
-        "degree": 1,
-        "component": 25
-      },
-      {
-        "id": "ACC-00034",
-        "kind": "person",
-        "name": "Lokesh V.",
-        "district": "Belagavi",
-        "incidents": 1,
-        "degree": 1,
-        "component": 34
-      },
-      {
-        "id": "ACC-00431",
-        "kind": "person",
-        "name": "Basava R.",
-        "district": "Mysuru",
-        "incidents": 3,
-        "degree": 3,
-        "component": 26
-      },
-      {
-        "id": "ACC-00227",
-        "kind": "person",
-        "name": "Kavya M.",
-        "district": "Chikkamagaluru",
-        "incidents": 4,
-        "degree": 4,
-        "component": 2
-      },
-      {
-        "id": "ACC-00278",
-        "kind": "person",
-        "name": "Nagaraj H.",
-        "district": "Kolar",
-        "incidents": 4,
-        "degree": 3,
-        "component": 8
-      },
-      {
-        "id": "ACC-00380",
-        "kind": "person",
-        "name": "Mallesh T.",
-        "district": "Tumakuru",
-        "incidents": 5,
-        "degree": 3,
-        "component": 29
-      },
-      {
-        "id": "ACC-00029",
-        "kind": "person",
-        "name": "Shankar T.",
-        "district": "Belagavi",
-        "incidents": 4,
-        "degree": 2,
-        "component": 17
-      },
-      {
-        "id": "ACC-00145",
-        "kind": "person",
-        "name": "Kiran S.",
-        "district": "Uttara Kannada",
-        "incidents": 3,
-        "degree": 1,
-        "component": 11
-      },
-      {
-        "id": "ACC-00331",
-        "kind": "person",
-        "name": "Lokesh M.",
-        "district": "Bengaluru Urban",
-        "incidents": 4,
-        "degree": 2,
-        "component": 0
-      },
-      {
-        "id": "ACC-00020",
-        "kind": "person",
-        "name": "Basava B.",
-        "district": "Kalaburagi",
-        "incidents": 5,
-        "degree": 3,
-        "component": 1
-      },
-      {
-        "id": "ACC-00260",
-        "kind": "person",
-        "name": "Prakash D.",
-        "district": "Hassan",
-        "incidents": 2,
-        "degree": 4,
-        "component": 7
-      },
-      {
-        "id": "ACC-00213",
-        "kind": "person",
-        "name": "Santosh T.",
-        "district": "Udupi",
-        "incidents": 3,
-        "degree": 3,
-        "component": 19
-      },
-      {
-        "id": "ACC-00198",
-        "kind": "person",
-        "name": "Basava R.",
-        "district": "Shivamogga",
-        "incidents": 3,
-        "degree": 4,
-        "component": 6
-      },
-      {
-        "id": "ACC-00397",
-        "kind": "person",
-        "name": "Girish P.",
-        "district": "Ramanagara",
-        "incidents": 3,
-        "degree": 2,
-        "component": 20
-      },
-      {
-        "id": "ACC-00443",
-        "kind": "person",
-        "name": "Naveen S.",
-        "district": "Vijayapura",
-        "incidents": 3,
-        "degree": 2,
-        "component": 24
-      },
-      {
-        "id": "ACC-00035",
-        "kind": "person",
-        "name": "Santosh D.",
-        "district": "Belagavi",
-        "incidents": 2,
-        "degree": 1,
-        "component": 17
-      },
-      {
-        "id": "ACC-00122",
-        "kind": "person",
-        "name": "Mallesh N.",
-        "district": "Ballari",
-        "incidents": 3,
-        "degree": 1,
-        "component": 21
-      },
-      {
-        "id": "ACC-00226",
-        "kind": "person",
-        "name": "Deepa N.",
-        "district": "Chikkamagaluru",
-        "incidents": 6,
-        "degree": 4,
-        "component": 2
-      },
-      {
-        "id": "ACC-00042",
-        "kind": "person",
-        "name": "Anil P.",
-        "district": "Belagavi",
-        "incidents": 1,
-        "degree": 2,
-        "component": 17
-      },
-      {
-        "id": "ACC-00378",
-        "kind": "person",
-        "name": "Kiran T.",
-        "district": "Chamarajanagara",
-        "incidents": 2,
-        "degree": 1,
-        "component": 23
-      },
-      {
-        "id": "ACC-00225",
-        "kind": "person",
-        "name": "Girish B.",
-        "district": "Chikkamagaluru",
-        "incidents": 9,
-        "degree": 8,
-        "component": 2
-      },
-      {
-        "id": "ACC-00161",
-        "kind": "person",
-        "name": "Imran T.",
-        "district": "Haveri",
-        "incidents": 3,
-        "degree": 1,
-        "component": 12
-      },
-      {
-        "id": "ACC-00071",
-        "kind": "person",
-        "name": "Naveen G.",
-        "district": "Raichur",
-        "incidents": 6,
-        "degree": 2,
-        "component": 10
-      },
-      {
-        "id": "ACC-00276",
-        "kind": "person",
-        "name": "Mallesh R.",
-        "district": "Kolar",
-        "incidents": 3,
-        "degree": 3,
-        "component": 8
-      },
-      {
-        "id": "ACC-00096",
-        "kind": "person",
-        "name": "Kavya P.",
-        "district": "Koppal",
-        "incidents": 1,
-        "degree": 2,
-        "component": 3
-      },
-      {
-        "id": "ACC-00205",
-        "kind": "person",
-        "name": "Roopa G.",
-        "district": "Shivamogga",
-        "incidents": 3,
-        "degree": 2,
-        "component": 6
-      },
-      {
-        "id": "ACC-00400",
-        "kind": "person",
-        "name": "Santosh V.",
-        "district": "Ramanagara",
-        "incidents": 1,
-        "degree": 1,
-        "component": 20
-      },
-      {
-        "id": "ACC-00279",
-        "kind": "person",
-        "name": "Kavya D.",
-        "district": "Kolar",
-        "incidents": 2,
-        "degree": 3,
-        "component": 8
-      },
-      {
-        "id": "ACC-00214",
-        "kind": "person",
-        "name": "Roopa V.",
-        "district": "Udupi",
-        "incidents": 3,
-        "degree": 3,
-        "component": 19
       },
       {
         "id": "ACC-00437",
@@ -5699,454 +3980,67 @@
         "component": 24
       },
       {
-        "id": "ACC-00394",
+        "id": "ACC-00045",
         "kind": "person",
-        "name": "Vinod T.",
-        "district": "Ramanagara",
-        "incidents": 7,
-        "degree": 4,
-        "component": 20
-      },
-      {
-        "id": "ACC-00352",
-        "kind": "person",
-        "name": "Kavya T.",
-        "district": "Kodagu",
-        "incidents": 7,
-        "degree": 6,
-        "component": 15
-      },
-      {
-        "id": "ACC-00285",
-        "kind": "person",
-        "name": "Suresh K.",
-        "district": "Bengaluru Rural",
-        "incidents": 3,
-        "degree": 4,
-        "component": 14
-      },
-      {
-        "id": "ACC-00315",
-        "kind": "person",
-        "name": "Arjun G.",
-        "district": "Bengaluru Urban",
-        "incidents": 3,
-        "degree": 3,
-        "component": 0
-      },
-      {
-        "id": "ACC-00088",
-        "kind": "person",
-        "name": "Latha T.",
-        "district": "Koppal",
-        "incidents": 2,
-        "degree": 3,
-        "component": 3
-      },
-      {
-        "id": "ACC-00231",
-        "kind": "person",
-        "name": "Mallesh P.",
-        "district": "Chikkamagaluru",
-        "incidents": 3,
-        "degree": 4,
-        "component": 2
-      },
-      {
-        "id": "ACC-00157",
-        "kind": "person",
-        "name": "Santosh V.",
-        "district": "Haveri",
-        "incidents": 3,
-        "degree": 4,
-        "component": 12
-      },
-      {
-        "id": "ACC-00130",
-        "kind": "person",
-        "name": "Naveen H.",
-        "district": "Dharwad",
-        "incidents": 2,
-        "degree": 2,
-        "component": 4
-      },
-      {
-        "id": "ACC-00001",
-        "kind": "person",
-        "name": "Yusuf M.",
-        "district": "Bidar",
-        "incidents": 5,
-        "degree": 2,
-        "component": 16
-      },
-      {
-        "id": "ACC-00203",
-        "kind": "person",
-        "name": "Prakash V.",
-        "district": "Shivamogga",
-        "incidents": 2,
-        "degree": 2,
-        "component": 6
-      },
-      {
-        "id": "ACC-00223",
-        "kind": "person",
-        "name": "Ravi P.",
-        "district": "Udupi",
-        "incidents": 1,
-        "degree": 1,
-        "component": 43
-      },
-      {
-        "id": "ACC-00255",
-        "kind": "person",
-        "name": "Mallesh S.",
-        "district": "Hassan",
-        "incidents": 4,
-        "degree": 3,
-        "component": 7
-      },
-      {
-        "id": "ACC-00432",
-        "kind": "person",
-        "name": "Prakash R.",
-        "district": "Mysuru",
-        "incidents": 2,
-        "degree": 1,
-        "component": 52
-      },
-      {
-        "id": "ACC-00263",
-        "kind": "person",
-        "name": "Arjun D.",
-        "district": "Hassan",
-        "incidents": 2,
-        "degree": 2,
-        "component": 7
-      },
-      {
-        "id": "ACC-00252",
-        "kind": "person",
-        "name": "Mallesh V.",
-        "district": "Chikkaballapura",
-        "incidents": 3,
-        "degree": 1,
-        "component": 45
-      },
-      {
-        "id": "ACC-00284",
-        "kind": "person",
-        "name": "Kavya K.",
-        "district": "Bengaluru Rural",
-        "incidents": 3,
-        "degree": 4,
-        "component": 14
-      },
-      {
-        "id": "ACC-00159",
-        "kind": "person",
-        "name": "Prakash D.",
-        "district": "Haveri",
-        "incidents": 4,
-        "degree": 4,
-        "component": 12
-      },
-      {
-        "id": "ACC-00154",
-        "kind": "person",
-        "name": "Shankar M.",
-        "district": "Uttara Kannada",
-        "incidents": 1,
-        "degree": 1,
-        "component": 11
-      },
-      {
-        "id": "ACC-00014",
-        "kind": "person",
-        "name": "Santosh R.",
-        "district": "Bidar",
-        "incidents": 3,
-        "degree": 1,
-        "component": 33
-      },
-      {
-        "id": "ACC-00123",
-        "kind": "person",
-        "name": "Girish G.",
-        "district": "Ballari",
-        "incidents": 1,
-        "degree": 2,
-        "component": 21
-      },
-      {
-        "id": "ACC-00033",
-        "kind": "person",
-        "name": "Ramesh V.",
-        "district": "Belagavi",
-        "incidents": 2,
-        "degree": 3,
-        "component": 17
-      },
-      {
-        "id": "ACC-00302",
-        "kind": "person",
-        "name": "Girish K.",
-        "district": "Dakshina Kannada",
-        "incidents": 3,
-        "degree": 2,
-        "component": 28
-      },
-      {
-        "id": "ACC-00158",
-        "kind": "person",
-        "name": "Manju K.",
-        "district": "Haveri",
-        "incidents": 2,
-        "degree": 2,
-        "component": 12
-      },
-      {
-        "id": "ACC-00366",
-        "kind": "person",
-        "name": "Arjun N.",
-        "district": "Chamarajanagara",
-        "incidents": 2,
-        "degree": 4,
-        "component": 23
-      },
-      {
-        "id": "ACC-00326",
-        "kind": "person",
-        "name": "Yusuf K.",
-        "district": "Bengaluru Urban",
-        "incidents": 1,
-        "degree": 1,
-        "component": 48
-      },
-      {
-        "id": "ACC-00054",
-        "kind": "person",
-        "name": "Lokesh S.",
+        "name": "Vinod P.",
         "district": "Yadgir",
-        "incidents": 1,
+        "incidents": 3,
         "degree": 1,
         "component": 35
       },
       {
-        "id": "ACC-00100",
+        "id": "ACC-00257",
         "kind": "person",
-        "name": "Naveen N.",
-        "district": "Gadag",
-        "incidents": 3,
-        "degree": 1,
-        "component": 36
-      },
-      {
-        "id": "ACC-00124",
-        "kind": "person",
-        "name": "Santosh B.",
-        "district": "Ballari",
-        "incidents": 2,
-        "degree": 1,
-        "component": 21
-      },
-      {
-        "id": "ACC-00115",
-        "kind": "person",
-        "name": "Ravi H.",
-        "district": "Ballari",
-        "incidents": 4,
-        "degree": 3,
-        "component": 21
-      },
-      {
-        "id": "ACC-00267",
-        "kind": "person",
-        "name": "Arjun D.",
-        "district": "Kolar",
-        "incidents": 4,
-        "degree": 3,
-        "component": 8
-      },
-      {
-        "id": "ACC-00325",
-        "kind": "person",
-        "name": "Nagaraj M.",
-        "district": "Bengaluru Urban",
-        "incidents": 2,
-        "degree": 2,
-        "component": 0
-      },
-      {
-        "id": "ACC-00427",
-        "kind": "person",
-        "name": "Ravi H.",
-        "district": "Mysuru",
-        "incidents": 1,
-        "degree": 1,
-        "component": 52
-      },
-      {
-        "id": "ACC-00313",
-        "kind": "person",
-        "name": "Mallesh S.",
-        "district": "Bengaluru Urban",
-        "incidents": 4,
-        "degree": 2,
-        "component": 0
-      },
-      {
-        "id": "ACC-00187",
-        "kind": "person",
-        "name": "Mallesh D.",
-        "district": "Davanagere",
-        "incidents": 2,
-        "degree": 1,
-        "component": 40
-      },
-      {
-        "id": "ACC-00256",
-        "kind": "person",
-        "name": "Mallesh H.",
+        "name": "Manju N.",
         "district": "Hassan",
-        "incidents": 2,
+        "incidents": 3,
         "degree": 2,
         "component": 7
       },
       {
-        "id": "ACC-00127",
+        "id": "ACC-00214",
         "kind": "person",
-        "name": "Girish T.",
-        "district": "Dharwad",
-        "incidents": 6,
-        "degree": 4,
-        "component": 4
-      },
-      {
-        "id": "ACC-00335",
-        "kind": "person",
-        "name": "Nagaraj D.",
-        "district": "Bengaluru Urban",
-        "incidents": 2,
-        "degree": 2,
-        "component": 0
-      },
-      {
-        "id": "ACC-00319",
-        "kind": "person",
-        "name": "Girish M.",
-        "district": "Bengaluru Urban",
-        "incidents": 2,
-        "degree": 3,
-        "component": 0
-      },
-      {
-        "id": "ACC-00392",
-        "kind": "person",
-        "name": "Kavya B.",
-        "district": "Tumakuru",
-        "incidents": 1,
-        "degree": 1,
-        "component": 51
-      },
-      {
-        "id": "ACC-00238",
-        "kind": "person",
-        "name": "Santosh P.",
-        "district": "Chikkamagaluru",
-        "incidents": 1,
-        "degree": 2,
-        "component": 2
-      },
-      {
-        "id": "ACC-00192",
-        "kind": "person",
-        "name": "Latha N.",
-        "district": "Davanagere",
-        "incidents": 2,
-        "degree": 1,
-        "component": 41
-      },
-      {
-        "id": "ACC-00140",
-        "kind": "person",
-        "name": "Prakash D.",
-        "district": "Dharwad",
-        "incidents": 2,
-        "degree": 1,
-        "component": 4
-      },
-      {
-        "id": "ACC-00160",
-        "kind": "person",
-        "name": "Mallesh V.",
-        "district": "Haveri",
-        "incidents": 2,
-        "degree": 2,
-        "component": 12
-      },
-      {
-        "id": "ACC-00086",
-        "kind": "person",
-        "name": "Ravi R.",
-        "district": "Koppal",
+        "name": "Roopa V.",
+        "district": "Udupi",
         "incidents": 3,
-        "degree": 1,
-        "component": 3
-      },
-      {
-        "id": "ACC-00133",
-        "kind": "person",
-        "name": "Manju M.",
-        "district": "Dharwad",
-        "incidents": 3,
-        "degree": 5,
-        "component": 4
-      },
-      {
-        "id": "ACC-00410",
-        "kind": "person",
-        "name": "Ravi K.",
-        "district": "Mandya",
-        "incidents": 4,
         "degree": 3,
-        "component": 5
+        "component": 19
       },
       {
-        "id": "ACC-00324",
+        "id": "ACC-00119",
         "kind": "person",
-        "name": "Manju K.",
-        "district": "Bengaluru Urban",
+        "name": "Latha K.",
+        "district": "Ballari",
         "incidents": 2,
-        "degree": 2,
-        "component": 0
+        "degree": 1,
+        "component": 38
       },
       {
-        "id": "ACC-00368",
+        "id": "ACC-00200",
         "kind": "person",
-        "name": "Anil B.",
-        "district": "Chamarajanagara",
-        "incidents": 5,
-        "degree": 3,
-        "component": 23
-      },
-      {
-        "id": "ACC-00308",
-        "kind": "person",
-        "name": "Anil B.",
-        "district": "Dakshina Kannada",
-        "incidents": 4,
-        "degree": 3,
-        "component": 28
-      },
-      {
-        "id": "ACC-00202",
-        "kind": "person",
-        "name": "Prakash K.",
+        "name": "Latha B.",
         "district": "Shivamogga",
-        "incidents": 4,
-        "degree": 1,
+        "incidents": 2,
+        "degree": 3,
         "component": 6
+      },
+      {
+        "id": "ACC-00309",
+        "kind": "person",
+        "name": "Vinod K.",
+        "district": "Bengaluru Urban",
+        "incidents": 8,
+        "degree": 3,
+        "component": 0
+      },
+      {
+        "id": "ACC-00358",
+        "kind": "person",
+        "name": "Lokesh B.",
+        "district": "Kodagu",
+        "incidents": 2,
+        "degree": 2,
+        "component": 15
       },
       {
         "id": "ACC-00009",
@@ -6158,22 +4052,436 @@
         "component": 16
       },
       {
-        "id": "ACC-00055",
+        "id": "ACC-00221",
         "kind": "person",
-        "name": "Deepa G.",
-        "district": "Yadgir",
+        "name": "Basava K.",
+        "district": "Udupi",
+        "incidents": 1,
+        "degree": 2,
+        "component": 19
+      },
+      {
+        "id": "ACC-00088",
+        "kind": "person",
+        "name": "Latha T.",
+        "district": "Koppal",
+        "incidents": 2,
+        "degree": 3,
+        "component": 3
+      },
+      {
+        "id": "ACC-00398",
+        "kind": "person",
+        "name": "Mallesh B.",
+        "district": "Ramanagara",
+        "incidents": 3,
+        "degree": 2,
+        "component": 20
+      },
+      {
+        "id": "ACC-00236",
+        "kind": "person",
+        "name": "Mallesh P.",
+        "district": "Chikkamagaluru",
+        "incidents": 2,
+        "degree": 1,
+        "component": 2
+      },
+      {
+        "id": "ACC-00446",
+        "kind": "person",
+        "name": "Ravi D.",
+        "district": "Vijayapura",
+        "incidents": 3,
+        "degree": 2,
+        "component": 24
+      },
+      {
+        "id": "ACC-00062",
+        "kind": "person",
+        "name": "Prakash G.",
+        "district": "Bagalkote",
         "incidents": 4,
+        "degree": 2,
+        "component": 18
+      },
+      {
+        "id": "ACC-00082",
+        "kind": "person",
+        "name": "Mallesh R.",
+        "district": "Raichur",
+        "incidents": 2,
+        "degree": 3,
+        "component": 10
+      },
+      {
+        "id": "ACC-00245",
+        "kind": "person",
+        "name": "Ramesh H.",
+        "district": "Chikkaballapura",
+        "incidents": 4,
+        "degree": 2,
+        "component": 25
+      },
+      {
+        "id": "ACC-00150",
+        "kind": "person",
+        "name": "Yusuf P.",
+        "district": "Uttara Kannada",
+        "incidents": 1,
+        "degree": 1,
+        "component": 11
+      },
+      {
+        "id": "ACC-00061",
+        "kind": "person",
+        "name": "Kiran K.",
+        "district": "Bagalkote",
+        "incidents": 4,
+        "degree": 4,
+        "component": 18
+      },
+      {
+        "id": "ACC-00345",
+        "kind": "person",
+        "name": "Suresh H.",
+        "district": "Bengaluru Urban",
+        "incidents": 2,
+        "degree": 2,
+        "component": 0
+      },
+      {
+        "id": "ACC-00034",
+        "kind": "person",
+        "name": "Lokesh V.",
+        "district": "Belagavi",
+        "incidents": 1,
+        "degree": 1,
+        "component": 34
+      },
+      {
+        "id": "ACC-00118",
+        "kind": "person",
+        "name": "Suresh T.",
+        "district": "Ballari",
+        "incidents": 2,
+        "degree": 2,
+        "component": 21
+      },
+      {
+        "id": "ACC-00383",
+        "kind": "person",
+        "name": "Manju S.",
+        "district": "Tumakuru",
+        "incidents": 2,
+        "degree": 1,
+        "component": 29
+      },
+      {
+        "id": "ACC-00032",
+        "kind": "person",
+        "name": "Nagaraj P.",
+        "district": "Belagavi",
+        "incidents": 4,
+        "degree": 1,
+        "component": 17
+      },
+      {
+        "id": "ACC-00400",
+        "kind": "person",
+        "name": "Santosh V.",
+        "district": "Ramanagara",
+        "incidents": 1,
+        "degree": 1,
+        "component": 20
+      },
+      {
+        "id": "ACC-00322",
+        "kind": "person",
+        "name": "Nagaraj R.",
+        "district": "Bengaluru Urban",
+        "incidents": 2,
+        "degree": 1,
+        "component": 47
+      },
+      {
+        "id": "ACC-00141",
+        "kind": "person",
+        "name": "Santosh H.",
+        "district": "Uttara Kannada",
+        "incidents": 4,
+        "degree": 4,
+        "component": 11
+      },
+      {
+        "id": "ACC-00001",
+        "kind": "person",
+        "name": "Yusuf M.",
+        "district": "Bidar",
+        "incidents": 5,
+        "degree": 2,
+        "component": 16
+      },
+      {
+        "id": "ACC-00102",
+        "kind": "person",
+        "name": "Basava T.",
+        "district": "Gadag",
+        "incidents": 2,
+        "degree": 3,
+        "component": 27
+      },
+      {
+        "id": "ACC-00078",
+        "kind": "person",
+        "name": "Lokesh P.",
+        "district": "Raichur",
+        "incidents": 1,
+        "degree": 1,
+        "component": 10
+      },
+      {
+        "id": "ACC-00122",
+        "kind": "person",
+        "name": "Mallesh N.",
+        "district": "Ballari",
+        "incidents": 3,
+        "degree": 1,
+        "component": 21
+      },
+      {
+        "id": "ACC-00439",
+        "kind": "person",
+        "name": "Imran S.",
+        "district": "Vijayapura",
+        "incidents": 2,
+        "degree": 1,
+        "component": 24
+      },
+      {
+        "id": "ACC-00002",
+        "kind": "person",
+        "name": "Ramesh S.",
+        "district": "Bidar",
+        "incidents": 2,
+        "degree": 1,
+        "component": 16
+      },
+      {
+        "id": "ACC-00160",
+        "kind": "person",
+        "name": "Mallesh V.",
+        "district": "Haveri",
+        "incidents": 2,
+        "degree": 2,
+        "component": 12
+      },
+      {
+        "id": "ACC-00212",
+        "kind": "person",
+        "name": "Yusuf P.",
+        "district": "Udupi",
+        "incidents": 5,
+        "degree": 3,
+        "component": 19
+      },
+      {
+        "id": "ACC-00123",
+        "kind": "person",
+        "name": "Girish G.",
+        "district": "Ballari",
+        "incidents": 1,
+        "degree": 2,
+        "component": 21
+      },
+      {
+        "id": "ACC-00256",
+        "kind": "person",
+        "name": "Mallesh H.",
+        "district": "Hassan",
+        "incidents": 2,
+        "degree": 2,
+        "component": 7
+      },
+      {
+        "id": "ACC-00331",
+        "kind": "person",
+        "name": "Lokesh M.",
+        "district": "Bengaluru Urban",
+        "incidents": 4,
+        "degree": 2,
+        "component": 0
+      },
+      {
+        "id": "ACC-00240",
+        "kind": "person",
+        "name": "Lokesh S.",
+        "district": "Chikkaballapura",
+        "incidents": 3,
+        "degree": 1,
+        "component": 25
+      },
+      {
+        "id": "ACC-00357",
+        "kind": "person",
+        "name": "Ramesh S.",
+        "district": "Kodagu",
+        "incidents": 3,
+        "degree": 1,
+        "component": 15
+      },
+      {
+        "id": "ACC-00029",
+        "kind": "person",
+        "name": "Shankar T.",
+        "district": "Belagavi",
+        "incidents": 4,
+        "degree": 2,
+        "component": 17
+      },
+      {
+        "id": "ACC-00031",
+        "kind": "person",
+        "name": "Santosh T.",
+        "district": "Belagavi",
+        "incidents": 3,
+        "degree": 3,
+        "component": 17
+      },
+      {
+        "id": "ACC-00020",
+        "kind": "person",
+        "name": "Basava B.",
+        "district": "Kalaburagi",
+        "incidents": 5,
+        "degree": 3,
+        "component": 1
+      },
+      {
+        "id": "ACC-00171",
+        "kind": "person",
+        "name": "Roopa D.",
+        "district": "Chitradurga",
+        "incidents": 4,
+        "degree": 2,
+        "component": 13
+      },
+      {
+        "id": "ACC-00318",
+        "kind": "person",
+        "name": "Kavya V.",
+        "district": "Bengaluru Urban",
+        "incidents": 5,
+        "degree": 2,
+        "component": 0
+      },
+      {
+        "id": "ACC-00035",
+        "kind": "person",
+        "name": "Santosh D.",
+        "district": "Belagavi",
+        "incidents": 2,
+        "degree": 1,
+        "component": 17
+      },
+      {
+        "id": "ACC-00048",
+        "kind": "person",
+        "name": "Girish H.",
+        "district": "Yadgir",
+        "incidents": 2,
         "degree": 2,
         "component": 9
       },
       {
-        "id": "ACC-00119",
+        "id": "ACC-00376",
         "kind": "person",
-        "name": "Latha K.",
-        "district": "Ballari",
+        "name": "Santosh N.",
+        "district": "Chamarajanagara",
+        "incidents": 2,
+        "degree": 3,
+        "component": 23
+      },
+      {
+        "id": "ACC-00096",
+        "kind": "person",
+        "name": "Kavya P.",
+        "district": "Koppal",
+        "incidents": 1,
+        "degree": 2,
+        "component": 3
+      },
+      {
+        "id": "ACC-00246",
+        "kind": "person",
+        "name": "Arjun P.",
+        "district": "Chikkaballapura",
         "incidents": 2,
         "degree": 1,
-        "component": 38
+        "component": 45
+      },
+      {
+        "id": "ACC-00098",
+        "kind": "person",
+        "name": "Ravi G.",
+        "district": "Koppal",
+        "incidents": 5,
+        "degree": 5,
+        "component": 3
+      },
+      {
+        "id": "ACC-00169",
+        "kind": "person",
+        "name": "Deepa D.",
+        "district": "Chitradurga",
+        "incidents": 5,
+        "degree": 5,
+        "component": 13
+      },
+      {
+        "id": "ACC-00239",
+        "kind": "person",
+        "name": "Basava P.",
+        "district": "Chikkaballapura",
+        "incidents": 6,
+        "degree": 4,
+        "component": 25
+      },
+      {
+        "id": "ACC-00223",
+        "kind": "person",
+        "name": "Ravi P.",
+        "district": "Udupi",
+        "incidents": 1,
+        "degree": 1,
+        "component": 43
+      },
+      {
+        "id": "ACC-00308",
+        "kind": "person",
+        "name": "Anil B.",
+        "district": "Dakshina Kannada",
+        "incidents": 4,
+        "degree": 3,
+        "component": 28
+      },
+      {
+        "id": "ACC-00413",
+        "kind": "person",
+        "name": "Yusuf R.",
+        "district": "Mandya",
+        "incidents": 4,
+        "degree": 2,
+        "component": 5
+      },
+      {
+        "id": "ACC-00013",
+        "kind": "person",
+        "name": "Mahesh V.",
+        "district": "Bidar",
+        "incidents": 2,
+        "degree": 1,
+        "component": 16
       },
       {
         "id": "ACC-00027",
@@ -6194,139 +4502,40 @@
         "component": 40
       },
       {
-        "id": "ACC-00268",
+        "id": "ACC-00281",
         "kind": "person",
-        "name": "Girish H.",
-        "district": "Kolar",
-        "incidents": 4,
-        "degree": 5,
-        "component": 8
-      },
-      {
-        "id": "ACC-00441",
-        "kind": "person",
-        "name": "Kavya T.",
-        "district": "Vijayapura",
-        "incidents": 1,
-        "degree": 1,
-        "component": 53
-      },
-      {
-        "id": "ACC-00239",
-        "kind": "person",
-        "name": "Basava P.",
-        "district": "Chikkaballapura",
-        "incidents": 6,
+        "name": "Manju R.",
+        "district": "Bengaluru Rural",
+        "incidents": 10,
         "degree": 4,
-        "component": 25
-      },
-      {
-        "id": "ACC-00365",
-        "kind": "person",
-        "name": "Deepa P.",
-        "district": "Kodagu",
-        "incidents": 1,
-        "degree": 1,
-        "component": 15
-      },
-      {
-        "id": "ACC-00098",
-        "kind": "person",
-        "name": "Ravi G.",
-        "district": "Koppal",
-        "incidents": 5,
-        "degree": 5,
-        "component": 3
-      },
-      {
-        "id": "ACC-00322",
-        "kind": "person",
-        "name": "Nagaraj R.",
-        "district": "Bengaluru Urban",
-        "incidents": 2,
-        "degree": 1,
-        "component": 47
-      },
-      {
-        "id": "ACC-00424",
-        "kind": "person",
-        "name": "Roopa T.",
-        "district": "Mysuru",
-        "incidents": 3,
-        "degree": 3,
-        "component": 26
-      },
-      {
-        "id": "ACC-00102",
-        "kind": "person",
-        "name": "Basava T.",
-        "district": "Gadag",
-        "incidents": 2,
-        "degree": 3,
-        "component": 27
-      },
-      {
-        "id": "ACC-00282",
-        "kind": "person",
-        "name": "Shankar R.",
-        "district": "Bengaluru Rural",
-        "incidents": 5,
-        "degree": 1,
         "component": 14
       },
       {
-        "id": "ACC-00391",
+        "id": "ACC-00399",
         "kind": "person",
-        "name": "Basava S.",
-        "district": "Tumakuru",
-        "incidents": 3,
-        "degree": 1,
-        "component": 50
-      },
-      {
-        "id": "ACC-00381",
-        "kind": "person",
-        "name": "Ramesh P.",
-        "district": "Tumakuru",
-        "incidents": 3,
-        "degree": 1,
-        "component": 29
-      },
-      {
-        "id": "ACC-00233",
-        "kind": "person",
-        "name": "Naveen K.",
-        "district": "Chikkamagaluru",
+        "name": "Prakash P.",
+        "district": "Ramanagara",
         "incidents": 1,
         "degree": 1,
-        "component": 2
+        "component": 20
       },
       {
-        "id": "ACC-00002",
+        "id": "ACC-00139",
         "kind": "person",
-        "name": "Ramesh S.",
-        "district": "Bidar",
-        "incidents": 2,
-        "degree": 1,
-        "component": 16
-      },
-      {
-        "id": "ACC-00283",
-        "kind": "person",
-        "name": "Suresh R.",
-        "district": "Bengaluru Rural",
+        "name": "Roopa H.",
+        "district": "Dharwad",
         "incidents": 1,
         "degree": 2,
-        "component": 14
+        "component": 4
       },
       {
-        "id": "ACC-00422",
+        "id": "ACC-00042",
         "kind": "person",
-        "name": "Anil T.",
-        "district": "Mysuru",
-        "incidents": 5,
+        "name": "Anil P.",
+        "district": "Belagavi",
+        "incidents": 1,
         "degree": 2,
-        "component": 32
+        "component": 17
       },
       {
         "id": "ACC-00043",
@@ -6338,67 +4547,202 @@
         "component": 9
       },
       {
-        "id": "ACC-00147",
+        "id": "ACC-00085",
         "kind": "person",
-        "name": "Girish D.",
-        "district": "Uttara Kannada",
+        "name": "Anil R.",
+        "district": "Koppal",
         "incidents": 5,
-        "degree": 2,
-        "component": 11
-      },
-      {
-        "id": "ACC-00073",
-        "kind": "person",
-        "name": "Ramesh V.",
-        "district": "Raichur",
-        "incidents": 3,
         "degree": 4,
-        "component": 10
+        "component": 3
       },
       {
-        "id": "ACC-00290",
+        "id": "ACC-00216",
         "kind": "person",
-        "name": "Kiran K.",
-        "district": "Bengaluru Rural",
+        "name": "Kiran S.",
+        "district": "Udupi",
+        "incidents": 4,
+        "degree": 4,
+        "component": 19
+      },
+      {
+        "id": "ACC-00233",
+        "kind": "person",
+        "name": "Naveen K.",
+        "district": "Chikkamagaluru",
+        "incidents": 1,
+        "degree": 1,
+        "component": 2
+      },
+      {
+        "id": "ACC-00260",
+        "kind": "person",
+        "name": "Prakash D.",
+        "district": "Hassan",
         "incidents": 2,
+        "degree": 4,
+        "component": 7
+      },
+      {
+        "id": "ACC-00199",
+        "kind": "person",
+        "name": "Shankar H.",
+        "district": "Shivamogga",
+        "incidents": 3,
         "degree": 2,
+        "component": 6
+      },
+      {
+        "id": "ACC-00346",
+        "kind": "person",
+        "name": "Arjun N.",
+        "district": "Bengaluru Urban",
+        "incidents": 1,
+        "degree": 2,
+        "component": 0
+      },
+      {
+        "id": "ACC-00435",
+        "kind": "person",
+        "name": "Manju G.",
+        "district": "Mysuru",
+        "incidents": 1,
+        "degree": 2,
+        "component": 32
+      },
+      {
+        "id": "ACC-00128",
+        "kind": "person",
+        "name": "Anil T.",
+        "district": "Dharwad",
+        "incidents": 6,
+        "degree": 5,
+        "component": 4
+      },
+      {
+        "id": "ACC-00247",
+        "kind": "person",
+        "name": "Manju N.",
+        "district": "Chikkaballapura",
+        "incidents": 3,
+        "degree": 1,
+        "component": 44
+      },
+      {
+        "id": "ACC-00333",
+        "kind": "person",
+        "name": "Ravi B.",
+        "district": "Bengaluru Urban",
+        "incidents": 1,
+        "degree": 1,
+        "component": 0
+      },
+      {
+        "id": "ACC-00124",
+        "kind": "person",
+        "name": "Santosh B.",
+        "district": "Ballari",
+        "incidents": 2,
+        "degree": 1,
+        "component": 21
+      },
+      {
+        "id": "ACC-00282",
+        "kind": "person",
+        "name": "Shankar R.",
+        "district": "Bengaluru Rural",
+        "incidents": 5,
+        "degree": 1,
         "component": 14
       },
       {
-        "id": "ACC-00411",
+        "id": "ACC-00070",
         "kind": "person",
-        "name": "Vinod K.",
-        "district": "Mandya",
-        "incidents": 2,
+        "name": "Anil B.",
+        "district": "Bagalkote",
+        "incidents": 1,
         "degree": 2,
-        "component": 5
+        "component": 18
       },
       {
-        "id": "ACC-00262",
+        "id": "ACC-00155",
         "kind": "person",
-        "name": "Girish N.",
-        "district": "Hassan",
-        "incidents": 2,
-        "degree": 1,
-        "component": 46
+        "name": "Latha R.",
+        "district": "Haveri",
+        "incidents": 5,
+        "degree": 5,
+        "component": 12
       },
       {
-        "id": "ACC-00025",
+        "id": "ACC-00198",
         "kind": "person",
-        "name": "Roopa R.",
-        "district": "Kalaburagi",
-        "incidents": 2,
+        "name": "Basava R.",
+        "district": "Shivamogga",
+        "incidents": 3,
+        "degree": 4,
+        "component": 6
+      },
+      {
+        "id": "ACC-00148",
+        "kind": "person",
+        "name": "Kavya N.",
+        "district": "Uttara Kannada",
+        "incidents": 3,
+        "degree": 4,
+        "component": 11
+      },
+      {
+        "id": "ACC-00201",
+        "kind": "person",
+        "name": "Roopa H.",
+        "district": "Shivamogga",
+        "incidents": 1,
         "degree": 2,
-        "component": 1
+        "component": 6
       },
       {
-        "id": "ACC-00374",
+        "id": "ACC-00379",
         "kind": "person",
-        "name": "Kiran S.",
+        "name": "Mahesh M.",
         "district": "Chamarajanagara",
-        "incidents": 2,
+        "incidents": 1,
         "degree": 1,
         "component": 49
+      },
+      {
+        "id": "ACC-00343",
+        "kind": "person",
+        "name": "Prakash N.",
+        "district": "Bengaluru Urban",
+        "incidents": 1,
+        "degree": 2,
+        "component": 31
+      },
+      {
+        "id": "ACC-00355",
+        "kind": "person",
+        "name": "Roopa D.",
+        "district": "Kodagu",
+        "incidents": 4,
+        "degree": 2,
+        "component": 15
+      },
+      {
+        "id": "ACC-00103",
+        "kind": "person",
+        "name": "Mahesh K.",
+        "district": "Gadag",
+        "incidents": 3,
+        "degree": 1,
+        "component": 27
+      },
+      {
+        "id": "ACC-00164",
+        "kind": "person",
+        "name": "Arjun S.",
+        "district": "Haveri",
+        "incidents": 1,
+        "degree": 1,
+        "component": 12
       },
       {
         "id": "ACC-00038",
@@ -6410,21 +4754,255 @@
         "component": 17
       },
       {
-        "id": "ACC-00013",
+        "id": "ACC-00014",
         "kind": "person",
-        "name": "Mahesh V.",
+        "name": "Santosh R.",
         "district": "Bidar",
-        "incidents": 2,
+        "incidents": 3,
         "degree": 1,
-        "component": 16
+        "component": 33
       },
       {
-        "id": "ACC-00312",
+        "id": "ACC-00422",
         "kind": "person",
-        "name": "Mahesh D.",
-        "district": "Bengaluru Urban",
+        "name": "Anil T.",
+        "district": "Mysuru",
+        "incidents": 5,
+        "degree": 2,
+        "component": 32
+      },
+      {
+        "id": "ACC-00267",
+        "kind": "person",
+        "name": "Arjun D.",
+        "district": "Kolar",
         "incidents": 4,
+        "degree": 3,
+        "component": 8
+      },
+      {
+        "id": "ACC-00356",
+        "kind": "person",
+        "name": "Lokesh S.",
+        "district": "Kodagu",
+        "incidents": 3,
+        "degree": 2,
+        "component": 15
+      },
+      {
+        "id": "ACC-00086",
+        "kind": "person",
+        "name": "Ravi R.",
+        "district": "Koppal",
+        "incidents": 3,
+        "degree": 1,
+        "component": 3
+      },
+      {
+        "id": "ACC-00092",
+        "kind": "person",
+        "name": "Suresh G.",
+        "district": "Koppal",
+        "incidents": 5,
         "degree": 4,
+        "component": 3
+      },
+      {
+        "id": "ACC-00131",
+        "kind": "person",
+        "name": "Suresh S.",
+        "district": "Dharwad",
+        "incidents": 2,
+        "degree": 1,
+        "component": 4
+      },
+      {
+        "id": "ACC-00055",
+        "kind": "person",
+        "name": "Deepa G.",
+        "district": "Yadgir",
+        "incidents": 4,
+        "degree": 2,
+        "component": 9
+      },
+      {
+        "id": "ACC-00417",
+        "kind": "person",
+        "name": "Lokesh M.",
+        "district": "Mandya",
+        "incidents": 4,
+        "degree": 3,
+        "component": 5
+      },
+      {
+        "id": "ACC-00136",
+        "kind": "person",
+        "name": "Roopa K.",
+        "district": "Dharwad",
+        "incidents": 2,
+        "degree": 2,
+        "component": 4
+      },
+      {
+        "id": "ACC-00203",
+        "kind": "person",
+        "name": "Prakash V.",
+        "district": "Shivamogga",
+        "incidents": 2,
+        "degree": 2,
+        "component": 6
+      },
+      {
+        "id": "ACC-00368",
+        "kind": "person",
+        "name": "Anil B.",
+        "district": "Chamarajanagara",
+        "incidents": 5,
+        "degree": 3,
+        "component": 23
+      },
+      {
+        "id": "ACC-00380",
+        "kind": "person",
+        "name": "Mallesh T.",
+        "district": "Tumakuru",
+        "incidents": 5,
+        "degree": 3,
+        "component": 29
+      },
+      {
+        "id": "ACC-00175",
+        "kind": "person",
+        "name": "Prakash B.",
+        "district": "Chitradurga",
+        "incidents": 2,
+        "degree": 1,
+        "component": 13
+      },
+      {
+        "id": "ACC-00428",
+        "kind": "person",
+        "name": "Prakash G.",
+        "district": "Mysuru",
+        "incidents": 1,
+        "degree": 2,
+        "component": 26
+      },
+      {
+        "id": "ACC-00004",
+        "kind": "person",
+        "name": "Manju R.",
+        "district": "Bidar",
+        "incidents": 1,
+        "degree": 1,
+        "component": 33
+      },
+      {
+        "id": "ACC-00213",
+        "kind": "person",
+        "name": "Santosh T.",
+        "district": "Udupi",
+        "incidents": 3,
+        "degree": 3,
+        "component": 19
+      },
+      {
+        "id": "ACC-00158",
+        "kind": "person",
+        "name": "Manju K.",
+        "district": "Haveri",
+        "incidents": 2,
+        "degree": 2,
+        "component": 12
+      },
+      {
+        "id": "ACC-00424",
+        "kind": "person",
+        "name": "Roopa T.",
+        "district": "Mysuru",
+        "incidents": 3,
+        "degree": 3,
+        "component": 26
+      },
+      {
+        "id": "ACC-00277",
+        "kind": "person",
+        "name": "Arjun T.",
+        "district": "Kolar",
+        "incidents": 2,
+        "degree": 1,
+        "component": 8
+      },
+      {
+        "id": "ACC-00016",
+        "kind": "person",
+        "name": "Arjun D.",
+        "district": "Kalaburagi",
+        "incidents": 4,
+        "degree": 1,
+        "component": 1
+      },
+      {
+        "id": "ACC-00218",
+        "kind": "person",
+        "name": "Lokesh P.",
+        "district": "Udupi",
+        "incidents": 1,
+        "degree": 1,
+        "component": 43
+      },
+      {
+        "id": "ACC-00225",
+        "kind": "person",
+        "name": "Girish B.",
+        "district": "Chikkamagaluru",
+        "incidents": 9,
+        "degree": 8,
+        "component": 2
+      },
+      {
+        "id": "ACC-00438",
+        "kind": "person",
+        "name": "Santosh G.",
+        "district": "Vijayapura",
+        "incidents": 2,
+        "degree": 1,
+        "component": 53
+      },
+      {
+        "id": "ACC-00372",
+        "kind": "person",
+        "name": "Nagaraj D.",
+        "district": "Chamarajanagara",
+        "incidents": 4,
+        "degree": 3,
+        "component": 23
+      },
+      {
+        "id": "ACC-00335",
+        "kind": "person",
+        "name": "Nagaraj D.",
+        "district": "Bengaluru Urban",
+        "incidents": 2,
+        "degree": 2,
+        "component": 0
+      },
+      {
+        "id": "ACC-00317",
+        "kind": "person",
+        "name": "Santosh H.",
+        "district": "Bengaluru Urban",
+        "incidents": 3,
+        "degree": 1,
+        "component": 0
+      },
+      {
+        "id": "ACC-00324",
+        "kind": "person",
+        "name": "Manju K.",
+        "district": "Bengaluru Urban",
+        "incidents": 2,
+        "degree": 2,
         "component": 0
       },
       {
@@ -6437,13 +5015,283 @@
         "component": 31
       },
       {
-        "id": "ACC-00097",
+        "id": "ACC-00353",
         "kind": "person",
-        "name": "Nagaraj H.",
-        "district": "Koppal",
+        "name": "Roopa R.",
+        "district": "Kodagu",
+        "incidents": 4,
+        "degree": 1,
+        "component": 15
+      },
+      {
+        "id": "ACC-00174",
+        "kind": "person",
+        "name": "Kavya R.",
+        "district": "Chitradurga",
+        "incidents": 2,
+        "degree": 2,
+        "component": 13
+      },
+      {
+        "id": "ACC-00021",
+        "kind": "person",
+        "name": "Lokesh G.",
+        "district": "Kalaburagi",
+        "incidents": 1,
+        "degree": 1,
+        "component": 1
+      },
+      {
+        "id": "ACC-00315",
+        "kind": "person",
+        "name": "Arjun G.",
+        "district": "Bengaluru Urban",
+        "incidents": 3,
+        "degree": 3,
+        "component": 0
+      },
+      {
+        "id": "ACC-00286",
+        "kind": "person",
+        "name": "Ravi B.",
+        "district": "Bengaluru Rural",
+        "incidents": 2,
+        "degree": 2,
+        "component": 14
+      },
+      {
+        "id": "ACC-00005",
+        "kind": "person",
+        "name": "Latha R.",
+        "district": "Bidar",
+        "incidents": 1,
+        "degree": 1,
+        "component": 16
+      },
+      {
+        "id": "ACC-00300",
+        "kind": "person",
+        "name": "Ravi N.",
+        "district": "Dakshina Kannada",
+        "incidents": 1,
+        "degree": 2,
+        "component": 22
+      },
+      {
+        "id": "ACC-00265",
+        "kind": "person",
+        "name": "Mallesh B.",
+        "district": "Hassan",
+        "incidents": 1,
+        "degree": 1,
+        "component": 7
+      },
+      {
+        "id": "ACC-00039",
+        "kind": "person",
+        "name": "Kiran H.",
+        "district": "Belagavi",
+        "incidents": 1,
+        "degree": 1,
+        "component": 34
+      },
+      {
+        "id": "ACC-00271",
+        "kind": "person",
+        "name": "Santosh R.",
+        "district": "Kolar",
+        "incidents": 2,
+        "degree": 2,
+        "component": 8
+      },
+      {
+        "id": "ACC-00234",
+        "kind": "person",
+        "name": "Ravi V.",
+        "district": "Chikkamagaluru",
+        "incidents": 1,
+        "degree": 1,
+        "component": 2
+      },
+      {
+        "id": "ACC-00153",
+        "kind": "person",
+        "name": "Roopa N.",
+        "district": "Uttara Kannada",
+        "incidents": 3,
+        "degree": 1,
+        "component": 39
+      },
+      {
+        "id": "ACC-00071",
+        "kind": "person",
+        "name": "Naveen G.",
+        "district": "Raichur",
+        "incidents": 6,
+        "degree": 2,
+        "component": 10
+      },
+      {
+        "id": "ACC-00378",
+        "kind": "person",
+        "name": "Kiran T.",
+        "district": "Chamarajanagara",
+        "incidents": 2,
+        "degree": 1,
+        "component": 23
+      },
+      {
+        "id": "ACC-00140",
+        "kind": "person",
+        "name": "Prakash D.",
+        "district": "Dharwad",
+        "incidents": 2,
+        "degree": 1,
+        "component": 4
+      },
+      {
+        "id": "ACC-00117",
+        "kind": "person",
+        "name": "Prakash N.",
+        "district": "Ballari",
+        "incidents": 2,
+        "degree": 3,
+        "component": 21
+      },
+      {
+        "id": "ACC-00423",
+        "kind": "person",
+        "name": "Santosh V.",
+        "district": "Mysuru",
+        "incidents": 2,
+        "degree": 2,
+        "component": 32
+      },
+      {
+        "id": "ACC-00024",
+        "kind": "person",
+        "name": "Girish G.",
+        "district": "Kalaburagi",
+        "incidents": 3,
+        "degree": 3,
+        "component": 1
+      },
+      {
+        "id": "ACC-00025",
+        "kind": "person",
+        "name": "Roopa R.",
+        "district": "Kalaburagi",
+        "incidents": 2,
+        "degree": 2,
+        "component": 1
+      },
+      {
+        "id": "ACC-00411",
+        "kind": "person",
+        "name": "Vinod K.",
+        "district": "Mandya",
+        "incidents": 2,
+        "degree": 2,
+        "component": 5
+      },
+      {
+        "id": "ACC-00202",
+        "kind": "person",
+        "name": "Prakash K.",
+        "district": "Shivamogga",
+        "incidents": 4,
+        "degree": 1,
+        "component": 6
+      },
+      {
+        "id": "ACC-00230",
+        "kind": "person",
+        "name": "Naveen D.",
+        "district": "Chikkamagaluru",
+        "incidents": 2,
+        "degree": 2,
+        "component": 2
+      },
+      {
+        "id": "ACC-00412",
+        "kind": "person",
+        "name": "Kavya S.",
+        "district": "Mandya",
         "incidents": 3,
         "degree": 2,
-        "component": 3
+        "component": 5
+      },
+      {
+        "id": "ACC-00268",
+        "kind": "person",
+        "name": "Girish H.",
+        "district": "Kolar",
+        "incidents": 4,
+        "degree": 5,
+        "component": 8
+      },
+      {
+        "id": "ACC-00211",
+        "kind": "person",
+        "name": "Ravi K.",
+        "district": "Udupi",
+        "incidents": 6,
+        "degree": 4,
+        "component": 19
+      },
+      {
+        "id": "ACC-00112",
+        "kind": "person",
+        "name": "Vinod T.",
+        "district": "Gadag",
+        "incidents": 1,
+        "degree": 2,
+        "component": 27
+      },
+      {
+        "id": "ACC-00432",
+        "kind": "person",
+        "name": "Prakash R.",
+        "district": "Mysuru",
+        "incidents": 2,
+        "degree": 1,
+        "component": 52
+      },
+      {
+        "id": "ACC-00304",
+        "kind": "person",
+        "name": "Anil G.",
+        "district": "Dakshina Kannada",
+        "incidents": 2,
+        "degree": 2,
+        "component": 22
+      },
+      {
+        "id": "ACC-00017",
+        "kind": "person",
+        "name": "Mallesh N.",
+        "district": "Kalaburagi",
+        "incidents": 4,
+        "degree": 2,
+        "component": 1
+      },
+      {
+        "id": "ACC-00073",
+        "kind": "person",
+        "name": "Ramesh V.",
+        "district": "Raichur",
+        "incidents": 3,
+        "degree": 4,
+        "component": 10
+      },
+      {
+        "id": "ACC-00145",
+        "kind": "person",
+        "name": "Kiran S.",
+        "district": "Uttara Kannada",
+        "incidents": 3,
+        "degree": 1,
+        "component": 11
       },
       {
         "id": "ACC-00311",
@@ -6455,49 +5303,490 @@
         "component": 0
       },
       {
-        "id": "ACC-00274",
+        "id": "ACC-00427",
         "kind": "person",
-        "name": "Ramesh V.",
-        "district": "Kolar",
-        "incidents": 2,
+        "name": "Ravi H.",
+        "district": "Mysuru",
+        "incidents": 1,
         "degree": 1,
+        "component": 52
+      },
+      {
+        "id": "ACC-00172",
+        "kind": "person",
+        "name": "Vinod M.",
+        "district": "Chitradurga",
+        "incidents": 3,
+        "degree": 1,
+        "component": 13
+      },
+      {
+        "id": "ACC-00089",
+        "kind": "person",
+        "name": "Naveen R.",
+        "district": "Koppal",
+        "incidents": 3,
+        "degree": 4,
+        "component": 3
+      },
+      {
+        "id": "ACC-00205",
+        "kind": "person",
+        "name": "Roopa G.",
+        "district": "Shivamogga",
+        "incidents": 3,
+        "degree": 2,
+        "component": 6
+      },
+      {
+        "id": "ACC-00278",
+        "kind": "person",
+        "name": "Nagaraj H.",
+        "district": "Kolar",
+        "incidents": 4,
+        "degree": 3,
         "component": 8
       },
       {
-        "id": "ACC-00218",
+        "id": "ACC-00161",
         "kind": "person",
-        "name": "Lokesh P.",
-        "district": "Udupi",
+        "name": "Imran T.",
+        "district": "Haveri",
+        "incidents": 3,
+        "degree": 1,
+        "component": 12
+      },
+      {
+        "id": "ACC-00385",
+        "kind": "person",
+        "name": "Mallesh S.",
+        "district": "Tumakuru",
+        "incidents": 3,
+        "degree": 1,
+        "component": 50
+      },
+      {
+        "id": "ACC-00072",
+        "kind": "person",
+        "name": "Manju T.",
+        "district": "Raichur",
+        "incidents": 5,
+        "degree": 5,
+        "component": 10
+      },
+      {
+        "id": "ACC-00194",
+        "kind": "person",
+        "name": "Kiran K.",
+        "district": "Davanagere",
         "incidents": 1,
         "degree": 1,
-        "component": 43
+        "component": 42
       },
       {
-        "id": "ACC-00345",
+        "id": "ACC-00146",
         "kind": "person",
-        "name": "Suresh H.",
-        "district": "Bengaluru Urban",
+        "name": "Arjun R.",
+        "district": "Uttara Kannada",
         "incidents": 2,
         "degree": 2,
-        "component": 0
+        "component": 11
       },
       {
-        "id": "ACC-00136",
+        "id": "ACC-00384",
         "kind": "person",
-        "name": "Roopa K.",
+        "name": "Yusuf K.",
+        "district": "Tumakuru",
+        "incidents": 2,
+        "degree": 1,
+        "component": 29
+      },
+      {
+        "id": "ACC-00170",
+        "kind": "person",
+        "name": "Latha D.",
+        "district": "Chitradurga",
+        "incidents": 5,
+        "degree": 2,
+        "component": 13
+      },
+      {
+        "id": "ACC-00443",
+        "kind": "person",
+        "name": "Naveen S.",
+        "district": "Vijayapura",
+        "incidents": 3,
+        "degree": 2,
+        "component": 24
+      },
+      {
+        "id": "ACC-00099",
+        "kind": "person",
+        "name": "Ramesh S.",
+        "district": "Gadag",
+        "incidents": 5,
+        "degree": 2,
+        "component": 27
+      },
+      {
+        "id": "ACC-00033",
+        "kind": "person",
+        "name": "Ramesh V.",
+        "district": "Belagavi",
+        "incidents": 2,
+        "degree": 3,
+        "component": 17
+      },
+      {
+        "id": "ACC-00143",
+        "kind": "person",
+        "name": "Shankar B.",
+        "district": "Uttara Kannada",
+        "incidents": 2,
+        "degree": 1,
+        "component": 39
+      },
+      {
+        "id": "ACC-00295",
+        "kind": "person",
+        "name": "Santosh M.",
+        "district": "Dakshina Kannada",
+        "incidents": 6,
+        "degree": 5,
+        "component": 22
+      },
+      {
+        "id": "ACC-00054",
+        "kind": "person",
+        "name": "Lokesh S.",
+        "district": "Yadgir",
+        "incidents": 1,
+        "degree": 1,
+        "component": 35
+      },
+      {
+        "id": "ACC-00410",
+        "kind": "person",
+        "name": "Ravi K.",
+        "district": "Mandya",
+        "incidents": 4,
+        "degree": 3,
+        "component": 5
+      },
+      {
+        "id": "ACC-00429",
+        "kind": "person",
+        "name": "Prakash M.",
+        "district": "Mysuru",
+        "incidents": 2,
+        "degree": 2,
+        "component": 26
+      },
+      {
+        "id": "ACC-00394",
+        "kind": "person",
+        "name": "Vinod T.",
+        "district": "Ramanagara",
+        "incidents": 7,
+        "degree": 4,
+        "component": 20
+      },
+      {
+        "id": "ACC-00106",
+        "kind": "person",
+        "name": "Lokesh K.",
+        "district": "Gadag",
+        "incidents": 2,
+        "degree": 1,
+        "component": 36
+      },
+      {
+        "id": "ACC-00132",
+        "kind": "person",
+        "name": "Manju S.",
+        "district": "Dharwad",
+        "incidents": 3,
+        "degree": 3,
+        "component": 4
+      },
+      {
+        "id": "ACC-00307",
+        "kind": "person",
+        "name": "Imran P.",
+        "district": "Dakshina Kannada",
+        "incidents": 2,
+        "degree": 2,
+        "component": 22
+      },
+      {
+        "id": "ACC-00157",
+        "kind": "person",
+        "name": "Santosh V.",
+        "district": "Haveri",
+        "incidents": 3,
+        "degree": 4,
+        "component": 12
+      },
+      {
+        "id": "ACC-00090",
+        "kind": "person",
+        "name": "Vinod M.",
+        "district": "Koppal",
+        "incidents": 1,
+        "degree": 1,
+        "component": 3
+      },
+      {
+        "id": "ACC-00113",
+        "kind": "person",
+        "name": "Santosh T.",
+        "district": "Ballari",
+        "incidents": 5,
+        "degree": 2,
+        "component": 30
+      },
+      {
+        "id": "ACC-00179",
+        "kind": "person",
+        "name": "Suresh V.",
+        "district": "Chitradurga",
+        "incidents": 1,
+        "degree": 2,
+        "component": 13
+      },
+      {
+        "id": "ACC-00414",
+        "kind": "person",
+        "name": "Mahesh M.",
+        "district": "Mandya",
+        "incidents": 1,
+        "degree": 2,
+        "component": 5
+      },
+      {
+        "id": "ACC-00431",
+        "kind": "person",
+        "name": "Basava R.",
+        "district": "Mysuru",
+        "incidents": 3,
+        "degree": 3,
+        "component": 26
+      },
+      {
+        "id": "ACC-00120",
+        "kind": "person",
+        "name": "Roopa D.",
+        "district": "Ballari",
+        "incidents": 3,
+        "degree": 1,
+        "component": 38
+      },
+      {
+        "id": "ACC-00252",
+        "kind": "person",
+        "name": "Mallesh V.",
+        "district": "Chikkaballapura",
+        "incidents": 3,
+        "degree": 1,
+        "component": 45
+      },
+      {
+        "id": "ACC-00121",
+        "kind": "person",
+        "name": "Nagaraj D.",
+        "district": "Ballari",
+        "incidents": 3,
+        "degree": 2,
+        "component": 30
+      },
+      {
+        "id": "ACC-00130",
+        "kind": "person",
+        "name": "Naveen H.",
         "district": "Dharwad",
         "incidents": 2,
         "degree": 2,
         "component": 4
       },
       {
-        "id": "ACC-00346",
+        "id": "ACC-00154",
         "kind": "person",
-        "name": "Arjun N.",
-        "district": "Bengaluru Urban",
+        "name": "Shankar M.",
+        "district": "Uttara Kannada",
         "incidents": 1,
+        "degree": 1,
+        "component": 11
+      },
+      {
+        "id": "ACC-00159",
+        "kind": "person",
+        "name": "Prakash D.",
+        "district": "Haveri",
+        "incidents": 4,
+        "degree": 4,
+        "component": 12
+      },
+      {
+        "id": "ACC-00362",
+        "kind": "person",
+        "name": "Roopa B.",
+        "district": "Kodagu",
+        "incidents": 1,
+        "degree": 1,
+        "component": 15
+      },
+      {
+        "id": "ACC-00434",
+        "kind": "person",
+        "name": "Girish P.",
+        "district": "Mysuru",
+        "incidents": 3,
+        "degree": 4,
+        "component": 26
+      },
+      {
+        "id": "ACC-00297",
+        "kind": "person",
+        "name": "Lokesh K.",
+        "district": "Dakshina Kannada",
+        "incidents": 2,
+        "degree": 1,
+        "component": 28
+      },
+      {
+        "id": "ACC-00047",
+        "kind": "person",
+        "name": "Imran B.",
+        "district": "Yadgir",
+        "incidents": 1,
+        "degree": 1,
+        "component": 9
+      },
+      {
+        "id": "ACC-00303",
+        "kind": "person",
+        "name": "Suresh B.",
+        "district": "Dakshina Kannada",
+        "incidents": 2,
+        "degree": 1,
+        "component": 22
+      },
+      {
+        "id": "ACC-00420",
+        "kind": "person",
+        "name": "Imran V.",
+        "district": "Mandya",
+        "incidents": 1,
+        "degree": 1,
+        "component": 5
+      },
+      {
+        "id": "ACC-00436",
+        "kind": "person",
+        "name": "Mahesh M.",
+        "district": "Vijayapura",
+        "incidents": 6,
+        "degree": 4,
+        "component": 24
+      },
+      {
+        "id": "ACC-00392",
+        "kind": "person",
+        "name": "Kavya B.",
+        "district": "Tumakuru",
+        "incidents": 1,
+        "degree": 1,
+        "component": 51
+      },
+      {
+        "id": "ACC-00409",
+        "kind": "person",
+        "name": "Santosh R.",
+        "district": "Mandya",
+        "incidents": 4,
+        "degree": 3,
+        "component": 5
+      },
+      {
+        "id": "ACC-00351",
+        "kind": "person",
+        "name": "Roopa T.",
+        "district": "Bengaluru Urban",
+        "incidents": 2,
         "degree": 2,
         "component": 0
+      },
+      {
+        "id": "ACC-00285",
+        "kind": "person",
+        "name": "Suresh K.",
+        "district": "Bengaluru Rural",
+        "incidents": 3,
+        "degree": 4,
+        "component": 14
+      },
+      {
+        "id": "ACC-00059",
+        "kind": "person",
+        "name": "Deepa R.",
+        "district": "Bagalkote",
+        "incidents": 3,
+        "degree": 2,
+        "component": 18
+      },
+      {
+        "id": "ACC-00063",
+        "kind": "person",
+        "name": "Arjun P.",
+        "district": "Bagalkote",
+        "incidents": 3,
+        "degree": 2,
+        "component": 18
+      },
+      {
+        "id": "ACC-00339",
+        "kind": "person",
+        "name": "Manju V.",
+        "district": "Bengaluru Urban",
+        "incidents": 3,
+        "degree": 3,
+        "component": 0
+      },
+      {
+        "id": "ACC-00255",
+        "kind": "person",
+        "name": "Mallesh S.",
+        "district": "Hassan",
+        "incidents": 4,
+        "degree": 3,
+        "component": 7
+      },
+      {
+        "id": "ACC-00442",
+        "kind": "person",
+        "name": "Prakash N.",
+        "district": "Vijayapura",
+        "incidents": 3,
+        "degree": 2,
+        "component": 24
+      },
+      {
+        "id": "ACC-00228",
+        "kind": "person",
+        "name": "Anil S.",
+        "district": "Chikkamagaluru",
+        "incidents": 3,
+        "degree": 3,
+        "component": 2
+      },
+      {
+        "id": "ACC-00264",
+        "kind": "person",
+        "name": "Latha D.",
+        "district": "Hassan",
+        "incidents": 3,
+        "degree": 2,
+        "component": 7
       },
       {
         "id": "ACC-00008",
@@ -6509,13 +5798,724 @@
         "component": 16
       },
       {
-        "id": "ACC-00089",
+        "id": "ACC-00381",
         "kind": "person",
-        "name": "Naveen R.",
-        "district": "Koppal",
+        "name": "Ramesh P.",
+        "district": "Tumakuru",
+        "incidents": 3,
+        "degree": 1,
+        "component": 29
+      },
+      {
+        "id": "ACC-00197",
+        "kind": "person",
+        "name": "Vinod M.",
+        "district": "Shivamogga",
+        "incidents": 6,
+        "degree": 5,
+        "component": 6
+      },
+      {
+        "id": "ACC-00026",
+        "kind": "person",
+        "name": "Arjun K.",
+        "district": "Kalaburagi",
+        "incidents": 1,
+        "degree": 1,
+        "component": 1
+      },
+      {
+        "id": "ACC-00251",
+        "kind": "person",
+        "name": "Basava P.",
+        "district": "Chikkaballapura",
+        "incidents": 1,
+        "degree": 1,
+        "component": 25
+      },
+      {
+        "id": "ACC-00441",
+        "kind": "person",
+        "name": "Kavya T.",
+        "district": "Vijayapura",
+        "incidents": 1,
+        "degree": 1,
+        "component": 53
+      },
+      {
+        "id": "ACC-00326",
+        "kind": "person",
+        "name": "Yusuf K.",
+        "district": "Bengaluru Urban",
+        "incidents": 1,
+        "degree": 1,
+        "component": 48
+      },
+      {
+        "id": "ACC-00269",
+        "kind": "person",
+        "name": "Girish S.",
+        "district": "Kolar",
+        "incidents": 4,
+        "degree": 3,
+        "component": 8
+      },
+      {
+        "id": "ACC-00274",
+        "kind": "person",
+        "name": "Ramesh V.",
+        "district": "Kolar",
+        "incidents": 2,
+        "degree": 1,
+        "component": 8
+      },
+      {
+        "id": "ACC-00074",
+        "kind": "person",
+        "name": "Prakash S.",
+        "district": "Raichur",
         "incidents": 3,
         "degree": 4,
+        "component": 10
+      },
+      {
+        "id": "ACC-00196",
+        "kind": "person",
+        "name": "Shankar V.",
+        "district": "Davanagere",
+        "incidents": 3,
+        "degree": 1,
+        "component": 42
+      },
+      {
+        "id": "ACC-00293",
+        "kind": "person",
+        "name": "Mallesh R.",
+        "district": "Bengaluru Rural",
+        "incidents": 2,
+        "degree": 3,
+        "component": 14
+      },
+      {
+        "id": "ACC-00077",
+        "kind": "person",
+        "name": "Ramesh T.",
+        "district": "Raichur",
+        "incidents": 2,
+        "degree": 1,
+        "component": 10
+      },
+      {
+        "id": "ACC-00290",
+        "kind": "person",
+        "name": "Kiran K.",
+        "district": "Bengaluru Rural",
+        "incidents": 2,
+        "degree": 2,
+        "component": 14
+      },
+      {
+        "id": "ACC-00104",
+        "kind": "person",
+        "name": "Shankar T.",
+        "district": "Gadag",
+        "incidents": 3,
+        "degree": 1,
+        "component": 37
+      },
+      {
+        "id": "ACC-00312",
+        "kind": "person",
+        "name": "Mahesh D.",
+        "district": "Bengaluru Urban",
+        "incidents": 4,
+        "degree": 4,
+        "component": 0
+      },
+      {
+        "id": "ACC-00195",
+        "kind": "person",
+        "name": "Deepa B.",
+        "district": "Davanagere",
+        "incidents": 1,
+        "degree": 1,
+        "component": 41
+      },
+      {
+        "id": "ACC-00097",
+        "kind": "person",
+        "name": "Nagaraj H.",
+        "district": "Koppal",
+        "incidents": 3,
+        "degree": 2,
         "component": 3
+      },
+      {
+        "id": "ACC-00015",
+        "kind": "person",
+        "name": "Ramesh D.",
+        "district": "Kalaburagi",
+        "incidents": 6,
+        "degree": 2,
+        "component": 1
+      },
+      {
+        "id": "ACC-00325",
+        "kind": "person",
+        "name": "Nagaraj M.",
+        "district": "Bengaluru Urban",
+        "incidents": 2,
+        "degree": 2,
+        "component": 0
+      },
+      {
+        "id": "ACC-00023",
+        "kind": "person",
+        "name": "Girish P.",
+        "district": "Kalaburagi",
+        "incidents": 1,
+        "degree": 2,
+        "component": 1
+      },
+      {
+        "id": "ACC-00336",
+        "kind": "person",
+        "name": "Lokesh V.",
+        "district": "Bengaluru Urban",
+        "incidents": 2,
+        "degree": 1,
+        "component": 0
+      },
+      {
+        "id": "ACC-00370",
+        "kind": "person",
+        "name": "Ramesh T.",
+        "district": "Chamarajanagara",
+        "incidents": 3,
+        "degree": 2,
+        "component": 23
+      },
+      {
+        "id": "ACC-00401",
+        "kind": "person",
+        "name": "Manju B.",
+        "district": "Ramanagara",
+        "incidents": 2,
+        "degree": 1,
+        "component": 20
+      },
+      {
+        "id": "ACC-00262",
+        "kind": "person",
+        "name": "Girish N.",
+        "district": "Hassan",
+        "incidents": 2,
+        "degree": 1,
+        "component": 46
+      },
+      {
+        "id": "ACC-00320",
+        "kind": "person",
+        "name": "Prakash R.",
+        "district": "Bengaluru Urban",
+        "incidents": 3,
+        "degree": 2,
+        "component": 0
+      },
+      {
+        "id": "ACC-00366",
+        "kind": "person",
+        "name": "Arjun N.",
+        "district": "Chamarajanagara",
+        "incidents": 2,
+        "degree": 4,
+        "component": 23
+      },
+      {
+        "id": "ACC-00313",
+        "kind": "person",
+        "name": "Mallesh S.",
+        "district": "Bengaluru Urban",
+        "incidents": 4,
+        "degree": 2,
+        "component": 0
+      },
+      {
+        "id": "ACC-00133",
+        "kind": "person",
+        "name": "Manju M.",
+        "district": "Dharwad",
+        "incidents": 3,
+        "degree": 5,
+        "component": 4
+      },
+      {
+        "id": "ACC-00110",
+        "kind": "person",
+        "name": "Imran S.",
+        "district": "Gadag",
+        "incidents": 2,
+        "degree": 1,
+        "component": 37
+      },
+      {
+        "id": "ACC-00226",
+        "kind": "person",
+        "name": "Deepa N.",
+        "district": "Chikkamagaluru",
+        "incidents": 6,
+        "degree": 4,
+        "component": 2
+      },
+      {
+        "id": "ACC-00018",
+        "kind": "person",
+        "name": "Latha M.",
+        "district": "Kalaburagi",
+        "incidents": 2,
+        "degree": 3,
+        "component": 1
+      },
+      {
+        "id": "ACC-00237",
+        "kind": "person",
+        "name": "Yusuf D.",
+        "district": "Chikkamagaluru",
+        "incidents": 2,
+        "degree": 2,
+        "component": 2
+      },
+      {
+        "id": "ACC-00408",
+        "kind": "person",
+        "name": "Arjun P.",
+        "district": "Mandya",
+        "incidents": 5,
+        "degree": 4,
+        "component": 5
+      },
+      {
+        "id": "ACC-00279",
+        "kind": "person",
+        "name": "Kavya D.",
+        "district": "Kolar",
+        "incidents": 2,
+        "degree": 3,
+        "component": 8
+      },
+      {
+        "id": "ACC-00231",
+        "kind": "person",
+        "name": "Mallesh P.",
+        "district": "Chikkamagaluru",
+        "incidents": 3,
+        "degree": 4,
+        "component": 2
+      },
+      {
+        "id": "ACC-00187",
+        "kind": "person",
+        "name": "Mallesh D.",
+        "district": "Davanagere",
+        "incidents": 2,
+        "degree": 1,
+        "component": 40
+      },
+      {
+        "id": "ACC-00395",
+        "kind": "person",
+        "name": "Anil D.",
+        "district": "Ramanagara",
+        "incidents": 3,
+        "degree": 3,
+        "component": 20
+      },
+      {
+        "id": "ACC-00298",
+        "kind": "person",
+        "name": "Vinod G.",
+        "district": "Dakshina Kannada",
+        "incidents": 2,
+        "degree": 2,
+        "component": 28
+      },
+      {
+        "id": "ACC-00302",
+        "kind": "person",
+        "name": "Girish K.",
+        "district": "Dakshina Kannada",
+        "incidents": 3,
+        "degree": 2,
+        "component": 28
+      },
+      {
+        "id": "ACC-00266",
+        "kind": "person",
+        "name": "Roopa M.",
+        "district": "Hassan",
+        "incidents": 1,
+        "degree": 2,
+        "component": 7
+      },
+      {
+        "id": "ACC-00321",
+        "kind": "person",
+        "name": "Santosh P.",
+        "district": "Bengaluru Urban",
+        "incidents": 3,
+        "degree": 4,
+        "component": 0
+      },
+      {
+        "id": "ACC-00344",
+        "kind": "person",
+        "name": "Deepa V.",
+        "district": "Bengaluru Urban",
+        "incidents": 2,
+        "degree": 1,
+        "component": 48
+      },
+      {
+        "id": "ACC-00415",
+        "kind": "person",
+        "name": "Shankar K.",
+        "district": "Mandya",
+        "incidents": 1,
+        "degree": 2,
+        "component": 5
+      },
+      {
+        "id": "ACC-00127",
+        "kind": "person",
+        "name": "Girish T.",
+        "district": "Dharwad",
+        "incidents": 6,
+        "degree": 4,
+        "component": 4
+      },
+      {
+        "id": "ACC-00144",
+        "kind": "person",
+        "name": "Anil H.",
+        "district": "Uttara Kannada",
+        "incidents": 2,
+        "degree": 3,
+        "component": 11
+      },
+      {
+        "id": "ACC-00248",
+        "kind": "person",
+        "name": "Mahesh T.",
+        "district": "Chikkaballapura",
+        "incidents": 1,
+        "degree": 2,
+        "component": 25
+      },
+      {
+        "id": "ACC-00204",
+        "kind": "person",
+        "name": "Nagaraj P.",
+        "district": "Shivamogga",
+        "incidents": 2,
+        "degree": 1,
+        "component": 6
+      },
+      {
+        "id": "ACC-00284",
+        "kind": "person",
+        "name": "Kavya K.",
+        "district": "Bengaluru Rural",
+        "incidents": 3,
+        "degree": 4,
+        "component": 14
+      },
+      {
+        "id": "ACC-00374",
+        "kind": "person",
+        "name": "Kiran S.",
+        "district": "Chamarajanagara",
+        "incidents": 2,
+        "degree": 1,
+        "component": 49
+      },
+      {
+        "id": "ACC-00316",
+        "kind": "person",
+        "name": "Prakash V.",
+        "district": "Bengaluru Urban",
+        "incidents": 1,
+        "degree": 2,
+        "component": 31
+      },
+      {
+        "id": "ACC-00156",
+        "kind": "person",
+        "name": "Yusuf B.",
+        "district": "Haveri",
+        "incidents": 3,
+        "degree": 3,
+        "component": 12
+      },
+      {
+        "id": "ACC-00319",
+        "kind": "person",
+        "name": "Girish M.",
+        "district": "Bengaluru Urban",
+        "incidents": 2,
+        "degree": 3,
+        "component": 0
+      },
+      {
+        "id": "ACC-00215",
+        "kind": "person",
+        "name": "Mallesh D.",
+        "district": "Udupi",
+        "incidents": 4,
+        "degree": 3,
+        "component": 19
+      },
+      {
+        "id": "ACC-00176",
+        "kind": "person",
+        "name": "Manju K.",
+        "district": "Chitradurga",
+        "incidents": 3,
+        "degree": 1,
+        "component": 13
+      },
+      {
+        "id": "ACC-00147",
+        "kind": "person",
+        "name": "Girish D.",
+        "district": "Uttara Kannada",
+        "incidents": 5,
+        "degree": 2,
+        "component": 11
+      },
+      {
+        "id": "ACC-00327",
+        "kind": "person",
+        "name": "Mallesh P.",
+        "district": "Bengaluru Urban",
+        "incidents": 3,
+        "degree": 1,
+        "component": 47
+      },
+      {
+        "id": "ACC-00064",
+        "kind": "person",
+        "name": "Shankar B.",
+        "district": "Bagalkote",
+        "incidents": 1,
+        "degree": 1,
+        "component": 18
+      },
+      {
+        "id": "ACC-00080",
+        "kind": "person",
+        "name": "Naveen P.",
+        "district": "Raichur",
+        "incidents": 2,
+        "degree": 2,
+        "component": 10
+      },
+      {
+        "id": "ACC-00100",
+        "kind": "person",
+        "name": "Naveen N.",
+        "district": "Gadag",
+        "incidents": 3,
+        "degree": 1,
+        "component": 36
+      },
+      {
+        "id": "ACC-00254",
+        "kind": "person",
+        "name": "Anil T.",
+        "district": "Hassan",
+        "incidents": 2,
+        "degree": 1,
+        "component": 46
+      },
+      {
+        "id": "ACC-00263",
+        "kind": "person",
+        "name": "Arjun D.",
+        "district": "Hassan",
+        "incidents": 2,
+        "degree": 2,
+        "component": 7
+      },
+      {
+        "id": "ACC-00050",
+        "kind": "person",
+        "name": "Anil T.",
+        "district": "Yadgir",
+        "incidents": 4,
+        "degree": 3,
+        "component": 9
+      },
+      {
+        "id": "ACC-00391",
+        "kind": "person",
+        "name": "Basava S.",
+        "district": "Tumakuru",
+        "incidents": 3,
+        "degree": 1,
+        "component": 50
+      },
+      {
+        "id": "ACC-00397",
+        "kind": "person",
+        "name": "Girish P.",
+        "district": "Ramanagara",
+        "incidents": 3,
+        "degree": 2,
+        "component": 20
+      },
+      {
+        "id": "ACC-00065",
+        "kind": "person",
+        "name": "Manju D.",
+        "district": "Bagalkote",
+        "incidents": 2,
+        "degree": 1,
+        "component": 18
+      },
+      {
+        "id": "ACC-00003",
+        "kind": "person",
+        "name": "Latha M.",
+        "district": "Bidar",
+        "incidents": 5,
+        "degree": 3,
+        "component": 16
+      },
+      {
+        "id": "ACC-00116",
+        "kind": "person",
+        "name": "Suresh D.",
+        "district": "Ballari",
+        "incidents": 2,
+        "degree": 2,
+        "component": 30
+      },
+      {
+        "id": "ACC-00242",
+        "kind": "person",
+        "name": "Shankar V.",
+        "district": "Chikkaballapura",
+        "incidents": 1,
+        "degree": 1,
+        "component": 44
+      },
+      {
+        "id": "ACC-00296",
+        "kind": "person",
+        "name": "Santosh G.",
+        "district": "Dakshina Kannada",
+        "incidents": 6,
+        "degree": 2,
+        "component": 22
+      },
+      {
+        "id": "ACC-00093",
+        "kind": "person",
+        "name": "Shankar N.",
+        "district": "Koppal",
+        "incidents": 1,
+        "degree": 2,
+        "component": 3
+      },
+      {
+        "id": "ACC-00227",
+        "kind": "person",
+        "name": "Kavya M.",
+        "district": "Chikkamagaluru",
+        "incidents": 4,
+        "degree": 4,
+        "component": 2
+      },
+      {
+        "id": "ACC-00253",
+        "kind": "person",
+        "name": "Basava P.",
+        "district": "Hassan",
+        "incidents": 5,
+        "degree": 4,
+        "component": 7
+      },
+      {
+        "id": "ACC-00276",
+        "kind": "person",
+        "name": "Mallesh R.",
+        "district": "Kolar",
+        "incidents": 3,
+        "degree": 3,
+        "component": 8
+      },
+      {
+        "id": "ACC-00192",
+        "kind": "person",
+        "name": "Latha N.",
+        "district": "Davanagere",
+        "incidents": 2,
+        "degree": 1,
+        "component": 41
+      },
+      {
+        "id": "ACC-00352",
+        "kind": "person",
+        "name": "Kavya T.",
+        "district": "Kodagu",
+        "incidents": 7,
+        "degree": 6,
+        "component": 15
+      },
+      {
+        "id": "ACC-00238",
+        "kind": "person",
+        "name": "Santosh P.",
+        "district": "Chikkamagaluru",
+        "incidents": 1,
+        "degree": 2,
+        "component": 2
+      },
+      {
+        "id": "ACC-00386",
+        "kind": "person",
+        "name": "Nagaraj N.",
+        "district": "Tumakuru",
+        "incidents": 1,
+        "degree": 1,
+        "component": 51
+      },
+      {
+        "id": "ACC-00049",
+        "kind": "person",
+        "name": "Manju B.",
+        "district": "Yadgir",
+        "incidents": 2,
+        "degree": 1,
+        "component": 9
+      },
+      {
+        "id": "ACC-00115",
+        "kind": "person",
+        "name": "Ravi H.",
+        "district": "Ballari",
+        "incidents": 4,
+        "degree": 3,
+        "component": 21
+      },
+      {
+        "id": "ACC-00046",
+        "kind": "person",
+        "name": "Basava M.",
+        "district": "Yadgir",
+        "incidents": 2,
+        "degree": 1,
+        "component": 9
       },
       {
         "id": "CASE-000001",

@@ -1,0 +1,92 @@
+UnitID,UnitName,TypeID,ParentUnit,NationalityID,StateID,DistrictID,Active
+100001,Bidar Town PS,1,,1,29,558,1
+100002,Bidar Rural PS,1,,1,29,558,1
+100003,Bidar Market PS,1,,1,29,558,1
+100004,Kalaburagi Town PS,1,,1,29,579,1
+100005,Kalaburagi Rural PS,1,,1,29,579,1
+100006,Kalaburagi Market PS,1,,1,29,579,1
+100007,Belagavi Town PS,1,,1,29,555,1
+100008,Belagavi Rural PS,1,,1,29,555,1
+100009,Belagavi Market PS,1,,1,29,555,1
+100010,Yadgir Town PS,1,,1,29,580,1
+100011,Yadgir Rural PS,1,,1,29,580,1
+100012,Yadgir Market PS,1,,1,29,580,1
+100013,Bagalkote Town PS,1,,1,29,556,1
+100014,Bagalkote Rural PS,1,,1,29,556,1
+100015,Bagalkote Market PS,1,,1,29,556,1
+100016,Raichur Town PS,1,,1,29,559,1
+100017,Raichur Rural PS,1,,1,29,559,1
+100018,Raichur Market PS,1,,1,29,559,1
+100019,Koppal Town PS,1,,1,29,560,1
+100020,Koppal Rural PS,1,,1,29,560,1
+100021,Koppal Market PS,1,,1,29,560,1
+100022,Gadag Town PS,1,,1,29,561,1
+100023,Gadag Rural PS,1,,1,29,561,1
+100024,Gadag Market PS,1,,1,29,561,1
+100025,Ballari Town PS,1,,1,29,565,1
+100026,Ballari Rural PS,1,,1,29,565,1
+100027,Ballari Market PS,1,,1,29,565,1
+100028,Dharwad Town PS,1,,1,29,562,1
+100029,Dharwad Rural PS,1,,1,29,562,1
+100030,Dharwad Market PS,1,,1,29,562,1
+100031,Uttara Kannada Town PS,1,,1,29,563,1
+100032,Uttara Kannada Rural PS,1,,1,29,563,1
+100033,Uttara Kannada Market PS,1,,1,29,563,1
+100034,Haveri Town PS,1,,1,29,564,1
+100035,Haveri Rural PS,1,,1,29,564,1
+100036,Haveri Market PS,1,,1,29,564,1
+100037,Chitradurga Town PS,1,,1,29,566,1
+100038,Chitradurga Rural PS,1,,1,29,566,1
+100039,Chitradurga Market PS,1,,1,29,566,1
+100040,Davanagere Town PS,1,,1,29,567,1
+100041,Davanagere Rural PS,1,,1,29,567,1
+100042,Davanagere Market PS,1,,1,29,567,1
+100043,Shivamogga Town PS,1,,1,29,568,1
+100044,Shivamogga Rural PS,1,,1,29,568,1
+100045,Shivamogga Market PS,1,,1,29,568,1
+100046,Udupi Town PS,1,,1,29,569,1
+100047,Udupi Rural PS,1,,1,29,569,1
+100048,Udupi Market PS,1,,1,29,569,1
+100049,Chikkamagaluru Town PS,1,,1,29,570,1
+100050,Chikkamagaluru Rural PS,1,,1,29,570,1
+100051,Chikkamagaluru Market PS,1,,1,29,570,1
+100052,Chikkaballapura Town PS,1,,1,29,582,1
+100053,Chikkaballapura Rural PS,1,,1,29,582,1
+100054,Chikkaballapura Market PS,1,,1,29,582,1
+100055,Hassan Town PS,1,,1,29,574,1
+100056,Hassan Rural PS,1,,1,29,574,1
+100057,Hassan Market PS,1,,1,29,574,1
+100058,Kolar Town PS,1,,1,29,581,1
+100059,Kolar Rural PS,1,,1,29,581,1
+100060,Kolar Market PS,1,,1,29,581,1
+100061,Bengaluru Rural Town PS,1,,1,29,583,1
+100062,Bengaluru Rural Rural PS,1,,1,29,583,1
+100063,Bengaluru Rural Market PS,1,,1,29,583,1
+100064,Dakshina Kannada Town PS,1,,1,29,575,1
+100065,Dakshina Kannada Rural PS,1,,1,29,575,1
+100066,Dakshina Kannada Market PS,1,,1,29,575,1
+100067,Bengaluru Urban Town PS,1,,1,29,572,1
+100068,Bengaluru Urban Rural PS,1,,1,29,572,1
+100069,Bengaluru Urban Market PS,1,,1,29,572,1
+100070,Bengaluru Urban City PS,1,,1,29,572,1
+100071,Kodagu Town PS,1,,1,29,576,1
+100072,Kodagu Rural PS,1,,1,29,576,1
+100073,Kodagu Market PS,1,,1,29,576,1
+100074,Chamarajanagara Town PS,1,,1,29,578,1
+100075,Chamarajanagara Rural PS,1,,1,29,578,1
+100076,Chamarajanagara Market PS,1,,1,29,578,1
+100077,Tumakuru Town PS,1,,1,29,571,1
+100078,Tumakuru Rural PS,1,,1,29,571,1
+100079,Tumakuru Market PS,1,,1,29,571,1
+100080,Ramanagara Town PS,1,,1,29,584,1
+100081,Ramanagara Rural PS,1,,1,29,584,1
+100082,Ramanagara Market PS,1,,1,29,584,1
+100083,Mandya Town PS,1,,1,29,573,1
+100084,Mandya Rural PS,1,,1,29,573,1
+100085,Mandya Market PS,1,,1,29,573,1
+100086,Mysuru Town PS,1,,1,29,577,1
+100087,Mysuru Rural PS,1,,1,29,577,1
+100088,Mysuru Market PS,1,,1,29,577,1
+100089,Vijayapura Town PS,1,,1,29,557,1
+100090,Vijayapura Rural PS,1,,1,29,557,1
+100091,Vijayapura Market PS,1,,1,29,557,1

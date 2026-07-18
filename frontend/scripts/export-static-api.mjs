@@ -1,5 +1,5 @@
 // Copies the backend's built API payloads into public/api/ so the frontend can be
-// deployed to a static host (Netlify, GitHub Pages, S3) with no server.
+// deployed to Catalyst Web Client Hosting (or any static host) with no server.
 //
 // This is sound because every FastAPI route is a pure passthrough of one JSON file
 // (`return _load("districts.json")`). The files ARE the API contract, so serving

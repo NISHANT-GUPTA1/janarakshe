@@ -19,7 +19,7 @@ from fastapi.staticfiles import StaticFiles
 
 from pipeline import paths
 
-from . import config
+from . import config, datastore
 from .middleware import AuditMiddleware, SecurityHeadersMiddleware
 from .security import analyst_required, identify
 
@@ -64,6 +64,7 @@ def api_root():
             "/api/socioeconomic/schema",
             "/api/fir/overview", "/api/fir/stations", "/api/fir/spatiotemporal",
             "/api/fir/network", "/api/fir/offenders", "/api/fir/cases", "/api/fir/schema",
+            "/api/datastore/status", "/api/fir/live/cases", "/api/fir/live/stations",
         ],
         "docs": "/docs",
     }
@@ -198,6 +199,66 @@ def fir_cases():
 def fir_schema():
     """The KSP Police FIR System ER model (tables, keys, relationships)."""
     return _load("fir_schema.json")
+
+
+# ---- Catalyst Data Store: live record-level queries (ZCQL) ----
+# These read the FIR tables straight from Data Store when the app runs on AppSail
+# with CRIME_USE_DATASTORE=1; otherwise they fall back to the precomputed JSON so the
+# app works identically in local dev. Proves the platform uses Data Store at runtime.
+@app.get("/api/datastore/status")
+def datastore_status():
+    """Whether the API is serving record-level data live from Catalyst Data Store."""
+    return datastore.status()
+
+
+@app.get("/api/fir/live/cases")
+def fir_live_cases(limit: int = 50):
+    """Latest FIR cases, joined to their lookups — live from Data Store when available."""
+    limit = max(1, min(limit, 500))
+    if datastore.available():
+        try:
+            rows = datastore.query(
+                "SELECT CaseMaster.CrimeNo, CaseMaster.CrimeRegisteredDate, "
+                "CaseMaster.latitude, CaseMaster.longitude, CaseCategory.LookupValue, "
+                "CrimeHead.CrimeGroupName, CrimeSubHead.CrimeHeadName, "
+                "GravityOffence.LookupValue, CaseStatusMaster.CaseStatusName "
+                "FROM CaseMaster "
+                "LEFT JOIN CaseCategory ON CaseMaster.CaseCategoryID = CaseCategory.CaseCategoryID "
+                "LEFT JOIN CrimeHead ON CaseMaster.CrimeMajorHeadID = CrimeHead.CrimeHeadID "
+                "LEFT JOIN CrimeSubHead ON CaseMaster.CrimeMinorHeadID = CrimeSubHead.CrimeSubHeadID "
+                "LEFT JOIN GravityOffence ON CaseMaster.GravityOffenceID = GravityOffence.GravityOffenceID "
+                "LEFT JOIN CaseStatusMaster ON CaseMaster.CaseStatusID = CaseStatusMaster.CaseStatusID "
+                f"ORDER BY CaseMaster.CrimeRegisteredDate DESC LIMIT {limit}")
+            return {"source": "datastore", "count": len(rows), "rows": rows}
+        except Exception as exc:  # noqa: BLE001 — degrade to the static payload
+            fallback = _load("fir_cases.json")
+            fallback["source"] = "fallback"
+            fallback["datastore_error"] = str(exc)
+            return fallback
+    payload = _load("fir_cases.json")
+    payload["source"] = "fallback"
+    return payload
+
+
+@app.get("/api/fir/live/stations")
+def fir_live_stations(limit: int = 50):
+    """Per-station case counts — live from Data Store when available, else JSON."""
+    limit = max(1, min(limit, 500))
+    if datastore.available():
+        try:
+            rows = datastore.query(
+                "SELECT Unit.UnitName, COUNT(CaseMaster.CaseMasterID) AS cases "
+                "FROM CaseMaster LEFT JOIN Unit ON CaseMaster.PoliceStationID = Unit.UnitID "
+                f"GROUP BY Unit.UnitName ORDER BY cases DESC LIMIT {limit}")
+            return {"source": "datastore", "count": len(rows), "stations": rows}
+        except Exception as exc:  # noqa: BLE001
+            fallback = _load("fir_stations.json")
+            fallback["source"] = "fallback"
+            fallback["datastore_error"] = str(exc)
+            return fallback
+    payload = _load("fir_stations.json")
+    payload["source"] = "fallback"
+    return payload
 
 
 # ---- Phase 4: socio-economic correlation (real Census 2011) ----

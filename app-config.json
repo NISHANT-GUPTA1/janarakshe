@@ -1,0 +1,11 @@
+{
+	"command": "python3 -u server.py",
+	"build_path": "backend",
+	"stack": "python_3_11",
+	"env_variables": {
+		"CRIME_CORS_ORIGINS": "*",
+		"CRIME_USE_DATASTORE": "1"
+	},
+	"memory": 512,
+	"scripts": {}
+}

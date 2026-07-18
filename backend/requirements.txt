@@ -1,17 +1,10 @@
-# Phase 1 backend — data pipeline + aggregate API.
-# Versions pinned to what the dev environment already has.
+# RUNTIME dependencies for the deployed API (Catalyst AppSail).
+#
+# The API only serves the pre-built JSON payloads (data/processed/api/*.json) and runs
+# ZCQL against Data Store — it imports NONE of the heavy ML libraries. Those live in
+# requirements-pipeline.txt and are needed only to (re)generate the data offline.
+# Keeping this list slim makes the AppSail install fast and reliable.
 fastapi==0.119.0
 uvicorn[standard]==0.37.0
-pandas==2.2.3
-numpy==2.1.2
-scikit-learn==1.8.0
 pydantic>=2.0
-scipy>=1.13
-
-# Phase 6 — Advanced AI/ML pattern detection (PCA, RF, SHAP, IsolationForest, Forecast)
-shap>=0.46
-
-# Phase 2+ (geospatial maps, seasonal/anomaly stats) — install when those phases start:
-# geopandas
-# shapely
-# statsmodels
+zcatalyst-sdk>=1.4.0
