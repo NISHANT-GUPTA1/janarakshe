@@ -6,12 +6,13 @@ import {
 } from './Pages.jsx';
 
 // Primary navigation — mirrors the official KSP portal's menu.
+// `caret` marks a menu that shows a dropdown chevron on the real portal.
 const NAV = [
   { id: 'home', label: 'Home' },
-  { id: 'about', label: 'About Us' },
-  { id: 'crime', label: 'Crime' },
-  { id: 'women-children', label: 'Women & Children' },
-  { id: 'police-units', label: 'Police Units & Special Units' },
+  { id: 'about', label: 'About Us', caret: true },
+  { id: 'crime', label: 'Crime', caret: true },
+  { id: 'women-children', label: 'Women and Children', caret: true },
+  { id: 'police-units', label: 'Police Units & Special Units', caret: true },
   { id: 'faq', label: 'FAQ' },
   { id: 'contact', label: 'Contact Us' },
 ];
@@ -60,6 +61,12 @@ export default function App() {
 // ===========================================================
 function Shell({ meta, route, go, children }) {
   const active = NAV.find((n) => n.id === route)?.label ?? '';
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [sq, setSq] = useState('');
+  const results = sq.trim()
+    ? NAV.filter((n) => n.label.toLowerCase().includes(sq.trim().toLowerCase()))
+    : NAV.filter((n) => n.id !== 'home');
+  const pickSearch = (id) => { setSearchOpen(false); setSq(''); go(id); };
 
   // Font Size controls — scale the root font size (rem-based layout follows).
   const setFont = (delta) => {
@@ -73,29 +80,29 @@ function Shell({ meta, route, go, children }) {
     <>
       <a className="skip-link" href="#main">Skip to main content</a>
 
-      {/* Row 1 — top utility bar (KSP teal→purple gradient) */}
+      {/* Row 1 — top utility bar (solid navy) */}
       <div className="ksp-topbar">
         <div className="ksp-topbar-in">
           <div className="ktb-left">
-            <a href="#" className="ktb-item" lang="kn">ಕನ್ನಡ</a>
-            <a href="https://ksp.karnataka.gov.in/" target="_blank" rel="noreferrer" className="ktb-item ktb-hide-sm">Official Website of GoK</a>
+            <a href="https://ksp.karnataka.gov.in/" target="_blank" rel="noreferrer" className="ktb-item">Official Website of GoK</a>
           </div>
           <div className="ktb-right">
+            <a href="#" className="ktb-item ktb-hide-sm">Accessibility</a>
             <span className="ktb-font">
               Font Size
-              <button type="button" aria-label="Increase font size" onClick={() => setFont(1)}>+</button>
+              <button type="button" aria-label="Decrease font size" onClick={() => setFont(-1)}>A-</button>
               <button type="button" aria-label="Reset font size" onClick={() => setFont(0)}>A</button>
-              <button type="button" aria-label="Decrease font size" onClick={() => setFont(-1)}>−</button>
+              <button type="button" aria-label="Increase font size" onClick={() => setFont(1)}>A+</button>
             </span>
             <SocialBar />
-            <span className="ktb-emergency">Emergency Number : <b>112</b></span>
+            <span className="ktb-emergency"><span className="ktb-phone" aria-hidden="true">📞</span> Emergency Number : <b>112</b></span>
           </div>
         </div>
       </div>
 
       {/* Row 2 — masthead: state emblem + bilingual title */}
       <header className="ksp-masthead">
-        <div className="ksp-masthead-in">
+        <div className="ksp-masthead-in ksp-masthead-center">
           <a
             className="ksp-brand"
             href="#/home"
@@ -104,13 +111,13 @@ function Shell({ meta, route, go, children }) {
             <img className="ksp-emblem" src="/ksp-main-logo.png" alt="Karnataka State Emblem" />
             <span className="ksp-brand-text">
               <b>Karnataka State Police</b>
-              <span className="ksp-brand-kn" lang="kn">ಕರ್ನಾಟಕ ರಾಜ್ಯ ಪೊಲೀಸ್</span>
+              <span className="ksp-brand-sub">Government of Karnataka</span>
             </span>
           </a>
         </div>
       </header>
 
-      {/* Row 3 — primary navigation (KSP blue→purple gradient) */}
+      {/* Row 3 — primary navigation (solid blue) */}
       <nav className="ksp-nav" aria-label="Primary">
         <div className="ksp-nav-in">
           {NAV.map((n) => (
@@ -120,13 +127,48 @@ function Shell({ meta, route, go, children }) {
               onClick={() => go(n.id)}
               aria-current={route === n.id ? 'page' : undefined}
             >
+              {n.id === 'home' && (
+                <svg className="nav-home-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5" /><path d="M5 10v9h5v-5h4v5h5v-9" /></svg>
+              )}
               {n.label}
+              {n.caret && <span className="nav-caret" aria-hidden="true">▾</span>}
             </button>
           ))}
+          <button
+            className={`ksp-nav-search ${searchOpen ? 'on' : ''}`}
+            aria-label="Search"
+            aria-expanded={searchOpen}
+            onClick={() => setSearchOpen((v) => !v)}
+          >
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+          </button>
         </div>
+
+        {searchOpen && (
+          <div className="ksp-search-panel">
+            <div className="ksp-search-in">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+              <input
+                autoFocus
+                type="search"
+                value={sq}
+                placeholder="Search the portal…"
+                onChange={(e) => setSq(e.target.value)}
+                onKeyDown={(e) => { if (e.key === 'Enter' && results[0]) pickSearch(results[0].id); if (e.key === 'Escape') setSearchOpen(false); }}
+              />
+              <button type="button" aria-label="Close search" onClick={() => setSearchOpen(false)}>✕</button>
+            </div>
+            <ul className="ksp-search-results">
+              {results.map((n) => (
+                <li key={n.id}><button onClick={() => pickSearch(n.id)}>{n.label}</button></li>
+              ))}
+              {!results.length && <li className="ksp-search-empty">No matching sections.</li>}
+            </ul>
+          </div>
+        )}
       </nav>
 
-      <div className="gov-context">
+      {route !== 'home' && <div className="gov-context">
         <div className="gov-context-in">
           <span className="crumb">
             <a href="#/home" onClick={(e) => { e.preventDefault(); go('home'); }}>Home</a>
@@ -139,7 +181,7 @@ function Shell({ meta, route, go, children }) {
             </span>
           )}
         </div>
-      </div>
+      </div>}
 
       {/* The home console is full-bleed; the content pages keep the centred gov column. */}
       <main id="main" className={route === 'home' ? 'wrap wrap-full' : 'wrap'}>{children}</main>

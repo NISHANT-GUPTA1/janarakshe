@@ -14,8 +14,8 @@ import { SERIES, BAND_COLOR, fmt } from './palette.js';
 //   - single y-axis only, always zero-baselined
 // ===========================================================
 
-const GRID = 'rgba(255,255,255,0.06)';
-const AXIS = '#7c8ba3';
+const GRID = 'rgba(20,36,58,0.08)';
+const AXIS = '#6a7a90';
 
 // ---------- Sparkline: trend shape only, no axes. ----------
 export function Sparkline({ data, color = SERIES[0], w = 120, h = 34, fill = true }) {
@@ -113,12 +113,12 @@ export function AreaTrend({ series, xKey = 'year', yKey = 'total', color = SERIE
         ))}
 
         {/* direct label on the terminal point — never a number on every point */}
-        <circle cx={last.x} cy={last.y} r="4" fill={color} stroke="#0e1626" strokeWidth="2" />
+        <circle cx={last.x} cy={last.y} r="4" fill={color} stroke="#fff" strokeWidth="2" />
 
         {hover && (
           <g>
-            <line x1={hover.x} x2={hover.x} y1={P.t} y2={H - P.b} stroke="rgba(255,255,255,0.22)" strokeWidth="1" strokeDasharray="3 3" />
-            <circle cx={hover.x} cy={hover.y} r="5" fill={color} stroke="#0e1626" strokeWidth="2" />
+            <line x1={hover.x} x2={hover.x} y1={P.t} y2={H - P.b} stroke="rgba(20,36,58,0.28)" strokeWidth="1" strokeDasharray="3 3" />
+            <circle cx={hover.x} cy={hover.y} r="5" fill={color} stroke="#fff" strokeWidth="2" />
           </g>
         )}
       </svg>

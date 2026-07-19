@@ -56,7 +56,8 @@ export default function District3D({ districts, boundaries, firHotspots = [], fi
     el.appendChild(renderer.domElement);
 
     const sc = new THREE.Scene();
-    sc.fog = new THREE.Fog(0x0e1626, 34, 78);
+    // Light backdrop so the terrain matches the rest of the dashboard.
+    sc.fog = new THREE.Fog(0xe6edf6, 46, 96);
 
     const camera = new THREE.PerspectiveCamera(42, el.clientWidth / el.clientHeight, 0.1, 400);
     camera.position.set(0, 30, 30);
@@ -70,19 +71,19 @@ export default function District3D({ districts, boundaries, firHotspots = [], fi
     controls.autoRotateSpeed = 0.5;
     controls.target.set(0, 0, 0);
 
-    sc.add(new THREE.AmbientLight(0x8fa8c8, 1.15));
-    const key = new THREE.DirectionalLight(0xffffff, 1.5);
+    sc.add(new THREE.AmbientLight(0xdfe8f4, 1.35));
+    const key = new THREE.DirectionalLight(0xffffff, 1.35);
     key.position.set(18, 30, 14);
     sc.add(key);
-    const rim = new THREE.DirectionalLight(0x3987e5, 0.9);
+    const rim = new THREE.DirectionalLight(0x9bbce8, 0.7);
     rim.position.set(-20, 12, -18);
     sc.add(rim);
 
     // faint ground grid so the extrusions read as standing on a plane
-    const grid = new THREE.GridHelper(90, 36, 0x24344e, 0x1a2436);
+    const grid = new THREE.GridHelper(90, 36, 0xb6c7dd, 0xd2ddeb);
     grid.position.y = -0.02;
     grid.material.transparent = true;
-    grid.material.opacity = 0.5;
+    grid.material.opacity = 0.6;
     sc.add(grid);
 
     // All data layers live under one world group. Once the districts are built we
@@ -270,33 +271,62 @@ export default function District3D({ districts, boundaries, firHotspots = [], fi
     }
   }, [districts, boundaries, metric, selectedId]);
 
-  // ---- FIR hotspot pillars ----
+  // ---- FIR hotspot pins ----
   useEffect(() => {
     const s = scene.current;
     if (!s) return;
-    const { pillarGroup } = s;
+    const { pillarGroup, districtGroup, world } = s;
     pillarGroup.clear();
     if (!showPillars || !firHotspots.length) return;
 
+    // Refresh world matrices, then drop a ray onto the terrain at each hotspot so
+    // every pin sits exactly ON its district's surface (no floating / parallax).
+    s.sc.updateMatrixWorld(true);
+    const ray = new THREE.Raycaster();
+    const down = new THREE.Vector3(0, -1, 0);
+    const meshes = districtGroup.children.filter((c) => c.isMesh);
+
     const maxC = Math.max(...firHotspots.map((h) => h.count), 1);
     for (const h of firHotspots) {
-      const hgt = 1.2 + (h.count / maxC) * 7;
+      const t = h.count / maxC;                 // 0..1 magnitude
       const heavy = h.heinous > 0;
-      const col = new THREE.Color(heavy ? '#e66767' : '#3987e5');
-      const geo = new THREE.CylinderGeometry(0.13, 0.13, hgt, 10);
-      const mat = new THREE.MeshStandardMaterial({
-        color: col, emissive: col, emissiveIntensity: 1.1, transparent: true, opacity: 0.85,
-      });
-      const m = new THREE.Mesh(geo, mat);
-      m.position.set(projX(h.lon), 6 + hgt / 2, -projY(h.lat));
-      pillarGroup.add(m);
+      // Google-Maps style location pin: red teardrop with a white dot.
+      const col = new THREE.Color(heavy ? '#c5221f' : '#ea4335');
+      const x = projX(h.lon);
+      const z = -projY(h.lat);
 
-      const capGeo = new THREE.SphereGeometry(0.24, 12, 10);
-      const cap = new THREE.Mesh(capGeo, new THREE.MeshBasicMaterial({ color: col, transparent: true, opacity: 0.95 }));
-      cap.position.set(projX(h.lon), 6 + hgt, -projY(h.lat));
-      pillarGroup.add(cap);
+      // surface height under this point (fall back to ground if the ray misses)
+      const origin = world.localToWorld(new THREE.Vector3(x, 60, z));
+      ray.set(origin, down);
+      const hit = ray.intersectObjects(meshes, false)[0];
+      const surfaceY = hit ? world.worldToLocal(hit.point.clone()).y : 0.35;
+
+      const scale = 0.62 + t * 0.32;             // small markers, gently scaled by count
+      const pin = new THREE.Group();
+      const mat = new THREE.MeshStandardMaterial({ color: col, emissive: col, emissiveIntensity: 0.3, metalness: 0.15, roughness: 0.45 });
+
+      // pointed base (cone, tip down onto the terrain)
+      const cone = new THREE.Mesh(new THREE.ConeGeometry(0.2, 0.62, 20), mat);
+      cone.rotation.x = Math.PI;                 // apex points down
+      cone.position.y = 0.31;                    // apex at group origin (the surface)
+      pin.add(cone);
+
+      // rounded head
+      const head = new THREE.Mesh(new THREE.SphereGeometry(0.24, 20, 16), mat);
+      head.position.y = 0.74;
+      pin.add(head);
+
+      // white centre dot
+      const dot = new THREE.Mesh(new THREE.SphereGeometry(0.1, 14, 12), new THREE.MeshBasicMaterial({ color: '#ffffff' }));
+      dot.position.set(0, 0.74, 0.19);
+      pin.add(dot);
+
+      // pin the tip to the surface (tiny lift so it never z-fights the district top)
+      pin.position.set(x, surfaceY + 0.02, z);
+      pin.scale.setScalar(scale);
+      pillarGroup.add(pin);
     }
-  }, [firHotspots, showPillars]);
+  }, [firHotspots, showPillars, metric, selectedId]);
 
   // ---- incident points for the scrubbed hour ----
   useEffect(() => {
@@ -343,7 +373,7 @@ export default function District3D({ districts, boundaries, firHotspots = [], fi
         </div>
         <div className="d3d-toggles">
           <button className={showPillars ? 'on' : ''} onClick={() => setShowPillars((v) => !v)}>
-            FIR pillars
+            FIR pins
           </button>
           <button className={spin ? 'on' : ''} onClick={() => setSpin((v) => !v)}>
             {spin ? 'Pause spin' : 'Auto-rotate'}
@@ -372,8 +402,8 @@ export default function District3D({ districts, boundaries, firHotspots = [], fi
           <span key={b} className="d3d-lg"><i style={{ background: c }} />{b}</span>
         ))}
         <span className="d3d-sep" />
-        <span className="d3d-lg"><i className="pill" style={{ background: '#e66767' }} />Heinous hotspot</span>
-        <span className="d3d-lg"><i className="pill" style={{ background: '#3987e5' }} />FIR hotspot</span>
+        <span className="d3d-lg"><i className="dot" style={{ background: '#c5221f' }} />Heinous incident pin</span>
+        <span className="d3d-lg"><i className="dot" style={{ background: '#ea4335' }} />FIR hotspot pin</span>
         {hour != null && <span className="d3d-lg"><i className="dot" style={{ background: '#fab219' }} />Incidents at {String(hour).padStart(2, '0')}:00</span>}
       </div>
     </div>

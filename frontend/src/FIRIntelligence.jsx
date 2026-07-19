@@ -8,9 +8,10 @@ import { api } from './api.js';
 // MO, case lifecycle) that the open NCRB aggregates cannot provide.
 // ===========================================================
 
+// Spatiotemporal hotspots live in the 3D Terrain view (FIR beacons) and the
+// Crime Map, so they are not duplicated as a static tab here.
 const FIR_TABS = [
   { id: 'overview', label: 'Case Lifecycle' },
-  { id: 'hotspots', label: 'Spatiotemporal Hotspots' },
   { id: 'network', label: 'Crime Network' },
   { id: 'offenders', label: 'Repeat Offenders & MO' },
   { id: 'stations', label: 'Station Drill-down' },
@@ -34,7 +35,6 @@ export default function FIRIntelligence() {
         ))}
       </div>
       {tab === 'overview' && <Lifecycle />}
-      {tab === 'hotspots' && <Hotspots />}
       {tab === 'network' && <Network />}
       {tab === 'offenders' && <Offenders />}
       {tab === 'stations' && <Stations />}
