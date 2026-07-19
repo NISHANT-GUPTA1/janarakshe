@@ -59,6 +59,7 @@ function egoNetwork(base, mode, pid) {
 export default function NetworkGraph({ graph, caseGraph, summary, onClose, embedded = false }) {
   const fgRef = useRef();
   const boxRef = useRef();
+  const dialogRef = useRef();
   const [dims, setDims] = useState({ w: 800, h: 520 });
   const [selected, setSelected] = useState(null);
   const [focusLargest, setFocusLargest] = useState(false);
@@ -66,8 +67,39 @@ export default function NetworkGraph({ graph, caseGraph, summary, onClose, embed
   const [mode, setMode] = useState('people'); // 'people' | 'cases'
   const [query, setQuery] = useState('');
   const [focusPerson, setFocusPerson] = useState(null); // pinned person node
+  const [autoRotate, setAutoRotate] = useState(true); // slow globe-style spin
+  const [isFull, setIsFull] = useState(false); // native fullscreen ("view large")
 
   const hasCases = !!(caseGraph && caseGraph.nodes && caseGraph.nodes.length);
+
+  // "View large" — native fullscreen on the graph panel, like the crime map.
+  const toggleFull = () => {
+    const el = dialogRef.current;
+    if (!el) return;
+    if (!document.fullscreenElement) el.requestFullscreen?.();
+    else document.exitFullscreen?.();
+  };
+  useEffect(() => {
+    const onFs = () => setIsFull(!!document.fullscreenElement);
+    document.addEventListener('fullscreenchange', onFs);
+    return () => document.removeEventListener('fullscreenchange', onFs);
+  }, []);
+
+  // Globe-style auto-rotation — nudge the whole graph scene a touch each frame.
+  // This is independent of the camera controls, so drag-to-rotate / scroll-to-
+  // zoom still work while it turns, and it doesn't change any render setup.
+  useEffect(() => {
+    if (!autoRotate) return undefined;
+    let raf;
+    const spin = () => {
+      const fg = fgRef.current;
+      const scene = fg && fg.scene ? fg.scene() : null;
+      if (scene) scene.rotation.y += 0.0016;
+      raf = requestAnimationFrame(spin);
+    };
+    raf = requestAnimationFrame(spin);
+    return () => cancelAnimationFrame(raf);
+  }, [autoRotate]);
 
   // size the canvas to its container
   useEffect(() => {
@@ -177,7 +209,7 @@ export default function NetworkGraph({ graph, caseGraph, summary, onClose, embed
       className={embedded ? 'graph-embed' : 'graph-modal'}
       onMouseDown={(e) => !embedded && e.target === e.currentTarget && onClose()}
     >
-      <div className="graph-dialog">
+      <div className={`graph-dialog${isFull ? ' is-full' : ''}`} ref={dialogRef}>
         <div className="graph-head">
           <div>
             <h2>{isCaseMode ? 'Who appears across multiple cases' : 'Who committed crimes together'}</h2>
@@ -227,6 +259,17 @@ export default function NetworkGraph({ graph, caseGraph, summary, onClose, embed
               onClick={() => { setFocusLargest((v) => !v); setSelected(null); }}
             >
               {focusLargest ? 'Show all crews' : 'Focus biggest crew'}
+            </button>
+            <button
+              className={autoRotate ? 'on' : ''}
+              onClick={() => setAutoRotate((v) => !v)}
+              title="Slowly rotate the network like a globe"
+            >
+              {autoRotate ? 'Stop rotation' : 'Auto-rotate'}
+            </button>
+            <button className="graph-full" onClick={toggleFull} title={isFull ? 'Exit fullscreen' : 'View large'}>
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3" /></svg>
+              {isFull ? 'Exit large' : 'View large'}
             </button>
             {!embedded && (
               <button className="graph-close" onClick={onClose} aria-label="Close">✕</button>

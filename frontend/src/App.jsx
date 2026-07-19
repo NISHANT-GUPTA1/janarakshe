@@ -1,18 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { api } from './api.js';
 import Dashboard from './dash/Dashboard.jsx';
-import {
-  AboutPage, CrimePage, WomenChildrenPage, PoliceUnitsPage, FAQPage, ContactPage,
-} from './Pages.jsx';
+import { AboutPage, FAQPage, ContactPage } from './Pages.jsx';
 
 // Primary navigation — mirrors the official KSP portal's menu.
 // `caret` marks a menu that shows a dropdown chevron on the real portal.
 const NAV = [
   { id: 'home', label: 'Home' },
-  { id: 'about', label: 'About Us', caret: true },
-  { id: 'crime', label: 'Crime', caret: true },
-  { id: 'women-children', label: 'Women and Children', caret: true },
-  { id: 'police-units', label: 'Police Units & Special Units', caret: true },
+  { id: 'about', label: 'About Us' },
   { id: 'faq', label: 'FAQ' },
   { id: 'contact', label: 'Contact Us' },
 ];
@@ -44,9 +39,6 @@ export default function App() {
     <Shell meta={meta} route={route} go={go}>
       {route === 'home' && <Dashboard meta={meta} />}
       {route === 'about' && <AboutPage />}
-      {route === 'crime' && <CrimePage />}
-      {route === 'women-children' && <WomenChildrenPage />}
-      {route === 'police-units' && <PoliceUnitsPage />}
       {route === 'faq' && <FAQPage />}
       {route === 'contact' && <ContactPage />}
     </Shell>
@@ -231,10 +223,7 @@ function GovFooter() {
           <h4>Quick Links</h4>
           <ul className="gf-links">
             <li><a href="#/home">Crime Analytics</a></li>
-            <li><a href="#/crime">Crime</a></li>
             <li><a href="#/about">About Us</a></li>
-            <li><a href="#/women-children">Women &amp; Children</a></li>
-            <li><a href="#/police-units">Police Units &amp; Special Units</a></li>
             <li><a href="#/faq">FAQ</a></li>
             <li><a href="#/contact">Contact Us</a></li>
           </ul>

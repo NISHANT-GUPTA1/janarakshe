@@ -145,7 +145,7 @@ function buildHeatGrid(boundaries, districts, points) {
   return { type: 'FeatureCollection', features };
 }
 
-export default function CrimeMap({ districts, boundaries, selectedId, focusIds = null, height = 452, onSelect, firPoints = [] }) {
+export default function CrimeMap({ districts, boundaries, selectedId, focusIds = null, height = 452, onSelect, onView, firPoints = [] }) {
   const [layer, setLayer] = useState('risk'); // 'risk' | 'heat'
   const wrapRef = useRef(null);
   const byId = Object.fromEntries(districts.map((d) => [d.geo_unit_id, d]));
@@ -227,6 +227,20 @@ export default function CrimeMap({ districts, boundaries, selectedId, focusIds =
           />
         )}
 
+        {/* District boundaries drawn over the heat grid (transparent fill, still clickable) */}
+        {layer === 'heat' && boundaries && (
+          <GeoJSON
+            key={`heat-bounds-${selectedId}`}
+            data={boundaries}
+            style={(feature) => ({
+              color: selectedId === feature.properties.geo_unit_id ? '#0f2d6e' : '#243654',
+              weight: selectedId === feature.properties.geo_unit_id ? 2.6 : 1.1,
+              fill: true, fillColor: '#000', fillOpacity: 0,
+            })}
+            onEachFeature={onEach}
+          />
+        )}
+
         {/* hotspot markers stay on the risk view; the heat view is kept clean */}
         {layer === 'risk' && shown
           .filter((d) => d.hotspot_status !== 'none')
@@ -272,7 +286,7 @@ export default function CrimeMap({ districts, boundaries, selectedId, focusIds =
           <span className={`band-pill b-${selected.risk_band.toLowerCase()}`}>{BAND_LABEL[selected.risk_band]} Risk</span>
           <div className="mcp-row"><span>Rate/100k</span><b>{selected.crime_rate_per_100k}</b></div>
           <div className="mcp-row"><span>Risk Score</span><b>{selected.risk_score}</b></div>
-          <button className="btn-primary w-full" onClick={() => onSelect(selected.geo_unit_id)}>View District</button>
+          <button className="btn-primary w-full" onClick={() => (onView ? onView(selected.geo_unit_id) : onSelect(selected.geo_unit_id))}>View District</button>
         </div>
       )}
     </div>

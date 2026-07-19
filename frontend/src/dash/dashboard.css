@@ -445,6 +445,15 @@
 .cc-deep .graph-embed .graph-actions { flex-shrink: 0; flex-wrap: wrap; justify-content: flex-end; }
 .cc-deep .graph-embed .graph-toggle { flex-shrink: 0; }
 .cc-deep .graph-embed .graph-actions button { white-space: nowrap; }
+.graph-full { display: inline-flex; align-items: center; gap: 6px; }
+.graph-full svg { flex-shrink: 0; }
+/* "View large" native fullscreen — fill the screen, drop the panel chrome. */
+.graph-dialog.is-full,
+.cc-deep .graph-embed .graph-dialog.is-full,
+.graph-dialog:fullscreen {
+  width: 100vw; height: 100vh; max-width: none; border-radius: 0; border: none;
+}
+.graph-dialog:fullscreen { background: linear-gradient(180deg, #0b1220, #090f1a); }
 
 /* district table + detail (light) */
 .cc-deep .cc-table-wrap { max-height: 560px; overflow-y: auto; border: 1px solid var(--line); border-radius: 10px; }

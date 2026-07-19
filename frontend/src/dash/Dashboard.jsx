@@ -301,6 +301,7 @@ export default function Dashboard({ meta }) {
                     focusIds={focusIds}
                     height={452}
                     onSelect={(id) => (id ? select(id) : setSelected(null))}
+                    onView={viewDistrict}
                   />
                 ) : (
                   <Skeleton h={452} />
