@@ -245,6 +245,15 @@
 .map-card { padding: 16px 16px 14px; }
 .map-wrap { position: relative; }
 .map-wrap .leaflet-container { background: #eaf1f9; }
+/* the heat choropleth reads best on a clean white canvas */
+.map-wrap.is-heat .leaflet-container { background: #ffffff; }
+
+/* heat legend gradient */
+.map-legend .ml-gradient {
+  width: 150px; height: 11px; border-radius: 3px; margin-top: 3px;
+  background: linear-gradient(90deg, rgb(26,152,80), rgb(120,198,90), rgb(210,230,120), rgb(253,220,120), rgb(253,174,97), rgb(244,109,67), rgb(214,47,39), rgb(150,0,30));
+}
+.map-legend .ml-scale { display: flex; justify-content: space-between; font-size: 0.66rem; color: var(--muted); margin-top: 2px; }
 
 .map-toolbar { position: absolute; top: 10px; right: 10px; z-index: 500; display: flex; gap: 8px; }
 .seg { display: inline-flex; background: #fff; border: 1px solid var(--line-2); border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px rgba(16,36,60,0.12); }

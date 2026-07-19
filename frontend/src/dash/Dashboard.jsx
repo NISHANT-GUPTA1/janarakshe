@@ -296,6 +296,7 @@ export default function Dashboard({ meta }) {
                   <CrimeMap
                     districts={districts}
                     boundaries={boundaries}
+                    firPoints={spatio?.points ?? []}
                     selectedId={selected?.geo_unit_id}
                     focusIds={focusIds}
                     height={452}
