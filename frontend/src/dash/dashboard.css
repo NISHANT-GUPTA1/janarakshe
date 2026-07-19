@@ -28,13 +28,18 @@
 .dash-side {
   width: 214px; flex: none;
   background: linear-gradient(180deg, #1a49a8 0%, #0f2d6e 100%);
+  /* the aside stretches to full dashboard height (parent align-items: stretch)
+     so the blue rail always reaches the footer — no light gap ever shows */
+}
+/* the actual nav sticks to the top while scrolling; the blue behind it fills. */
+.dash-side-inner {
+  position: sticky; top: 0;
   padding: 14px 12px;
   display: flex; flex-direction: column; gap: 14px;
-  position: sticky; top: 0; align-self: flex-start;
   max-height: 100vh; overflow-y: auto;
 }
-.dash-side::-webkit-scrollbar { width: 6px; }
-.dash-side::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.25); border: none; }
+.dash-side-inner::-webkit-scrollbar { width: 6px; }
+.dash-side-inner::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.25); border: none; }
 
 .side-nav { display: flex; flex-direction: column; gap: 3px; }
 .side-nav button {

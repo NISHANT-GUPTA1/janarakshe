@@ -200,7 +200,7 @@ a:hover { text-decoration: underline; }
 .data-note b { color: #6a4f0f; }
 
 /* footer */
-.gov-footer { background: var(--navy-2); color: #c2d3e6; margin-top: 40px; }
+.gov-footer { background: var(--navy-2); color: #c2d3e6; margin-top: 0; }
 .gov-footer-in {
   max-width: 1200px; margin: 0 auto; padding: 28px 24px 22px;
   display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 26px;

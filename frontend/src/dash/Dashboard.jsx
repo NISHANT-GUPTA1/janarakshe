@@ -574,28 +574,30 @@ export default function Dashboard({ meta }) {
 function Sidebar({ active, onNav }) {
   return (
     <aside className="dash-side">
-      <nav className="side-nav" aria-label="Dashboard sections">
-        {RAIL.map((r) => (
-          <button key={r.id} className={active === r.id ? 'on' : ''} onClick={() => onNav(r.id)}>
-            <span className="sn-icon"><Icon name={r.icon} /></span>
-            <span className="sn-label">{r.label}</span>
-            {r.dot && <span className="sn-dot" aria-hidden="true" />}
-          </button>
-        ))}
-      </nav>
+      <div className="dash-side-inner">
+        <nav className="side-nav" aria-label="Dashboard sections">
+          {RAIL.map((r) => (
+            <button key={r.id} className={active === r.id ? 'on' : ''} onClick={() => onNav(r.id)}>
+              <span className="sn-icon"><Icon name={r.icon} /></span>
+              <span className="sn-label">{r.label}</span>
+              {r.dot && <span className="sn-dot" aria-hidden="true" />}
+            </button>
+          ))}
+        </nav>
 
-      <div className="side-emergency">
-        <span className="se-phone"><Icon name="phone" /></span>
-        <span className="se-txt">
-          <em>Emergency</em>
-          <b>112</b>
-          <span>Police Emergency</span>
-        </span>
+        <div className="side-emergency">
+          <span className="se-phone"><Icon name="phone" /></span>
+          <span className="se-txt">
+            <em>Emergency</em>
+            <b>112</b>
+            <span>Police Emergency</span>
+          </span>
+        </div>
+
+        <button className="side-help" onClick={() => { window.location.hash = '/contact'; }}>
+          <Icon name="help" /> Help &amp; Support
+        </button>
       </div>
-
-      <button className="side-help" onClick={() => { window.location.hash = '/contact'; }}>
-        <Icon name="help" /> Help &amp; Support
-      </button>
     </aside>
   );
 }
