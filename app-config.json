@@ -3,10 +3,6 @@
   "build_path": "backend",
   "stack": "python_3_11",
   "env_variables": {
-    "//CRIME_CORS_ORIGINS": "Set to your Slate frontend origin, e.g. https://<app>.catalystserverless.com. LEFT UNSET on purpose: the API then uses its built-in allowlist (localhost + Catalyst hosting domains) instead of the '*' wildcard it used before, which let any website read the API.",
-    "//CRIME_API_KEYS": "Set to 'key:role,...' (roles: viewer|analyst|admin) to enforce RBAC on the person-level endpoints. While unset those endpoints are served WITHOUT authentication and the service logs a startup warning.",
-    "//CRIME_HSTS": "1 - Catalyst terminates TLS, so pin browsers to HTTPS.",
-    "//CRIME_RATE_LIMIT": "Requests per CRIME_RATE_WINDOW seconds per client IP.",
     "CRIME_USE_DATASTORE": "1",
     "CRIME_HSTS": "1",
     "CRIME_RATE_LIMIT": "240",
