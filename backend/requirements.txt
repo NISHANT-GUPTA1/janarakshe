@@ -1,10 +1,39 @@
 # RUNTIME dependencies for the deployed API (Catalyst AppSail).
 #
 # The API only serves the pre-built JSON payloads (data/processed/api/*.json) and runs
-# ZCQL against Data Store — it imports NONE of the heavy ML libraries. Those live in
+# ZCQL against Data Store - it imports NONE of the heavy ML libraries. Those live in
 # requirements-pipeline.txt and are needed only to (re)generate the data offline.
 # Keeping this list slim makes the AppSail install fast and reliable.
+#
+# AppSail does not run pip: these are vendored as Linux wheels into ./vendor (see
+# catalyst/README.md). Regenerate that bundle from THIS file so the deployed code is
+# the code that is pinned here:
+#
+#   pip install -r requirements.txt --target vendor \
+#       --platform manylinux2014_x86_64 --python-version 3.11 --only-binary=:all:
+#
+# Pinned exactly wherever the version is verified against the test suite: an
+# unpinned floor (">=") means two deploys of the same commit can ship different code.
+#
+# NOTE: the vendor bundle currently on disk has drifted from these pins (it carries
+# fastapi 0.139.2, uvicorn 0.51.0 and zcatalyst_sdk 0.0.2), so the deployed code is
+# not the code pinned here. Re-run the command above to bring them back in step.
+
 fastapi==0.119.0
 uvicorn[standard]==0.37.0
-pydantic>=2.0
+pydantic==2.13.4
+# Floor rather than an exact pin: the vendored SDK is 0.0.2 and the published
+# version was not verifiable from this environment. Pin exactly once confirmed.
 zcatalyst-sdk>=1.4.0
+
+# --- transitive dependencies pinned for security -------------------------------
+# zcatalyst-sdk pulls in requests. The version previously present in the vendor
+# bundle (2.28.1) is affected by:
+#   CVE-2023-32681 - Proxy-Authorization leaked to the destination on redirect.
+#   CVE-2024-35195 - a session that once used verify=False keeps skipping TLS
+#                    verification for every later request to that host.
+# Both are fixed at 2.32.4. urllib3 is pinned alongside it for CVE-2024-37891
+# (proxy auth header retained across redirects).
+requests==2.32.4
+urllib3==2.2.2
+certifi>=2024.7.4
