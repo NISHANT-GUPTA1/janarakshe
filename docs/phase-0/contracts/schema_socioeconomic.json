@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "socioeconomic",
+  "title": "Socio-Economic Record (per district)",
+  "description": "One district's socio-economic indicators (Census 2011), joined to crime via geo_unit_id. Field set and ranges mirror socioeconomic_schema.json. Indicators are nullable so a partial source still validates.",
+  "type": "object",
+  "required": ["geo_unit_id", "source_year", "source_id"],
+  "additionalProperties": false,
+  "properties": {
+    "geo_unit_id": { "type": "string", "pattern": "^DISTRICT:.+", "description": "Reference to geo_unit (DISTRICT grain)" },
+    "name": { "type": ["string", "null"] },
+    "source_year": { "type": "integer", "description": "Census vintage, e.g. 2011" },
+    "source_id": { "type": "string", "description": "data_sources.json id (lineage)" },
+
+    "population_density": { "type": ["number", "null"], "minimum": 0, "maximum": 50000, "description": "persons per km2" },
+    "urbanization_rate": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+    "literacy_rate": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+    "graduate_rate": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+    "low_income_share": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+    "marginal_worker_share": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+    "nonworker_share": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+    "work_participation_rate": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+    "scst_share": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+    "sex_ratio": { "type": ["number", "null"], "minimum": 0, "maximum": 2000, "description": "females per 1000 males" },
+    "internet_penetration": { "type": ["number", "null"], "minimum": 0, "maximum": 100 }
+  }
+}

@@ -43,6 +43,16 @@ const STATIC_FILES = {
   '/api/fir/offenders': 'fir_offenders.json',
   '/api/fir/cases': 'fir_cases.json',
   '/api/fir/schema': 'fir_schema.json',
+  // Phase 8 — investigation workspace + crime-intelligence findings
+  '/api/fir/queue': 'fir_queue.json',
+  '/api/fir/case-details': 'fir_case_detail.json',
+  '/api/fir/search-index': 'fir_search.json',
+  '/api/fir/alerts': 'fir_alerts.json',
+  '/api/fir/graph': 'fir_graph.json',
+  '/api/intelligence/overview': 'ci_overview.json',
+  '/api/intelligence/districts': 'ci_districts.json',
+  '/api/intelligence/offenders': 'ci_offenders.json',
+  '/api/socioeconomic/intelligence': 'se_intel.json',
 };
 
 // Status codes the UI can explain better than a bare number.
@@ -117,6 +127,43 @@ async function district(id) {
   return found;
 }
 
+// FIR case files follow the same shape as district(): live mode has a per-id
+// route, static mode fetches the whole map once and indexes it here. The promise
+// is cached, so opening the twentieth case costs one object lookup.
+let caseMap = null;
+function allCases() {
+  if (!caseMap) {
+    caseMap = get('/api/fir/case-details').catch((error) => {
+      caseMap = null; // let a later attempt retry instead of caching the failure
+      throw error;
+    });
+  }
+  return caseMap;
+}
+async function firCase(id) {
+  if (!STATIC) return get(`/api/fir/case/${encodeURIComponent(id)}`);
+  const all = await allCases();
+  const found = all.cases[id];
+  if (!found) throw new Error(`FIR '${id}' not found`);
+  return { stages: all.stages, rules: all.rules, as_of: all.as_of, case: found };
+}
+
+// The intelligence drill-down is small enough to keep whole; index it the same way.
+let ciMap = null;
+async function ciDistrict(id) {
+  if (!STATIC) return get(`/api/intelligence/districts/${encodeURIComponent(id)}`);
+  if (!ciMap) {
+    ciMap = get('/api/intelligence/districts').catch((error) => {
+      ciMap = null;
+      throw error;
+    });
+  }
+  const all = await ciMap;
+  const found = all.districts[id];
+  if (!found) throw new Error(`district '${id}' not found`);
+  return found;
+}
+
 export const api = {
   meta: () => get('/api/meta'),
   districts: () => get('/api/districts'),
@@ -136,4 +183,16 @@ export const api = {
   firOffenders: () => get('/api/fir/offenders'),
   firCases: () => get('/api/fir/cases'),
   firSchema: () => get('/api/fir/schema'),
+  // Phase 8 — FIR investigation workspace
+  firQueue: () => get('/api/fir/queue'),
+  firCase,
+  firSearchIndex: () => get('/api/fir/search-index'),
+  firAlerts: () => get('/api/fir/alerts'),
+  firGraph: () => get('/api/fir/graph'),
+  // Phase 8 — Crime Intelligence findings
+  ciOverview: () => get('/api/intelligence/overview'),
+  ciDistricts: () => get('/api/intelligence/districts'),
+  ciDistrict,
+  ciOffenders: () => get('/api/intelligence/offenders'),
+  seIntel: () => get('/api/socioeconomic/intelligence'),
 };

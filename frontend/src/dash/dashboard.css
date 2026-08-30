@@ -544,3 +544,7 @@
   .kpi-row { grid-template-columns: 1fr 1fr; }
   .feature-tiles { grid-template-columns: 1fr 1fr; }
 }
+
+/* The FIR / Crime Intelligence workspaces render their own chrome full-bleed. */
+.deep-embed-full { padding: 0; }
+.deep-embed-full > .link-btn { margin: 0 0 8px 2px; }

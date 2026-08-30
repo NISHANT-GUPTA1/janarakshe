@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "entity",
+  "title": "Entity (Person)",
+  "description": "A person involved in incidents: offender, victim, associate, or witness. PII-bearing (pii_level=high) — populated only from synthetic or MOU pilot data, never open NCRB. Analyst-facing views mask/minimize per roadmap §9.",
+  "type": "object",
+  "required": ["entity_id", "role"],
+  "additionalProperties": false,
+  "properties": {
+    "entity_id": { "type": "string", "description": "Stable surrogate id after entity resolution (dedupes aliases)" },
+    "role": { "type": "string", "enum": ["offender", "victim", "associate", "witness", "suspect"] },
+    "display_name_masked": { "type": ["string", "null"], "description": "Masked/initials only for analyst views" },
+    "aliases": { "type": "array", "items": { "type": "string" }, "default": [], "description": "Known alternate names; drives entity resolution" },
+    "gender": { "type": ["string", "null"], "enum": ["M", "F", "O", null] },
+    "age_band": { "type": ["string", "null"], "enum": ["<18", "18-25", "26-35", "36-45", "46-60", "60+", null], "description": "Banded, not exact DOB, to minimize PII" },
+    "home_geo_unit_id": { "type": ["string", "null"], "description": "Reference to geo_unit of residence" },
+    "incident_count": { "type": "integer", "minimum": 0, "default": 0, "description": "Number of linked incidents; >=2 with role=offender => repeat offender" },
+    "first_seen": { "type": ["string", "null"], "format": "date" },
+    "last_seen": { "type": ["string", "null"], "format": "date" },
+    "resolution_confidence": { "type": ["number", "null"], "minimum": 0, "maximum": 1, "description": "Entity-resolution confidence; low values flagged for manual merge review" },
+    "source_id": { "type": "string", "description": "data_sources.json id (lineage); expect synthetic_fir or pilot_fir_mou" }
+  }
+}

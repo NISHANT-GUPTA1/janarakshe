@@ -1,0 +1,178 @@
+{
+  "contract": "kpi_catalog",
+  "version": "0.1.0",
+  "updated": "2026-06-14",
+  "description": "Every metric shown on a dashboard card or consumed by a model. Each KPI has an exact formula, the canonical fields it reads, its grain, unit, and whether higher is better or worse. Formulas reference fields from schema_incident / schema_entity / kpi_fact and category codes from crime_taxonomy.",
+  "grains": {
+    "geo": ["STATE", "DISTRICT", "STATION"],
+    "time": ["month", "quarter", "year", "rolling_12m"]
+  },
+  "direction_legend": {
+    "lower_is_better": "increase is bad (crime counts, rates, pendency)",
+    "higher_is_better": "increase is good (chargesheeting, conviction, recovery, clearance)",
+    "neutral": "context metric, no inherent good/bad"
+  },
+  "kpis": [
+    {
+      "id": "total_cognizable_cases",
+      "name": "Total Cognizable Cases",
+      "group": "volume",
+      "formula": "COUNT(incident WHERE is_cognizable = true)",
+      "inputs": ["incident.case_id", "incident.category_code"],
+      "unit": "count",
+      "grain": { "geo": ["STATE", "DISTRICT", "STATION"], "time": ["month", "year", "rolling_12m"] },
+      "direction": "lower_is_better",
+      "card": true
+    },
+    {
+      "id": "crime_rate_per_100k",
+      "name": "Crime Rate (per 100k population)",
+      "group": "rate",
+      "formula": "(total_cognizable_cases / population) * 100000",
+      "inputs": ["total_cognizable_cases", "geo_unit.population"],
+      "unit": "per_100k",
+      "grain": { "geo": ["STATE", "DISTRICT"], "time": ["year", "rolling_12m"] },
+      "direction": "lower_is_better",
+      "card": true,
+      "note": "Normalizes for population so districts are comparable. Population from Census/projected; record vintage."
+    },
+    {
+      "id": "crime_against_women_rate",
+      "name": "Crime Against Women Rate (per 100k female population)",
+      "group": "rate",
+      "formula": "(COUNT(incident WHERE category.group = 'WOMEN') / female_population) * 100000",
+      "inputs": ["incident.category_code", "geo_unit.female_population"],
+      "unit": "per_100k",
+      "grain": { "geo": ["STATE", "DISTRICT"], "time": ["year"] },
+      "direction": "lower_is_better",
+      "card": true
+    },
+    {
+      "id": "violent_crime_share",
+      "name": "Violent Crime Share",
+      "group": "composition",
+      "formula": "COUNT(incident WHERE category.group = 'VIOLENT') / total_cognizable_cases",
+      "inputs": ["incident.category_code"],
+      "unit": "ratio",
+      "grain": { "geo": ["DISTRICT", "STATION"], "time": ["month", "year"] },
+      "direction": "lower_is_better",
+      "card": true
+    },
+    {
+      "id": "chargesheeting_rate",
+      "name": "Chargesheeting Rate",
+      "group": "disposal",
+      "formula": "cases_chargesheeted / (cases_chargesheeted + cases_not_chargesheeted_final) ",
+      "inputs": ["incident.investigation_status"],
+      "unit": "percent",
+      "grain": { "geo": ["STATE", "DISTRICT"], "time": ["year"] },
+      "direction": "higher_is_better",
+      "card": true,
+      "note": "NCRB definition: share of cases where police filed a chargesheet out of cases where investigation was completed."
+    },
+    {
+      "id": "conviction_rate",
+      "name": "Conviction Rate",
+      "group": "disposal",
+      "formula": "cases_convicted / cases_trial_completed",
+      "inputs": ["incident.trial_status"],
+      "unit": "percent",
+      "grain": { "geo": ["STATE", "DISTRICT"], "time": ["year"] },
+      "direction": "higher_is_better",
+      "card": true
+    },
+    {
+      "id": "pendency_rate",
+      "name": "Investigation Pendency Rate",
+      "group": "disposal",
+      "formula": "cases_pending_investigation / total_cognizable_cases",
+      "inputs": ["incident.investigation_status"],
+      "unit": "percent",
+      "grain": { "geo": ["DISTRICT", "STATION"], "time": ["month", "year"] },
+      "direction": "lower_is_better",
+      "card": true
+    },
+    {
+      "id": "property_recovery_rate",
+      "name": "Property Recovery Rate (value)",
+      "group": "property",
+      "formula": "value_property_recovered / value_property_stolen",
+      "inputs": ["incident.value_stolen", "incident.value_recovered"],
+      "unit": "percent",
+      "grain": { "geo": ["DISTRICT"], "time": ["year"] },
+      "direction": "higher_is_better",
+      "card": false
+    },
+    {
+      "id": "yoy_change",
+      "name": "Year-over-Year Change",
+      "group": "trend",
+      "formula": "(value[period] - value[period - 1y]) / value[period - 1y]",
+      "inputs": ["any_kpi"],
+      "unit": "percent",
+      "grain": { "geo": ["STATE", "DISTRICT", "STATION"], "time": ["year"] },
+      "direction": "neutral",
+      "card": true,
+      "note": "Generic operator applicable to any base KPI; powers trend arrows on cards."
+    },
+    {
+      "id": "mom_change",
+      "name": "Month-over-Month Change",
+      "group": "trend",
+      "formula": "(value[month] - value[month - 1]) / value[month - 1]",
+      "inputs": ["any_kpi"],
+      "unit": "percent",
+      "grain": { "geo": ["DISTRICT", "STATION"], "time": ["month"] },
+      "direction": "neutral",
+      "card": false
+    },
+    {
+      "id": "severity_weighted_index",
+      "name": "Severity-Weighted Crime Index",
+      "group": "composite",
+      "formula": "SUM(count[category] * severity_weight[category]) / population * 100000",
+      "inputs": ["incident.category_code", "crime_taxonomy.severity_weight", "geo_unit.population"],
+      "unit": "index_per_100k",
+      "grain": { "geo": ["DISTRICT", "STATION"], "time": ["month", "rolling_12m"] },
+      "direction": "lower_is_better",
+      "card": true,
+      "note": "Weights grave crimes higher so a district with murders does not look 'better' than one with many petty thefts. Feeds risk scoring."
+    },
+    {
+      "id": "hotspot_density",
+      "name": "Hotspot Density",
+      "group": "spatial",
+      "formula": "incident_count / area_km2   (per grid cell or station jurisdiction)",
+      "inputs": ["incident.geo_unit_id", "incident.lat", "incident.lon", "geo_unit.area_km2"],
+      "unit": "per_km2",
+      "grain": { "geo": ["STATION", "GRID"], "time": ["rolling_12m"] },
+      "direction": "lower_is_better",
+      "card": false,
+      "note": "Base input to hotspot detection (§06). GRID = H3/square binning, defined in baseline-metrics."
+    },
+    {
+      "id": "repeat_offender_ratio",
+      "name": "Repeat Offender Ratio",
+      "group": "entity",
+      "formula": "COUNT(DISTINCT offender WHERE incident_count >= 2) / COUNT(DISTINCT offender)",
+      "inputs": ["entity.entity_id", "entity.role", "offender_case_link"],
+      "unit": "ratio",
+      "grain": { "geo": ["DISTRICT", "STATION"], "time": ["rolling_12m", "year"] },
+      "direction": "lower_is_better",
+      "card": true,
+      "note": "Requires person-level data (pilot/synthetic, not open NCRB). See data-source register Track D."
+    },
+    {
+      "id": "anomaly_zscore",
+      "name": "Monthly Anomaly Z-Score",
+      "group": "trend",
+      "formula": "(count[month] - mean(count[trailing_12m])) / std(count[trailing_12m])",
+      "inputs": ["incident.registration_datetime", "incident.geo_unit_id"],
+      "unit": "zscore",
+      "grain": { "geo": ["DISTRICT", "STATION"], "time": ["month"] },
+      "direction": "neutral",
+      "card": false,
+      "note": "|z| > 2 triggers a trend alert (anomaly detection). Baseline rule in §06."
+    }
+  ]
+}

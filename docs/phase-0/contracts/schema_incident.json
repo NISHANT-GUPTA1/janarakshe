@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "incident",
+  "title": "Incident / Case",
+  "description": "Canonical incident record. Open NCRB data populates the aggregate path (one row = one (geo, year, category) count via kpi_fact); pilot/synthetic data populates the full per-incident path. Fields not available in a given source are null.",
+  "type": "object",
+  "required": ["incident_id", "category_code", "geo_unit_id", "registration_date", "source_id"],
+  "additionalProperties": false,
+  "properties": {
+    "incident_id": { "type": "string", "description": "Stable surrogate id" },
+    "fir_no": { "type": ["string", "null"], "description": "FIR number (pilot data only); PII-adjacent" },
+    "category_code": { "type": "string", "description": "Canonical code from crime_taxonomy.json" },
+    "act": { "type": ["string", "null"], "enum": ["IPC", "BNS", "SLL", null], "description": "Legal act family of the booked section" },
+    "section": { "type": ["string", "null"], "description": "Booked legal section, e.g. 302 / 103" },
+    "is_cognizable": { "type": ["boolean", "null"] },
+    "occurrence_datetime": { "type": ["string", "null"], "format": "date-time", "description": "When the crime occurred (often unknown in open data)" },
+    "registration_date": { "type": "string", "format": "date", "description": "When the case/FIR was registered" },
+    "geo_unit_id": { "type": "string", "description": "Reference to geo_unit (usually DISTRICT for open data, STATION for pilot)" },
+    "lat": { "type": ["number", "null"], "minimum": -90, "maximum": 90 },
+    "lon": { "type": ["number", "null"], "minimum": -180, "maximum": 180 },
+    "geo_precision": { "type": "string", "enum": ["exact", "station_centroid", "district_centroid", "unknown"], "default": "district_centroid", "description": "How trustworthy lat/lon are; drives pin-vs-aggregate rendering" },
+    "victim_count": { "type": ["integer", "null"], "minimum": 0 },
+    "value_stolen": { "type": ["number", "null"], "minimum": 0, "description": "Property value stolen (INR)" },
+    "value_recovered": { "type": ["number", "null"], "minimum": 0 },
+    "investigation_status": { "type": ["string", "null"], "enum": ["pending", "chargesheeted", "closed_untraced", "closed_false", "closed_other", null] },
+    "trial_status": { "type": ["string", "null"], "enum": ["not_started", "in_trial", "convicted", "acquitted", "withdrawn", null] },
+    "case_count": { "type": "integer", "minimum": 1, "default": 1, "description": "For aggregated open rows this holds the count; for a single FIR it is 1" },
+    "source_id": { "type": "string", "description": "data_sources.json id this record came from (lineage)" },
+    "ingested_at": { "type": ["string", "null"], "format": "date-time" }
+  }
+}

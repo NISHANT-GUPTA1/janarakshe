@@ -1,0 +1,14 @@
+{
+  "entity_id": "ENT-SYN-000042",
+  "role": "offender",
+  "display_name_masked": "R. K.",
+  "aliases": ["Raju", "RK"],
+  "gender": "M",
+  "age_band": "26-35",
+  "home_geo_unit_id": "STATION:KA-BLR-CITY-CUBBONPARK",
+  "incident_count": 3,
+  "first_seen": "2022-03-11",
+  "last_seen": "2024-08-02",
+  "resolution_confidence": 0.82,
+  "source_id": "synthetic_fir"
+}

@@ -21,6 +21,15 @@ def correlations():
     return payloads.load("se_correlations.json")
 
 
+@router.get("/intelligence", summary="Socio-economic intelligence")
+def intelligence():
+    """District profiles banded against the other districts and the state figure,
+    the associations that carry signal stated in plain language with their limits,
+    nearest-profile districts, and the full correlation matrix + methodology behind
+    them for the analyst view."""
+    return payloads.load("se_intel.json")
+
+
 @router.get("/schema", summary="Indicator definitions and hypotheses")
 def schema():
     """The logically-backed indicator definitions + crime hypotheses."""

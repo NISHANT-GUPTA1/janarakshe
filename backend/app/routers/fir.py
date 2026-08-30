@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import logging
 
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, Depends, HTTPException, Path, Query, status
 
 from .. import config, datastore, payloads
 from ..security import analyst_required
@@ -19,6 +19,17 @@ from ..security import analyst_required
 log = logging.getLogger("crime.fir")
 
 router = APIRouter(prefix="/api/fir", tags=["fir"])
+
+# Canonical FIR record id, e.g. "CASE-000444". Bounded for the same reason as the
+# district id in analytics: oversized or control-character input never reaches the
+# lookup or the audit log, and anything well-formed but unknown still answers 404.
+FIR_ID = Path(
+    ...,
+    min_length=1,
+    max_length=64,
+    pattern=r"^[A-Za-z0-9:_-]+$",
+    description="Canonical FIR record id, e.g. CASE-000444",
+)
 
 # Out-of-range values are clamped rather than rejected (see datastore.safe_limit),
 # preserving the endpoint's established contract. The clamp - not the caller - is
@@ -85,6 +96,85 @@ def cases():
 def schema():
     """The KSP Police FIR System ER model (tables, keys, relationships)."""
     return payloads.load("fir_schema.json")
+
+
+# --------------------------------------------------------------------------- #
+# investigation workspace
+#
+# The queue is the officer's work list; a case file is one investigation. Search,
+# alerts and the link graph are cross-cutting views over the same records. The
+# case file, search index and graph expose person-level detail, so they carry the
+# same analyst gate as the co-accused network.
+# --------------------------------------------------------------------------- #
+@router.get("/queue", summary="Operational FIR work queue")
+def queue():
+    """Every case with priority, SLA state, investigation progress and last
+    activity, plus the summary buckets, emerging patterns and filter facets."""
+    return payloads.load("fir_queue.json")
+
+
+@router.get(
+    "/case/{fir_id}",
+    summary="One FIR case file",
+    dependencies=[Depends(analyst_required)],
+)
+def case(fir_id: str = FIR_ID):
+    """People, entities, related FIRs with the reason each was linked, explainable
+    insights and the typed investigation timeline. Analyst role required when auth
+    is enabled."""
+    payload = payloads.load("fir_case_detail.json")
+    record = payload["cases"].get(fir_id)
+    if record is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"FIR '{fir_id}' not found",
+        )
+    return {
+        "stages": payload["stages"],
+        "rules": payload["rules"],
+        "as_of": payload["as_of"],
+        "case": record,
+    }
+
+
+@router.get(
+    "/case-details",
+    summary="All FIR case files",
+    dependencies=[Depends(analyst_required)],
+)
+def case_details():
+    """Every case file in one payload - what a static host serves instead of the
+    per-id route, indexed client-side as the district map already is."""
+    return payloads.load("fir_case_detail.json")
+
+
+@router.get(
+    "/search-index",
+    summary="Global intelligence search index",
+    dependencies=[Depends(analyst_required)],
+)
+def search_index():
+    """FIRs, persons, vehicles, phones, locations, stations, crime types and
+    districts in one flat list, so a plate or a number resolves without the caller
+    knowing which module holds it."""
+    return payloads.load("fir_search.json")
+
+
+@router.get("/alerts", summary="Actionable intelligence alerts")
+def alerts():
+    """Alerts that each state what happened, why it matters and what can be done."""
+    return payloads.load("fir_alerts.json")
+
+
+@router.get(
+    "/graph",
+    summary="Multi-entity link graph",
+    dependencies=[Depends(analyst_required)],
+)
+def graph():
+    """Person / vehicle / phone / location / FIR / station nodes with typed edges.
+    Analyst role required when auth is enabled."""
+    return payloads.load("fir_graph.json")
 
 
 # --------------------------------------------------------------------------- #

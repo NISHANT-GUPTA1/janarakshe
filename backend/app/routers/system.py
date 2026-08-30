@@ -22,6 +22,11 @@ ENDPOINTS = (
     "/api/fir/overview", "/api/fir/stations", "/api/fir/spatiotemporal",
     "/api/fir/network", "/api/fir/offenders", "/api/fir/cases", "/api/fir/schema",
     "/api/datastore/status", "/api/fir/live/cases", "/api/fir/live/stations",
+    "/api/fir/queue", "/api/fir/case/{fir_id}", "/api/fir/case-details",
+    "/api/fir/search-index", "/api/fir/alerts", "/api/fir/graph",
+    "/api/intelligence/overview", "/api/intelligence/districts",
+    "/api/intelligence/districts/{geo_unit_id}", "/api/intelligence/offenders",
+    "/api/socioeconomic/intelligence",
 )
 
 
