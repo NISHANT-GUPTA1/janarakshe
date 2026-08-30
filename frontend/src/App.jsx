@@ -79,7 +79,8 @@ function Shell({ meta, route, go, children }) {
             <a href="https://ksp.karnataka.gov.in/" target="_blank" rel="noreferrer" className="ktb-item">Official Website of GoK</a>
           </div>
           <div className="ktb-right">
-            <a href="#" className="ktb-item ktb-hide-sm">Accessibility</a>
+            {/* Accessibility statement lives in the About page's a11y section. */}
+            <a href="#/about" className="ktb-item ktb-hide-sm">Accessibility</a>
             <span className="ktb-font">
               Font Size
               <button type="button" aria-label="Decrease font size" onClick={() => setFont(-1)}>A-</button>

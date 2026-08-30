@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import { api } from '../api.js';
+import { api, asset } from '../api.js';
 import '../ops/ops.css';
 import { Empty, Panel, Skeleton, dateLabel, fmt } from '../ops/ui.jsx';
 import LinkGraph from '../ops/LinkGraph.jsx';
@@ -65,7 +65,7 @@ export default function FIRWorkspace({ jump }) {
       soft(api.firAlerts()),
       soft(api.firSearchIndex()),
       soft(api.firGraph()),
-      fetch('/data/karnataka_districts.geojson').then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      soft(asset('/data/karnataka_districts.geojson')),
     ]).then(([a, s, g, b]) => {
       if (dead) return;
       setAlerts(a?.alerts || []);

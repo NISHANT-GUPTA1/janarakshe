@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import { api } from '../api.js';
+import { api, asset } from '../api.js';
 import '../ops/ops.css';
 import { Panel, Skeleton, dateLabel, fmt } from '../ops/ui.jsx';
 import LinkGraph from '../ops/LinkGraph.jsx';
@@ -61,7 +61,7 @@ export default function IntelWorkspace({ jump, onOpenFir }) {
       soft(api.ciOffenders()),
       soft(api.firQueue()),
       soft(api.firGraph()),
-      fetch('/data/karnataka_districts.geojson').then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      soft(asset('/data/karnataka_districts.geojson')),
     ]).then(([d, o, q, g, b]) => {
       if (dead) return;
       setDistricts(d?.districts || {});

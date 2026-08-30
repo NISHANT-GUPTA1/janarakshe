@@ -1,5 +1,11 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import ForceGraph3D from 'react-force-graph-3d';
+import { escapeHtml } from './safeHtml.js';
+
+// Shared chrome for the hover tooltips (static markup, no interpolation).
+const TOOLTIP_STYLE =
+  'font:600 12px Inter,sans-serif;color:#fff;background:#181818;'
+  + 'border:1px solid #383838;border-radius:6px;padding:6px 9px';
 
 // Vivid palette to distinguish co-offending clusters (component id -> color).
 // Netflix red leads; the rest give enough separation for many components.
@@ -297,18 +303,20 @@ export default function NetworkGraph({ graph, caseGraph, summary, onClose, embed
             }}
             nodeOpacity={0.92}
             nodeLabel={(n) => {
+              // nodeLabel is injected as HTML by react-force-graph. Node fields
+              // (name, district, category) come from the API, so each one is
+              // escaped before interpolation — see safeHtml.js.
+              const e = escapeHtml;
               if (isCaseMode && n.kind === 'case') {
-                return `<div style="font:600 12px Inter,sans-serif;color:#fff;background:#181818;
-                   border:1px solid #383838;border-radius:6px;padding:6px 9px">
-                   <span style="color:#f5b301">Case</span> &middot; ${n.district ?? '—'} &middot; ${n.year ?? ''}<br/>
-                   ${(n.category || '').replace(/_/g, ' ')} &middot;
-                   <span style="color:#ff6a70">${n.size} ${n.size === 1 ? 'person' : 'people'} involved</span></div>`;
+                return `<div style="${TOOLTIP_STYLE}">
+                   <span style="color:#f5b301">Case</span> &middot; ${e(n.district ?? '—')} &middot; ${e(n.year ?? '')}<br/>
+                   ${e((n.category || '').replace(/_/g, ' '))} &middot;
+                   <span style="color:#ff6a70">${e(n.size)} ${n.size === 1 ? 'person' : 'people'} involved</span></div>`;
               }
-              const cases = `across ${n.incidents} ${n.incidents === 1 ? 'case' : 'cases'}`;
-              const partners = `worked with ${n.degree} ${n.degree === 1 ? 'person' : 'people'}`;
-              return `<div style="font:600 12px Inter,sans-serif;color:#fff;background:#181818;
-                 border:1px solid #383838;border-radius:6px;padding:6px 9px">
-                 ${n.name} &middot; <span style="color:#8c8c8c">${n.district ?? '—'}</span><br/>
+              const cases = `across ${e(n.incidents)} ${n.incidents === 1 ? 'case' : 'cases'}`;
+              const partners = `worked with ${e(n.degree)} ${n.degree === 1 ? 'person' : 'people'}`;
+              return `<div style="${TOOLTIP_STYLE}">
+                 ${e(n.name)} &middot; <span style="color:#8c8c8c">${e(n.district ?? '—')}</span><br/>
                  <span style="color:#ff6a70">${isCaseMode ? cases : partners}</span> &middot;
                  ${isCaseMode ? partners : cases}</div>`;
             }}

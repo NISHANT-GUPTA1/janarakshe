@@ -5,379 +5,178 @@ Serves the district-level aggregates produced by the pipeline
 503 with a hint to run `python -m pipeline.run`. When frontend/dist exists it is
 served at / so the whole app runs from one server (no proxy, no stale-route 404s).
 
-Phase 5 hardening: audit logging, security headers, configurable CORS, and
-API-key RBAC gating the person-level (intelligence) endpoints.
+Hardening applied here: trusted-host validation, an origin allowlist instead of a
+CORS wildcard, security response headers including a Content-Security-Policy,
+per-IP rate limiting, correlated audit logging, API-key RBAC gating the
+person-level endpoints, and error handlers that never return internals to a client.
 """
 from __future__ import annotations
 
-import json
-from pathlib import Path
+import logging
+import os
+from contextlib import asynccontextmanager
 
-from fastapi import Depends, FastAPI, Header, HTTPException
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
+from starlette.middleware.trustedhost import TrustedHostMiddleware
 
-from pipeline import paths
+from . import config, payloads
+from .middleware import (
+    AuditMiddleware,
+    RateLimitMiddleware,
+    SecurityHeadersMiddleware,
+    audit_log,
+)
+from .routers import ALL_ROUTERS
+from .routers.system import API_VERSION
 
-from . import config, datastore
-from .middleware import AuditMiddleware, SecurityHeadersMiddleware
-from .security import analyst_required, identify
+log = logging.getLogger("crime.app")
 
-app = FastAPI(
-    title="AI-Driven Crime Analytics API",
-    version="0.5.0",
-    description="District crime analytics, intelligence, and socio-economic correlation (pilot: Karnataka).",
+# Payloads parsed at startup so the first user request is not the one that pays for
+# it. Everything else is loaded lazily on first use and then cached.
+WARM_PAYLOADS = (
+    "meta.json",
+    "districts.json",
+    "district_detail.json",
+    "trends.json",
+    "hotspots.json",
 )
 
-app.add_middleware(SecurityHeadersMiddleware)
-app.add_middleware(AuditMiddleware)
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=config.CORS_ORIGINS,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+
+@asynccontextmanager
+async def lifespan(_: FastAPI):
+    for warning in config.startup_warnings():
+        audit_log.warning("SECURITY: %s", warning)
+    warmed = payloads.warm(WARM_PAYLOADS)
+    audit_log.info(
+        "startup: %d/%d payloads cached, posture=%s",
+        warmed,
+        len(WARM_PAYLOADS),
+        config.posture(),
+    )
+    yield
 
 
-def _load(name: str):
-    path: Path = paths.API_DIR / name
-    if not path.exists():
-        raise HTTPException(
-            status_code=503,
-            detail=f"{name} not built. Run `python -m pipeline.run` first.",
-        )
-    return json.loads(path.read_text(encoding="utf-8"))
+class SPAStaticFiles(StaticFiles):
+    """Static files for the built SPA, with correct cache semantics.
 
-
-@app.get("/api")
-def api_root():
-    # API index. "/" is left for the served frontend (StaticFiles mount below).
-    return {
-        "service": "AI-Driven Crime Analytics API",
-        "version": "0.6.0",
-        "endpoints": [
-            "/health", "/api/meta", "/api/districts", "/api/districts/{geo_unit_id}",
-            "/api/hotspots", "/api/trends", "/api/kpi-catalog", "/api/categories",
-            "/api/whoami", "/api/intelligence/repeat-offenders", "/api/intelligence/network",
-            "/api/intelligence/patterns", "/api/intelligence/ml-insights",
-            "/api/socioeconomic", "/api/socioeconomic/correlations",
-            "/api/socioeconomic/schema",
-            "/api/fir/overview", "/api/fir/stations", "/api/fir/spatiotemporal",
-            "/api/fir/network", "/api/fir/offenders", "/api/fir/cases", "/api/fir/schema",
-            "/api/fir/queue", "/api/fir/case/{fir_id}", "/api/fir/case-details",
-            "/api/fir/search-index", "/api/fir/alerts", "/api/fir/graph",
-            "/api/intelligence/overview", "/api/intelligence/districts",
-            "/api/intelligence/districts/{geo_unit_id}", "/api/intelligence/offenders",
-            "/api/socioeconomic/intelligence",
-            "/api/datastore/status", "/api/fir/live/cases", "/api/fir/live/stations",
-        ],
-        "docs": "/docs",
-    }
-
-
-@app.get("/health")
-def health():
-    built = (paths.API_DIR / "districts.json").exists()
-    return {"status": "ok", "data_built": built}
-
-
-@app.get("/api/meta")
-def meta():
-    return _load("meta.json")
-
-
-@app.get("/api/districts")
-def districts():
-    """District summary list (latest year), sorted by risk score desc."""
-    return _load("districts.json")
-
-
-@app.get("/api/districts/{geo_unit_id}")
-def district_detail(geo_unit_id: str):
-    """Full drilldown for one district: KPIs, yearly trend, category breakdown,
-    hotspot status, and explainable risk-score components."""
-    detail = _load("district_detail.json")
-    rec = detail.get(geo_unit_id)
-    if rec is None:
-        raise HTTPException(status_code=404, detail=f"district '{geo_unit_id}' not found")
-    return rec
-
-
-@app.get("/api/hotspots")
-def hotspots():
-    return _load("hotspots.json")
-
-
-@app.get("/api/trends")
-def trends():
-    return _load("trends.json")
-
-
-@app.get("/api/kpi-catalog")
-def kpi_catalog():
-    return _load("kpi_catalog.json")
-
-
-@app.get("/api/categories")
-def categories():
-    return _load("categories.json")
-
-
-@app.get("/api/whoami")
-def whoami(x_api_key: str | None = Header(default=None, alias="X-API-Key")):
-    who = identify(x_api_key)
-    return {"role": who["role"], "auth_mode": who["mode"], "auth_enabled": config.AUTH_ENABLED}
-
-
-# ---- Phase 3: intelligence (synthetic person-level + real-data ML) ----
-# Person-level endpoints are gated to analyst+ (governance: synthetic PII). In dev
-# (no CRIME_API_KEYS configured) access is open so the demo runs without setup.
-@app.get("/api/intelligence/repeat-offenders")
-def repeat_offenders(_=Depends(analyst_required)):
-    """Top repeat offenders (SYNTHETIC data — see data_note). Requires analyst role when auth enabled."""
-    return _load("intel_repeat_offenders.json")
-
-
-@app.get("/api/intelligence/network")
-def network(_=Depends(analyst_required)):
-    """Co-offending network (SYNTHETIC). Requires analyst role when auth enabled."""
-    return _load("intel_network.json")
-
-
-@app.get("/api/intelligence/patterns")
-def patterns():
-    """AI/ML pattern detection on REAL data: district clusters + anomalies (no PII; open)."""
-    return _load("intel_patterns.json")
-
-
-@app.get("/api/intelligence/ml-insights")
-def ml_insights():
-    """Advanced AI/ML insights (Phase 6, open): PCA + KMeans (socio-crime clusters),
-    RandomForest feature importance, SHAP per-district explainability, Isolation Forest
-    multi-dimensional anomaly detection, OLS district forecasts, and composite hotspot
-    probability scores — all integrating NCRB crime data with Census 2011 socio-economic
-    indicators. No PII; open endpoint.
+    Vite emits content-hashed filenames under /assets, so those are safe to cache
+    indefinitely; the HTML entrypoint must always be revalidated or users are
+    pinned to a stale build after every deploy.
     """
-    return _load("ml_insights.json")
+
+    # StaticFiles hands get_response an OS-native relative path, so on Windows the
+    # separator is a backslash. Normalise before matching.
+    ASSET_PREFIX = "assets/"
+
+    async def get_response(self, path: str, scope):
+        response = await super().get_response(path, scope)
+        normalised = path.replace(os.sep, "/").replace("\\", "/").lstrip("/")
+        if normalised.startswith(self.ASSET_PREFIX):
+            response.headers.setdefault("Cache-Control", "public, max-age=31536000, immutable")
+        else:
+            response.headers.setdefault("Cache-Control", "no-cache")
+        return response
 
 
-# ---- Phase 7: FIR-record intelligence (KSP Police FIR System schema) ----
-# Schema-shaped synthetic FIR records → record-level analytics the open NCRB
-# aggregates cannot provide. Person-level views are gated to analyst+ when auth is on.
-@app.get("/api/fir/overview")
-def fir_overview():
-    """Case lifecycle, gravity, detection (chargesheet A/B/C) and demographics."""
-    return _load("fir_overview.json")
+def create_app() -> FastAPI:
+    """Build the application: docs gating, middleware stack, routers, SPA mount."""
+    application = FastAPI(
+        title="AI-Driven Crime Analytics API",
+        version=API_VERSION,
+        description=(
+            "District crime analytics, intelligence, and socio-economic correlation "
+            "(pilot: Karnataka)."
+        ),
+        lifespan=lifespan,
+        # Interactive docs enumerate every route and schema; off unless enabled.
+        docs_url="/docs" if config.DOCS_ENABLED else None,
+        redoc_url="/redoc" if config.DOCS_ENABLED else None,
+        openapi_url="/openapi.json" if config.DOCS_ENABLED else None,
+    )
+
+    _register_middleware(application)
+    _register_error_handlers(application)
+
+    for router in ALL_ROUTERS:
+        application.include_router(router)
+
+    _mount_frontend(application)
+    return application
 
 
-@app.get("/api/fir/stations")
-def fir_stations():
-    """Police-station drill-down: cases, heinous share and detection rate per station."""
-    return _load("fir_stations.json")
+def _register_middleware(application: FastAPI) -> None:
+    """Middleware runs outermost-last-added, so this reads inside-out.
+
+    Effective order per request:
+        TrustedHost -> CORS -> SecurityHeaders -> RateLimit -> Audit -> route
+    CORS sits outside the throttle so a browser can still read a 429, and the
+    security headers wrap the throttle so they are present on rejections too.
+    """
+    application.add_middleware(AuditMiddleware)
+
+    if config.RATE_LIMIT_ENABLED:
+        application.add_middleware(
+            RateLimitMiddleware, limit=config.RATE_LIMIT, window=config.RATE_WINDOW
+        )
+
+    application.add_middleware(SecurityHeadersMiddleware)
+
+    cors_kwargs: dict = {
+        "allow_methods": config.CORS_ALLOW_METHODS,
+        "allow_headers": config.CORS_ALLOW_HEADERS,
+        "expose_headers": config.CORS_EXPOSE_HEADERS,
+        # No cookies or Authorization are used, so credentials stay off. This is
+        # also what makes any origin allowlist meaningful rather than advisory.
+        "allow_credentials": False,
+        "max_age": 600,
+    }
+    if config.CORS_ORIGINS:
+        cors_kwargs["allow_origins"] = config.CORS_ORIGINS
+    else:
+        cors_kwargs["allow_origins"] = []
+        cors_kwargs["allow_origin_regex"] = config.CORS_ORIGIN_REGEX
+    application.add_middleware(CORSMiddleware, **cors_kwargs)
+
+    if config.TRUSTED_HOSTS != ["*"]:
+        application.add_middleware(
+            TrustedHostMiddleware, allowed_hosts=config.TRUSTED_HOSTS
+        )
 
 
-@app.get("/api/fir/spatiotemporal")
-def fir_spatiotemporal():
-    """Spatiotemporal hotspots: GPS points + time-of-day histograms + grid hotspots."""
-    return _load("fir_spatiotemporal.json")
+def _register_error_handlers(application: FastAPI) -> None:
+    """Return a generic body for unhandled errors; log the detail server-side.
+
+    Without this, an unexpected exception surfaces a stack trace or internal path
+    to the caller.
+    """
+
+    @application.exception_handler(Exception)
+    async def unhandled_error(request: Request, exc: Exception) -> JSONResponse:
+        request_id = getattr(request.state, "request_id", "-")
+        log.exception("unhandled error on %s [id=%s]", request.url.path, request_id)
+        return JSONResponse(
+            status_code=500,
+            content={"detail": "internal server error", "request_id": request_id},
+        )
 
 
-@app.get("/api/fir/network")
-def fir_network(_=Depends(analyst_required)):
-    """REAL co-accused network + person↔case graph. Requires analyst role when auth enabled."""
-    return _load("fir_network.json")
+def _mount_frontend(application: FastAPI) -> None:
+    """Serve the built SPA at / - mounted last so every /api route takes precedence.
+
+    Only active after `npm run build`; on Slate-hosted deployments the frontend is
+    served separately and this is a no-op.
+    """
+    if config.FRONTEND_DIST.is_dir():
+        application.mount(
+            "/",
+            SPAStaticFiles(directory=str(config.FRONTEND_DIST), html=True),
+            name="frontend",
+        )
+    else:
+        log.info("frontend/dist not present; serving the API only")
 
 
-@app.get("/api/fir/offenders")
-def fir_offenders(_=Depends(analyst_required)):
-    """Repeat-offender profiles with Modus Operandi. Requires analyst role when auth enabled."""
-    return _load("fir_offenders.json")
-
-
-@app.get("/api/fir/cases")
-def fir_cases():
-    """Sample raw FIR rows (CaseMaster + classification) for the case table."""
-    return _load("fir_cases.json")
-
-
-@app.get("/api/fir/schema")
-def fir_schema():
-    """The KSP Police FIR System ER model (tables, keys, relationships)."""
-    return _load("fir_schema.json")
-
-
-# ---- Phase 8: the FIR investigation workspace ----
-# The queue is the officer's work list; case detail is one investigation file;
-# search, alerts and the graph are the cross-cutting views over the same records.
-@app.get("/api/fir/queue")
-def fir_queue():
-    """Operational FIR work queue: every case with priority, SLA, investigation
-    progress and last activity, plus the summary buckets and filter facets."""
-    return _load("fir_queue.json")
-
-
-@app.get("/api/fir/case/{fir_id}")
-def fir_case(fir_id: str, _=Depends(analyst_required)):
-    """One case file: people, entities, related FIRs with reasons, explainable AI
-    insights, and the typed investigation timeline. Person-level -> analyst gated."""
-    payload = _load("fir_case_detail.json")
-    rec = payload["cases"].get(fir_id)
-    if rec is None:
-        raise HTTPException(status_code=404, detail=f"FIR '{fir_id}' not found")
-    return {"stages": payload["stages"], "rules": payload["rules"],
-            "as_of": payload["as_of"], "case": rec}
-
-
-@app.get("/api/fir/case-details")
-def fir_case_details(_=Depends(analyst_required)):
-    """Every case file in one payload — what a static host serves instead of the
-    per-id route (the frontend indexes it client-side, as it does for districts)."""
-    return _load("fir_case_detail.json")
-
-
-@app.get("/api/fir/search-index")
-def fir_search_index(_=Depends(analyst_required)):
-    """Global intelligence search index: FIRs, persons, vehicles, phones,
-    locations, stations, crime types and districts in one flat list."""
-    return _load("fir_search.json")
-
-
-@app.get("/api/fir/alerts")
-def fir_alerts():
-    """Actionable intelligence alerts — each states what happened, why it matters
-    and what the officer can do."""
-    return _load("fir_alerts.json")
-
-
-@app.get("/api/fir/graph")
-def fir_graph(_=Depends(analyst_required)):
-    """Multi-entity link-analysis graph (person / vehicle / phone / location /
-    FIR / station) with typed edges. Person-level -> analyst gated."""
-    return _load("fir_graph.json")
-
-
-# ---- Phase 8: Crime Intelligence findings ----
-@app.get("/api/intelligence/overview")
-def intelligence_overview():
-    """Ranked intelligence findings with priority, claim type (observed /
-    statistical / ML / prediction), signals, method and actions; plus crime
-    profiles, period comparisons and the state trend."""
-    return _load("ci_overview.json")
-
-
-@app.get("/api/intelligence/districts")
-def intelligence_districts():
-    """Per-district intelligence drill-down for every district."""
-    return _load("ci_districts.json")
-
-
-@app.get("/api/intelligence/districts/{geo_unit_id}")
-def intelligence_district(geo_unit_id: str):
-    """One district's intelligence view: period change, top movers, hotspot
-    areas, stations, and the findings that landed there."""
-    rec = _load("ci_districts.json")["districts"].get(geo_unit_id)
-    if rec is None:
-        raise HTTPException(status_code=404, detail=f"district '{geo_unit_id}' not found")
-    return rec
-
-
-@app.get("/api/intelligence/offenders")
-def intelligence_offenders(_=Depends(analyst_required)):
-    """Repeat-offender intelligence: linked cases, crime types, locations,
-    associates and recent activity. Person-level -> analyst gated."""
-    return _load("ci_offenders.json")
-
-
-# ---- Catalyst Data Store: live record-level queries (ZCQL) ----
-# These read the FIR tables straight from Data Store when the app runs on AppSail
-# with CRIME_USE_DATASTORE=1; otherwise they fall back to the precomputed JSON so the
-# app works identically in local dev. Proves the platform uses Data Store at runtime.
-@app.get("/api/datastore/status")
-def datastore_status():
-    """Whether the API is serving record-level data live from Catalyst Data Store."""
-    return datastore.status()
-
-
-@app.get("/api/fir/live/cases")
-def fir_live_cases(limit: int = 50):
-    """Latest FIR cases, joined to their lookups — live from Data Store when available."""
-    limit = max(1, min(limit, 500))
-    if datastore.available():
-        try:
-            rows = datastore.query(
-                "SELECT CaseMaster.CrimeNo, CaseMaster.CrimeRegisteredDate, "
-                "CaseMaster.latitude, CaseMaster.longitude, CaseCategory.LookupValue, "
-                "CrimeHead.CrimeGroupName, CrimeSubHead.CrimeHeadName, "
-                "GravityOffence.LookupValue, CaseStatusMaster.CaseStatusName "
-                "FROM CaseMaster "
-                "LEFT JOIN CaseCategory ON CaseMaster.CaseCategoryID = CaseCategory.CaseCategoryID "
-                "LEFT JOIN CrimeHead ON CaseMaster.CrimeMajorHeadID = CrimeHead.CrimeHeadID "
-                "LEFT JOIN CrimeSubHead ON CaseMaster.CrimeMinorHeadID = CrimeSubHead.CrimeSubHeadID "
-                "LEFT JOIN GravityOffence ON CaseMaster.GravityOffenceID = GravityOffence.GravityOffenceID "
-                "LEFT JOIN CaseStatusMaster ON CaseMaster.CaseStatusID = CaseStatusMaster.CaseStatusID "
-                f"ORDER BY CaseMaster.CrimeRegisteredDate DESC LIMIT {limit}")
-            return {"source": "datastore", "count": len(rows), "rows": rows}
-        except Exception as exc:  # noqa: BLE001 — degrade to the static payload
-            fallback = _load("fir_cases.json")
-            fallback["source"] = "fallback"
-            fallback["datastore_error"] = str(exc)
-            return fallback
-    payload = _load("fir_cases.json")
-    payload["source"] = "fallback"
-    return payload
-
-
-@app.get("/api/fir/live/stations")
-def fir_live_stations(limit: int = 50):
-    """Per-station case counts — live from Data Store when available, else JSON."""
-    limit = max(1, min(limit, 500))
-    if datastore.available():
-        try:
-            rows = datastore.query(
-                "SELECT Unit.UnitName, COUNT(CaseMaster.CaseMasterID) AS cases "
-                "FROM CaseMaster LEFT JOIN Unit ON CaseMaster.PoliceStationID = Unit.UnitID "
-                f"GROUP BY Unit.UnitName ORDER BY cases DESC LIMIT {limit}")
-            return {"source": "datastore", "count": len(rows), "stations": rows}
-        except Exception as exc:  # noqa: BLE001
-            fallback = _load("fir_stations.json")
-            fallback["source"] = "fallback"
-            fallback["datastore_error"] = str(exc)
-            return fallback
-    payload = _load("fir_stations.json")
-    payload["source"] = "fallback"
-    return payload
-
-
-# ---- Phase 4: socio-economic correlation (real Census 2011) ----
-@app.get("/api/socioeconomic")
-def socioeconomic():
-    """Per-district socio-economic indicators (Census 2011)."""
-    return _load("se_indicators.json")
-
-
-@app.get("/api/socioeconomic/correlations")
-def socioeconomic_correlations():
-    """Correlation matrix: each indicator x each crime group (Pearson/Spearman,
-    p-values, hypothesis verdicts) + ethical caveats."""
-    return _load("se_correlations.json")
-
-
-@app.get("/api/socioeconomic/intelligence")
-def socioeconomic_intelligence():
-    """Socio-economic intelligence: per-district profiles banded against the other
-    districts and the state figure, the associations that carry signal stated in
-    plain language with their limits, nearest-profile districts, and the full
-    correlation matrix + methodology behind them for the analyst view."""
-    return _load("se_intel.json")
-
-
-@app.get("/api/socioeconomic/schema")
-def socioeconomic_schema():
-    """The logically-backed indicator definitions + crime hypotheses."""
-    return _load("se_schema.json")
-
-
-# ---- serve the built frontend (single origin; eliminates proxy/stale-route 404s) ----
-# Mounted LAST so all /api routes take precedence. Only active after `npm run build`.
-if config.FRONTEND_DIST.exists():
-    app.mount("/", StaticFiles(directory=str(config.FRONTEND_DIST), html=True), name="frontend")
+app = create_app()

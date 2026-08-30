@@ -2,8 +2,8 @@ import React, { useMemo, useRef, useState } from 'react';
 import { MapContainer, TileLayer, GeoJSON, CircleMarker, Tooltip } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { BAND_COLOR, HOTSPOT_COLOR } from './dash/palette.js';
-
-const BAND_LABEL = { Critical: 'Critical', High: 'High', Medium: 'Moderate', Low: 'Low' };
+import { BAND_LABEL } from './labels.js';
+import { escapeHtml } from './safeHtml.js';
 
 // ---- red→green heat ramp (RdYlGn reversed: high crime = dark red, low = green) ----
 const HEAT_STOPS = [
@@ -174,8 +174,14 @@ export default function CrimeMap({ districts, boundaries, selectedId, focusIds =
 
   const onEach = (feature, lyr) => {
     const d = byId[feature.properties.geo_unit_id];
+    // bindTooltip parses its argument as HTML and `name` comes from the fetched
+    // GeoJSON, so every interpolated value is escaped (see safeHtml.js).
+    const summary = d
+      ? `${escapeHtml(BAND_LABEL[d.risk_band])} risk (${escapeHtml(d.risk_score)})`
+        + ` · ${escapeHtml(d.crime_rate_per_100k)}/100k`
+      : '';
     lyr.bindTooltip(
-      `<b>${feature.properties.name}</b><br/>${d ? `${BAND_LABEL[d.risk_band]} risk (${d.risk_score}) · ${d.crime_rate_per_100k}/100k` : ''}`,
+      `<b>${escapeHtml(feature.properties.name)}</b><br/>${summary}`,
       { sticky: true }
     );
     lyr.on('click', () => onSelect(feature.properties.geo_unit_id));

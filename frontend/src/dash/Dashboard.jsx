@@ -1,5 +1,5 @@
 import React, { Suspense, lazy, useCallback, useEffect, useMemo, useState } from 'react';
-import { api } from '../api.js';
+import { api, asset } from '../api.js';
 import CrimeMap from '../CrimeMap.jsx';
 import IntelWorkspace from '../intel/IntelWorkspace.jsx';
 import SEWorkspace from '../se/SEWorkspace.jsx';
@@ -10,11 +10,9 @@ import District3D from './District3D.jsx';
 const NetworkGraph = lazy(() => import('../NetworkGraph.jsx'));
 import { AreaTrend, Donut, HourBars, RankBars } from './charts.jsx';
 import { BAND_COLOR, BAND_ORDER, SERIES, fmt, pct, hourLabel } from './palette.js';
+import { BAND_LABEL, STATUS_LABEL } from '../labels.js';
 import './dashboard.css';
 
-const STATUS_LABEL = { none: 'Stable', emerging: 'Emerging', established: 'Hotspot' };
-// The console model uses "Medium"; the portal shows it as "Moderate".
-const BAND_LABEL = { Critical: 'Critical', High: 'High', Medium: 'Moderate', Low: 'Low' };
 
 // Left sidebar sections. Selecting one swaps the main panel (only one heavy
 // section — 3D scene / force-graph — is ever mounted at a time, so the page
@@ -70,7 +68,7 @@ export default function Dashboard({ meta }) {
 
     Promise.all([
       api.districts(),
-      fetch('/data/karnataka_districts.geojson').then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      soft(asset('/data/karnataka_districts.geojson')),
       soft(api.trends()),
       soft(api.firOverview()),
       soft(api.firSpatiotemporal()),
