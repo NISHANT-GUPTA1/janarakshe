@@ -3,14 +3,36 @@ services:
     build: .
     image: crime-analytics:latest
     ports:
-      - "8000:8000"
+      # Bound to loopback: publish on 0.0.0.0 only behind a reverse proxy.
+      - "127.0.0.1:8000:8000"
     environment:
-      # Dev-open by default. To enforce RBAC, set keys and tighten CORS:
+      # CORS: left unset so the API uses its built-in allowlist (localhost +
+      # Catalyst hosting domains) rather than a wildcard. Set this to your exact
+      # frontend origin in production.
+      # CRIME_CORS_ORIGINS: "https://your-frontend.example"
+      #
+      # RBAC: while unset, the person-level endpoints (/api/fir/offenders,
+      # /api/fir/network, /api/intelligence/*) are served WITHOUT authentication
+      # and the service logs a startup warning. To enforce:
       # CRIME_API_KEYS: "demo-admin:admin,demo-analyst:analyst,demo-viewer:viewer"
-      CRIME_CORS_ORIGINS: "*"
+      #
+      # CRIME_TRUSTED_HOSTS: "analytics.example"   # blocks Host-header poisoning
+      # CRIME_HSTS: "1"                            # enable behind TLS termination
+      CRIME_RATE_LIMIT: "240"
+      CRIME_RATE_WINDOW: "60"
     volumes:
       - audit-logs:/app/backend/logs
     restart: unless-stopped
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=5).status == 200 else 1)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
 
 volumes:
   audit-logs:

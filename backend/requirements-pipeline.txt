@@ -6,14 +6,18 @@ uvicorn[standard]==0.37.0
 pandas==2.2.3
 numpy==2.1.2
 scikit-learn==1.8.0
-pydantic>=2.0
-scipy>=1.13
+pydantic==2.13.4
+scipy==1.14.1
 
 # Advanced AI/ML pattern detection (PCA, RF, SHAP, IsolationForest, Forecast)
-shap>=0.46
+shap==0.46.0
 
 # Catalyst Data Store SDK (also in the runtime set)
 zcatalyst-sdk>=1.4.0
+
+# Transitive, pinned for security (see requirements.txt for the CVEs).
+requests==2.32.4
+urllib3==2.2.2
 
 # Phase 2+ (geospatial maps, seasonal/anomaly stats) — install when those phases start:
 # geopandas

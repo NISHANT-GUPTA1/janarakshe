@@ -4,6 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#2271a0" />
+
+    <!--
+      Content-Security-Policy, declared here as well as in the API's response
+      headers: on the Catalyst Slate deployment this bundle is served by Slate,
+      not by FastAPI, so the backend's headers never reach this document.
+
+      'unsafe-eval' is required and deliberate — the 3D offender-network view uses
+      react-force-graph, whose physics integrator JIT-compiles its step function
+      with new Function(). Removing it silently breaks that view.
+      'unsafe-inline' in style-src covers Leaflet's runtime styles; it carries no
+      script-execution risk. frame-ancestors/object-src/base-uri are the
+      directives doing the real work here.
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               base-uri 'self';
+               object-src 'none';
+               frame-ancestors 'none';
+               form-action 'self';
+               script-src 'self' 'unsafe-eval';
+               style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+               font-src 'self' data: https://fonts.gstatic.com;
+               img-src 'self' data: blob: https://*.basemaps.cartocdn.com;
+               connect-src 'self' https://*.catalystappsail.in https://*.catalystserverless.com;
+               worker-src 'self' blob:;
+               manifest-src 'self'"
+    />
+    <meta name="referrer" content="no-referrer" />
     <link rel="icon" type="image/png" href="/ksp-main-logo.png" />
     <title>ಜನರಕ್ಷೆ Janarakṣe — Karnataka Crime Intelligence Platform</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />

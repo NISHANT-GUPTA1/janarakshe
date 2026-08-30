@@ -1,15 +1,17 @@
 {
   "//": "AppSail config for the Catalyst-MANAGED Python runtime path (no Docker).",
-  "//keys": "command / env_variables / memory are the keys Catalyst reads from app-config.json before deploy.",
-  "//port": "Catalyst injects the listen port via the X_ZOHO_CATALYST_LISTEN_PORT env var. The startup command binds uvicorn to it (default 9000 for local runs).",
-
-  "//command": "Data is pre-built and committed (backend/data/processed/api/*.json), so the runtime just serves it — no heavy pipeline run at startup. Binds to the port Catalyst injects.",
+  "//port": "Catalyst injects the listen port via X_ZOHO_CATALYST_LISTEN_PORT; the startup command binds uvicorn to it (default 9000 for local runs).",
+  "//command": "Data is pre-built and committed (backend/data/processed/api/*.json), so the runtime just serves it - no pipeline run at startup.",
   "command": "uvicorn app.main:app --host 0.0.0.0 --port ${X_ZOHO_CATALYST_LISTEN_PORT:-9000}",
   "memory": 512,
   "env_variables": {
-    "//CRIME_CORS_ORIGINS": "set to your Slate frontend URL in production, e.g. https://<app>.catalystserverless.com; '*' is fine for the demo.",
-    "CRIME_CORS_ORIGINS": "*",
-    "//CRIME_USE_DATASTORE": "1 makes the /api/fir/live/* endpoints query Catalyst Data Store via ZCQL; unset/0 falls back to the JSON payloads.",
-    "CRIME_USE_DATASTORE": "1"
+    "//CRIME_CORS_ORIGINS": "Your Slate frontend origin. Leave unset to use the built-in allowlist (localhost + Catalyst domains). Do NOT set '*' - that lets any website read the API.",
+    "//CRIME_API_KEYS": "'key:role,...' with roles viewer|analyst|admin. Enforces RBAC on /api/fir/offenders, /api/fir/network and /api/intelligence/*. Unset = those endpoints are public.",
+    "//CRIME_TRUSTED_HOSTS": "Comma-separated Host allowlist; blocks Host-header poisoning. '*' disables the check.",
+    "//CRIME_DOCS": "1 to expose /docs and /openapi.json. Defaults off once CRIME_API_KEYS is set.",
+    "CRIME_USE_DATASTORE": "1",
+    "CRIME_HSTS": "1",
+    "CRIME_RATE_LIMIT": "240",
+    "CRIME_RATE_WINDOW": "60"
   }
 }

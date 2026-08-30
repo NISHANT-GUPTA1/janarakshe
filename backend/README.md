@@ -29,9 +29,24 @@ Outputs land in `data/processed/` (canonical layer) and `data/processed/api/`
 uvicorn app.main:app --reload     # http://127.0.0.1:8000  (docs at /docs)
 ```
 
+Runs open (no API key) by default so the demo needs no setup; the service logs a
+`SECURITY:` warning at startup saying so, and `GET /health` reports the live
+posture. See [../SECURITY.md](../SECURITY.md) for every environment variable and
+the production checklist.
+
+## Tests
+
+```bash
+python -m pytest                  # 58 contract + security tests
+```
+
+`tests/test_api.py` pins every route's status and shape, the RBAC hierarchy, and
+each security control (CORS allowlist, CSP, rate limiting, trusted hosts, docs
+gating, header sanitisation, payload-cache isolation).
+
 | Endpoint                             | Returns                                                                    |
 | ------------------------------------ | -------------------------------------------------------------------------- |
-| `GET /health`                      | liveness + whether data is built                                           |
+| `GET /health`                      | liveness + whether data is built + security posture                        |
 | `GET /api/meta`                    | platform metadata, years, district count                                   |
 | `GET /api/districts`               | district summary list (latest year), sorted by risk                        |
 | `GET /api/districts/{geo_unit_id}` | full drilldown: KPIs, trend, breakdown, hotspot,**explainable risk** |
@@ -44,7 +59,15 @@ uvicorn app.main:app --reload     # http://127.0.0.1:8000  (docs at /docs)
 
 ```
 backend/
-  app/main.py            FastAPI aggregate API
+  app/
+    main.py              app factory: middleware stack, routers, SPA mount
+    config.py            env-driven settings + startup security warnings
+    security.py          API-key RBAC (hashed keys, constant-time compare)
+    middleware.py        audit log, rate limit, security headers
+    payloads.py          cached, path-validated access to data/processed/api/
+    datastore.py         Catalyst Data Store (ZCQL) with static-payload fallback
+    routers/             system | analytics | intelligence | fir | socioeconomic
+  tests/test_api.py      contract + security test suite
   pipeline/
     contracts.py         loads docs/phase-0 contracts; taxonomy mapping + schema validation
     paths.py             filesystem locations
