@@ -99,9 +99,17 @@ function get(path) {
   return fetchJson(url, { label: path });
 }
 
-// Assets served alongside the frontend build (not through the API).
+// Static files shipped with the frontend build (public/), such as the district
+// boundary GeoJSON the map and the 3D terrain are drawn from.
+//
+// Deliberately NOT prefixed with BASE. BASE points at the API host, and on the
+// split deployment the SPA is served by Slate while the API runs on AppSail — so
+// prefixing sends these to a host that has never heard of /data and answers 404,
+// silently leaving the map with no boundaries. These files always live next to
+// the bundle, so the path stays relative to the page's own origin. That is also
+// correct in the single-origin deployment, where one server does both jobs.
 export function asset(path) {
-  return fetchJson(`${BASE}${path}`, { label: path });
+  return fetchJson(path, { label: path });
 }
 
 // The per-district route is the one endpoint that is not a whole file: the backend
