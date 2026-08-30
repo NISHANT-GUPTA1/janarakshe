@@ -1,0 +1,182 @@
+{
+  "contract": "socioeconomic_schema",
+  "version": "0.1.0",
+  "updated": "2026-06-14",
+  "description": "Logically-backed socio-economic indicator model for crime correlation. Each indicator has a precise definition, an exact derivation from Census 2011 columns (no vague aggregates), a unit and plausible range, and an explicit, theory-grounded hypothesis about how it relates to specific crime GROUPS in crime_taxonomy.json. Indicators join to crime data on geo_unit_id at DISTRICT grain.",
+
+  "join": {
+    "key": "geo_unit_id",
+    "grain": "DISTRICT",
+    "crime_link": "Each indicator is correlated against crime-group rates per 100k (groups from crime_taxonomy.json), computed for the same district and the latest crime year.",
+    "note": "Socio-economic values are Census 2011 vintage; crime rates use the latest available crime year. Both are tied to the same canonical district geo_unit_id."
+  },
+
+  "ethical_constraints": {
+    "ecological_fallacy": "All relationships are DISTRICT-level (ecological). A district-level correlation does NOT license any inference about individuals. Never use these to profile a person, group, or community.",
+    "recorded_vs_true_crime": "Crime figures are RECORDED crime and reflect reporting and policing intensity, not necessarily underlying crime. Higher recorded crime can mean better reporting.",
+    "non_causality": "Correlation is not causation. These indicators are explanatory context for analysts, never a justification for enforcement targeting.",
+    "protected_attributes": "scst_share and sex_ratio are included only to explain VICTIMIZATION/REPORTING patterns (e.g. atrocities against SC/ST, crimes against women). They must NEVER be read as group propensity to offend. Treat with the highest caution and human review.",
+    "small_sample": "n = 30 districts. Correlations are indicative, not definitive; always report the p-value and confidence."
+  },
+
+  "correlation_method": {
+    "tests": ["pearson (linear)", "spearman (monotonic rank)"],
+    "target": "crime-group rate per 100,000 population (and overall crime rate)",
+    "n": 30,
+    "significance_alpha": 0.05,
+    "strength_bands": {
+      "negligible": "|r| < 0.2", "weak": "0.2-0.4", "moderate": "0.4-0.6",
+      "strong": "0.6-0.8", "very_strong": "> 0.8"
+    },
+    "hypothesis_check": "Each computed correlation is compared to the indicator's hypothesized sign for that crime group; 'confirmed' if same sign and significant, 'contradicted' if opposite sign and significant, else 'inconclusive'."
+  },
+
+  "indicators": [
+    {
+      "id": "population_density",
+      "name": "Population Density",
+      "definition": "Resident population per square kilometre of district land area.",
+      "formula": "population / area_km2",
+      "derivation": "population (Census 2011) ÷ area_km2 (computed geodesically from the district boundary polygon).",
+      "unit": "persons_per_km2",
+      "range": [10, 12000],
+      "direction_social": "neutral",
+      "hypotheses": [
+        {"crime_group": "PROPERTY", "expected_sign": "+", "theory": "Routine Activity Theory — denser areas concentrate suitable targets and motivated offenders; more opportunity.", "confidence": "medium"},
+        {"crime_group": "VIOLENT", "expected_sign": "+", "theory": "Social Disorganization — density correlates with anonymity and weaker informal social control.", "confidence": "low"}
+      ]
+    },
+    {
+      "id": "urbanization_rate",
+      "name": "Urbanization Rate",
+      "definition": "Share of households classified urban.",
+      "formula": "Urban_Households / Households * 100",
+      "derivation": "Census 2011 household counts.",
+      "unit": "percent",
+      "range": [0, 100],
+      "direction_social": "neutral",
+      "hypotheses": [
+        {"crime_group": "PROPERTY", "expected_sign": "+", "theory": "Urban opportunity structure and target density.", "confidence": "medium"},
+        {"crime_group": "ECONOMIC", "expected_sign": "+", "theory": "Urban economic activity expands fraud/cheating surface.", "confidence": "low"}
+      ]
+    },
+    {
+      "id": "literacy_rate",
+      "name": "Literacy Rate",
+      "definition": "Literate persons as a share of total population.",
+      "formula": "Literate / Population * 100",
+      "derivation": "Census 2011.",
+      "unit": "percent",
+      "range": [40, 100],
+      "direction_social": "higher_is_better",
+      "hypotheses": [
+        {"crime_group": "VIOLENT", "expected_sign": "-", "theory": "Social Control / human capital — education raises opportunity cost of crime and strengthens norms.", "confidence": "medium"}
+      ]
+    },
+    {
+      "id": "graduate_rate",
+      "name": "Graduate Education Rate",
+      "definition": "Graduates as a share of total population.",
+      "formula": "Graduate_Education / Population * 100",
+      "derivation": "Census 2011 education levels.",
+      "unit": "percent",
+      "range": [0, 40],
+      "direction_social": "higher_is_better",
+      "hypotheses": [
+        {"crime_group": "VIOLENT", "expected_sign": "-", "theory": "Human capital — higher education associated with lower violent offending.", "confidence": "low"}
+      ]
+    },
+    {
+      "id": "low_income_share",
+      "name": "Low-Income Household Share (poverty proxy)",
+      "definition": "Share of households in the lowest income-equivalent bracket (< Rs 45,000/year, PPP-style).",
+      "formula": "Power_Parity_Less_than_Rs_45000 / Total_Power_Parity * 100",
+      "derivation": "Census 2011 'Power Parity' income-bracket household counts.",
+      "unit": "percent",
+      "range": [0, 60],
+      "direction_social": "higher_is_worse",
+      "hypotheses": [
+        {"crime_group": "PROPERTY", "expected_sign": "+", "theory": "Strain Theory / economic deprivation — material hardship raises acquisitive crime.", "confidence": "medium"},
+        {"crime_group": "ECONOMIC", "expected_sign": "+", "theory": "Relative deprivation drives economic offences.", "confidence": "low"}
+      ]
+    },
+    {
+      "id": "marginal_worker_share",
+      "name": "Marginal Worker Share (underemployment proxy)",
+      "definition": "Marginal (works < 6 months/yr) workers as a share of all workers.",
+      "formula": "Marginal_Workers / Workers * 100",
+      "derivation": "Census 2011 worker classification.",
+      "unit": "percent",
+      "range": [0, 60],
+      "direction_social": "higher_is_worse",
+      "hypotheses": [
+        {"crime_group": "PROPERTY", "expected_sign": "+", "theory": "Economic precarity and seasonal income gaps (Strain).", "confidence": "medium"}
+      ]
+    },
+    {
+      "id": "nonworker_share",
+      "name": "Non-Worker Share (joblessness/dependency proxy)",
+      "definition": "Non-workers as a share of total population.",
+      "formula": "Non_Workers / Population * 100",
+      "derivation": "Census 2011. NOTE: includes students, homemakers, elderly — a dependency proxy, NOT a clean unemployment rate.",
+      "unit": "percent",
+      "range": [40, 75],
+      "direction_social": "neutral",
+      "hypotheses": [
+        {"crime_group": "PROPERTY", "expected_sign": "+", "theory": "Strain — lower household earning capacity.", "confidence": "low"}
+      ]
+    },
+    {
+      "id": "work_participation_rate",
+      "name": "Work Participation Rate",
+      "definition": "Workers as a share of total population.",
+      "formula": "Workers / Population * 100",
+      "derivation": "Census 2011.",
+      "unit": "percent",
+      "range": [25, 60],
+      "direction_social": "higher_is_better",
+      "hypotheses": [
+        {"crime_group": "PROPERTY", "expected_sign": "-", "theory": "Employment reduces economic strain.", "confidence": "low"}
+      ]
+    },
+    {
+      "id": "scst_share",
+      "name": "SC/ST Population Share",
+      "definition": "Scheduled Caste + Scheduled Tribe persons as a share of population.",
+      "formula": "(SC + ST) / Population * 100",
+      "derivation": "Census 2011.",
+      "unit": "percent",
+      "range": [0, 60],
+      "direction_social": "vulnerability_context",
+      "hypotheses": [
+        {"crime_group": "SCST", "expected_sign": "+", "theory": "Higher SC/ST population is associated with more REPORTED atrocities under the SC/ST (PoA) Act — a victimization/reporting relationship, NOT offending.", "confidence": "low", "ethics_flag": true}
+      ]
+    },
+    {
+      "id": "sex_ratio",
+      "name": "Sex Ratio",
+      "definition": "Females per 1000 males.",
+      "formula": "Female / Male * 1000",
+      "derivation": "Census 2011.",
+      "unit": "females_per_1000_males",
+      "range": [850, 1050],
+      "direction_social": "context",
+      "hypotheses": [
+        {"crime_group": "WOMEN", "expected_sign": "-", "theory": "Some literature links skewed (low) sex ratios to higher crimes against women; direction uncertain and confounded by reporting. Interpret with extreme caution.", "confidence": "very_low", "ethics_flag": true}
+      ]
+    },
+    {
+      "id": "internet_penetration",
+      "name": "Internet Penetration (development proxy)",
+      "definition": "Households with internet as a share of all households.",
+      "formula": "Households_with_Internet / Households * 100",
+      "derivation": "Census 2011.",
+      "unit": "percent",
+      "range": [0, 40],
+      "direction_social": "higher_is_better",
+      "hypotheses": [
+        {"crime_group": "ECONOMIC", "expected_sign": "+", "theory": "Connectivity expands the economic/cyber-enabled fraud surface.", "confidence": "very_low"}
+      ]
+    }
+  ]
+}

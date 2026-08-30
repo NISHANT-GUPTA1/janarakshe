@@ -1,9 +1,9 @@
 import React, { Suspense, lazy, useCallback, useEffect, useMemo, useState } from 'react';
 import { api } from '../api.js';
 import CrimeMap from '../CrimeMap.jsx';
-import Intelligence from '../Intelligence.jsx';
-import Correlations from '../Correlations.jsx';
-import FIRIntelligence from '../FIRIntelligence.jsx';
+import IntelWorkspace from '../intel/IntelWorkspace.jsx';
+import SEWorkspace from '../se/SEWorkspace.jsx';
+import FIRWorkspace from '../fir/FIRWorkspace.jsx';
 import District3D from './District3D.jsx';
 
 // three.js + the force-graph engine are heavy; keep them out of the initial bundle.
@@ -27,7 +27,7 @@ const RAIL = [
   { id: 'cc-intel', label: 'Crime Intelligence', icon: 'shield' },
   { id: 'cc-fir', label: 'FIR Intelligence', icon: 'file' },
   { id: 'cc-alerts', label: 'Alerts', icon: 'bell', dot: true },
-  { id: 'cc-reports', label: 'Reports', icon: 'report' },
+  { id: 'cc-reports', label: 'Socio-economic', icon: 'report' },
   { id: 'cc-admin', label: 'Administration', icon: 'gear' },
 ];
 
@@ -58,6 +58,11 @@ export default function Dashboard({ meta }) {
   const [applied, setApplied] = useState({ q: '', bands: [], hotOnly: false });
   const [hour, setHour] = useState(null);       // 0..23 scrub for the 3D scene
   const [view, setView] = useState('cc-overview');
+  // Cross-module handoff: Crime Intelligence hands a case id or a queue filter
+  // to FIR Intelligence, so "view related FIRs" lands on the actual case work
+  // instead of dead-ending in the analysis.
+  const [firJump, setFirJump] = useState(null);
+  const [intelJump, setIntelJump] = useState(null);
 
   useEffect(() => {
     let dead = false;
@@ -506,47 +511,46 @@ export default function Dashboard({ meta }) {
 
         {/* ---------- Crime intelligence ---------- */}
         {view === 'cc-intel' && (
-          <div className="deep-embed">
-            <DeepHead title="Crime Intelligence" back={() => go('cc-overview')} light />
-            <Intelligence />
+          <div className="deep-embed deep-embed-full">
+            <button className="link-btn" onClick={() => go('cc-overview')}>← Back to overview</button>
+            <IntelWorkspace
+              jump={intelJump}
+              onOpenFir={(firId, filter) => {
+                setFirJump({ firId, filter, at: Date.now() });
+                go('cc-fir');
+              }}
+            />
           </div>
         )}
 
         {/* ---------- FIR intelligence ---------- */}
+        {/* The workspace brings its own header, tabs and search, so it is mounted
+            full-bleed rather than inside the generic deep-dive chrome. */}
         {view === 'cc-fir' && (
-          <div className="deep-embed">
-            <DeepHead title="FIR Intelligence" back={() => go('cc-overview')} light />
-            <FIRIntelligence />
+          <div className="deep-embed deep-embed-full">
+            <button className="link-btn" onClick={() => go('cc-overview')}>← Back to overview</button>
+            <FIRWorkspace jump={firJump} />
           </div>
         )}
 
-        {/* ---------- Reports ---------- */}
+        {/* ---------- Socio-economic intelligence ---------- */}
+        {/* Was "District Register": a table, a drill-down and a correlation
+            matrix. All three survive inside the workspace — the register is its
+            first tab and the matrix its last — but the district's own
+            intelligence now comes first. */}
         {view === 'cc-reports' && (
-          <div className="cc-deep">
-            <DeepHead title="District Register" back={() => go('cc-overview')}
-              sub="Full district table with drill-down and socio-economic correlations." />
-            <div className="cc-deep-report">
-              <div className="cc-table-wrap">
-                <table className="cc-table">
-                  <thead><tr><th>District</th><th className="num">Rate/100k</th><th className="num">Cases</th><th>Status</th><th>Risk</th></tr></thead>
-                  <tbody>
-                    {filtered.map((d) => (
-                      <tr key={d.geo_unit_id} className={selected?.geo_unit_id === d.geo_unit_id ? 'sel' : ''} onClick={() => select(d.geo_unit_id)}>
-                        <td>{d.name}</td>
-                        <td className="num">{d.crime_rate_per_100k}</td>
-                        <td className="num">{fmt(d.total_cognizable_cases)}</td>
-                        <td>{STATUS_LABEL[d.hotspot_status]}</td>
-                        <td><span className="band" style={{ background: BAND_COLOR[d.risk_band] }}>{BAND_LABEL[d.risk_band]} {d.risk_score}</span></td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-              <div className="cc-detail">
-                {selected ? <DistrictDetail d={selected} /> : <p className="hint">Select a district from the table to drill down.</p>}
-              </div>
-            </div>
-            <div className="cc-deep-embed"><Correlations /></div>
+          <div className="deep-embed deep-embed-full">
+            <button className="link-btn" onClick={() => go('cc-overview')}>← Back to overview</button>
+            <SEWorkspace
+              onOpenCrimeIntel={(geoUnitId) => {
+                setIntelJump({ districtId: geoUnitId, at: Date.now() });
+                go('cc-intel');
+              }}
+              onOpenFirs={(filter) => {
+                setFirJump({ filter, at: Date.now() });
+                go('cc-fir');
+              }}
+            />
           </div>
         )}
 

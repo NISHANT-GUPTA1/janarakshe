@@ -1,0 +1,44 @@
+{
+  "contract": "geo_hierarchy",
+  "version": "0.1.0",
+  "updated": "2026-06-14",
+  "description": "Geographic spine for the platform. Defines the police administrative hierarchy and the keys used to join it to Census 2011 and LGD (Local Government Directory) geographies for socio-economic correlation.",
+  "pilot_state": {
+    "code": "STATE:KA",
+    "name": "Karnataka",
+    "lgd_state_code": 29,
+    "census_state_code": 29,
+    "note": "Pilot state for Phase 1. Karnataka uses Police Commissionerates for major cities (Bengaluru City Police is a Commissionerate headed by a Commissioner) plus rural Police Districts grouped under Ranges. Commissionerate maps to the RANGE/DISTRICT tiers below."
+  },
+  "levels": [
+    { "level": 0, "code": "NATION",      "name": "National",            "parent_level": null, "example": "India",                  "is_police_unit": false, "is_join_grain": false },
+    { "level": 1, "code": "STATE",       "name": "State / UT",          "parent_level": 0,    "example": "Karnataka",              "is_police_unit": false, "is_join_grain": true,  "join_keys": ["lgd_state_code", "census_state_code", "state_ut_name"] },
+    { "level": 2, "code": "RANGE",       "name": "Police Range / Commissionerate / Zone", "parent_level": 1, "example": "Bengaluru City Commissionerate", "is_police_unit": true, "is_join_grain": false, "note": "Police-only administrative tier. In Karnataka a Range groups rural districts under an IGP; a city Commissionerate is the urban equivalent. No census equivalent." },
+    { "level": 3, "code": "DISTRICT",    "name": "Police District",     "parent_level": 2,    "example": "Bengaluru City",         "is_police_unit": true,  "is_join_grain": true,  "join_keys": ["lgd_district_code", "census_district_code"], "note": "PRIMARY analytical grain. Police districts can differ from revenue/census districts; see crosswalk." },
+    { "level": 4, "code": "SUBDIVISION", "name": "Sub-Division / Circle","parent_level": 3,    "example": "Bengaluru Central Division", "is_police_unit": true, "is_join_grain": false },
+    { "level": 5, "code": "STATION",     "name": "Police Station",      "parent_level": 4,    "example": "Cubbon Park PS",         "is_police_unit": true,  "is_join_grain": false, "note": "Operational grain for district/station drilldowns. Jurisdiction polygon where available." },
+    { "level": 6, "code": "BEAT",        "name": "Beat",                "parent_level": 5,    "example": "Beat 5",                 "is_police_unit": true,  "is_join_grain": false, "note": "Finest operational unit; often unavailable in open data." }
+  ],
+  "primary_analytical_grain": "DISTRICT",
+  "operational_grain": "STATION",
+  "socioeconomic_join_grain": "DISTRICT",
+  "crosswalk": {
+    "purpose": "Police districts != revenue/census districts in several states. A crosswalk table maps each police DISTRICT to one or more census/LGD district codes (and weights for splitting socio-economic figures).",
+    "table": "geo_crosswalk",
+    "columns": ["police_district_id", "census_district_code", "lgd_district_code", "allocation_weight", "method"],
+    "default_method": "population_weighted",
+    "note": "allocation_weight sums to 1.0 across the census districts a police district overlaps; used to apportion district-level socio-economic indicators."
+  },
+  "geometry": {
+    "boundary_source_default": "datameet_districts_2011",
+    "boundary_formats": ["geojson", "shapefile"],
+    "centroid_required_levels": ["STATE", "DISTRICT", "STATION"],
+    "crs": "EPSG:4326",
+    "note": "Where station jurisdiction polygons are unavailable, use district polygon + station point (geocoded address) and assign incidents to district centroid."
+  },
+  "id_convention": {
+    "format": "<LEVELCODE>:<slug-or-code>",
+    "examples": ["STATE:KA", "DISTRICT:KA-BLR-CITY", "STATION:KA-BLR-CITY-CUBBONPARK"],
+    "rule": "geo_unit_id is globally unique and stable; parent_id references the id of the level above."
+  }
+}

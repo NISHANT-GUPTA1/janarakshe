@@ -64,6 +64,11 @@ def api_root():
             "/api/socioeconomic/schema",
             "/api/fir/overview", "/api/fir/stations", "/api/fir/spatiotemporal",
             "/api/fir/network", "/api/fir/offenders", "/api/fir/cases", "/api/fir/schema",
+            "/api/fir/queue", "/api/fir/case/{fir_id}", "/api/fir/case-details",
+            "/api/fir/search-index", "/api/fir/alerts", "/api/fir/graph",
+            "/api/intelligence/overview", "/api/intelligence/districts",
+            "/api/intelligence/districts/{geo_unit_id}", "/api/intelligence/offenders",
+            "/api/socioeconomic/intelligence",
             "/api/datastore/status", "/api/fir/live/cases", "/api/fir/live/stations",
         ],
         "docs": "/docs",
@@ -201,6 +206,88 @@ def fir_schema():
     return _load("fir_schema.json")
 
 
+# ---- Phase 8: the FIR investigation workspace ----
+# The queue is the officer's work list; case detail is one investigation file;
+# search, alerts and the graph are the cross-cutting views over the same records.
+@app.get("/api/fir/queue")
+def fir_queue():
+    """Operational FIR work queue: every case with priority, SLA, investigation
+    progress and last activity, plus the summary buckets and filter facets."""
+    return _load("fir_queue.json")
+
+
+@app.get("/api/fir/case/{fir_id}")
+def fir_case(fir_id: str, _=Depends(analyst_required)):
+    """One case file: people, entities, related FIRs with reasons, explainable AI
+    insights, and the typed investigation timeline. Person-level -> analyst gated."""
+    payload = _load("fir_case_detail.json")
+    rec = payload["cases"].get(fir_id)
+    if rec is None:
+        raise HTTPException(status_code=404, detail=f"FIR '{fir_id}' not found")
+    return {"stages": payload["stages"], "rules": payload["rules"],
+            "as_of": payload["as_of"], "case": rec}
+
+
+@app.get("/api/fir/case-details")
+def fir_case_details(_=Depends(analyst_required)):
+    """Every case file in one payload — what a static host serves instead of the
+    per-id route (the frontend indexes it client-side, as it does for districts)."""
+    return _load("fir_case_detail.json")
+
+
+@app.get("/api/fir/search-index")
+def fir_search_index(_=Depends(analyst_required)):
+    """Global intelligence search index: FIRs, persons, vehicles, phones,
+    locations, stations, crime types and districts in one flat list."""
+    return _load("fir_search.json")
+
+
+@app.get("/api/fir/alerts")
+def fir_alerts():
+    """Actionable intelligence alerts — each states what happened, why it matters
+    and what the officer can do."""
+    return _load("fir_alerts.json")
+
+
+@app.get("/api/fir/graph")
+def fir_graph(_=Depends(analyst_required)):
+    """Multi-entity link-analysis graph (person / vehicle / phone / location /
+    FIR / station) with typed edges. Person-level -> analyst gated."""
+    return _load("fir_graph.json")
+
+
+# ---- Phase 8: Crime Intelligence findings ----
+@app.get("/api/intelligence/overview")
+def intelligence_overview():
+    """Ranked intelligence findings with priority, claim type (observed /
+    statistical / ML / prediction), signals, method and actions; plus crime
+    profiles, period comparisons and the state trend."""
+    return _load("ci_overview.json")
+
+
+@app.get("/api/intelligence/districts")
+def intelligence_districts():
+    """Per-district intelligence drill-down for every district."""
+    return _load("ci_districts.json")
+
+
+@app.get("/api/intelligence/districts/{geo_unit_id}")
+def intelligence_district(geo_unit_id: str):
+    """One district's intelligence view: period change, top movers, hotspot
+    areas, stations, and the findings that landed there."""
+    rec = _load("ci_districts.json")["districts"].get(geo_unit_id)
+    if rec is None:
+        raise HTTPException(status_code=404, detail=f"district '{geo_unit_id}' not found")
+    return rec
+
+
+@app.get("/api/intelligence/offenders")
+def intelligence_offenders(_=Depends(analyst_required)):
+    """Repeat-offender intelligence: linked cases, crime types, locations,
+    associates and recent activity. Person-level -> analyst gated."""
+    return _load("ci_offenders.json")
+
+
 # ---- Catalyst Data Store: live record-level queries (ZCQL) ----
 # These read the FIR tables straight from Data Store when the app runs on AppSail
 # with CRIME_USE_DATASTORE=1; otherwise they fall back to the precomputed JSON so the
@@ -273,6 +360,15 @@ def socioeconomic_correlations():
     """Correlation matrix: each indicator x each crime group (Pearson/Spearman,
     p-values, hypothesis verdicts) + ethical caveats."""
     return _load("se_correlations.json")
+
+
+@app.get("/api/socioeconomic/intelligence")
+def socioeconomic_intelligence():
+    """Socio-economic intelligence: per-district profiles banded against the other
+    districts and the state figure, the associations that carry signal stated in
+    plain language with their limits, nearest-profile districts, and the full
+    correlation matrix + methodology behind them for the analyst view."""
+    return _load("se_intel.json")
 
 
 @app.get("/api/socioeconomic/schema")

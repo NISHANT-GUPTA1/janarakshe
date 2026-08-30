@@ -1,0 +1,22 @@
+{
+  "incident_id": "INC-2023-KA-BLR-CITY-THEFT-000001",
+  "fir_no": null,
+  "category_code": "THEFT",
+  "act": "IPC",
+  "section": "379",
+  "is_cognizable": true,
+  "occurrence_datetime": null,
+  "registration_date": "2023-12-31",
+  "geo_unit_id": "DISTRICT:KA-BLR-CITY",
+  "lat": 12.9716,
+  "lon": 77.5946,
+  "geo_precision": "district_centroid",
+  "victim_count": null,
+  "value_stolen": null,
+  "value_recovered": null,
+  "investigation_status": "chargesheeted",
+  "trial_status": "in_trial",
+  "case_count": 4120,
+  "source_id": "ogd_district_ipc",
+  "ingested_at": "2026-06-14T00:00:00Z"
+}

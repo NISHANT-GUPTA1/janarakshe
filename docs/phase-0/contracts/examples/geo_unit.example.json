@@ -1,0 +1,18 @@
+{
+  "geo_unit_id": "DISTRICT:KA-BLR-CITY",
+  "level": "DISTRICT",
+  "name": "Bengaluru City",
+  "parent_id": "RANGE:KA-BLR-CITY-COMMR",
+  "codes": {
+    "lgd_state_code": 29,
+    "lgd_district_code": 525,
+    "census_state_code": 29,
+    "census_district_code": 583
+  },
+  "centroid": { "lat": 12.9716, "lon": 77.5946 },
+  "boundary_ref": "datameet:district:bengaluru-urban",
+  "area_km2": 2196.0,
+  "population": 9621551,
+  "female_population": 4637000,
+  "population_year": 2011
+}

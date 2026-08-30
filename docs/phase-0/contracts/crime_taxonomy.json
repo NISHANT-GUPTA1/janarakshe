@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema#meta-note",
+  "contract": "crime_taxonomy",
+  "version": "0.1.0",
+  "updated": "2026-06-14",
+  "description": "Canonical crime category model. Raw legal heads (IPC/BNS sections, NCRB heads, SLL acts) map onto these canonical codes so siloed sources reconcile to one taxonomy.",
+  "legal_note": "IPC (Indian Penal Code, 1860) was replaced by BNS (Bharatiya Nyaya Sanhita, 2023) effective 2024-07-01. Both section references are kept so historical NCRB data (IPC) and new FIRs (BNS) map to the same canonical code.",
+  "severity_scale": {
+    "1": "low (nuisance / minor property)",
+    "2": "moderate (property, non-grievous hurt)",
+    "3": "serious (grievous hurt, robbery, major fraud)",
+    "4": "grave (kidnapping, dacoity)",
+    "5": "most grave (murder, culpable homicide, terror, rape)"
+  },
+  "groups": [
+    { "code": "VIOLENT", "name": "Violent Crime" },
+    { "code": "WOMEN", "name": "Crime Against Women" },
+    { "code": "CHILDREN", "name": "Crime Against Children" },
+    { "code": "PROPERTY", "name": "Property Crime" },
+    { "code": "SCST", "name": "Crime Against SC/ST" },
+    { "code": "ECONOMIC", "name": "Economic & Financial Crime" },
+    { "code": "CYBER", "name": "Cyber Crime" },
+    { "code": "PUBLIC_ORDER", "name": "Crime Against Public Order / State" },
+    { "code": "NARCOTICS", "name": "Drugs & Narcotics" },
+    { "code": "OTHER_SLL", "name": "Other Special & Local Laws" }
+  ],
+  "categories": [
+    { "code": "MURDER", "name": "Murder", "group": "VIOLENT", "severity_weight": 5, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["302"], "bns_sections": ["103"], "ncrb_heads": ["Murder"] },
+    { "code": "CULP_HOMICIDE", "name": "Culpable Homicide not amounting to Murder", "group": "VIOLENT", "severity_weight": 5, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["304"], "bns_sections": ["105"], "ncrb_heads": ["Culpable Homicide not amounting to Murder"] },
+    { "code": "ATTEMPT_MURDER", "name": "Attempt to Murder", "group": "VIOLENT", "severity_weight": 4, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["307"], "bns_sections": ["109"], "ncrb_heads": ["Attempt to Murder"] },
+    { "code": "KIDNAP_ABDUCT", "name": "Kidnapping & Abduction", "group": "VIOLENT", "severity_weight": 4, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["363", "364", "365", "366"], "bns_sections": ["137", "139", "140"], "ncrb_heads": ["Kidnapping & Abduction"] },
+    { "code": "DACOITY", "name": "Dacoity", "group": "VIOLENT", "severity_weight": 4, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["395", "396"], "bns_sections": ["310"], "ncrb_heads": ["Dacoity"] },
+    { "code": "ROBBERY", "name": "Robbery", "group": "VIOLENT", "severity_weight": 3, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["392", "393", "394"], "bns_sections": ["309"], "ncrb_heads": ["Robbery"] },
+    { "code": "RIOTS", "name": "Riots", "group": "PUBLIC_ORDER", "severity_weight": 3, "is_cognizable": true, "victim_centric": false, "ipc_sections": ["147", "148", "149"], "bns_sections": ["191", "192"], "ncrb_heads": ["Riots"] },
+    { "code": "GRIEVOUS_HURT", "name": "Grievous Hurt", "group": "VIOLENT", "severity_weight": 3, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["325", "326"], "bns_sections": ["117"], "ncrb_heads": ["Hurt / Grievous Hurt"] },
+
+    { "code": "RAPE", "name": "Rape", "group": "WOMEN", "severity_weight": 4, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["376"], "bns_sections": ["64"], "ncrb_heads": ["Rape"] },
+    { "code": "ASSAULT_WOMEN_MODESTY", "name": "Assault on Women with Intent to Outrage Modesty", "group": "WOMEN", "severity_weight": 3, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["354"], "bns_sections": ["74"], "ncrb_heads": ["Assault on Women with intent to outrage her Modesty"] },
+    { "code": "INSULT_MODESTY", "name": "Insult to Modesty of Women", "group": "WOMEN", "severity_weight": 2, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["509"], "bns_sections": ["79"], "ncrb_heads": ["Insult to the Modesty of Women"] },
+    { "code": "DOWRY_DEATH", "name": "Dowry Death", "group": "WOMEN", "severity_weight": 5, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["304B"], "bns_sections": ["80"], "ncrb_heads": ["Dowry Deaths"] },
+    { "code": "CRUELTY_HUSBAND", "name": "Cruelty by Husband or his Relatives", "group": "WOMEN", "severity_weight": 3, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["498A"], "bns_sections": ["85", "86"], "ncrb_heads": ["Cruelty by Husband or his Relatives"] },
+
+    { "code": "CHILD_RAPE_POCSO", "name": "Sexual Offences against Children (POCSO)", "group": "CHILDREN", "severity_weight": 5, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["376"], "bns_sections": ["65"], "sll_acts": ["POCSO Act 2012"], "ncrb_heads": ["Protection of Children from Sexual Offences Act"] },
+    { "code": "CHILD_KIDNAP", "name": "Kidnapping & Abduction of Children", "group": "CHILDREN", "severity_weight": 4, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["363", "366A"], "bns_sections": ["137"], "ncrb_heads": ["Kidnapping & Abduction of Children"] },
+    { "code": "CHILD_LABOUR", "name": "Child Labour", "group": "CHILDREN", "severity_weight": 2, "is_cognizable": true, "victim_centric": true, "sll_acts": ["Child Labour (Prohibition & Regulation) Act 1986"], "ncrb_heads": ["Child Labour Act"] },
+
+    { "code": "BURGLARY", "name": "Burglary / House-breaking", "group": "PROPERTY", "severity_weight": 2, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["445", "454", "457"], "bns_sections": ["331"], "ncrb_heads": ["Burglary"] },
+    { "code": "THEFT", "name": "Theft", "group": "PROPERTY", "severity_weight": 2, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["379"], "bns_sections": ["303"], "ncrb_heads": ["Theft"] },
+    { "code": "AUTO_THEFT", "name": "Automobile Theft", "group": "PROPERTY", "severity_weight": 2, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["379"], "bns_sections": ["303"], "ncrb_heads": ["Auto Theft"] },
+    { "code": "CBT", "name": "Criminal Breach of Trust", "group": "ECONOMIC", "severity_weight": 3, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["406", "408", "409"], "bns_sections": ["316"], "ncrb_heads": ["Criminal Breach of Trust"] },
+    { "code": "CHEATING", "name": "Cheating", "group": "ECONOMIC", "severity_weight": 2, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["420"], "bns_sections": ["318"], "ncrb_heads": ["Cheating"] },
+    { "code": "FORGERY", "name": "Forgery / Counterfeiting", "group": "ECONOMIC", "severity_weight": 2, "is_cognizable": true, "victim_centric": false, "ipc_sections": ["463", "465", "489A"], "bns_sections": ["336", "178"], "ncrb_heads": ["Counterfeiting", "Forgery"] },
+    { "code": "ARSON", "name": "Arson", "group": "PROPERTY", "severity_weight": 3, "is_cognizable": true, "victim_centric": true, "ipc_sections": ["435", "436"], "bns_sections": ["326"], "ncrb_heads": ["Arson"] },
+
+    { "code": "SCST_ATROCITY", "name": "Offences against SC/ST (PoA Act)", "group": "SCST", "severity_weight": 4, "is_cognizable": true, "victim_centric": true, "sll_acts": ["SC/ST (Prevention of Atrocities) Act 1989"], "ncrb_heads": ["SC/ST (Prevention of Atrocities) Act"] },
+
+    { "code": "CYBER_FRAUD", "name": "Cyber-enabled Fraud", "group": "CYBER", "severity_weight": 3, "is_cognizable": true, "victim_centric": true, "sll_acts": ["Information Technology Act 2000"], "bns_sections": ["318", "319"], "ncrb_heads": ["Fraud (IT Act)"] },
+    { "code": "CYBER_OTHER", "name": "Other Cyber Crime (IT Act)", "group": "CYBER", "severity_weight": 2, "is_cognizable": true, "victim_centric": true, "sll_acts": ["Information Technology Act 2000"], "ncrb_heads": ["IT Act"] },
+
+    { "code": "NDPS", "name": "Narcotic Drugs & Psychotropic Substances", "group": "NARCOTICS", "severity_weight": 3, "is_cognizable": true, "victim_centric": false, "sll_acts": ["NDPS Act 1985"], "ncrb_heads": ["Narcotic Drugs & Psychotropic Substances Act"] },
+    { "code": "ARMS", "name": "Arms Act Offences", "group": "OTHER_SLL", "severity_weight": 3, "is_cognizable": true, "victim_centric": false, "sll_acts": ["Arms Act 1959"], "ncrb_heads": ["Arms Act"] },
+    { "code": "EXCISE", "name": "Excise / Prohibition", "group": "OTHER_SLL", "severity_weight": 1, "is_cognizable": true, "victim_centric": false, "sll_acts": ["State Excise Acts", "Prohibition Acts"], "ncrb_heads": ["Prohibition Act", "Excise Act"] },
+    { "code": "GAMBLING", "name": "Gambling", "group": "OTHER_SLL", "severity_weight": 1, "is_cognizable": true, "victim_centric": false, "sll_acts": ["Public Gambling Act 1867"], "ncrb_heads": ["Gambling Act"] },
+
+    { "code": "OTHER", "name": "Other / Unmapped", "group": "OTHER_SLL", "severity_weight": 1, "is_cognizable": null, "victim_centric": false, "ncrb_heads": ["Other IPC Crimes", "Other SLL Crimes"], "note": "Fallback bucket. Anything that cannot be mapped lands here and is flagged for taxonomy review in Phase 1 data-quality." }
+  ]
+}
