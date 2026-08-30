@@ -1,5 +1,6 @@
 import React, { useMemo, useRef, useState } from 'react';
-import { MapContainer, TileLayer, GeoJSON, CircleMarker, Tooltip } from 'react-leaflet';
+import { MapContainer, GeoJSON, CircleMarker, Tooltip } from 'react-leaflet';
+import Basemap from './Basemap.jsx';
 import 'leaflet/dist/leaflet.css';
 import { BAND_COLOR, HOTSPOT_COLOR } from './dash/palette.js';
 import { BAND_LABEL } from './labels.js';
@@ -208,10 +209,7 @@ export default function CrimeMap({ districts, boundaries, selectedId, focusIds =
 
       <MapContainer center={[14.8, 76.2]} zoom={6} style={{ height, borderRadius: 12 }} zoomControl={false} preferCanvas>
         {/* basemap always shown so the surrounding states give context in both layers */}
-        <TileLayer
-          url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-          attribution='&copy; OpenStreetMap &copy; CARTO'
-        />
+        <Basemap />
 
         {/* Risk choropleth (district level) */}
         {layer === 'risk' && boundaries && (

@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { CircleMarker, GeoJSON, MapContainer, Popup, TileLayer, useMap } from 'react-leaflet';
+import { CircleMarker, GeoJSON, MapContainer, Popup, useMap } from 'react-leaflet';
+import Basemap from '../Basemap.jsx';
 import 'leaflet/dist/leaflet.css';
 import { Delta, Tag, fmt, pClass } from './ui.jsx';
 
@@ -82,10 +83,7 @@ export default function IntelMap({
   return (
     <div className="map-wrap" style={{ height }}>
       <MapContainer center={KA_CENTER} zoom={7} scrollWheelZoom style={{ height: '100%' }}>
-        <TileLayer
-          url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-          attribution='&copy; OpenStreetMap &copy; CARTO'
-        />
+        <Basemap />
         <FlyTo focus={focus} />
 
         {shown('beats') && boundaries && (

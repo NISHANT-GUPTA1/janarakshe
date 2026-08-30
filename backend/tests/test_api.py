@@ -207,6 +207,22 @@ def test_cors_allows_a_catalyst_origin(client):
     assert response.headers.get("access-control-allow-origin") == origin
 
 
+@pytest.mark.parametrize(
+    "origin",
+    [
+        "https://janarakshe.onslate.in",   # the live deployed frontend
+        "https://myapp.onslate.in",
+        "https://crimeapi-50044117510.development.catalystappsail.in",
+        "http://localhost:5173",
+    ],
+)
+def test_cors_allows_every_origin_the_app_is_actually_served_from(client, origin):
+    """Slate serves the SPA from *.onslate.in. If the allowlist misses that origin
+    the deployed dashboard breaks entirely, so each real origin is pinned here."""
+    response = client.get("/api/meta", headers={"Origin": origin})
+    assert response.headers.get("access-control-allow-origin") == origin
+
+
 def test_cors_does_not_allow_credentials(client):
     response = client.get(
         "/api/meta", headers={"Origin": "http://localhost:5173"}

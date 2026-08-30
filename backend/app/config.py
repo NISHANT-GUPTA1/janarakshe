@@ -104,8 +104,15 @@ def role_rank(role: str | None) -> int:
 # the Catalyst hosting domains. Set CRIME_CORS_ORIGINS to pin production further.
 DEFAULT_CORS_ORIGIN_REGEX = (
     r"^https?://(localhost|127\.0\.0\.1)(:\d+)?$"
-    r"|^https://[A-Za-z0-9-]+\.catalystserverless\.(com|eu|in)$"
-    r"|^https://[A-Za-z0-9-]+\.catalystappsail\.(in|com)$"
+    # Slate serves the deployed SPA from *.onslate.in (e.g. janarakshe.onslate.in).
+    # This is the origin the live frontend actually calls from — omitting it blocks
+    # the entire dashboard, so it stays first among the hosted patterns.
+    # Subdomains carry dots of their own - the AppSail host is
+    # "crimeapi-<id>.development.catalystappsail.in" - so the label pattern must
+    # allow them, or the real hosts fail to match.
+    r"|^https://[A-Za-z0-9.-]+\.onslate\.in$"
+    r"|^https://[A-Za-z0-9.-]+\.catalystserverless\.(com|eu|in)$"
+    r"|^https://[A-Za-z0-9.-]+\.catalystappsail\.(in|com)$"
     r"|^https://[A-Za-z0-9.-]+\.zohoscw\.(com|eu|in)$"
 )
 
@@ -152,7 +159,7 @@ DEFAULT_CSP = "; ".join(
         "script-src 'self' 'unsafe-eval'",
         "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
         "font-src 'self' data: https://fonts.gstatic.com",
-        "img-src 'self' data: blob: https://*.basemaps.cartocdn.com",
+        "img-src 'self' data: blob: https://services.arcgisonline.com",
         "connect-src 'self' https://*.catalystappsail.in https://*.catalystserverless.com",
         "worker-src 'self' blob:",
         "manifest-src 'self'",
